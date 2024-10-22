@@ -218,7 +218,7 @@
         if (isScrolling) {
           const touchEndY = event.touches[0].clientY;
           const deltaY = touchStartY - touchEndY;
-          scrollVelocity += deltaY * 0.005; // Adjust speed of scroll effect
+          scrollVelocity += deltaY * 0.1; // Adjust speed of scroll effect for mobile
           touchStartY = touchEndY;
         }
       });
