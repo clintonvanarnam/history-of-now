@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D Scrolling Timeline with Logarithmic Scales</title>
     <style>
         body {
             margin: 0;
             overflow: hidden;
-            background-color: white; /* Set background to white */
+            background-color: white;
         }
         canvas {
             display: block;
@@ -21,7 +20,7 @@
             display: flex;
             align-items: center;
             padding: 10px;
-            background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+            background-color: rgba(255, 255, 255, 0.8);
             font-family: Arial, sans-serif;
         }
         .log-scale-left {
@@ -90,233 +89,280 @@
     <!-- Tooltip -->
     <div class="tooltip" id="tooltip"></div>
 
+    <!-- Include Three.js library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Include non-module versions of FontLoader and TextGeometry -->
     <script src="https://threejs.org/examples/js/loaders/FontLoader.js"></script>
     <script src="https://threejs.org/examples/js/geometries/TextGeometry.js"></script>
 
     <script>
-      // Set up scene, camera, and renderer
-      const scene = new THREE.Scene();
-      const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 2000); // Adjust FOV to exaggerate perspective
-      const renderer = new THREE.WebGLRenderer({ antialias: true }); // Enable antialiasing
-      renderer.setSize(window.innerWidth, window.innerHeight);
-      renderer.setPixelRatio(window.devicePixelRatio); // Support high-DPI displays
-      renderer.setClearColor(0xffffff, 1); // Set background color to white
-      document.body.appendChild(renderer.domElement);
-
-      // Add a light source
-      const light = new THREE.PointLight(0xffffff, 1, 1000);
-      light.position.set(50, 50, 50);
-      scene.add(light);
-
-      // Logarithmic scale values
-      const logScaleValues = {
-        '1K': 1e3,
-        '10K': 1e4,
-        '100K': 1e5,
-        '1M': 1e6,
-        '10M': 1e7,
-        '100M': 1e8,
-        '1B': 1e9,
-        '10B': 1e10,
-        '100B': 1e11,
-        '1T': 1e12
-      };
-
-      // Function to map past age value to position on the logarithmic scale
-      function mapToLogScale(value) {
-        if (value === '∞') {
-          return window.innerWidth / 2; // Arbitrary large value for infinity
-        }
-        const logValue = Math.log10(parseFloat(value.replace(/,/g, '')));
-        const minLog = Math.log10(1e3); // Minimum value on the scale (1K)
-        const maxLog = Math.log10(1e12); // Maximum value on the scale (1T)
-        const scaleWidth = window.innerWidth / 2; // Width of the scale (50vw)
-        return scaleWidth * (logValue - minLog) / (maxLog - minLog);
-      }
-
-      // Load font and create text meshes
-      const loader = new THREE.FontLoader();
-      fetch('data.json')
-        .then(response => response.json())
-        .then(data => {
-          loader.load('fonts/Cosmica Trial Regular_Regular.json', function (font) { // Use the converted typeface.json file
-            const entries = data.Sheet1.reverse(); // Reverse the order of the entries
-            entries.forEach((entry, index) => {
-              if (entry.DATE) { // Check if DATE field exists
-                const year = entry.DATE;
-                const textGeometry = new THREE.TextGeometry(year.toString(), {
-                  font: font,
-                  size: 5, // Text size
-                  height: 0.1, // Text depth
-                  curveSegments: 12, // Increase the number of segments to make the text smoother
-                });
-
-                textGeometry.computeBoundingBox();
-                const centerOffset = -0.5 * (textGeometry.boundingBox.max.x - textGeometry.boundingBox.min.x);
-
-                const material = new THREE.MeshBasicMaterial({ color: 0x000000 }); // Black text color
-                const textMesh = new THREE.Mesh(textGeometry, material);
-
-                // Calculate the height of the viewport in 3D space to align the text bottom to the page bottom
-                const textHeight = textGeometry.boundingBox.max.y - textGeometry.boundingBox.min.y;
-                const yPosition = -(window.innerHeight / 20);  // Constant Y position
-
-                // Position the text in 3D space along the z-axis
-                textMesh.position.set(centerOffset, yPosition, -(index * 20)); // 20 units apart in Z-axis
-
-                // Tilt the text mesh up a little bit
-                textMesh.rotation.x = -0.6; // Adjust this value to control the tilt angle
-
-                textMesh.userData = { isYear: true }; // Mark this mesh as a year label
-                scene.add(textMesh);
-
-                // Create a line from the bottom of the text extending infinitely on the horizontal axis
-                const lineMaterial = new THREE.LineBasicMaterial({ color: 0x000000 });
-                const lineGeometry = new THREE.BufferGeometry().setFromPoints([
-                  new THREE.Vector3(-1000, yPosition, -(index * 20)),
-                  new THREE.Vector3(1000, yPosition, -(index * 20))
-                ]);
-                const line = new THREE.Line(lineGeometry, lineMaterial);
-                scene.add(line);
-
-                // Add past age of earth line
-                if (entry["PAST AGE OF EARTH"]) {
-                  const pastAge = entry["PAST AGE OF EARTH"];
-                  const lineLength = mapToLogScale(pastAge);
-
-                  const redLineMaterial = new THREE.LineBasicMaterial({ color: 0xff0000 });
-                  const redLineGeometry = new THREE.BufferGeometry().setFromPoints([
-                    new THREE.Vector3(0, yPosition, -(index * 20)),
-                    new THREE.Vector3(-lineLength, yPosition, -(index * 20))
-                  ]);
-                  const redLine = new THREE.Line(redLineGeometry, redLineMaterial);
-                  redLine.userData = { pastAge }; // Store the past age value in the line's userData
-                  scene.add(redLine);
-                }
-              }
-            });
-          });
-        });
-
-      // Scroll position handling
-      let scrollPosition = 0;
-      let scrollVelocity = 0;
-      let touchStartY = 0;
-      let isScrolling = false;
-
-      window.addEventListener('wheel', function (event) {
-        scrollVelocity += event.deltaY * 0.005; // Adjust speed of scroll effect
-      });
-
-      window.addEventListener('touchstart', function (event) {
-        touchStartY = event.touches[0].clientY;
-        isScrolling = true;
-      });
-
-      window.addEventListener('touchmove', function (event) {
-        if (isScrolling) {
-          const touchEndY = event.touches[0].clientY;
-          const deltaY = touchStartY - touchEndY;
-          scrollVelocity += deltaY * 0.1; // Adjust speed of scroll effect for mobile
-          touchStartY = touchEndY;
-        }
-      });
-
-      window.addEventListener('touchend', function () {
-        isScrolling = false;
-      });
-
-      // Function to generate logarithmic scale labels
-      function generateLogarithmicScale(container, reverse = false) {
-        const logValues = ['1K', '10K', '100K', '1M', '10M', '100M', '1B', '10B', '100B', '1T'];
-        const values = reverse ? logValues.reverse() : logValues;
-
-        values.forEach(value => {
-          const label = document.createElement('div');
-          label.classList.add('log-label');
-          label.textContent = value;
-          container.appendChild(label);
-        });
-      }
-
-      // Generate the logarithmic scale for both left and right sides
-      generateLogarithmicScale(document.querySelector('.log-scale-left'), true);
-      generateLogarithmicScale(document.querySelector('.log-scale-right'));
-
-      // Handle camera rotation slider
-      const xRotationSlider = document.getElementById('x-rotation-slider');
-      xRotationSlider.addEventListener('input', function () {
-        camera.rotation.x = parseFloat(xRotationSlider.value);
-      });
-
-      // Tooltip handling
-      const tooltip = document.getElementById('tooltip');
-      const raycaster = new THREE.Raycaster();
-      const mouse = new THREE.Vector2();
-      let previousIntersected = null;
-
-      function onMouseMove(event) {
-        // Calculate mouse position in normalized device coordinates (-1 to +1) for both components
-        mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-        mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
-
-        // Update the raycaster with the camera and mouse position
-        raycaster.setFromCamera(mouse, camera);
-
-        // Calculate objects intersecting the picking ray
-        const intersects = raycaster.intersectObjects(scene.children);
-
-        // Check if any red line or year label is intersected
-        let intersected = false;
-        intersects.forEach(intersect => {
-          if (intersect.object.material.color.getHex() === 0xff0000) {
-            tooltip.style.opacity = 1;
-            tooltip.style.left = `${event.clientX + 10}px`;
-            tooltip.style.top = `${event.clientY + 10}px`;
-            tooltip.innerText = `Past Age of Earth: ${intersect.object.userData.pastAge}`;
-            intersected = true;
-          } else if (intersect.object.userData.isYear) {
-            intersect.object.material.color.set(0xff0000); // Change color to red
-            previousIntersected = intersect.object;
-            intersected = true;
-          }
-        });
-
-        if (!intersected) {
-          tooltip.style.opacity = 0;
-        }
-
-        // Reset the color of the previously intersected year label
-        if (previousIntersected && !intersects.some(intersect => intersect.object === previousIntersected)) {
-          previousIntersected.material.color.set(0x000000); // Change color back to black
-          previousIntersected = null;
-        }
-      }
-
-      window.addEventListener('mousemove', onMouseMove);
-
-      function animate() {
-        requestAnimationFrame(animate);
-
-        // Apply momentum scrolling
-        scrollPosition += scrollVelocity;
-        scrollVelocity *= 0.95; // Deceleration factor
-
-        // Move camera along the Z-axis based on scroll
-        camera.position.z = 200 + scrollPosition; // Move camera along Z-axis based on scroll
-
-        renderer.render(scene, camera);
-      }
-
-      animate();
-
-      // Handle window resizing
-      window.addEventListener('resize', function () {
+        // Set up scene, camera, and renderer
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(
+            50,
+            window.innerWidth / window.innerHeight,
+            0.1,
+            2000
+        );
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
         renderer.setSize(window.innerWidth, window.innerHeight);
-        camera.aspect = window.innerWidth / window.innerHeight;
-        camera.updateProjectionMatrix();
-      });
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.setClearColor(0xffffff, 1);
+        document.body.appendChild(renderer.domElement);
+
+        // Add a light source
+        const light = new THREE.PointLight(0xffffff, 1, 1000);
+        light.position.set(50, 50, 50);
+        scene.add(light);
+
+        // Logarithmic scale values
+        const logScaleValues = {
+            '1K': 1e3,
+            '10K': 1e4,
+            '100K': 1e5,
+            '1M': 1e6,
+            '10M': 1e7,
+            '100M': 1e8,
+            '1B': 1e9,
+            '10B': 1e10,
+            '100B': 1e11,
+            '1T': 1e12
+        };
+
+        // Function to map past age value to position on the logarithmic scale
+        function mapToLogScale(value) {
+            if (value === '∞') {
+                return window.innerWidth / 2; // Arbitrary large value for infinity
+            }
+            const logValue = Math.log10(parseFloat(value.replace(/,/g, '')));
+            const minLog = Math.log10(1e3); // Minimum value on the scale (1K)
+            const maxLog = Math.log10(1e12); // Maximum value on the scale (1T)
+            const scaleWidth = window.innerWidth / 2; // Width of the scale (50vw)
+            return scaleWidth * (logValue - minLog) / (maxLog - minLog);
+        }
+
+        // Arrays to store meshes
+        const textMeshes = [];
+        const planeMeshes = [];
+
+        // Load font and create text meshes
+        const loader = new THREE.FontLoader();
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                loader.load('fonts/Cosmica Trial Regular_Regular.json', function (font) {
+                    const entries = data.Sheet1.reverse();
+                    entries.forEach((entry, index) => {
+                        if (entry.DATE) {
+                            const year = entry.DATE;
+                            const textGeometry = new THREE.TextGeometry(year.toString(), {
+                                font: font,
+                                size: 5,
+                                height: 0.1,
+                                curveSegments: 12,
+                            });
+
+                            textGeometry.computeBoundingBox();
+                            const bbox = textGeometry.boundingBox;
+                            const centerOffset = -0.5 * (bbox.max.x - bbox.min.x);
+
+                            const material = new THREE.MeshBasicMaterial({
+                                color: 0x000000,
+                                side: THREE.DoubleSide,
+                            });
+                            const textMesh = new THREE.Mesh(textGeometry, material);
+
+                            const yPosition = -(window.innerHeight / 20);
+
+                            // Position the text mesh
+                            textMesh.position.set(centerOffset, yPosition, -(index * 20));
+                            textMesh.rotation.x = -0.6;
+                            textMesh.userData = { isYear: true };
+                            textMesh.name = `Year_${year}`;
+                            scene.add(textMesh);
+                            textMeshes.push(textMesh);
+
+                            // Create a plane behind the text mesh
+                            const width = bbox.max.x - bbox.min.x;
+                            const height = bbox.max.y - bbox.min.y;
+
+                            const planeGeometry = new THREE.PlaneGeometry(width, height);
+                            const planeMaterial = new THREE.MeshBasicMaterial({
+                                opacity: 0,
+                                transparent: true,
+                                side: THREE.DoubleSide,
+                            });
+                            const planeMesh = new THREE.Mesh(planeGeometry, planeMaterial);
+
+                            // Position and rotate the plane to match the text mesh
+                            planeMesh.position.set(
+                                centerOffset + (bbox.max.x - bbox.min.x) / 2, // Center the plane
+                                yPosition + (bbox.max.y + bbox.min.y) / 2,
+                                -(index * 20) - 0.1 // Slightly behind the text mesh
+                            );
+                            planeMesh.rotation.x = -0.6;
+                            planeMesh.userData = { textMesh: textMesh };
+                            scene.add(planeMesh);
+                            planeMeshes.push(planeMesh);
+
+                            // Create a line from the bottom of the text extending infinitely on the horizontal axis
+                            const lineMaterial = new THREE.LineBasicMaterial({ color: 0x000000 });
+                            const lineGeometry = new THREE.BufferGeometry().setFromPoints([
+                                new THREE.Vector3(-1000, yPosition, -(index * 20)),
+                                new THREE.Vector3(1000, yPosition, -(index * 20))
+                            ]);
+                            const line = new THREE.Line(lineGeometry, lineMaterial);
+                            scene.add(line);
+
+                            // Add past age of earth line
+                            if (entry["PAST AGE OF EARTH"]) {
+                                const pastAge = entry["PAST AGE OF EARTH"];
+                                const lineLength = mapToLogScale(pastAge);
+
+                                const redLineMaterial = new THREE.LineBasicMaterial({ color: 0xff0000 });
+                                const redLineGeometry = new THREE.BufferGeometry().setFromPoints([
+                                    new THREE.Vector3(0, yPosition, -(index * 20)),
+                                    new THREE.Vector3(-lineLength, yPosition, -(index * 20))
+                                ]);
+                                const redLine = new THREE.Line(redLineGeometry, redLineMaterial);
+                                redLine.userData = { pastAge };
+                                scene.add(redLine);
+                            }
+                        }
+                    });
+                });
+            });
+
+        // Scroll position handling
+        let scrollPosition = 0;
+        let scrollVelocity = 0;
+        let touchStartY = 0;
+        let isScrolling = false;
+
+        const isMobile = window.matchMedia("(max-width: 767px)").matches;
+
+        window.addEventListener('wheel', function (event) {
+            scrollVelocity += event.deltaY * 0.005;
+        });
+
+        window.addEventListener('touchstart', function (event) {
+            touchStartY = event.touches[0].clientY;
+            isScrolling = true;
+        });
+
+        window.addEventListener('touchmove', function (event) {
+            if (isScrolling) {
+                const touchEndY = event.touches[0].clientY;
+                const deltaY = touchStartY - touchEndY;
+                scrollVelocity += deltaY * (isMobile ? 0.02 : 0.01);
+                touchStartY = touchEndY;
+            }
+        });
+
+        window.addEventListener('touchend', function () {
+            isScrolling = false;
+        });
+
+        // Function to generate logarithmic scale labels
+        function generateLogarithmicScale(container, reverse = false) {
+            const logValues = ['1K', '10K', '100K', '1M', '10M', '100M', '1B', '10B', '100B', '1T'];
+            const values = reverse ? logValues.reverse() : logValues;
+
+            values.forEach(value => {
+                const label = document.createElement('div');
+                label.classList.add('log-label');
+                label.textContent = value;
+                container.appendChild(label);
+            });
+        }
+
+        // Generate the logarithmic scale for both left and right sides
+        generateLogarithmicScale(document.querySelector('.log-scale-left'), true);
+        generateLogarithmicScale(document.querySelector('.log-scale-right'));
+
+        // Handle camera rotation slider
+        const xRotationSlider = document.getElementById('x-rotation-slider');
+        xRotationSlider.addEventListener('input', function () {
+            camera.rotation.x = parseFloat(xRotationSlider.value);
+        });
+
+        // Tooltip handling
+        const tooltip = document.getElementById('tooltip');
+        const raycaster = new THREE.Raycaster();
+        const mouse = new THREE.Vector2();
+        let previousIntersectedPlane = null;
+
+        function onMouseMove(event) {
+            const rect = renderer.domElement.getBoundingClientRect();
+
+            mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+            mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+
+            raycaster.setFromCamera(mouse, camera);
+
+            const intersects = raycaster.intersectObjects(planeMeshes, false);
+
+            let intersected = false;
+            let intersectObject = null;
+
+            if (intersects.length > 0) {
+                const planeMesh = intersects[0].object;
+                const textMesh = planeMesh.userData.textMesh;
+
+                if (textMesh) {
+                    textMesh.material.color.set(0xff0000); // Change text color to red
+                    intersected = true;
+
+                    if (previousIntersectedPlane && previousIntersectedPlane !== planeMesh) {
+                        previousIntersectedPlane.userData.textMesh.material.color.set(0x000000); // Reset previous text color
+                    }
+
+                    previousIntersectedPlane = planeMesh;
+                    intersectObject = textMesh;
+                }
+            } else {
+                if (previousIntersectedPlane) {
+                    previousIntersectedPlane.userData.textMesh.material.color.set(0x000000); // Reset color
+                    previousIntersectedPlane = null;
+                }
+            }
+
+            // Tooltip logic
+            if (intersected && intersectObject) {
+                tooltip.style.opacity = 1;
+                tooltip.style.left = `${event.clientX + 10}px`;
+                tooltip.style.top = `${event.clientY + 10}px`;
+                tooltip.innerText = intersectObject.name;
+                document.body.style.cursor = 'pointer'; // Change cursor to pointer
+            } else {
+                tooltip.style.opacity = 0;
+                document.body.style.cursor = 'default'; // Reset cursor
+            }
+        }
+
+        renderer.domElement.addEventListener('mousemove', onMouseMove, false);
+
+        function animate() {
+            requestAnimationFrame(animate);
+
+            // Apply momentum scrolling
+            scrollPosition += scrollVelocity;
+            scrollVelocity *= isMobile ? 0.93 : 0.95;
+
+            // Move camera along the Z-axis based on scroll
+            camera.position.z = 200 + scrollPosition;
+
+            renderer.render(scene, camera);
+        }
+
+        animate();
+
+        // Handle window resizing
+        window.addEventListener('resize', function () {
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+        });
     </script>
 </body>
 </html>
