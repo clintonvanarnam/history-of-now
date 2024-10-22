@@ -1,0 +1,619 @@
+{
+  "Sheet1": [
+    {
+      "NAME": "ARISTOTLE",
+      "DATE": "-300",
+      "PAST AGE OF EARTH": "∞",
+      "PAST HABITABILITY": "∞",
+      "FUTURE HABITABILITY ON EARTH": "∞",
+      "EXPLANATION TYPE": "Metaphysical.",
+      "KILL MECHANISM": "n/a",
+      "UPPER BOUND": "No bound: eternal."
+    },
+    {
+      "NAME": "HIPPOLYTUS",
+      "DATE": "234",
+      "PAST AGE OF EARTH": "5734",
+      "FUTURE HABITABILITY ON EARTH": "266"
+    },
+    {
+      "NAME": "AUGUSTINE",
+      "DATE": "426",
+      "PAST AGE OF EARTH": "5600"
+    },
+    {
+      "NAME": "CHURCH FATHERS",
+      "DATE": "c.500",
+      "FUTURE HABITABILITY ON EARTH": "500",
+      "EXPLANATION TYPE": "Biblical.",
+      "KILL MECHANISM": "Divine."
+    },
+    {
+      "NAME": "BEDE",
+      "DATE": "731",
+      "PAST AGE OF EARTH": "4683",
+      "EXPLANATION TYPE": "Biblical.",
+      "KILL MECHANISM": "Divine."
+    },
+    {
+      "NAME": "JOHN LIGHTFOOT",
+      "DATE": "1644",
+      "PAST AGE OF EARTH": "5572",
+      "EXPLANATION TYPE": "Biblical.",
+      "KILL MECHANISM": "Divine."
+    },
+    {
+      "NAME": "JAMES USSHER",
+      "DATE": "1650",
+      "PAST AGE OF EARTH": "5654"
+    },
+    {
+      "NAME": "ISAAC NEWTON",
+      "DATE": "1704",
+      "PAST AGE OF EARTH": "5700",
+      "FUTURE HABITABILITY ON EARTH": "356",
+      "EXPLANATION TYPE": "Biblical.",
+      "KILL MECHANISM": "Divine."
+    },
+    {
+      "NAME": "JOHN CRAIG",
+      "DATE": "1711",
+      "FUTURE HABITABILITY ON EARTH": "1,411"
+    },
+    {
+      "NAME": "TELLIAMED",
+      "DATE": "1727",
+      "PAST AGE OF EARTH": "100,000",
+      "PAST HABITABILITY": "50,000",
+      "FUTURE HABITABILITY ON EARTH": "50,000",
+      "EXPLANATION TYPE": "Quasi-scientific.",
+      "KILL MECHANISM": "Dessication?"
+    },
+    {
+      "NAME": "MIKHAIL LOMONOSOV",
+      "DATE": "1763",
+      "PAST AGE OF EARTH": "100,000",
+      "EXPLANATION TYPE": "Quasi-scientific.",
+      "KILL MECHANISM": "n/a"
+    },
+    {
+      "NAME": "BUFFON",
+      "DATE": "1774",
+      "PAST AGE OF EARTH": "74,832",
+      "PAST HABITABILITY": "38,849",
+      "FUTURE HABITABILITY ON EARTH": "93,291.00",
+      "EXPLANATION TYPE": "Scientific.",
+      "KILL MECHANISM": "Internal refrigeration"
+    },
+    {
+      "NAME": "HUTTON",
+      "DATE": "1780",
+      "PAST AGE OF EARTH": "∞",
+      "PAST HABITABILITY": "∞",
+      "FUTURE HABITABILITY ON EARTH": "∞",
+      "EXPLANATION TYPE": "Scientific/metaphysical",
+      "KILL MECHANISM": "n/a"
+    },
+    {
+      "NAME": "DELISLE DE SALES",
+      "DATE": "1789",
+      "PAST AGE OF EARTH": "140,000",
+      "FUTURE HABITABILITY ON EARTH": "100,000"
+    },
+    {
+      "NAME": "CHARLES FOURIER",
+      "DATE": "1808",
+      "PAST AGE OF EARTH": "5000",
+      "FUTURE HABITABILITY ON EARTH": "75,000.00",
+      "EXPLANATION TYPE": "Metaphysical.",
+      "KILL MECHANISM": "Orbital inclination"
+    },
+    {
+      "NAME": "OLBERS",
+      "DATE": "1810",
+      "FUTURE HABITABILITY ON EARTH": "220,000,000",
+      "EXPLANATION TYPE": "Scientific.",
+      "KILL MECHANISM": "Comet collision."
+    },
+    {
+      "NAME": "LORD KELVIN",
+      "DATE": "1854",
+      "PAST AGE OF EARTH": "32,000",
+      "FUTURE HABITABILITY ON EARTH": "300,000",
+      "EXPLANATION TYPE": "Scientific ",
+      "KILL MECHANISM": "Solar cooling."
+    },
+    {
+      "NAME": "PRESTWICH",
+      "DATE": "1859",
+      "HUMAN EMERGENCE": "20,000"
+    },
+    {
+      "NAME": "LORD KELVIN",
+      "DATE": "1862",
+      "PAST AGE OF EARTH": "20,000,000",
+      "FUTURE HABITABILITY ON EARTH": "1,000,000",
+      "KILL MECHANISM": "Solar cooling."
+    },
+    {
+      "NAME": "LORD KELVIN",
+      "DATE": "1862",
+      "PAST AGE OF EARTH": "400,000,000",
+      "FUTURE HABITABILITY ON EARTH": "4,000,000"
+    },
+    {
+      "NAME": "LYELL",
+      "DATE": "1863",
+      "HUMAN EMERGENCE": "100,000"
+    },
+    {
+      "NAME": "LORD KELVIN",
+      "DATE": "1868",
+      "PAST HABITABILITY": "100,000,000"
+    },
+    {
+      "NAME": "HELMHOLTZ",
+      "DATE": "1871",
+      "FUTURE HABITABILITY ON EARTH": "17,000,000",
+      "KILL MECHANISM": "Solar cooling."
+    },
+    {
+      "NAME": "LORD KELVIN",
+      "DATE": "1876",
+      "PAST AGE OF EARTH": "50,000,000"
+    },
+    {
+      "NAME": "NEWCOMB",
+      "DATE": "1878",
+      "FUTURE HABITABILITY ON EARTH": "12,000,000",
+      "EXPLANATION TYPE": "Scientific.",
+      "KILL MECHANISM": "Solar cooling."
+    },
+    {
+      "NAME": "YOUNG",
+      "DATE": "1881",
+      "FUTURE HABITABILITY ON EARTH": "10,000,000",
+      "KILL MECHANISM": "Solar cooling."
+    },
+    {
+      "NAME": "LORD KELVIN",
+      "DATE": "1881",
+      "PAST AGE OF EARTH": "50,000,000"
+    },
+    {
+      "DATE": "1881",
+      "PAST AGE OF EARTH": "20,000,000"
+    },
+    {
+      "NAME": "LORD KELVIN",
+      "DATE": "1897",
+      "PAST AGE OF EARTH": "20,000,000",
+      "FUTURE HABITABILITY ON EARTH": "5,000,000"
+    },
+    {
+      "NAME": "LORD KELVIN",
+      "DATE": "1897",
+      "PAST AGE OF EARTH": "40,000,000",
+      "FUTURE HABITABILITY ON EARTH": "6,000,000",
+      "EXPLANATION TYPE": "Scientific.",
+      "KILL MECHANISM": "Solar cooling."
+    },
+    {
+      "NAME": "ROBERT S BALL",
+      "DATE": "1892",
+      "FUTURE HABITABILITY ON EARTH": "4,000,000",
+      "KILL MECHANISM": "Solar cooling."
+    },
+    {
+      "NAME": "CAMILLE FLAMMARION",
+      "DATE": "1894",
+      "FUTURE HABITABILITY ON EARTH": "20,000,000",
+      "EXPLANATION TYPE": "Fictional.",
+      "KILL MECHANISM": "Solar cooling."
+    },
+    {
+      "NAME": "CAMILLE FLAMMARION",
+      "DATE": "1894",
+      "FUTURE HABITABILITY ON EARTH": "40,000,000"
+    },
+    {
+      "NAME": "H.G. WELLS",
+      "DATE": "1895",
+      "FUTURE HABITABILITY ON EARTH": "30,000,000",
+      "EXPLANATION TYPE": "Fictional.",
+      "KILL MECHANISM": "Solar cooling."
+    },
+    {
+      "NAME": "GEIKE",
+      "DATE": "1899",
+      "PAST AGE OF EARTH": "100,000,000"
+    },
+    {
+      "NAME": "JOLY",
+      "DATE": "1908",
+      "PAST AGE OF EARTH": "80,000,000"
+    },
+    {
+      "NAME": "ARRHENIUS",
+      "DATE": "1908",
+      "FUTURE HABITABILITY ON EARTH": "5,000,000,000",
+      "EXPLANATION TYPE": "Scientific"
+    },
+    {
+      "NAME": "ARRHENIUS",
+      "DATE": "1908",
+      "FUTURE HABITABILITY ON EARTH": "1,000,000,000,000",
+      "EXPLANATION TYPE": "Scientific",
+      "KILL MECHANISM": "Solar colling."
+    },
+    {
+      "NAME": "T.C. CHAMBERLIN",
+      "DATE": "1909",
+      "FUTURE HABITABILITY ON EARTH": "5,000,000",
+      "EXPLANATION TYPE": "Scientific.",
+      "KILL MECHANISM": "Solar cooling."
+    },
+    {
+      "NAME": "T.C. CHAMBERLIN",
+      "DATE": "1909",
+      "FUTURE HABITABILITY ON EARTH": "50,000,000"
+    },
+    {
+      "NAME": "JOLY",
+      "DATE": "1909",
+      "FUTURE HABITABILITY ON EARTH": "100,000,000",
+      "KILL MECHANISM": "Earth's internal radiogenic heating."
+    },
+    {
+      "NAME": "JOSEPH MCCABE",
+      "DATE": "1921",
+      "BEHAVIOURAL MODERNITY": "50,000",
+      "AGE OF CIVILIZATION": "10,000",
+      "FUTURE HABITABILITY ON EARTH": "4,000,000",
+      "EXPLANATION TYPE": "Scientific.",
+      "KILL MECHANISM": "Solar cooling."
+    },
+    {
+      "NAME": "JOSEPH MCCABE",
+      "DATE": "1921",
+      "FUTURE HABITABILITY ON EARTH": "4,000,000,000"
+    },
+    {
+      "NAME": "FRIEDMAN",
+      "DATE": "1923",
+      "AGE OF UNIVERSE": "10,000,000,000"
+    },
+    {
+      "NAME": "MATHER",
+      "DATE": "1924",
+      "HUMAN EMERGENCE": "40,000",
+      "FUTURE HABITABILITY ON EARTH": "5,000,000",
+      "EXPLANATION TYPE": "Scientific.",
+      "KILL MECHANISM": "Solar cooling."
+    },
+    {
+      "NAME": "MATHER",
+      "DATE": "1924",
+      "FUTURE HABITABILITY ON EARTH": "50,000,000"
+    },
+    {
+      "NAME": "E.E. FOURNIER",
+      "DATE": "1925",
+      "AGE OF GALAXY": "7,000,000,000,000",
+      "PAST AGE OF EARTH": "1,000,000,000",
+      "HUMAN EMERGENCE": "500,000",
+      "AGE OF CIVILIZATION": "5,000",
+      "FUTURE HABITABILITY ON EARTH": "1,000,000,000,000",
+      "KILL MECHANISM": "Solar cooling."
+    },
+    {
+      "NAME": "HALDANE",
+      "DATE": "1926",
+      "FUTURE HABITABILITY ON EARTH": "36,000,000",
+      "UPPER BOUND FOR LIFE BEYOND EARTH": "80,000,000,000,000",
+      "KILL MECHANISM": "Lunar disintegration",
+      "UPPER BOUND": "Galactic habitability."
+    },
+    {
+      "NAME": "JEANS",
+      "DATE": "1928",
+      "AGE OF GALAXY": "5,000,000,000,000",
+      "AGE OF SUN": "7,000,000,000,000"
+    },
+    {
+      "NAME": "JEANS",
+      "DATE": "1928",
+      "AGE OF GALAXY": "10,000,000,000,000",
+      "AGE OF SUN": "8,000,000,000,000"
+    },
+    {
+      "NAME": "JEANS",
+      "DATE": "1929",
+      "HUMAN EMERGENCE": "300,000",
+      "ESTIMATE FOR HOMO SAPIENS SURVIVAL": "2,000,000,000"
+    },
+    {
+      "NAME": "JEANS",
+      "DATE": "1929",
+      "ESTIMATE FOR HOMO SAPIENS SURVIVAL": "2,000,000,000,000"
+    },
+    {
+      "NAME": "RUTHERFORD",
+      "DATE": "1930",
+      "PAST AGE OF EARTH": "3,400,000,000.00"
+    },
+    {
+      "NAME": "JAMES JEANS",
+      "DATE": "1930",
+      "AGE OF UNIVERSE": "200,000,000,000,000",
+      "AGE OF GALAXY": "5,000,000,000,000",
+      "AGE OF SUN": "7,000,000,000,000",
+      "PAST AGE OF EARTH": "2,000,000,000",
+      "PAST HABITABILITY": "300,000,000",
+      "HUMAN EMERGENCE": "300,000",
+      "BEHAVIOURAL MODERNITY": "100,000",
+      "AGE OF CIVILIZATION": "5000",
+      "FUTURE HABITABILITY ON EARTH": "2,000,000,000",
+      "EXPLANATION TYPE": "Scientific.",
+      "KILL MECHANISM": "Solar cooling."
+    },
+    {
+      "NAME": "JAMES JEANS",
+      "DATE": "1930",
+      "AGE OF GALAXY": "5,000,000,000,000",
+      "FUTURE HABITABILITY ON EARTH": "1,000,000,000,000"
+    },
+    {
+      "NAME": "BARNES",
+      "DATE": "1931",
+      "AGE OF GALAXY": "5,000,000,000,000",
+      "PAST AGE OF EARTH": "3,000,000,000",
+      "PAST HABITABILITY": "1,000,000,000"
+    },
+    {
+      "NAME": "EDDINGTON",
+      "DATE": "1933",
+      "AGE OF UNIVERSE": "10,000,000,000",
+      "AGE OF SUN": "10,000,000,000"
+    },
+    {
+      "NAME": "BARNES",
+      "DATE": "1933",
+      "UPPER BOUND FOR LIFE BEYOND EARTH": "50,000,000,000,000",
+      "UPPER BOUND": "Heat death."
+    },
+    {
+      "NAME": "C.E.M. JOAD",
+      "DATE": "1934",
+      "PAST HABITABILITY": "1,200,000,000",
+      "HUMAN EMERGENCE": "1,000,000",
+      "AGE OF CIVILIZATION": "3,000",
+      "FUTURE HABITABILITY ON EARTH": "1,000,000,000,000",
+      "EXPLANATION TYPE": "Scientific (probably sourced from Jeans)",
+      "KILL MECHANISM": "Solar cooling."
+    },
+    {
+      "NAME": "HALDANE",
+      "DATE": "1935",
+      "UPPER BOUND FOR LIFE BEYOND EARTH": "80,000,000,000,000",
+      "UPPER BOUND": "Galactic Habitability"
+    },
+    {
+      "NAME": "H.P. MAXIM",
+      "DATE": "1936",
+      "HUMAN EMERGENCE": "500,000",
+      "AGE OF CIVILIZATION": "5,000",
+      "FUTURE HABITABILITY ON EARTH": "1,000,000,000,000",
+      "EXPLANATION TYPE": "Scientific",
+      "KILL MECHANISM": "Solar cooling."
+    },
+    {
+      "NAME": "E. HUBBLE",
+      "DATE": "1937",
+      "AGE OF UNIVERSE": "2,000,000,000"
+    },
+    {
+      "NAME": "GAMOW",
+      "DATE": "1940",
+      "FUTURE HABITABILITY ON EARTH": "10,000,000,000",
+      "EXPLANATION TYPE": "Scientific.",
+      "KILL MECHANISM": "Solar expansion."
+    },
+    {
+      "NAME": "H.N. RUSSELL",
+      "DATE": "1940",
+      "AGE OF UNIVERSE": "2,000,000,000",
+      "PAST AGE OF EARTH": "1,800,000,000",
+      "FUTURE HABITABILITY ON EARTH": "10,000,000,000",
+      "UPPER BOUND FOR LIFE BEYOND EARTH": "100,000,000,000",
+      "KILL MECHANISM": "Solar expansion.",
+      "UPPER BOUND": "Heat death."
+    },
+    {
+      "NAME": "MATHER",
+      "DATE": "1940",
+      "PAST AGE OF EARTH": "1,500,000,000",
+      "FUTURE HABITABILITY ON EARTH": "60,000,000",
+      "ESTIMATE FOR HOMO SAPIENS SURVIVAL": "500,000"
+    },
+    {
+      "NAME": "MATHER",
+      "DATE": "1940",
+      "FUTURE HABITABILITY ON EARTH": "600,000,000",
+      "EXPLANATION TYPE": "Scientific.",
+      "KILL MECHANISM": "Geological."
+    },
+    {
+      "NAME": "GAMOW",
+      "DATE": "1941",
+      "PAST AGE OF EARTH": "2,000,000,000",
+      "PAST HABITABILITY": "1,000,000,000",
+      "HUMAN EMERGENCE": "500,000",
+      "AGE OF CIVILIZATION": "6000",
+      "FUTURE HABITABILITY ON EARTH": "10,000,000,000",
+      "EXPLANATION TYPE": "Scientific.",
+      "KILL MECHANISM": "Solar expansion."
+    },
+    {
+      "NAME": "HOLMES",
+      "DATE": "1947",
+      "PAST AGE OF EARTH": "3,350,000,000"
+    },
+    {
+      "NAME": "HOYLE, BONDI, & GOLD",
+      "DATE": "1948",
+      "AGE OF UNIVERSE": "100",
+      "UPPER BOUND FOR LIFE BEYOND EARTH": "100"
+    },
+    {
+      "NAME": "A.G. WILSON",
+      "DATE": "1950",
+      "AGE OF UNIVERSE": "3,000,000,000",
+      "AGE OF GALAXY": "3,000,000,000",
+      "FUTURE HABITABILITY ON EARTH": "4,000,000,000",
+      "KILL MECHANISM": "Solar expansion."
+    },
+    {
+      "NAME": "GAMOW",
+      "DATE": "1964",
+      "FUTURE HABITABILITY ON EARTH": "5,000,000,000",
+      "KILL MECHANISM": "Solar expansion."
+    },
+    {
+      "NAME": "LEAKEY/BUTZER",
+      "DATE": "1969",
+      "HUMAN EMERGENCE": "130,000"
+    },
+    {
+      "NAME": "SAGAN & MULLEN",
+      "DATE": "1972",
+      "FUTURE HABITABILITY ON EARTH": "3,000,000,000",
+      "EXPLANATION TYPE": "Scientific.",
+      "KILL MECHANISM": "Runaway greenhouse."
+    },
+    {
+      "NAME": "SAGAN & MULLEN",
+      "DATE": "1972",
+      "FUTURE HABITABILITY ON EARTH": "4,500,000,000",
+      "EXPLANATION TYPE": "Scientific."
+    },
+    {
+      "NAME": "OPIK",
+      "DATE": "1973",
+      "AGE OF SUN": "4,500,000,000",
+      "PAST HABITABILITY": "3,000,000,000",
+      "HUMAN EMERGENCE": "3,000,000",
+      "AGE OF CIVILIZATION": "10,000",
+      "FUTURE HABITABILITY ON EARTH": "1,000,000,000",
+      "KILL MECHANISM": "Runaway greenhouse."
+    },
+    {
+      "NAME": "DYSON",
+      "DATE": "1979",
+      "UPPER BOUND FOR LIFE BEYOND EARTH": "100"
+    },
+    {
+      "NAME": "HUTTON & KENDIG",
+      "DATE": "1980",
+      "AGE OF UNIVERSE": "20,000,000,000",
+      "AGE OF GALAXY": "19900000000",
+      "AGE OF SUN": "5,000,000,000"
+    },
+    {
+      "NAME": "SCHRAMM",
+      "DATE": "1983",
+      "AGE OF UNIVERSE": "15,000,000,000"
+    },
+    {
+      "NAME": "ISLAM",
+      "DATE": "1983",
+      "UPPER BOUND FOR LIFE BEYOND EARTH": "1e,+45",
+      "UPPER BOUND": "Proton Decay at 10^45-10^50 - though life could exist beyond?."
+    },
+    {
+      "NAME": "ISLAM",
+      "DATE": "1983",
+      "UPPER BOUND FOR LIFE BEYOND EARTH": "1e,+50"
+    },
+    {
+      "NAME": "DICUS et al.",
+      "DATE": "1983",
+      "UPPER BOUND FOR LIFE BEYOND EARTH": "1e,+32",
+      "UPPER BOUND": "Blackhole evapation at 10^100 - though life probably died at 10^32 due to proton decay."
+    },
+    {
+      "NAME": "CANN, STONEKING, WILSON",
+      "DATE": "1987",
+      "HUMAN EMERGENCE": "200,000"
+    },
+    {
+      "NAME": "DALRYMPLE",
+      "DATE": "1991",
+      "PAST AGE OF EARTH": "4,540,000,000"
+    },
+    {
+      "NAME": "CALDEIRA & KASTING",
+      "DATE": "1992",
+      "FUTURE HABITABILITY ON EARTH": "900,000,000"
+    },
+    {
+      "NAME": "CALDEIRA & KASTING",
+      "DATE": "1992",
+      "FUTURE HABITABILITY ON EARTH": "1,500,000,000"
+    },
+    {
+      "NAME": "ADAMS & LAUGHLIN",
+      "DATE": "1999",
+      "AGE OF UNIVERSE": "10,000,000,000",
+      "PAST AGE OF EARTH": "4,500,000,000",
+      "FUTURE HABITABILITY ON EARTH": "3,000,000,000",
+      "UPPER BOUND FOR LIFE BEYOND EARTH": "1e,+40",
+      "KILL MECHANISM": "Runaway greenhouse.",
+      "UPPER BOUND": "Proton decay - end of complex life."
+    },
+    {
+      "NAME": "KRAUS & STARKMAN",
+      "DATE": "2000",
+      "UPPER BOUND FOR LIFE BEYOND EARTH": "1e,+50"
+    },
+    {
+      "NAME": "KRAUS & STARKMAN",
+      "DATE": "2000",
+      "UPPER BOUND": "Longterm astrophysical processes."
+    },
+    {
+      "NAME": "ADAMS",
+      "DATE": "2008",
+      "UPPER BOUND FOR LIFE BEYOND EARTH": "1e,+40",
+      "UPPER BOUND": "Proton decay - end of carbon-based life."
+    },
+    {
+      "NAME": "WOLF & TOON",
+      "DATE": "2015",
+      "FUTURE HABITABILITY ON EARTH": "2,000,000,000"
+    },
+    {
+      "NAME": "WMAP",
+      "DATE": "2012",
+      "AGE OF UNIVERSE": "13,772,000,000"
+    },
+    {
+      "NAME": "RUSHBY et al",
+      "DATE": "2013",
+      "FUTURE HABITABILITY ON EARTH": "1,750,000,000"
+    },
+    {
+      "NAME": "RUSHBY et al",
+      "DATE": "2013",
+      "FUTURE HABITABILITY ON EARTH": "3,250,000,000"
+    },
+    {
+      "NAME": "PLANK",
+      "DATE": "2013",
+      "AGE OF UNIVERSE": "13,820,000,000"
+    },
+    {
+      "AGE OF CIVILIZATION": "6000"
+    }
+  ]
+}
