@@ -43,8 +43,8 @@
             flex-grow: 1;
             text-align: center;
         }
-        /* Slider container */
-        .slider-container {
+        /* Slider and checkbox container */
+        .controls-container {
             position: fixed;
             top: 10px;
             left: 50%;
@@ -53,9 +53,12 @@
             background-color: rgba(255, 255, 255, 0.8);
             padding: 10px;
             border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .slider-container label {
+        .controls-container label {
             margin-right: 10px;
         }
         /* Tooltip */
@@ -68,6 +71,7 @@
             pointer-events: none;
             opacity: 0;
             transition: opacity 0.2s;
+            z-index: 10;
         }
     </style>
 </head>
@@ -80,10 +84,16 @@
         <!-- The labels will be generated dynamically via JavaScript -->
     </div>
 
-    <!-- Slider for camera rotation -->
-    <div class="slider-container">
-        <label for="x-rotation-slider">Camera X Rotation:</label>
-        <input type="range" id="x-rotation-slider" min="-1.57" max="1.57" step="0.01" value="0">
+    <!-- Controls for camera rotation and line toggling -->
+    <div class="controls-container">
+        <div>
+            <label for="x-rotation-slider">Camera X Rotation:</label>
+            <input type="range" id="x-rotation-slider" min="-1.57" max="1.57" step="0.01" value="0">
+        </div>
+        <div>
+            <input type="checkbox" id="toggle-vertical-lines">
+            <label for="toggle-vertical-lines">Toggle Vertical Lines</label>
+        </div>
     </div>
 
     <!-- Tooltip -->
@@ -102,7 +112,7 @@
             50,
             window.innerWidth / window.innerHeight,
             0.1,
-            2000
+            5000 // Increased far clipping plane to ensure visibility
         );
         const renderer = new THREE.WebGLRenderer({ antialias: true });
         renderer.setSize(window.innerWidth, window.innerHeight);
@@ -131,6 +141,9 @@
 
         // Function to map past age value to position on the logarithmic scale
         function mapToLogScale(value) {
+            if (typeof value !== 'string') {
+                value = value.toString();
+            }
             if (value === '∞') {
                 return window.innerWidth / 2; // Arbitrary large value for infinity
             }
@@ -144,6 +157,12 @@
         // Arrays to store meshes
         const textMeshes = [];
         const planeMeshes = [];
+        const redLines = [];
+        const blueLines = [];
+        const verticalRedLines = [];
+        const verticalBlueLines = [];
+        let entries = [];
+        let centralLine;
 
         // Load font and create text meshes
         const loader = new THREE.FontLoader();
@@ -151,7 +170,7 @@
             .then(response => response.json())
             .then(data => {
                 loader.load('fonts/Cosmica Trial Regular_Regular.json', function (font) {
-                    const entries = data.Sheet1.reverse();
+                    entries = data.Sheet1.reverse();
                     entries.forEach((entry, index) => {
                         if (entry.DATE) {
                             const year = entry.DATE;
@@ -163,8 +182,7 @@
                             });
 
                             textGeometry.computeBoundingBox();
-                            const bbox = textGeometry.boundingBox;
-                            const centerOffset = -0.5 * (bbox.max.x - bbox.min.x);
+                            textGeometry.center(); // Center the geometry around its origin
 
                             const material = new THREE.MeshBasicMaterial({
                                 color: 0x000000,
@@ -173,18 +191,19 @@
                             const textMesh = new THREE.Mesh(textGeometry, material);
 
                             const yPosition = -(window.innerHeight / 20);
+                            const zPosition = -(index * 20);
 
                             // Position the text mesh
-                            textMesh.position.set(centerOffset, yPosition, -(index * 20));
+                            textMesh.position.set(0, yPosition, zPosition);
                             textMesh.rotation.x = -0.6;
-                            textMesh.userData = { isYear: true };
+                            textMesh.userData = { isYear: true, originalColor: 0x000000 };
                             textMesh.name = `Year_${year}`;
                             scene.add(textMesh);
                             textMeshes.push(textMesh);
 
                             // Create a plane behind the text mesh
-                            const width = bbox.max.x - bbox.min.x;
-                            const height = bbox.max.y - bbox.min.y;
+                            const width = textGeometry.boundingBox.max.x - textGeometry.boundingBox.min.x;
+                            const height = textGeometry.boundingBox.max.y - textGeometry.boundingBox.min.y;
 
                             const planeGeometry = new THREE.PlaneGeometry(width, height);
                             const planeMaterial = new THREE.MeshBasicMaterial({
@@ -196,11 +215,11 @@
 
                             // Position and rotate the plane to match the text mesh
                             planeMesh.position.set(
-                                centerOffset + (bbox.max.x - bbox.min.x) / 2, // Center the plane
-                                yPosition + (bbox.max.y + bbox.min.y) / 2,
-                                -(index * 20) - 0.1 // Slightly behind the text mesh
+                                textMesh.position.x,
+                                textMesh.position.y,
+                                textMesh.position.z - 0.1 // Slightly behind the text mesh
                             );
-                            planeMesh.rotation.x = -0.6;
+                            planeMesh.rotation.copy(textMesh.rotation);
                             planeMesh.userData = { textMesh: textMesh };
                             scene.add(planeMesh);
                             planeMeshes.push(planeMesh);
@@ -208,8 +227,8 @@
                             // Create a line from the bottom of the text extending infinitely on the horizontal axis
                             const lineMaterial = new THREE.LineBasicMaterial({ color: 0x000000 });
                             const lineGeometry = new THREE.BufferGeometry().setFromPoints([
-                                new THREE.Vector3(-1000, yPosition, -(index * 20)),
-                                new THREE.Vector3(1000, yPosition, -(index * 20))
+                                new THREE.Vector3(-1000, yPosition, zPosition),
+                                new THREE.Vector3(1000, yPosition, zPosition)
                             ]);
                             const line = new THREE.Line(lineGeometry, lineMaterial);
                             scene.add(line);
@@ -221,17 +240,104 @@
 
                                 const redLineMaterial = new THREE.LineBasicMaterial({ color: 0xff0000 });
                                 const redLineGeometry = new THREE.BufferGeometry().setFromPoints([
-                                    new THREE.Vector3(0, yPosition, -(index * 20)),
-                                    new THREE.Vector3(-lineLength, yPosition, -(index * 20))
+                                    new THREE.Vector3(0, yPosition, zPosition),
+                                    new THREE.Vector3(-lineLength, yPosition, zPosition)
                                 ]);
                                 const redLine = new THREE.Line(redLineGeometry, redLineMaterial);
-                                redLine.userData = { pastAge };
+                                redLine.userData = { entry, originalColor: 0xff0000 };
                                 scene.add(redLine);
+                                redLines.push(redLine);
+
+                          // Create vertical red line extending upwards to the text
+const verticalRedLineGeometry = new THREE.BufferGeometry().setFromPoints([
+    new THREE.Vector3(-lineLength, yPosition, zPosition),
+    new THREE.Vector3(-lineLength, yPosition + Math.abs(textMesh.position.y - yPosition) + 100, zPosition) // +100 for height
+]);
+const verticalRedLine = new THREE.Line(verticalRedLineGeometry, redLineMaterial.clone());
+verticalRedLine.visible = false; // Initially hidden
+verticalRedLine.userData = { entry, originalColor: 0xff0000 };
+scene.add(verticalRedLine);
+verticalRedLines.push(verticalRedLine);
+                            }
+
+                            // Add future habitability of earth line
+                            if (entry["FUTURE HABITABILITY ON EARTH"]) {
+                                const futureHabitability = entry["FUTURE HABITABILITY ON EARTH"];
+                                const lineLength = mapToLogScale(futureHabitability);
+
+                                const blueLineMaterial = new THREE.LineBasicMaterial({ color: 0x0000ff });
+                                const blueLineGeometry = new THREE.BufferGeometry().setFromPoints([
+                                    new THREE.Vector3(0, yPosition, zPosition),
+                                    new THREE.Vector3(lineLength, yPosition, zPosition)
+                                ]);
+                                const blueLine = new THREE.Line(blueLineGeometry, blueLineMaterial);
+                                blueLine.userData = { entry, originalColor: 0x0000ff };
+                                scene.add(blueLine);
+                                blueLines.push(blueLine);
+
+// Create vertical blue line extending upwards to the text
+const verticalBlueLineGeometry = new THREE.BufferGeometry().setFromPoints([
+    new THREE.Vector3(lineLength, yPosition, zPosition),
+    new THREE.Vector3(lineLength, yPosition + Math.abs(textMesh.position.y - yPosition) + 100, zPosition) // +100 for height
+]);
+const verticalBlueLine = new THREE.Line(verticalBlueLineGeometry, blueLineMaterial.clone());
+verticalBlueLine.visible = false; // Initially hidden
+verticalBlueLine.userData = { entry, originalColor: 0x0000ff };
+scene.add(verticalBlueLine);
+verticalBlueLines.push(verticalBlueLine);
                             }
                         }
                     });
+
+                    // After adding all entries, create the central vertical line
+                    addCentralVerticalLine();
+                    // Add grid lines
+                    addLogarithmicGridLines();
                 });
             });
+
+        // Function to add a central vertical line
+        function addCentralVerticalLine() {
+            const lineMaterial = new THREE.LineBasicMaterial({ color: 0x00ff00 }); // Change color here
+            const firstYearPosition = textMeshes[0].position;
+            const lastYearPosition = textMeshes[textMeshes.length - 1].position;
+            const centerX = 0; // Since text is centered, the center X position is 0
+            const lineGeometry = new THREE.BufferGeometry().setFromPoints([
+                new THREE.Vector3(centerX, firstYearPosition.y, firstYearPosition.z),
+                new THREE.Vector3(centerX, lastYearPosition.y, lastYearPosition.z)
+            ]);
+            centralLine = new THREE.Line(lineGeometry, lineMaterial);
+            scene.add(centralLine);
+        }
+
+        // Function to add logarithmic grid lines
+        function addLogarithmicGridLines() {
+            const lineMaterial = new THREE.LineBasicMaterial({ color: 0x0000ff }); // Blue color for grid lines
+            const logValues = Object.values(logScaleValues);
+
+            logValues.forEach(value => {
+                const xPosition = mapToLogScale(value);
+
+                const firstYearPosition = textMeshes[0].position;
+                const lastYearPosition = textMeshes[textMeshes.length - 1].position;
+
+                // Add line on the left side
+                const leftLineGeometry = new THREE.BufferGeometry().setFromPoints([
+                    new THREE.Vector3(-xPosition, firstYearPosition.y, firstYearPosition.z),
+                    new THREE.Vector3(-xPosition, lastYearPosition.y, lastYearPosition.z)
+                ]);
+                const leftLine = new THREE.Line(leftLineGeometry, lineMaterial);
+                scene.add(leftLine);
+
+                // Add line on the right side
+                const rightLineGeometry = new THREE.BufferGeometry().setFromPoints([
+                    new THREE.Vector3(xPosition, firstYearPosition.y, firstYearPosition.z),
+                    new THREE.Vector3(xPosition, lastYearPosition.y, lastYearPosition.z)
+                ]);
+                const rightLine = new THREE.Line(rightLineGeometry, lineMaterial);
+                scene.add(rightLine);
+            });
+        }
 
         // Scroll position handling
         let scrollPosition = 0;
@@ -286,11 +392,27 @@
             camera.rotation.x = parseFloat(xRotationSlider.value);
         });
 
+        // Handle vertical lines toggle checkbox
+        const toggleVerticalLinesCheckbox = document.getElementById('toggle-vertical-lines');
+        toggleVerticalLinesCheckbox.addEventListener('change', function () {
+            const showVertical = toggleVerticalLinesCheckbox.checked;
+            // Toggle visibility of horizontal and vertical red lines
+            redLines.forEach((line, index) => {
+                line.visible = !showVertical;
+                verticalRedLines[index].visible = showVertical;
+            });
+            // Toggle visibility of horizontal and vertical blue lines
+            blueLines.forEach((line, index) => {
+                line.visible = !showVertical;
+                verticalBlueLines[index].visible = showVertical;
+            });
+        });
+
         // Tooltip handling
         const tooltip = document.getElementById('tooltip');
         const raycaster = new THREE.Raycaster();
         const mouse = new THREE.Vector2();
-        let previousIntersectedPlane = null;
+        let previousIntersectedObject = null;
 
         function onMouseMove(event) {
             const rect = renderer.domElement.getBoundingClientRect();
@@ -300,43 +422,53 @@
 
             raycaster.setFromCamera(mouse, camera);
 
-            const intersects = raycaster.intersectObjects(planeMeshes, false);
-
-            let intersected = false;
-            let intersectObject = null;
+            // Check intersections with planeMeshes, redLines, blueLines, verticalRedLines, verticalBlueLines
+            const intersects = raycaster.intersectObjects([...planeMeshes, ...redLines, ...blueLines, ...verticalRedLines, ...verticalBlueLines], false);
 
             if (intersects.length > 0) {
-                const planeMesh = intersects[0].object;
-                const textMesh = planeMesh.userData.textMesh;
+                const intersectedObject = intersects[0].object;
 
-                if (textMesh) {
-                    textMesh.material.color.set(0xff0000); // Change text color to red
-                    intersected = true;
-
-                    if (previousIntersectedPlane && previousIntersectedPlane !== planeMesh) {
-                        previousIntersectedPlane.userData.textMesh.material.color.set(0x000000); // Reset previous text color
-                    }
-
-                    previousIntersectedPlane = planeMesh;
-                    intersectObject = textMesh;
+                // If we have a previous object and it's different from the current
+                if (previousIntersectedObject && previousIntersectedObject !== intersectedObject) {
+                    resetObjectColor(previousIntersectedObject);
                 }
-            } else {
-                if (previousIntersectedPlane) {
-                    previousIntersectedPlane.userData.textMesh.material.color.set(0x000000); // Reset color
-                    previousIntersectedPlane = null;
-                }
-            }
 
-            // Tooltip logic
-            if (intersected && intersectObject) {
+                // Handle current intersected object
+                if (intersectedObject.userData.textMesh) {
+                    // Hovering over text
+                    intersectedObject.userData.textMesh.material.color.set(0xff0000);
+                    tooltip.innerText = intersectedObject.userData.textMesh.name;
+                } else {
+                    // Hovering over a line
+                    intersectedObject.material.color.set(0x00ff00); // Change line color to green on hover
+                    tooltip.innerText = `Data: ${JSON.stringify(intersectedObject.userData.entry)}`;
+                }
+
+                // Show tooltip
                 tooltip.style.opacity = 1;
                 tooltip.style.left = `${event.clientX + 10}px`;
                 tooltip.style.top = `${event.clientY + 10}px`;
-                tooltip.innerText = intersectObject.name;
-                document.body.style.cursor = 'pointer'; // Change cursor to pointer
+                document.body.style.cursor = 'pointer';
+
+                previousIntersectedObject = intersectedObject;
             } else {
+                // No intersections
+                if (previousIntersectedObject) {
+                    resetObjectColor(previousIntersectedObject);
+                    previousIntersectedObject = null;
+                }
                 tooltip.style.opacity = 0;
-                document.body.style.cursor = 'default'; // Reset cursor
+                document.body.style.cursor = 'default';
+            }
+        }
+
+        function resetObjectColor(object) {
+            if (object.userData.textMesh) {
+                // Reset text color
+                object.userData.textMesh.material.color.set(object.userData.textMesh.userData.originalColor);
+            } else {
+                // Reset line color
+                object.material.color.set(object.userData.originalColor);
             }
         }
 
