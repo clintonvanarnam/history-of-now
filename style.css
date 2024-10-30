@@ -1,14 +1,23 @@
-body {
+body, html {
   margin: 0;
+  padding: 0;
   overflow: hidden;
-  background-color: white;
+  width: 100%;
+  height: 100%;
 }
+
 canvas {
   display: block;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  position: absolute; /* Ensures no extra margin/padding from the browser */
+  top: 0;
+  left: 0;
 }
+
 /* Bottom logarithmic scales */
 .log-scale {
-  position: fixed;
+  visibility: hidden;
   bottom: 0;
   height: 50px;
   display: flex;
@@ -17,18 +26,22 @@ canvas {
   background-color: rgba(255, 255, 255, 0.8);
   font-family: Arial, sans-serif;
 }
+
 .log-scale-left {
   left: 50%;
   transform: translateX(-100%);
   justify-content: flex-end;
   width: 50vw;
+  visibility: hidden;
 }
+
 .log-scale-right {
   right: 50%;
   transform: translateX(100%);
   justify-content: flex-start;
   width: 50vw;
 }
+
 /* Labels for the logarithmic scale */
 .log-label {
   font-size: 12px;
@@ -37,10 +50,11 @@ canvas {
   flex-grow: 1;
   text-align: center;
 }
+
 /* Slider and checkbox container */
 .controls-container {
   position: fixed;
-  top: 10px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
@@ -52,9 +66,11 @@ canvas {
   gap: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .controls-container label {
   margin-right: 10px;
 }
+
 /* Tooltip */
 .tooltip {
   position: absolute;

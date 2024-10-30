@@ -8,10 +8,10 @@ const camera = new THREE.PerspectiveCamera(
 );
 
 const renderer = new THREE.WebGLRenderer({ antialias: true });
-renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setClearColor(0xffffff, 1);
 document.body.appendChild(renderer.domElement);
+renderer.setSize(window.innerWidth, window.innerHeight);
 
 // Add a light source
 const light = new THREE.PointLight(0xffffff, 1, 1000);
@@ -46,6 +46,10 @@ function mapToLogScale(value) {
     const scaleWidth = window.innerWidth / 2; // Width of the scale (50vw)
     return scaleWidth * (logValue - minLog) / (maxLog - minLog);
 }
+
+// Global variables for data line thickness and color
+const DATA_LINE_THICKNESS = 0.8;
+const DATA_LINE_COLOR = 0xff0000; // Red color
 
 // Arrays to store meshes
 const textMeshes = [];
@@ -99,31 +103,29 @@ fetch('data.json')
                     textMeshes.push(textMesh);
 
                     // Get dimensions for plane mesh
-const width = textGeometry.boundingBox.max.x - textGeometry.boundingBox.min.x;
-const height = textGeometry.boundingBox.max.y - textGeometry.boundingBox.min.y;
+                    const width = textGeometry.boundingBox.max.x - textGeometry.boundingBox.min.x;
+                    const height = textGeometry.boundingBox.max.y - textGeometry.boundingBox.min.y;
 
-const planeGeometry = new THREE.PlaneGeometry(width * 1.2, height * 1.2); // Slightly increase the plane size for better hover
-const planeMaterial = new THREE.MeshBasicMaterial({
-    opacity: 0,
-    transparent: true,
-    side: THREE.DoubleSide,
-});
-const planeMesh = new THREE.Mesh(planeGeometry, planeMaterial);
+                    const planeGeometry = new THREE.PlaneGeometry(width * 1.2, height * 1.2); // Slightly increase the plane size for better hover
+                    const planeMaterial = new THREE.MeshBasicMaterial({
+                        opacity: 0,
+                        transparent: true,
+                        side: THREE.DoubleSide,
+                    });
+                    const planeMesh = new THREE.Mesh(planeGeometry, planeMaterial);
 
-// Position and rotate the plane to match the text mesh
-planeMesh.position.copy(textMesh.position);
-planeMesh.rotation.set(textMesh.rotation.x, textMesh.rotation.y, textMesh.rotation.z);
-planeMesh.userData = { textMesh: textMesh };
-scene.add(planeMesh);
-planeMeshes.push(planeMesh);
+                    // Position and rotate the plane to match the text mesh
+                    planeMesh.position.copy(textMesh.position);
+                    planeMesh.rotation.set(textMesh.rotation.x, textMesh.rotation.y, textMesh.rotation.z);
+                    planeMesh.userData = { textMesh: textMesh };
+                    scene.add(planeMesh);
+                    planeMeshes.push(planeMesh);
 
-                    // Create a line from the bottom of the text extending infinitely on the horizontal axis
-                    const lineMaterial = new THREE.LineBasicMaterial({ color: 0x000000 });
-                    const lineGeometry = new THREE.BufferGeometry().setFromPoints([
-                        new THREE.Vector3(-1000, yPosition, zPosition),
-                        new THREE.Vector3(1000, yPosition, zPosition)
-                    ]);
-                    const line = new THREE.Line(lineGeometry, lineMaterial);
+                    // Create a thin rectangle from the bottom of the text extending horizontally
+                    const lineMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
+                    const lineGeometry = new THREE.BoxGeometry(2000, 0.2, 0.2); // Adjust thickness as needed
+                    const line = new THREE.Mesh(lineGeometry, lineMaterial);
+                    line.position.set(0, yPosition, zPosition);
                     scene.add(line);
 
                     // Add past age of earth line
@@ -131,24 +133,20 @@ planeMeshes.push(planeMesh);
                         const pastAge = entry["PAST AGE OF EARTH"];
                         const lineLength = mapToLogScale(pastAge);
 
-                        const redLineMaterial = new THREE.LineBasicMaterial({ color: 0xff0000 });
-                        const redLineGeometry = new THREE.BufferGeometry().setFromPoints([
-                            new THREE.Vector3(0, yPosition, zPosition),
-                            new THREE.Vector3(-lineLength, yPosition, zPosition)
-                        ]);
-                        const redLine = new THREE.Line(redLineGeometry, redLineMaterial);
-                        redLine.userData = { entry, originalColor: 0xff0000 };
+                        const redLineMaterial = new THREE.MeshBasicMaterial({ color: DATA_LINE_COLOR }); // Use global color
+                        const redLineGeometry = new THREE.BoxGeometry(lineLength, DATA_LINE_THICKNESS, DATA_LINE_THICKNESS); // Use global thickness
+                        const redLine = new THREE.Mesh(redLineGeometry, redLineMaterial);
+                        redLine.position.set(-lineLength / 2, yPosition, zPosition);
+                        redLine.userData = { entry, originalColor: DATA_LINE_COLOR };
                         scene.add(redLine);
                         redLines.push(redLine);
 
                         // Create vertical red line extending upwards to the text
-                        const verticalRedLineGeometry = new THREE.BufferGeometry().setFromPoints([
-                            new THREE.Vector3(-lineLength, yPosition, zPosition),
-                            new THREE.Vector3(-lineLength, yPosition + Math.abs(textMesh.position.y - yPosition) + 100, zPosition) // +100 for height
-                        ]);
-                        const verticalRedLine = new THREE.Line(verticalRedLineGeometry, redLineMaterial.clone());
+                        const verticalRedLineGeometry = new THREE.BoxGeometry(DATA_LINE_THICKNESS, Math.abs(textMesh.position.y - yPosition) + 100, DATA_LINE_THICKNESS); // Use global thickness
+                        const verticalRedLine = new THREE.Mesh(verticalRedLineGeometry, redLineMaterial.clone());
+                        verticalRedLine.position.set(-lineLength, yPosition + (Math.abs(textMesh.position.y - yPosition) + 100) / 2, zPosition);
                         verticalRedLine.visible = false; // Initially hidden
-                        verticalRedLine.userData = { entry, originalColor: 0xff0000 };
+                        verticalRedLine.userData = { entry, originalColor: DATA_LINE_COLOR };
                         scene.add(verticalRedLine);
                         verticalRedLines.push(verticalRedLine);
                     }
@@ -158,24 +156,20 @@ planeMeshes.push(planeMesh);
                         const futureHabitability = entry["FUTURE HABITABILITY ON EARTH"];
                         const lineLength = mapToLogScale(futureHabitability);
 
-                        const blueLineMaterial = new THREE.LineBasicMaterial({ color: 0x0000ff });
-                        const blueLineGeometry = new THREE.BufferGeometry().setFromPoints([
-                            new THREE.Vector3(0, yPosition, zPosition),
-                            new THREE.Vector3(lineLength, yPosition, zPosition)
-                        ]);
-                        const blueLine = new THREE.Line(blueLineGeometry, blueLineMaterial);
-                        blueLine.userData = { entry, originalColor: 0x0000ff };
+                        const blueLineMaterial = new THREE.MeshBasicMaterial({ color: DATA_LINE_COLOR }); // Use global color
+                        const blueLineGeometry = new THREE.BoxGeometry(lineLength, DATA_LINE_THICKNESS, DATA_LINE_THICKNESS); // Use global thickness
+                        const blueLine = new THREE.Mesh(blueLineGeometry, blueLineMaterial);
+                        blueLine.position.set(lineLength / 2, yPosition, zPosition);
+                        blueLine.userData = { entry, originalColor: DATA_LINE_COLOR };
                         scene.add(blueLine);
                         blueLines.push(blueLine);
 
                         // Create vertical blue line extending upwards to the text
-                        const verticalBlueLineGeometry = new THREE.BufferGeometry().setFromPoints([
-                            new THREE.Vector3(lineLength, yPosition, zPosition),
-                            new THREE.Vector3(lineLength, yPosition + Math.abs(textMesh.position.y - yPosition) + 100, zPosition) // +100 for height
-                        ]);
-                        const verticalBlueLine = new THREE.Line(verticalBlueLineGeometry, blueLineMaterial.clone());
+                        const verticalBlueLineGeometry = new THREE.BoxGeometry(DATA_LINE_THICKNESS, Math.abs(textMesh.position.y - yPosition) + 100, DATA_LINE_THICKNESS); // Use global thickness
+                        const verticalBlueLine = new THREE.Mesh(verticalBlueLineGeometry, blueLineMaterial.clone());
+                        verticalBlueLine.position.set(lineLength, yPosition + (Math.abs(textMesh.position.y - yPosition) + 100) / 2, zPosition);
                         verticalBlueLine.visible = false; // Initially hidden
-                        verticalBlueLine.userData = { entry, originalColor: 0x0000ff };
+                        verticalBlueLine.userData = { entry, originalColor: DATA_LINE_COLOR };
                         scene.add(verticalBlueLine);
                         verticalBlueLines.push(verticalBlueLine);
                     }
@@ -189,35 +183,35 @@ planeMeshes.push(planeMesh);
         });
     });
 
-    function addCentralVerticalLine() {
-      // Define the thickness of the rectangle
-      const thickness = 0.5; // Adjust for the width of the line
-  
-      // Calculate the length based on the distance between the first and last textMeshes
-      const firstTextPosition = textMeshes[0].position;
-      const lastTextPosition = textMeshes[textMeshes.length - 1].position;
-      const length = Math.abs(lastTextPosition.z - firstTextPosition.z) ; // Add a bit extra to ensure it spans fully
-  
-      // Create the BoxGeometry for the rectangle
-      const rectangleGeometry = new THREE.BoxGeometry(thickness, 0.1, length); // Set Z-axis length for front-to-back orientation
-  
-      // Create a material and color for the rectangle
-      const rectangleMaterial = new THREE.MeshBasicMaterial({ color: 00000 });
-  
-      // Create the mesh for the rectangle
-      const rectangle = new THREE.Mesh(rectangleGeometry, rectangleMaterial);
-  
-      // Position the rectangle in the middle of the grid, slightly to the left of the text labels
-      const midZ = (firstTextPosition.z + lastTextPosition.z) / 2;
-      rectangle.position.set(0, firstTextPosition.y, midZ); // Adjust X-position (-5) to align it left of the text if needed
-  
-      // Add the rectangle to the scene
-      scene.add(rectangle);
-  }
+function addCentralVerticalLine() {
+    // Define the thickness of the rectangle
+    const thickness = 0.5; // Adjust for the width of the line
+
+    // Calculate the length based on the distance between the first and last textMeshes
+    const firstTextPosition = textMeshes[0].position;
+    const lastTextPosition = textMeshes[textMeshes.length - 1].position;
+    const length = Math.abs(lastTextPosition.z - firstTextPosition.z); // Add a bit extra to ensure it spans fully
+
+    // Create the BoxGeometry for the rectangle
+    const rectangleGeometry = new THREE.BoxGeometry(thickness, 0.1, length); // Set Z-axis length for front-to-back orientation
+
+    // Create a material and color for the rectangle
+    const rectangleMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
+
+    // Create the mesh for the rectangle
+    const rectangle = new THREE.Mesh(rectangleGeometry, rectangleMaterial);
+
+    // Position the rectangle in the middle of the grid, slightly to the left of the text labels
+    const midZ = (firstTextPosition.z + lastTextPosition.z) / 2;
+    rectangle.position.set(0, firstTextPosition.y, midZ); // Adjust X-position (-5) to align it left of the text if needed
+
+    // Add the rectangle to the scene
+    scene.add(rectangle);
+}
 
 // Function to add logarithmic grid lines
 function addLogarithmicGridLines() {
-    const lineMaterial = new THREE.LineBasicMaterial({ color: 0x0000ff }); // Blue color for grid lines
+    const lineMaterial = new THREE.MeshBasicMaterial({ color: 0x808080 }); // Grey color for grid lines
     const logValues = Object.values(logScaleValues);
 
     logValues.forEach(value => {
@@ -227,19 +221,15 @@ function addLogarithmicGridLines() {
         const lastYearPosition = textMeshes[textMeshes.length - 1].position;
 
         // Add line on the left side
-        const leftLineGeometry = new THREE.BufferGeometry().setFromPoints([
-            new THREE.Vector3(-xPosition, firstYearPosition.y, firstYearPosition.z),
-            new THREE.Vector3(-xPosition, lastYearPosition.y, lastYearPosition.z)
-        ]);
-        const leftLine = new THREE.Line(leftLineGeometry, lineMaterial);
+        const leftLineGeometry = new THREE.BoxGeometry(0.1, 0.1, Math.abs(lastYearPosition.z - firstYearPosition.z)); // Adjust thickness as needed
+        const leftLine = new THREE.Mesh(leftLineGeometry, lineMaterial);
+        leftLine.position.set(-xPosition, firstYearPosition.y, (firstYearPosition.z + lastYearPosition.z) / 2);
         scene.add(leftLine);
 
         // Add line on the right side
-        const rightLineGeometry = new THREE.BufferGeometry().setFromPoints([
-            new THREE.Vector3(xPosition, firstYearPosition.y, firstYearPosition.z),
-            new THREE.Vector3(xPosition, lastYearPosition.y, lastYearPosition.z)
-        ]);
-        const rightLine = new THREE.Line(rightLineGeometry, lineMaterial);
+        const rightLineGeometry = new THREE.BoxGeometry(0.1, 0.1, Math.abs(lastYearPosition.z - firstYearPosition.z)); // Adjust thickness as needed
+        const rightLine = new THREE.Mesh(rightLineGeometry, lineMaterial);
+        rightLine.position.set(xPosition, firstYearPosition.y, (firstYearPosition.z + lastYearPosition.z) / 2);
         scene.add(rightLine);
     });
 }
@@ -395,7 +385,7 @@ renderer.domElement.addEventListener('mousemove', function (event) {
         const deltaX = event.clientX - previousMousePosition.x;
         const deltaY = event.clientY - previousMousePosition.y;
 
-        camera.position.x -= deltaX * .5;
+        camera.position.x -= deltaX * 0.5;
         camera.position.y += deltaY * 0.5;
 
         previousMousePosition = { x: event.clientX, y: event.clientY };
