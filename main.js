@@ -1,3 +1,14 @@
+let scrollVelocity = 0;
+let scrollOffset = 0;
+let isTransitioning = false;
+const transitionSpeed = 0.005;
+let userInteracting = false;
+let isDragging = false;
+
+// Target position and rotation vectors for smooth transition
+const targetPosition = new THREE.Vector3();
+const targetRotation = new THREE.Euler();
+
 // Set up scene, camera, and renderer
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
@@ -6,6 +17,68 @@ const camera = new THREE.PerspectiveCamera(
     0.1,
     5000 // Increased far clipping plane to ensure visibility
 );
+
+
+const cameraPositions = [
+    {
+        position: { x: 0, y: 54, z: -1899.3 },
+        rotation: { x: -1.57, y: 0, z: 0 }
+    },
+    {
+        position: { x: 0, y: 58.5, z: -1617.8 },
+        rotation: { x: -1.21, y: 0, z: 0 }
+    },
+    {
+        position: { x: 0, y: 176, z: -1047.6 },
+        rotation: { x: -0.52, y: 0, z: 0 }
+    },
+    {
+        position: { x: 0, y: 360.48, z: 300.7 }, // New Position 4
+        rotation: { x: -0.47, y: 0, z: 0 }
+    }
+];
+
+// Add event listener for the new position button
+document.getElementById('position1-btn').addEventListener('click', () => switchCameraPosition(0));
+document.getElementById('position2-btn').addEventListener('click', () => switchCameraPosition(1));
+document.getElementById('position3-btn').addEventListener('click', () => switchCameraPosition(2));
+document.getElementById('position4-btn').addEventListener('click', () => switchCameraPosition(3)); 
+
+
+// Function to switch to target camera position immediately or smoothly
+function switchCameraPosition(positionIndex) {
+    const target = cameraPositions[positionIndex];
+    targetPosition.set(target.position.x, target.position.y, target.position.z);
+    targetRotation.set(target.rotation.x, target.rotation.y, target.rotation.z);
+
+    isTransitioning = true; // Start transitioning to the new position
+    userInteracting = false; // Prevent scrolling during the transition
+    scrollVelocity = 0; // Reset scroll velocity
+
+    // Set the base position to target position when the transition completes
+    basePositionZ = target.position.z;
+}
+
+
+// Track the current camera position index
+let currentCameraIndex = 0;
+
+// Scroll position handling
+let basePositionZ = camera.position.z;
+let scrollPosition = 0;
+let touchStartY = 0;
+let isScrolling = false;
+
+
+
+
+
+// Add an event listener to switch camera positions with the 'C' key
+window.addEventListener('keydown', function(event) {
+    if (event.key === 'c' || event.key === 'C') {
+        switchCameraPosition();
+    }
+});
 
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setPixelRatio(window.devicePixelRatio);
@@ -60,6 +133,19 @@ const verticalRedLines = [];
 const verticalBlueLines = [];
 let entries = [];
 let centralLine;
+
+// Function to log camera data
+function logCameraData() {
+    console.log(`Camera Position: x=${camera.position.x}, y=${camera.position.y}, z=${camera.position.z}`);
+    console.log(`Camera Rotation: x=${camera.rotation.x}, y=${camera.rotation.y}, z=${camera.rotation.z}`);
+}
+
+// Add an event listener to log camera data on key press (e.g., 'L' key)
+window.addEventListener('keydown', function(event) {
+    if (event.key === 'l' || event.key === 'L') {
+        logCameraData();
+    }
+});
 
 // Load font and create text meshes
 const loader = new THREE.FontLoader();
@@ -234,35 +320,50 @@ function addLogarithmicGridLines() {
     });
 }
 
-// Scroll position handling
-let scrollPosition = 0;
-let scrollVelocity = 0;
-let touchStartY = 0;
-let isScrolling = false;
+
 
 const isMobile = window.matchMedia("(max-width: 767px)").matches;
 
-window.addEventListener('wheel', function (event) {
+
+// Event listeners to detect user scroll/touch interactions
+window.addEventListener('wheel', (event) => {
     scrollVelocity += event.deltaY * 0.005;
+    userInteracting = true;
+    stopTransition();
 });
 
-window.addEventListener('touchstart', function (event) {
+window.addEventListener('touchstart', (event) => {
     touchStartY = event.touches[0].clientY;
     isScrolling = true;
+    userInteracting = true;
+    stopTransition();
 });
 
-window.addEventListener('touchmove', function (event) {
+window.addEventListener('touchmove', (event) => {
     if (isScrolling) {
         const touchEndY = event.touches[0].clientY;
         const deltaY = touchStartY - touchEndY;
-        scrollVelocity += deltaY * (isMobile ? 0.02 : 0.01);
+        scrollVelocity += deltaY * 0.005;
         touchStartY = touchEndY;
     }
 });
 
-window.addEventListener('touchend', function () {
+window.addEventListener('touchend', () => {
     isScrolling = false;
 });
+
+// Updated `stopTransition` function to ensure correct snapping to target position
+function stopTransition() {
+    if (isTransitioning) {
+        // Directly set the camera to the target position and rotation
+        camera.position.copy(targetPosition);
+        camera.rotation.copy(targetRotation);
+        isTransitioning = false; // Stop the transition
+        basePositionZ = targetPosition.z; // Ensure base position aligns with target
+        scrollOffset = 0; // Reset scroll offset
+    }
+    userInteracting = true; // Allow user interaction
+}
 
 // Function to generate logarithmic scale labels
 function generateLogarithmicScale(container, reverse = false) {
@@ -370,16 +471,21 @@ function resetObjectColor(object) {
 renderer.domElement.addEventListener('mousemove', onMouseMove, false);
 
 // Variables to track mouse state
-let isDragging = false;
+
 let previousMousePosition = { x: 0, y: 0 };
 
-// Handle mouse down event
+
+
+// Handle mouse down event to start dragging
 renderer.domElement.addEventListener('mousedown', function (event) {
     isDragging = true;
+    userInteracting = true;
+    stopTransition();
     previousMousePosition = { x: event.clientX, y: event.clientY };
 });
 
-// Handle mouse move event
+
+// Handle mouse move event to update camera position if dragging
 renderer.domElement.addEventListener('mousemove', function (event) {
     if (isDragging) {
         const deltaX = event.clientX - previousMousePosition.x;
@@ -387,25 +493,48 @@ renderer.domElement.addEventListener('mousemove', function (event) {
 
         camera.position.x -= deltaX * 0.5;
         camera.position.y += deltaY * 0.5;
-
         previousMousePosition = { x: event.clientX, y: event.clientY };
     }
 });
 
-// Handle mouse up event
+// Handle mouse up event to stop dragging
 renderer.domElement.addEventListener('mouseup', function () {
     isDragging = false;
+    userInteracting = false;
 });
 
+
+// `animate` function for smooth scrolling and transitioning independently
 function animate() {
     requestAnimationFrame(animate);
 
-    // Apply momentum scrolling
-    scrollPosition += scrollVelocity;
-    scrollVelocity *= isMobile ? 0.93 : 0.95;
+    if (userInteracting && !isTransitioning) {
+        // Smooth scrolling with decay when interacting
+        scrollOffset += scrollVelocity;
+        camera.position.z = basePositionZ + scrollOffset;
+        scrollVelocity *= 0.95; // Gradual decay for smooth scroll
+    } else if (isTransitioning) {
+        // Transition smoothly to target position and rotation
+        camera.position.lerp(targetPosition, transitionSpeed);
+        camera.rotation.x += (targetRotation.x - camera.rotation.x) * transitionSpeed;
+        camera.rotation.y += (targetRotation.y - camera.rotation.y) * transitionSpeed;
+        camera.rotation.z += (targetRotation.z - camera.rotation.z) * transitionSpeed;
 
-    // Move camera along the Z-axis based on scroll
-    camera.position.z = 200 + scrollPosition;
+        const positionTolerance = 0.1;
+        const rotationTolerance = 0.001;
+
+        // Check if the transition is complete
+        if (
+            camera.position.distanceTo(targetPosition) < positionTolerance &&
+            Math.abs(camera.rotation.x - targetRotation.x) < rotationTolerance &&
+            Math.abs(camera.rotation.y - targetRotation.y) < rotationTolerance &&
+            Math.abs(camera.rotation.z - targetRotation.z) < rotationTolerance
+        ) {
+            isTransitioning = false;
+            basePositionZ = targetPosition.z; // Update the base position after transition
+            scrollOffset = 0;
+        }
+    }
 
     renderer.render(scene, camera);
 }
