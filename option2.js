@@ -1,3 +1,6 @@
+// option2.js
+
+// Global variables
 let scrollVelocity = 0;
 let scrollOffset = 0;
 let isTransitioning = false;
@@ -11,86 +14,71 @@ const targetRotation = new THREE.Euler();
 
 // Set up scene, camera, and renderer
 const scene = new THREE.Scene();
+const fullWidth = window.innerWidth;
+const fullHeight = window.innerHeight;
+let halfWidth = Math.floor(fullWidth / 2); // Initialize halfWidth
+
+// Adjust camera aspect ratio for right half
 const camera = new THREE.PerspectiveCamera(
     50,
-    window.innerWidth / window.innerHeight,
+    halfWidth / fullHeight, // Adjusted aspect ratio for right half
     0.1,
     5000 // Increased far clipping plane to ensure visibility
 );
 
-
+// Define camera positions
 const cameraPositions = [
     {
-        position: { x: 0, y: 54, z: -1899.3 },
+        position: { x: 0, y: 193.5, z: -1899.3 },
         rotation: { x: -1.57, y: 0, z: 0 }
     },
     {
-        position: { x: 0, y: 58.5, z: -1617.8 },
+        position: { x: 0, y: 200, z: -1617.8 },
         rotation: { x: -1.21, y: 0, z: 0 }
     },
     {
-        position: { x: 0, y: 176, z: -1047.6 },
+        position: { x: 0, y: 250, z: -1047.6 },
         rotation: { x: -0.52, y: 0, z: 0 }
     },
     {
-        position: { x: 0, y: 360.48, z: 300.7 }, // New Position 4
+        position: { x: 0, y: 860.48, z: 900.7 }, // New Position 4
         rotation: { x: -0.47, y: 0, z: 0 }
     }
 ];
 
 // Set the initial camera position and rotation to position 1
 const initialPosition = cameraPositions[0];
-camera.position.set(initialPosition.position.x, initialPosition.position.y, initialPosition.position.z);
-camera.rotation.set(initialPosition.rotation.x, initialPosition.rotation.y, initialPosition.rotation.z);
+camera.position.set(
+    initialPosition.position.x,
+    initialPosition.position.y,
+    initialPosition.position.z
+);
+camera.rotation.set(
+    initialPosition.rotation.x,
+    initialPosition.rotation.y,
+    initialPosition.rotation.z
+);
 
-
-// Add event listener for the new position button
-document.getElementById('position1-btn').addEventListener('click', () => switchCameraPosition(0));
-document.getElementById('position2-btn').addEventListener('click', () => switchCameraPosition(1));
-document.getElementById('position3-btn').addEventListener('click', () => switchCameraPosition(2));
-document.getElementById('position4-btn').addEventListener('click', () => switchCameraPosition(3)); 
-
-
-// Function to switch to target camera position immediately or smoothly
-function switchCameraPosition(positionIndex) {
-    const target = cameraPositions[positionIndex];
-    targetPosition.set(target.position.x, target.position.y, target.position.z);
-    targetRotation.set(target.rotation.x, target.rotation.y, target.rotation.z);
-
-    isTransitioning = true; // Start transitioning to the new position
-    userInteracting = false; // Prevent scrolling during the transition
-    scrollVelocity = 0; // Reset scroll velocity
-
-    // Set the base position to target position when the transition completes
-    basePositionZ = target.position.z;
-}
-
-
-// Track the current camera position index
-let currentCameraIndex = 0;
-
-// Scroll position handling
-let basePositionZ = camera.position.z;
-let scrollPosition = 0;
-let touchStartY = 0;
-let isScrolling = false;
-
-
-
-
-
-// Add an event listener to switch camera positions with the 'C' key
-window.addEventListener('keydown', function(event) {
-    if (event.key === 'c' || event.key === 'C') {
-        switchCameraPosition();
-    }
-});
-
+// Create renderer
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setClearColor(0xffffff, 1);
-document.body.appendChild(renderer.domElement);
-renderer.setSize(window.innerWidth, window.innerHeight);
+
+// Append renderer to the appropriate container
+const sceneContainer = document.getElementById('threejs-container');
+sceneContainer.appendChild(renderer.domElement);
+
+// Set the renderer size to match the right half of the window
+renderer.setSize(halfWidth, fullHeight);
+
+// Position the renderer's DOM element (canvas) to the right half
+renderer.domElement.style.position = 'absolute';
+renderer.domElement.style.top = '0px';
+renderer.domElement.style.left = `${halfWidth}px`;
+
+// Adjust the camera's aspect ratio
+camera.aspect = halfWidth / fullHeight;
+camera.updateProjectionMatrix();
 
 // Add a light source
 const light = new THREE.PointLight(0xffffff, 1, 1000);
@@ -117,12 +105,12 @@ function mapToLogScale(value) {
         value = value.toString();
     }
     if (value === '∞') {
-        return window.innerWidth / 2; // Arbitrary large value for infinity
+        return 1000; // Arbitrary large value in world units
     }
     const logValue = Math.log10(parseFloat(value.replace(/,/g, '')));
     const minLog = Math.log10(1e3); // Minimum value on the scale (1K)
     const maxLog = Math.log10(1e12); // Maximum value on the scale (1T)
-    const scaleWidth = window.innerWidth / 2; // Width of the scale (50vw)
+    const scaleWidth = 500; // Define a suitable scale width in world units
     return scaleWidth * (logValue - minLog) / (maxLog - minLog);
 }
 
@@ -139,19 +127,6 @@ const verticalRedLines = [];
 const verticalBlueLines = [];
 let entries = [];
 let centralLine;
-
-// Function to log camera data
-function logCameraData() {
-    console.log(`Camera Position: x=${camera.position.x}, y=${camera.position.y}, z=${camera.position.z}`);
-    console.log(`Camera Rotation: x=${camera.rotation.x}, y=${camera.rotation.y}, z=${camera.rotation.z}`);
-}
-
-// Add an event listener to log camera data on key press (e.g., 'L' key)
-window.addEventListener('keydown', function(event) {
-    if (event.key === 'l' || event.key === 'L') {
-        logCameraData();
-    }
-});
 
 // Load font and create text meshes
 const loader = new THREE.FontLoader();
@@ -180,12 +155,12 @@ fetch('data.json')
                     });
                     const textMesh = new THREE.Mesh(textGeometry, material);
 
-                    const yPosition = -(window.innerHeight / 20);
+                    const yPosition = -10; // Fixed value in world units
                     const zPosition = -(index * 20);
 
-                    // Position the text mesh at x=0 (right next to the center line)
+                    // Position the text mesh at x=0 (center of right half)
                     textMesh.position.set(0, yPosition, zPosition);
-                    
+
                     // Rotate the text mesh 90 degrees on the X-axis
                     textMesh.rotation.x = -1.5;
 
@@ -275,14 +250,20 @@ fetch('data.json')
         });
     });
 
+// Function to add central vertical line
 function addCentralVerticalLine() {
+    if (textMeshes.length === 0) {
+        console.error('No text meshes available to calculate the central vertical line.');
+        return;
+    }
+
     // Define the thickness of the rectangle
     const thickness = 0.5; // Adjust for the width of the line
 
     // Calculate the length based on the distance between the first and last textMeshes
     const firstTextPosition = textMeshes[0].position;
     const lastTextPosition = textMeshes[textMeshes.length - 1].position;
-    const length = Math.abs(lastTextPosition.z - firstTextPosition.z); // Add a bit extra to ensure it spans fully
+    const length = Math.abs(lastTextPosition.z - firstTextPosition.z) + 100; // Add extra to ensure it spans fully
 
     // Create the BoxGeometry for the rectangle
     const rectangleGeometry = new THREE.BoxGeometry(thickness, 0.1, length); // Set Z-axis length for front-to-back orientation
@@ -293,9 +274,9 @@ function addCentralVerticalLine() {
     // Create the mesh for the rectangle
     const rectangle = new THREE.Mesh(rectangleGeometry, rectangleMaterial);
 
-    // Position the rectangle in the middle of the grid, slightly to the left of the text labels
+    // Position the rectangle at x=0
     const midZ = (firstTextPosition.z + lastTextPosition.z) / 2;
-    rectangle.position.set(0, firstTextPosition.y, midZ); // Adjust X-position (-5) to align it left of the text if needed
+    rectangle.position.set(0, firstTextPosition.y, midZ);
 
     // Add the rectangle to the scene
     scene.add(rectangle);
@@ -313,65 +294,20 @@ function addLogarithmicGridLines() {
         const lastYearPosition = textMeshes[textMeshes.length - 1].position;
 
         // Add line on the left side
-        const leftLineGeometry = new THREE.BoxGeometry(0.1, 0.1, Math.abs(lastYearPosition.z - firstYearPosition.z)); // Adjust thickness as needed
+        const leftLineGeometry = new THREE.BoxGeometry(0.1, 0.1, Math.abs(lastYearPosition.z - firstYearPosition.z) + 100); // Adjust thickness as needed
         const leftLine = new THREE.Mesh(leftLineGeometry, lineMaterial);
         leftLine.position.set(-xPosition, firstYearPosition.y, (firstYearPosition.z + lastYearPosition.z) / 2);
         scene.add(leftLine);
 
         // Add line on the right side
-        const rightLineGeometry = new THREE.BoxGeometry(0.1, 0.1, Math.abs(lastYearPosition.z - firstYearPosition.z)); // Adjust thickness as needed
+        const rightLineGeometry = new THREE.BoxGeometry(0.1, 0.1, Math.abs(lastYearPosition.z - firstYearPosition.z) + 100); // Adjust thickness as needed
         const rightLine = new THREE.Mesh(rightLineGeometry, lineMaterial);
         rightLine.position.set(xPosition, firstYearPosition.y, (firstYearPosition.z + lastYearPosition.z) / 2);
         scene.add(rightLine);
     });
 }
 
-
-
-const isMobile = window.matchMedia("(max-width: 767px)").matches;
-
-
-// Event listeners to detect user scroll/touch interactions
-window.addEventListener('wheel', (event) => {
-    scrollVelocity += event.deltaY * 0.005;
-    userInteracting = true;
-    stopTransition();
-});
-
-window.addEventListener('touchstart', (event) => {
-    touchStartY = event.touches[0].clientY;
-    isScrolling = true;
-    userInteracting = true;
-    stopTransition();
-});
-
-window.addEventListener('touchmove', (event) => {
-    if (isScrolling) {
-        const touchEndY = event.touches[0].clientY;
-        const deltaY = touchStartY - touchEndY;
-        scrollVelocity += deltaY * 0.005;
-        touchStartY = touchEndY;
-    }
-});
-
-window.addEventListener('touchend', () => {
-    isScrolling = false;
-});
-
-// Updated `stopTransition` function to ensure correct snapping to target position
-function stopTransition() {
-    if (isTransitioning) {
-        // Directly set the camera to the target position and rotation
-        camera.position.copy(targetPosition);
-        camera.rotation.copy(targetRotation);
-        isTransitioning = false; // Stop the transition
-        basePositionZ = targetPosition.z; // Ensure base position aligns with target
-        scrollOffset = 0; // Reset scroll offset
-    }
-    userInteracting = true; // Allow user interaction
-}
-
-// Function to generate logarithmic scale labels
+// Generate logarithmic scale labels
 function generateLogarithmicScale(container, reverse = false) {
     const logValues = ['1K', '10K', '100K', '1M', '10M', '100M', '1B', '10B', '100B', '1T'];
     const values = reverse ? logValues.reverse() : logValues;
@@ -477,10 +413,50 @@ function resetObjectColor(object) {
 renderer.domElement.addEventListener('mousemove', onMouseMove, false);
 
 // Variables to track mouse state
-
+let isScrolling = false;
+let touchStartY = 0;
 let previousMousePosition = { x: 0, y: 0 };
 
+// Event listeners to detect user scroll/touch interactions on the Three.js canvas
+renderer.domElement.addEventListener('wheel', (event) => {
+    event.preventDefault(); // Prevent default scrolling behavior
+    scrollVelocity += event.deltaY * 0.005;
+    userInteracting = true;
+    stopTransition();
+});
 
+renderer.domElement.addEventListener('touchstart', (event) => {
+    touchStartY = event.touches[0].clientY;
+    isScrolling = true;
+    userInteracting = true;
+    stopTransition();
+});
+
+renderer.domElement.addEventListener('touchmove', (event) => {
+    if (isScrolling) {
+        const touchEndY = event.touches[0].clientY;
+        const deltaY = touchStartY - touchEndY;
+        scrollVelocity += deltaY * 0.005;
+        touchStartY = touchEndY;
+    }
+});
+
+renderer.domElement.addEventListener('touchend', () => {
+    isScrolling = false;
+});
+
+// Updated `stopTransition` function to ensure correct snapping to target position
+function stopTransition() {
+    if (isTransitioning) {
+        // Directly set the camera to the target position and rotation
+        camera.position.copy(targetPosition);
+        camera.rotation.copy(targetRotation);
+        isTransitioning = false; // Stop the transition
+        basePositionZ = targetPosition.z; // Ensure base position aligns with target
+        scrollOffset = 0; // Reset scroll offset
+    }
+    userInteracting = true; // Allow user interaction
+}
 
 // Handle mouse down event to start dragging
 renderer.domElement.addEventListener('mousedown', function (event) {
@@ -489,7 +465,6 @@ renderer.domElement.addEventListener('mousedown', function (event) {
     stopTransition();
     previousMousePosition = { x: event.clientX, y: event.clientY };
 });
-
 
 // Handle mouse move event to update camera position if dragging
 renderer.domElement.addEventListener('mousemove', function (event) {
@@ -509,6 +484,31 @@ renderer.domElement.addEventListener('mouseup', function () {
     userInteracting = false;
 });
 
+// Add event listener for the position buttons
+document.getElementById('position1-btn').addEventListener('click', () => switchCameraPosition(0));
+document.getElementById('position2-btn').addEventListener('click', () => switchCameraPosition(1));
+document.getElementById('position3-btn').addEventListener('click', () => switchCameraPosition(2));
+document.getElementById('position4-btn').addEventListener('click', () => switchCameraPosition(3));
+
+// Function to switch to target camera position immediately or smoothly
+function switchCameraPosition(positionIndex) {
+    const target = cameraPositions[positionIndex];
+    targetPosition.set(target.position.x, target.position.y, target.position.z);
+    targetRotation.set(target.rotation.x, target.rotation.y, target.rotation.z);
+
+    isTransitioning = true; // Start transitioning to the new position
+    userInteracting = false; // Prevent scrolling during the transition
+    scrollVelocity = 0; // Reset scroll velocity
+
+    // Set the base position to target position when the transition completes
+    basePositionZ = target.position.z;
+}
+
+// Track the current camera position index
+let currentCameraIndex = 0;
+
+// Scroll position handling
+let basePositionZ = camera.position.z;
 
 // `animate` function for smooth scrolling and transitioning independently
 function animate() {
@@ -549,7 +549,117 @@ animate();
 
 // Handle window resizing
 window.addEventListener('resize', function () {
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    camera.aspect = window.innerWidth / window.innerHeight;
+    const fullWidth = window.innerWidth;
+    const fullHeight = window.innerHeight;
+    halfWidth = Math.floor(fullWidth / 2);
+
+    // Update renderer size and position
+    renderer.setSize(halfWidth, fullHeight);
+    renderer.domElement.style.left = `${halfWidth}px`;
+
+    // Update camera aspect
+    camera.aspect = halfWidth / fullHeight;
     camera.updateProjectionMatrix();
 });
+
+// Event listener to log camera data on key press (e.g., 'L' key)
+window.addEventListener('keydown', function(event) {
+    if (event.key === 'l' || event.key === 'L') {
+        logCameraData();
+    }
+});
+
+// Function to log camera data
+function logCameraData() {
+    console.log(`Camera Position: x=${camera.position.x}, y=${camera.position.y}, z=${camera.position.z}`);
+    console.log(`Camera Rotation: x=${camera.rotation.x}, y=${camera.rotation.y}, z=${camera.rotation.z}`);
+}
+
+// Add an event listener to switch camera positions with the 'C' key
+window.addEventListener('keydown', function(event) {
+    if (event.key === 'c' || event.key === 'C') {
+        currentCameraIndex = (currentCameraIndex + 1) % cameraPositions.length;
+        switchCameraPosition(currentCameraIndex);
+    }
+});
+
+// Load the essay
+loadEssay();
+
+function loadEssay() {
+    fetch('essay.txt')
+        .then(response => response.text())
+        .then(text => {
+            const contentDiv = document.getElementById('essay-content');
+            if (!contentDiv) {
+                console.error('Essay content div not found.');
+                return;
+            }
+
+            // Split the text on [Position X] markers
+            const sections = text.split(/\[Position (\d+)\]/g);
+            const essaySections = [];
+
+            // Start from index 1 to skip any text before the first [Position X]
+            for (let i = 1; i < sections.length; i += 2) {
+                const positionIndex = parseInt(sections[i], 10);
+                const sectionText = sections[i + 1].trim();
+
+                if (sectionText) {
+                    essaySections.push({ positionIndex, sectionText });
+                }
+            }
+
+            console.log('Parsed essay sections:', essaySections);
+
+            essaySections.forEach(section => {
+                const sectionDiv = document.createElement('div');
+                sectionDiv.classList.add('essay-section');
+                sectionDiv.setAttribute('data-position', section.positionIndex);
+                sectionDiv.innerHTML = section.sectionText;
+                contentDiv.appendChild(sectionDiv);
+            });
+
+            console.log('Essay content loaded successfully');
+
+            // Call setupScrollLogging after content is loaded
+            setupScrollLogging();
+        })
+        .catch(error => {
+            console.error('Error loading essay:', error);
+        });
+}
+
+// Function to set up IntersectionObserver for scroll logging
+function setupScrollLogging() {
+    const sections = document.querySelectorAll('.essay-section');
+
+    console.log('Found sections:', sections.length);
+
+    if (sections.length === 0) {
+        console.error('No sections found.');
+        return;
+    }
+
+    const options = {
+        root: null, // Use the viewport as the root
+        rootMargin: '0px',
+        threshold: 0 // Trigger when any part of the section is visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            const positionIndex = entry.target.getAttribute('data-position');
+            console.log(`Entry for position ${positionIndex}: isIntersecting=${entry.isIntersecting}, intersectionRatio=${entry.intersectionRatio}`);
+            if (entry.isIntersecting) {
+                console.log(`Currently viewing section with position: ${positionIndex}`);
+                // Optionally, switch camera position here
+                switchCameraPosition(parseInt(positionIndex, 10));
+            }
+        });
+    }, options);
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+}

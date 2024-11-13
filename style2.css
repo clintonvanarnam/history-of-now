@@ -1,0 +1,142 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+@font-face {
+  font-family: 'Copernicus Book';
+  src: url(fonts/Copernicus-Book.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Copernicus Bold';
+  src: url(fonts/Copernicus-Bold.ttf) format('truetype');
+}
+p {
+  font-family: 'Copernicus Book', serif;
+}
+
+h {
+  font-family: 'Copernicus Bold', serif;
+}
+
+canvas {
+  display: block;
+  width: 50vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  position: absolute; /* Ensures no extra margin/padding from the browser */
+  top: 0;
+  left: 50vw; /* Position canvas on the right half */
+}
+
+/* Bottom logarithmic scales */
+.log-scale {
+  visibility: hidden;
+  bottom: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: Arial, sans-serif;
+}
+
+.log-scale-left {
+  left: 50%;
+  transform: translateX(-100%);
+  justify-content: flex-end;
+  width: 50vw;
+  visibility: hidden;
+}
+
+.log-scale-right {
+  right: 50%;
+  transform: translateX(100%);
+  justify-content: flex-start;
+  width: 50vw;
+}
+
+/* Labels for the logarithmic scale */
+.log-label {
+  font-size: 12px;
+  color: #000;
+  margin: 0 5px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+/* Slider and checkbox container */
+.controls-container {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.controls-container label {
+  margin-right: 10px;
+}
+
+/* Tooltip */
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+  z-index: 10;
+}
+
+/* style.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.essay-container {
+  width: 50%;
+  overflow-y: auto;
+  height: 100vh; /* or another fixed height */
+    padding: 20px;
+  box-sizing: border-box;
+  background-color: #f9f9f9; /* Optional background color */
+  z-index: 10;
+}
+
+.essay-content p {
+  margin-bottom: 1em;
+  cursor: pointer; /* Indicates that the text is interactive */
+}
+
+.scene-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.scene-container canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>History of Now - Option 2</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Half: Essay -->
+        <div id="essay-content" class="essay-container"></div> <!-- Correctly closed -->
+
+        <!-- Right Half: 3D Scene and Controls -->
+        <div class="scene-container">
+            <!-- Logarithmic scales on both sides -->
+            <div class="log-scale log-scale-left"></div>
+            <div class="log-scale log-scale-right"></div>
+
+            <!-- Controls -->
+            <div class="controls-container">
+                <div>
+                    <label for="x-rotation-slider">Camera X Rotation:</label>
+                    <input type="range" id="x-rotation-slider" min="-1.57" max="1.57" step="0.01" value="0">
+                </div>
+                <div>
+                    <input type="checkbox" id="toggle-vertical-lines">
+                    <label for="toggle-vertical-lines">Toggle Vertical Lines</label>
+                </div>
+                <div>
+                    <button id="position1-btn">Position 1</button>
+                    <button id="position2-btn">Position 2</button>
+                    <button id="position3-btn">Position 3</button>
+                    <button id="position4-btn">Position 4</button>
+                </div>
+            </div>
+
+            <!-- Tooltip -->
+            <div class="tooltip" id="tooltip"></div>
+
+            <!-- Three.js Canvas -->
+            <div id="threejs-container"></div>
+        </div> <!-- Closed scene-container correctly -->
+    </div>
+
+    <!-- Include Three.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- Include non-module versions of FontLoader and TextGeometry -->
+    <script src="https://threejs.org/examples/js/loaders/FontLoader.js"></script>
+    <script src="https://threejs.org/examples/js/geometries/TextGeometry.js"></script>
+
+    <!-- Include Line2 related scripts -->
+    <script src="https://threejs.org/examples/js/lines/Line2.js"></script>
+    <script src="https://threejs.org/examples/js/lines/LineMaterial.js"></script>
+    <script src="https://threejs.org/examples/js/lines/LineGeometry.js"></script>
+
+    <!-- Include TWEEN.js for smooth animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"></script>
+
+    <!-- Your main script for Option 2 -->
+    <script src="option2.js"></script>
+</body>
+</html>
