@@ -134,112 +134,122 @@ fetch('data.json')
     .then(response => response.json())
     .then(data => {
         loader.load('fonts/Cosmica Trial Regular_Regular.json', function (font) {
-            entries = data.Sheet1.reverse();
+            // **Extract the years from the data**
+            const years = data.Sheet1.map(entry => parseInt(entry.DATE)).filter(year => !isNaN(year));
+            const minYear = Math.min(...years);
+            const maxYear = Math.max(...years);
+
+            // **Generate a complete range of years**
+            const fullYears = generateYearRange(minYear, maxYear);
+
+            // **Merge the complete range of years with the existing data**
+            const mergedEntries = mergeDataWithYears(fullYears, data.Sheet1);
+
+            entries = mergedEntries.reverse();
+
             entries.forEach((entry, index) => {
-                if (entry.DATE) {
-                    const year = entry.DATE;
-                    const textGeometry = new THREE.TextGeometry(year.toString(), {
-                        font: font,
-                        size: 5,
-                        height: 0.1,
-                        curveSegments: 12,
-                    });
+                const year = entry.DATE;
+                const textGeometry = new THREE.TextGeometry(year.toString(), {
+                    font: font,
+                    size: 5,
+                    height: 0.1,
+                    curveSegments: 12,
+                });
 
-                    textGeometry.computeBoundingBox();
-                    const xOffset = -textGeometry.boundingBox.min.x; // Offset to align left edge to x=0
-                    textGeometry.translate(xOffset, 0, 0); // Align left edge to local origin
+                textGeometry.computeBoundingBox();
+                const xOffset = -textGeometry.boundingBox.min.x; // Offset to align left edge to x=0
+                textGeometry.translate(xOffset, 0, 0); // Align left edge to local origin
 
-                    const material = new THREE.MeshBasicMaterial({
-                        color: 0x000000,
-                        side: THREE.DoubleSide,
-                    });
-                    const textMesh = new THREE.Mesh(textGeometry, material);
+                const material = new THREE.MeshBasicMaterial({
+                    color: 0x000000,
+                    side: THREE.DoubleSide,
+                });
+                const textMesh = new THREE.Mesh(textGeometry, material);
 
-                    const yPosition = -10; // Fixed value in world units
-                    const zPosition = -(index * 20);
+                const yPosition = -10; // Fixed value in world units
+                const zPosition = -(index * 20);
 
-                    // Position the text mesh at x=0 (center of right half)
-                    textMesh.position.set(0, yPosition, zPosition);
+                // Position the text mesh at x=0 (center of right half)
+                textMesh.position.set(0, yPosition, zPosition);
 
-                    // Rotate the text mesh 90 degrees on the X-axis
-                    textMesh.rotation.x = -1.5;
+                // Rotate the text mesh 90 degrees on the X-axis
+                textMesh.rotation.x = -1.5;
 
-                    textMesh.userData = { isYear: true, originalColor: 0x000000 };
-                    textMesh.name = `Year_${year}`;
-                    scene.add(textMesh);
-                    textMeshes.push(textMesh);
+                textMesh.userData = { isYear: true, originalColor: 0x000000 };
+                textMesh.name = `Year_${year}`;
+                scene.add(textMesh);
+                textMeshes.push(textMesh);
 
-                    // Get dimensions for plane mesh
-                    const width = textGeometry.boundingBox.max.x - textGeometry.boundingBox.min.x;
-                    const height = textGeometry.boundingBox.max.y - textGeometry.boundingBox.min.y;
+                // Get dimensions for plane mesh
+                const width = textGeometry.boundingBox.max.x - textGeometry.boundingBox.min.x;
+                const height = textGeometry.boundingBox.max.y - textGeometry.boundingBox.min.y;
 
-                    const planeGeometry = new THREE.PlaneGeometry(width * 1.2, height * 1.2); // Slightly increase the plane size for better hover
-                    const planeMaterial = new THREE.MeshBasicMaterial({
-                        opacity: 0,
-                        transparent: true,
-                        side: THREE.DoubleSide,
-                    });
-                    const planeMesh = new THREE.Mesh(planeGeometry, planeMaterial);
+                const planeGeometry = new THREE.PlaneGeometry(width * 1.2, height * 1.2); // Slightly increase the plane size for better hover
+                const planeMaterial = new THREE.MeshBasicMaterial({
+                    opacity: 0,
+                    transparent: true,
+                    side: THREE.DoubleSide,
+                });
+                const planeMesh = new THREE.Mesh(planeGeometry, planeMaterial);
 
-                    // Position and rotate the plane to match the text mesh
-                    planeMesh.position.copy(textMesh.position);
-                    planeMesh.rotation.set(textMesh.rotation.x, textMesh.rotation.y, textMesh.rotation.z);
-                    planeMesh.userData = { textMesh: textMesh };
-                    scene.add(planeMesh);
-                    planeMeshes.push(planeMesh);
+                // Position and rotate the plane to match the text mesh
+                planeMesh.position.copy(textMesh.position);
+                planeMesh.rotation.set(textMesh.rotation.x, textMesh.rotation.y, textMesh.rotation.z);
+                planeMesh.userData = { textMesh: textMesh };
+                scene.add(planeMesh);
+                planeMeshes.push(planeMesh);
 
-                    // Create a thin rectangle from the bottom of the text extending horizontally
-                    const lineMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
-                    const lineGeometry = new THREE.BoxGeometry(2000, 0.2, 0.2); // Adjust thickness as needed
-                    const line = new THREE.Mesh(lineGeometry, lineMaterial);
-                    line.position.set(0, yPosition, zPosition);
-                    scene.add(line);
+                // Create a thin rectangle from the bottom of the text extending horizontally
+                const lineMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
+                const lineGeometry = new THREE.BoxGeometry(2000, 0.2, 0.2); // Adjust thickness as needed
+                const line = new THREE.Mesh(lineGeometry, lineMaterial);
+                line.position.set(0, yPosition, zPosition);
+                scene.add(line);
 
-                    // Add past age of earth line
-                    if (entry["PAST AGE OF EARTH"]) {
-                        const pastAge = entry["PAST AGE OF EARTH"];
-                        const lineLength = mapToLogScale(pastAge);
+                // **Add past age of earth line if data exists**
+                if (entry["PAST AGE OF EARTH"]) {
+                    const pastAge = entry["PAST AGE OF EARTH"];
+                    const lineLength = mapToLogScale(pastAge);
 
-                        const redLineMaterial = new THREE.MeshBasicMaterial({ color: DATA_LINE_COLOR }); // Use global color
-                        const redLineGeometry = new THREE.BoxGeometry(lineLength, DATA_LINE_THICKNESS, DATA_LINE_THICKNESS); // Use global thickness
-                        const redLine = new THREE.Mesh(redLineGeometry, redLineMaterial);
-                        redLine.position.set(-lineLength / 2, yPosition, zPosition);
-                        redLine.userData = { entry, originalColor: DATA_LINE_COLOR };
-                        scene.add(redLine);
-                        redLines.push(redLine);
+                    const redLineMaterial = new THREE.MeshBasicMaterial({ color: DATA_LINE_COLOR }); // Use global color
+                    const redLineGeometry = new THREE.BoxGeometry(lineLength, DATA_LINE_THICKNESS, DATA_LINE_THICKNESS); // Use global thickness
+                    const redLine = new THREE.Mesh(redLineGeometry, redLineMaterial);
+                    redLine.position.set(-lineLength / 2, yPosition, zPosition);
+                    redLine.userData = { entry, originalColor: DATA_LINE_COLOR };
+                    scene.add(redLine);
+                    redLines.push(redLine);
 
-                        // Create vertical red line extending upwards to the text
-                        const verticalRedLineGeometry = new THREE.BoxGeometry(DATA_LINE_THICKNESS, Math.abs(textMesh.position.y - yPosition) + 100, DATA_LINE_THICKNESS); // Use global thickness
-                        const verticalRedLine = new THREE.Mesh(verticalRedLineGeometry, redLineMaterial.clone());
-                        verticalRedLine.position.set(-lineLength, yPosition + (Math.abs(textMesh.position.y - yPosition) + 100) / 2, zPosition);
-                        verticalRedLine.visible = false; // Initially hidden
-                        verticalRedLine.userData = { entry, originalColor: DATA_LINE_COLOR };
-                        scene.add(verticalRedLine);
-                        verticalRedLines.push(verticalRedLine);
-                    }
+                    // Create vertical red line extending upwards to the text
+                    const verticalRedLineGeometry = new THREE.BoxGeometry(DATA_LINE_THICKNESS, Math.abs(textMesh.position.y - yPosition) + 100, DATA_LINE_THICKNESS); // Use global thickness
+                    const verticalRedLine = new THREE.Mesh(verticalRedLineGeometry, redLineMaterial.clone());
+                    verticalRedLine.position.set(-lineLength, yPosition + (Math.abs(textMesh.position.y - yPosition) + 100) / 2, zPosition);
+                    verticalRedLine.visible = false; // Initially hidden
+                    verticalRedLine.userData = { entry, originalColor: DATA_LINE_COLOR };
+                    scene.add(verticalRedLine);
+                    verticalRedLines.push(verticalRedLine);
+                }
 
-                    // Add future habitability of earth line
-                    if (entry["FUTURE HABITABILITY ON EARTH"]) {
-                        const futureHabitability = entry["FUTURE HABITABILITY ON EARTH"];
-                        const lineLength = mapToLogScale(futureHabitability);
+                // **Add future habitability of earth line if data exists**
+                if (entry["FUTURE HABITABILITY ON EARTH"]) {
+                    const futureHabitability = entry["FUTURE HABITABILITY ON EARTH"];
+                    const lineLength = mapToLogScale(futureHabitability);
 
-                        const blueLineMaterial = new THREE.MeshBasicMaterial({ color: DATA_LINE_COLOR }); // Use global color
-                        const blueLineGeometry = new THREE.BoxGeometry(lineLength, DATA_LINE_THICKNESS, DATA_LINE_THICKNESS); // Use global thickness
-                        const blueLine = new THREE.Mesh(blueLineGeometry, blueLineMaterial);
-                        blueLine.position.set(lineLength / 2, yPosition, zPosition);
-                        blueLine.userData = { entry, originalColor: DATA_LINE_COLOR };
-                        scene.add(blueLine);
-                        blueLines.push(blueLine);
+                    const blueLineMaterial = new THREE.MeshBasicMaterial({ color: DATA_LINE_COLOR }); // Use global color
+                    const blueLineGeometry = new THREE.BoxGeometry(lineLength, DATA_LINE_THICKNESS, DATA_LINE_THICKNESS); // Use global thickness
+                    const blueLine = new THREE.Mesh(blueLineGeometry, blueLineMaterial);
+                    blueLine.position.set(lineLength / 2, yPosition, zPosition);
+                    blueLine.userData = { entry, originalColor: DATA_LINE_COLOR };
+                    scene.add(blueLine);
+                    blueLines.push(blueLine);
 
-                        // Create vertical blue line extending upwards to the text
-                        const verticalBlueLineGeometry = new THREE.BoxGeometry(DATA_LINE_THICKNESS, Math.abs(textMesh.position.y - yPosition) + 100, DATA_LINE_THICKNESS); // Use global thickness
-                        const verticalBlueLine = new THREE.Mesh(verticalBlueLineGeometry, blueLineMaterial.clone());
-                        verticalBlueLine.position.set(lineLength, yPosition + (Math.abs(textMesh.position.y - yPosition) + 100) / 2, zPosition);
-                        verticalBlueLine.visible = false; // Initially hidden
-                        verticalBlueLine.userData = { entry, originalColor: DATA_LINE_COLOR };
-                        scene.add(verticalBlueLine);
-                        verticalBlueLines.push(verticalBlueLine);
-                    }
+                    // Create vertical blue line extending upwards to the text
+                    const verticalBlueLineGeometry = new THREE.BoxGeometry(DATA_LINE_THICKNESS, Math.abs(textMesh.position.y - yPosition) + 100, DATA_LINE_THICKNESS); // Use global thickness
+                    const verticalBlueLine = new THREE.Mesh(verticalBlueLineGeometry, blueLineMaterial.clone());
+                    verticalBlueLine.position.set(lineLength, yPosition + (Math.abs(textMesh.position.y - yPosition) + 100) / 2, zPosition);
+                    verticalBlueLine.visible = false; // Initially hidden
+                    verticalBlueLine.userData = { entry, originalColor: DATA_LINE_COLOR };
+                    scene.add(verticalBlueLine);
+                    verticalBlueLines.push(verticalBlueLine);
                 }
             });
 
@@ -249,6 +259,27 @@ fetch('data.json')
             addLogarithmicGridLines();
         });
     });
+
+// **Function to generate a range of years**
+function generateYearRange(startYear, endYear) {
+    const years = [];
+    for (let year = startYear; year <= endYear; year++) {
+        years.push(year);
+    }
+    return years;
+}
+
+// **Function to merge data with a complete range of years**
+function mergeDataWithYears(fullYears, dataEntries) {
+    return fullYears.map(year => {
+        const entry = dataEntries.find(entry => parseInt(entry.DATE) === year);
+        if (entry) {
+            return entry; // Use the existing entry if found
+        } else {
+            return { DATE: year }; // Fill missing years with minimal data
+        }
+    });
+}
 
 // Function to add central vertical line
 function addCentralVerticalLine() {
