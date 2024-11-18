@@ -29,12 +29,12 @@ const camera = new THREE.PerspectiveCamera(
 // Define camera positions
 const cameraPositions = [
     {
-        position: { x: 0, y: 193.5, z: -1899.3 },
-        rotation: { x: -1.57, y: 0, z: 0 }
+        position: { x: 0, y: 84, z: -31683 },
+        rotation: { x: -.74, y: 0, z: 0 }
     },
     {
-        position: { x: 0, y: 200, z: -1617.8 },
-        rotation: { x: -1.21, y: 0, z: 0 }
+        position: { x: 0, y: 139.5, z: -7202 },
+        rotation: { x: -.68, y: 0, z: 0 }
     },
     {
         position: { x: 0, y: 250, z: -1047.6 },
@@ -133,7 +133,7 @@ const loader = new THREE.FontLoader();
 fetch('data.json')
     .then(response => response.json())
     .then(data => {
-        loader.load('fonts/Cosmica Trial Regular_Regular.json', function (font) {
+        loader.load('fonts/Cosmica.json', function (font) {
             // **Extract the years from the data**
             const years = data.Sheet1.map(entry => parseInt(entry.DATE)).filter(year => !isNaN(year));
             const minYear = Math.min(...years);
@@ -206,51 +206,159 @@ fetch('data.json')
                 line.position.set(0, yPosition, zPosition);
                 scene.add(line);
 
-                // **Add past age of earth line if data exists**
-                if (entry["PAST AGE OF EARTH"]) {
-                    const pastAge = entry["PAST AGE OF EARTH"];
-                    const lineLength = mapToLogScale(pastAge);
+// **Add past age of earth line if data exists**
+if (entry["PAST AGE OF EARTH"]) {
+    const pastAge = entry["PAST AGE OF EARTH"];
+    const lineLength = mapToLogScale(pastAge);
 
-                    const redLineMaterial = new THREE.MeshBasicMaterial({ color: DATA_LINE_COLOR }); // Use global color
-                    const redLineGeometry = new THREE.BoxGeometry(lineLength, DATA_LINE_THICKNESS, DATA_LINE_THICKNESS); // Use global thickness
-                    const redLine = new THREE.Mesh(redLineGeometry, redLineMaterial);
-                    redLine.position.set(-lineLength / 2, yPosition, zPosition);
-                    redLine.userData = { entry, originalColor: DATA_LINE_COLOR };
-                    scene.add(redLine);
-                    redLines.push(redLine);
+    const redLineMaterial = new THREE.MeshBasicMaterial({ color: DATA_LINE_COLOR }); // Use global color
+    const redLineGeometry = new THREE.BoxGeometry(lineLength, DATA_LINE_THICKNESS, DATA_LINE_THICKNESS); // Use global thickness
+    const redLine = new THREE.Mesh(redLineGeometry, redLineMaterial);
+    redLine.position.set(-lineLength / 2, yPosition, zPosition);
+    redLine.userData = { entry, originalColor: DATA_LINE_COLOR };
+    scene.add(redLine);
+    redLines.push(redLine);
 
-                    // Create vertical red line extending upwards to the text
-                    const verticalRedLineGeometry = new THREE.BoxGeometry(DATA_LINE_THICKNESS, Math.abs(textMesh.position.y - yPosition) + 100, DATA_LINE_THICKNESS); // Use global thickness
-                    const verticalRedLine = new THREE.Mesh(verticalRedLineGeometry, redLineMaterial.clone());
-                    verticalRedLine.position.set(-lineLength, yPosition + (Math.abs(textMesh.position.y - yPosition) + 100) / 2, zPosition);
-                    verticalRedLine.visible = false; // Initially hidden
-                    verticalRedLine.userData = { entry, originalColor: DATA_LINE_COLOR };
-                    scene.add(verticalRedLine);
-                    verticalRedLines.push(verticalRedLine);
-                }
+    // Set the desired height for the vertical red line
+    const verticalRedLineHeight = 20; // Adjust this value as needed
 
-                // **Add future habitability of earth line if data exists**
-                if (entry["FUTURE HABITABILITY ON EARTH"]) {
-                    const futureHabitability = entry["FUTURE HABITABILITY ON EARTH"];
-                    const lineLength = mapToLogScale(futureHabitability);
+    // Create vertical red line with fixed height
+    const verticalRedLineGeometry = new THREE.BoxGeometry(
+        DATA_LINE_THICKNESS,
+        verticalRedLineHeight,
+        DATA_LINE_THICKNESS
+    );
+    const verticalRedLine = new THREE.Mesh(verticalRedLineGeometry, redLineMaterial.clone());
+    verticalRedLine.position.set(
+        -lineLength,
+        yPosition + verticalRedLineHeight / 2,
+        zPosition
+    );
+    
+    verticalRedLine.userData = { entry, originalColor: DATA_LINE_COLOR };
+    scene.add(verticalRedLine);
+    verticalRedLines.push(verticalRedLine);
 
-                    const blueLineMaterial = new THREE.MeshBasicMaterial({ color: DATA_LINE_COLOR }); // Use global color
-                    const blueLineGeometry = new THREE.BoxGeometry(lineLength, DATA_LINE_THICKNESS, DATA_LINE_THICKNESS); // Use global thickness
-                    const blueLine = new THREE.Mesh(blueLineGeometry, blueLineMaterial);
-                    blueLine.position.set(lineLength / 2, yPosition, zPosition);
-                    blueLine.userData = { entry, originalColor: DATA_LINE_COLOR };
-                    scene.add(blueLine);
-                    blueLines.push(blueLine);
+    // **Add text label next to vertical red line**
+    const name = entry["NAME"] || "Unknown"; // Get the name or default to "Unknown"
+    const textString = `${name}\n${pastAge}`; // Combine name and past age with a newline
 
-                    // Create vertical blue line extending upwards to the text
-                    const verticalBlueLineGeometry = new THREE.BoxGeometry(DATA_LINE_THICKNESS, Math.abs(textMesh.position.y - yPosition) + 100, DATA_LINE_THICKNESS); // Use global thickness
-                    const verticalBlueLine = new THREE.Mesh(verticalBlueLineGeometry, blueLineMaterial.clone());
-                    verticalBlueLine.position.set(lineLength, yPosition + (Math.abs(textMesh.position.y - yPosition) + 100) / 2, zPosition);
-                    verticalBlueLine.visible = false; // Initially hidden
-                    verticalBlueLine.userData = { entry, originalColor: DATA_LINE_COLOR };
-                    scene.add(verticalBlueLine);
-                    verticalBlueLines.push(verticalBlueLine);
-                }
+    // Create text geometry for the label
+    const labelGeometry = new THREE.TextGeometry(textString, {
+        font: font,          // Ensure 'font' is loaded and accessible
+        size: 3,             // Adjust size as needed
+        height: 0.1,
+        curveSegments: 12,
+    });
+
+
+    // Compute bounding box for alignment
+    labelGeometry.computeBoundingBox();
+    const labelWidth = labelGeometry.boundingBox.max.x - labelGeometry.boundingBox.min.x;
+
+    // Create material for the label
+    const labelMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
+
+    // Create the label mesh
+    const labelMesh = new THREE.Mesh(labelGeometry, labelMaterial);
+
+// Calculate offsets to position the label next to the vertical line
+const padding = 2; // Adjust padding as needed
+const xOffset = -lineLength + padding; // Position to the right of the vertical line
+const yOffset = yPosition + verticalRedLineHeight / 2; // Align vertically with the vertical line
+
+    // Position the label mesh
+    labelMesh.position.set(
+        xOffset,
+        yOffset,
+        zPosition
+    );
+
+    // Rotate the label to face upwards (align with other text in the scene)
+    labelMesh.rotation.x = -Math.PI / 8; // Rotate 90 degrees in radians
+  
+    // Mark the mesh as a label for potential future reference
+    labelMesh.userData.isLabel = true;
+
+    // Add the label mesh to the scene
+    scene.add(labelMesh);
+}
+
+// **Add future habitability of earth line if data exists**
+if (entry["FUTURE HABITABILITY ON EARTH"]) {
+    const futureHabitability = entry["FUTURE HABITABILITY ON EARTH"];
+    const lineLength = mapToLogScale(futureHabitability);
+
+    const blueLineMaterial = new THREE.MeshBasicMaterial({ color: DATA_LINE_COLOR }); // Use global color
+    const blueLineGeometry = new THREE.BoxGeometry(lineLength, DATA_LINE_THICKNESS, DATA_LINE_THICKNESS); // Use global thickness
+    const blueLine = new THREE.Mesh(blueLineGeometry, blueLineMaterial);
+    blueLine.position.set(lineLength / 2, yPosition, zPosition);
+    blueLine.userData = { entry, originalColor: DATA_LINE_COLOR };
+    scene.add(blueLine);
+    blueLines.push(blueLine);
+
+    // Set the desired height for the vertical blue line
+    const verticalBlueLineHeight = 20; // Adjust this value as needed
+
+    // Create vertical blue line with fixed height
+    const verticalBlueLineGeometry = new THREE.BoxGeometry(
+        DATA_LINE_THICKNESS,
+        verticalBlueLineHeight,
+        DATA_LINE_THICKNESS
+    );
+    const verticalBlueLine = new THREE.Mesh(verticalBlueLineGeometry, blueLineMaterial.clone());
+    verticalBlueLine.position.set(
+        lineLength,
+        yPosition + verticalBlueLineHeight / 2,
+        zPosition
+    );
+    verticalBlueLine.userData = { entry, originalColor: DATA_LINE_COLOR };
+    scene.add(verticalBlueLine);
+    verticalBlueLines.push(verticalBlueLine);
+
+    // **Add text label next to vertical blue line**
+    const name = entry["NAME"] || "Unknown"; // Get the name or default to "Unknown"
+    const textString = `${name}\n${futureHabitability}`; // Combine name and future habitability with a newline
+
+    // Create text geometry for the label
+    const labelGeometry = new THREE.TextGeometry(textString, {
+        font: font,          // Ensure 'font' is loaded and accessible
+        size: 3,             // Adjust size as needed
+        height: 0.1,
+        curveSegments: 12,
+    });
+
+    // Compute bounding box for alignment
+    labelGeometry.computeBoundingBox();
+    const labelWidth = labelGeometry.boundingBox.max.x - labelGeometry.boundingBox.min.x;
+
+    // Create material for the label
+    const labelMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
+
+    // Create the label mesh
+    const labelMesh = new THREE.Mesh(labelGeometry, labelMaterial);
+
+    // Calculate offsets to position the label next to the vertical line
+    const xOffset = lineLength + 5; // Position to the right of the vertical line with some padding
+    const yOffset = yPosition + verticalBlueLineHeight / 2; // Align vertically with the vertical line
+
+    // Position the label mesh
+    labelMesh.position.set(
+        xOffset,
+        yOffset,
+        zPosition
+    );
+
+    // Rotate the label to face upwards (align with other text in the scene)
+    labelMesh.rotation.x = -Math.PI / 8; // Rotate 90 degrees in radians
+
+    // Mark the mesh as a label for potential future reference
+    labelMesh.userData.isLabel = true;
+
+    // Add the label mesh to the scene
+    scene.add(labelMesh);
+}
+            
             });
 
             // After adding all entries, create the central vertical line
@@ -365,15 +473,20 @@ xRotationSlider.addEventListener('input', function () {
 const toggleVerticalLinesCheckbox = document.getElementById('toggle-vertical-lines');
 toggleVerticalLinesCheckbox.addEventListener('change', function () {
     const showVertical = toggleVerticalLinesCheckbox.checked;
-    // Toggle visibility of horizontal and vertical red lines
-    redLines.forEach((line, index) => {
-        line.visible = !showVertical;
-        verticalRedLines[index].visible = showVertical;
+    // Toggle visibility of vertical red lines
+    verticalRedLines.forEach((line) => {
+        line.visible = showVertical;
     });
-    // Toggle visibility of horizontal and vertical blue lines
-    blueLines.forEach((line, index) => {
-        line.visible = !showVertical;
-        verticalBlueLines[index].visible = showVertical;
+    // Toggle visibility of vertical blue lines
+    verticalBlueLines.forEach((line) => {
+        line.visible = showVertical;
+    });
+    // Keep horizontal lines always visible
+    redLines.forEach((line) => {
+        line.visible = true;
+    });
+    blueLines.forEach((line) => {
+        line.visible = true;
     });
 });
 
