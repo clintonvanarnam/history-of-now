@@ -112,14 +112,33 @@ body, html {
   height: 100%;
 }
 
+/* Adjust the essay-container to allow hiding */
 .essay-container {
   width: 50%;
   overflow-y: auto;
-  height: 100vh; /* or another fixed height */
-    padding: 20px;
+  height: 100vh;
+  padding: 20px;
   box-sizing: border-box;
-  background-color: #f9f9f9; /* Optional background color */
+  background-color: #f9f9f9;
   z-index: 10;
+  transition: width 2s; /* Add transition for smoothness */
+}
+
+/* When in full-screen mode, hide the essay-container */
+.fullscreen .essay-container {
+  display: none;
+}
+
+/* Adjust the scene-container to occupy full width when in full-screen */
+.fullscreen .scene-container {
+  width: 100%;
+}
+
+/* Adjust the canvas when in full-screen */
+.fullscreen canvas {
+  width: 100vw;
+  height: 100vh;
+  left: 0;
 }
 
 .essay-content p {

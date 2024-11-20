@@ -147,6 +147,7 @@ fetch('data.json')
 
             entries = mergedEntries.reverse();
 
+            
             entries.forEach((entry, index) => {
                 const year = entry.DATE;
                 const textGeometry = new THREE.TextGeometry(year.toString(), {
@@ -496,6 +497,7 @@ const raycaster = new THREE.Raycaster();
 const mouse = new THREE.Vector2();
 let previousIntersectedObject = null;
 
+let highlightedObjects = [];
 function onMouseMove(event) {
     const rect = renderer.domElement.getBoundingClientRect();
 
@@ -504,15 +506,15 @@ function onMouseMove(event) {
 
     raycaster.setFromCamera(mouse, camera);
 
-    // Check intersections with planeMeshes, redLines, blueLines, verticalRedLines, verticalBlueLines
+    // Check intersections
     const intersects = raycaster.intersectObjects([...planeMeshes, ...redLines, ...blueLines, ...verticalRedLines, ...verticalBlueLines], false);
 
     if (intersects.length > 0) {
         const intersectedObject = intersects[0].object;
 
-        // If we have a previous object and it's different from the current
-        if (previousIntersectedObject && previousIntersectedObject !== intersectedObject) {
-            resetObjectColor(previousIntersectedObject);
+        // Reset previously highlighted objects if they are different from the current
+        if (highlightedObjects.length > 0 && !highlightedObjects.includes(intersectedObject)) {
+            resetHighlightedObjects();
         }
 
         // Handle current intersected object
@@ -520,10 +522,16 @@ function onMouseMove(event) {
             // Hovering over text
             intersectedObject.userData.textMesh.material.color.set(0xff0000);
             tooltip.innerText = intersectedObject.userData.textMesh.name;
-        } else {
+            highlightedObjects.push(intersectedObject.userData.textMesh);
+        } else if (intersectedObject.userData.entry) {
             // Hovering over a line
-            intersectedObject.material.color.set(0x00ff00); // Change line color to green on hover
-            tooltip.innerText = `Data: ${JSON.stringify(intersectedObject.userData.entry)}`;
+            const entry = intersectedObject.userData.entry;
+
+            // Find and highlight all lines associated with this entry
+            highlightLines(entry);
+
+            // Update the tooltip
+            tooltip.innerText = `Data: ${JSON.stringify(entry)}`;
         }
 
         // Show tooltip
@@ -531,17 +539,42 @@ function onMouseMove(event) {
         tooltip.style.left = `${event.clientX + 10}px`;
         tooltip.style.top = `${event.clientY + 10}px`;
         document.body.style.cursor = 'pointer';
-
-        previousIntersectedObject = intersectedObject;
     } else {
         // No intersections
-        if (previousIntersectedObject) {
-            resetObjectColor(previousIntersectedObject);
-            previousIntersectedObject = null;
+        if (highlightedObjects.length > 0) {
+            resetHighlightedObjects();
         }
         tooltip.style.opacity = 0;
         document.body.style.cursor = 'default';
     }
+}
+
+
+function highlightLines(entry) {
+    const associatedLines = [];
+
+    const highlightAndCollect = (linesArray) => {
+        linesArray.forEach(line => {
+            if (line.userData.entry === entry) {
+                line.material.color.set(0x00ff00);
+                associatedLines.push(line);
+            }
+        });
+    };
+
+    highlightAndCollect(redLines);
+    highlightAndCollect(verticalRedLines);
+    highlightAndCollect(blueLines);
+    highlightAndCollect(verticalBlueLines);
+
+    highlightedObjects = highlightedObjects.concat(associatedLines);
+}
+
+function resetHighlightedObjects() {
+    highlightedObjects.forEach(object => {
+        object.material.color.set(object.userData.originalColor);
+    });
+    highlightedObjects = [];
 }
 
 function resetObjectColor(object) {
@@ -627,6 +660,55 @@ renderer.domElement.addEventListener('mouseup', function () {
     isDragging = false;
     userInteracting = false;
 });
+
+// Variable to track full-screen state
+let isFullScreen = false;
+
+// Add event listener for the toggle button
+document.getElementById('toggle-fullscreen-btn').addEventListener('click', toggleFullScreen);
+
+function toggleFullScreen() {
+    isFullScreen = !isFullScreen;
+
+    if (isFullScreen) {
+        // Enter full-screen mode
+        enterFullScreen();
+    } else {
+        // Exit full-screen mode
+        exitFullScreen();
+    }
+}
+
+function enterFullScreen() {
+    // Adjust CSS classes
+    document.body.classList.add('fullscreen');
+
+    // Update renderer size and position
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.domElement.style.left = '0px';
+
+    // Update camera aspect
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+}
+
+function exitFullScreen() {
+    // Adjust CSS classes
+    document.body.classList.remove('fullscreen');
+
+    // Calculate halfWidth again
+    const fullWidth = window.innerWidth;
+    const fullHeight = window.innerHeight;
+    halfWidth = Math.floor(fullWidth / 2);
+
+    // Update renderer size and position
+    renderer.setSize(halfWidth, fullHeight);
+    renderer.domElement.style.left = `${halfWidth}px`;
+
+    // Update camera aspect
+    camera.aspect = halfWidth / fullHeight;
+    camera.updateProjectionMatrix();
+}
 
 // Add event listener for the position buttons
 document.getElementById('position1-btn').addEventListener('click', () => switchCameraPosition(0));
