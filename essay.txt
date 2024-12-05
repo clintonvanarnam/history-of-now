@@ -1,6 +1,7 @@
 [Position 0]
 <h2>MIT JOURNAL — ACCOMPANYING NARRATIVE</h2>
 <p>Thomas Moynihan</p>
+
 <h2>PREAMBLE #1</h2>
 <p>Humans are almost certainly the only creatures to have ever asked, and begun answering, the question ‘where is now?’. We are the only animals that have attempted to figure out how much past was required to produce our living present and to gauge how much future might be ahead.</p>
 <p>We are orienting creatures, after all. We seek to map the world, to better navigate our way through it. All knowledge is, ultimately, knowhow. And to orient ourselves within this cosmos we need to seek our location not only in space but also within time.</p>
@@ -12,6 +13,7 @@
 <p>But answers to this question, of how much past is behind and how much future might be ahead, has not always been this way. Our sense of where we are in time has changed over time, as our species has learned more about this universe and its workings. That is, as our kind has compiled records, cumulated lessons, and conversed with itself as it ages.</p>
 <p>Over the generations, the ratio of time behind to time ahead has shifted, sometimes dramatically. The following is an attempt to map this, to plot how our answers to the question ‘where is now?’ have evolved over time.</p>
 <p>§</p>
+
 <h2>PREAMBLE #2</h2>
 <p>Why does any of this matter? Because we need to orient ourselves in the world before we can act. We need orientation to know how to make our actions matter.</p>
 <p>In each of our individual lives, having a sense of where we might be within our biographies is of obvious practical importance. After all, if I somehow learned I am much closer to the end of my life, than to its beginning, this would undoubtedly change my outlook and behaviour drastically.</p>

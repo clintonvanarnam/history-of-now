@@ -587,11 +587,7 @@
       "UPPER BOUND FOR LIFE BEYOND EARTH": "1e,+40",
       "UPPER BOUND": "Proton decay - end of carbon-based life."
     },
-    {
-      "NAME": "WOLF & TOON",
-      "DATE": "2015",
-      "FUTURE HABITABILITY ON EARTH": "2,000,000,000"
-    },
+    
     {
       "NAME": "WMAP",
       "DATE": "2012",
@@ -611,6 +607,11 @@
       "NAME": "PLANK",
       "DATE": "2013",
       "AGE OF UNIVERSE": "13,820,000,000"
+    },
+    {
+      "NAME": "WOLF & TOON",
+      "DATE": "2015",
+      "FUTURE HABITABILITY ON EARTH": "2,000,000,000"
     },
     {
       "AGE OF CIVILIZATION": "6000"
