@@ -221,7 +221,7 @@ function updateSceneWithScaleWidth(scaleWidth) {
 }
 
 // Global variables for data line thickness and color
-const DATA_LINE_THICKNESS = 1.75;
+const DATA_LINE_THICKNESS = 1;
 
 // Arrays to store meshes
 const textMeshes = [];
@@ -301,7 +301,7 @@ entries.forEach((entry, index) => {
 
     // Create a thin rectangle from the bottom of the text extending horizontally
     const lineMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
-    const lineGeometry = new THREE.BoxGeometry(2000, 1, 1); // Adjust thickness as needed
+    const lineGeometry = new THREE.BoxGeometry(2000, .5, .5); // Adjust thickness as needed
     const line = new THREE.Mesh(lineGeometry, lineMaterial);
     line.position.set(0, yPosition, zPosition);
     scene.add(line);
