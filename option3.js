@@ -1,12 +1,5 @@
-// option2.js
 
-// Global variables
-let scrollVelocity = 0;
-let scrollOffset = 0;
-let isTransitioning = false;
-const transitionSpeed = 0.005;
-let userInteracting = false;
-let isDragging = false;
+
 
 // Target position and rotation vectors for smooth transition
 const targetPosition = new THREE.Vector3();
@@ -21,30 +14,45 @@ let halfWidth = Math.floor(fullWidth / 2); // Initialize halfWidth
 const camera = new THREE.PerspectiveCamera(
     50,                  // Field of view
     halfWidth / fullHeight, // Aspect ratio
-    0.1,                 // Near clipping plane
-    10000000               // Far clipping plane (increase this to match your scene)
+    10,                 // Near clipping plane
+    10000               // Far clipping plane (increase this to match your scene)
 );
 
-// Define camera positions
+// Define camera positions with a targetScale property
 const cameraPositions = [
     {
-        position: { x: 0, y: 84, z: -1000 },
-        rotation: { x: -.74, y: 0, z: 0 }
+        position: { x: 0, y: 99, z: -1610 },
+        rotation: { x: -.74, y: 0, z: 0 },
+        targetScale: 1e10 // For example, set scale to 100,000
     },
     {
         position: { x: 0, y: 139.5, z: -1202 },
-        rotation: { x: -.68, y: 0, z: 0 }
+        rotation: { x: -.68, y: 0, z: 0 },
+        targetScale: 1e9 // Set scale to 10,000,000
     },
     {
         position: { x: 0, y: 250, z: -1047.6 },
-        rotation: { x: -0.52, y: 0, z: 0 }
+        rotation: { x: -0.52, y: 0, z: 0 },
+        targetScale: 1e7
     },
     {
-        position: { x: 0, y: 860.48, z: 900.7 }, // New Position 4
-        rotation: { x: -0.47, y: 0, z: 0 }
+        position: { x: 0, y: 860.48, z: 900.7 },
+        rotation: { x: -0.47, y: 0, z: 0 },
+        targetScale: 1e5
     }
 ];
+// Initialize scaleWidth with the targetScale of the initial camera position
+let scaleWidth = cameraPositions[0].targetScale;
 
+// Global variables
+const DATA_COLOR = 0xff0000; // Red color
+let scrollVelocity = 0;
+let scrollOffset = 0;
+let isTransitioning = false;
+const transitionSpeed = 0.02;
+let userInteracting = false;
+let isDragging = false;
+let targetScaleWidth = scaleWidth; // Add this line
 // Set the initial camera position and rotation to position 1
 const initialPosition = cameraPositions[0];
 camera.position.set(
@@ -100,8 +108,6 @@ const linearScaleValues = {
     '100B': 1e11,
     '1T': 1e12
 };
-// Initialize scaleWidth with the default slider value
-let scaleWidth = Math.pow(10, parseFloat(document.getElementById('scale-slider').value));
 
 // Update scaleWidth and label on slider input
 const scaleSlider = document.getElementById('scale-slider');
@@ -109,11 +115,16 @@ const scaleValueLabel = document.getElementById('scale-value');
 
 scaleSlider.addEventListener('input', function () {
     const exponent = parseFloat(scaleSlider.value); // Get the slider value as a float
-    scaleWidth = Math.pow(10, exponent); // Update scaleWidth to 10^slider value
+    scaleWidth = Math.pow(10, exponent);
+
+    // Clamp scaleWidth to prevent rendering issues
+    const maxScale = 1e10; // Adjust based on your scene's requirements
+    const minScale = 1;   // Minimum scale width
+    scaleWidth = clamp(scaleWidth, minScale, maxScale);
+
     scaleValueLabel.textContent = exponent.toFixed(1); // Update the label to show the current exponent
 
-    console.log(`Scale Width updated to: ${scaleWidth}`);
-    // Call any necessary functions to update the scene using the new scaleWidth
+
     updateSceneWithScaleWidth(scaleWidth);
 });
 
@@ -136,13 +147,14 @@ function mapToLinearScale(value) {
     // Clamp the parsed value to avoid precision issues
     const clampedValue = clamp(parsedValue, minLinear, maxLinear);
 
-    // Use dynamic scaleWidth
-    return scaleWidth * (clampedValue - minLinear) / (maxLinear - minLinear);
+    // Compute length, then clamp it to avoid extremely large lengths
+    const length = scaleWidth * (clampedValue - minLinear) / (maxLinear - minLinear);
+    const maxLength = 1e6; // Adjust based on your scene's size
+    return clamp(length, 0, maxLength);
 }
 
 
 function updateSceneWithScaleWidth(scaleWidth) {
-    console.log(`Updating scene with new scaleWidth: ${scaleWidth}`);
 
     // Recalculate line lengths and positions
     redLines.forEach((line, index) => {
@@ -209,8 +221,7 @@ function updateSceneWithScaleWidth(scaleWidth) {
 }
 
 // Global variables for data line thickness and color
-const DATA_LINE_THICKNESS = 0.8;
-const DATA_LINE_COLOR = 0xff0000; // Red color
+const DATA_LINE_THICKNESS = 1.75;
 
 // Arrays to store meshes
 const textMeshes = [];
@@ -290,168 +301,167 @@ entries.forEach((entry, index) => {
 
     // Create a thin rectangle from the bottom of the text extending horizontally
     const lineMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
-    const lineGeometry = new THREE.BoxGeometry(2000, 0.2, 0.2); // Adjust thickness as needed
+    const lineGeometry = new THREE.BoxGeometry(2000, 1, 1); // Adjust thickness as needed
     const line = new THREE.Mesh(lineGeometry, lineMaterial);
     line.position.set(0, yPosition, zPosition);
     scene.add(line);
 
-        // Add past age of earth line if data exists
-    if (entry["PAST AGE OF EARTH"]) {
-        const pastAge = entry["PAST AGE OF EARTH"];
-        if (pastAge === '∞') {
-            // Add a sphere for infinity value
-            const sphereGeometry = new THREE.SphereGeometry(2.5, 32, 32); // Adjust size as needed (half the size)
-            const sphereMaterial = new THREE.MeshBasicMaterial({ color: DATA_LINE_COLOR });
-            const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
-            sphere.position.set(0, yPosition, zPosition); // Position on the central vertical line
-            sphere.userData = { entry, originalColor: DATA_LINE_COLOR };
-            scene.add(sphere);
-            planeMeshes.push(sphere); // Add sphere to planeMeshes for hover detection
-        } else {
-            const lineLength = mapToLinearScale(pastAge);
-    
-            const redLineMaterial = new THREE.MeshBasicMaterial({ color: DATA_LINE_COLOR }); // Use global color
-            const redLineGeometry = new THREE.BoxGeometry(lineLength, DATA_LINE_THICKNESS, DATA_LINE_THICKNESS); // Use global thickness
-            const redLine = new THREE.Mesh(redLineGeometry, redLineMaterial);
-            redLine.position.set(-lineLength / 2, yPosition, zPosition);
-            redLine.userData = { entry, originalColor: DATA_LINE_COLOR };
-            scene.add(redLine);
-            redLines.push(redLine);
-    
-            // Set the desired height for the vertical red line
-            const verticalRedLineHeight = 20; // Adjust this value as needed
-    
-            // Create vertical red line with fixed height
-            const verticalRedLineGeometry = new THREE.BoxGeometry(
-                DATA_LINE_THICKNESS,
-                verticalRedLineHeight,
-                DATA_LINE_THICKNESS
-            );
-            const verticalRedLine = new THREE.Mesh(verticalRedLineGeometry, redLineMaterial.clone());
-            verticalRedLine.position.set(
-                -lineLength,
-                yPosition + verticalRedLineHeight / 2,
-                zPosition
-            );
-            verticalRedLine.userData = { entry, originalColor: DATA_LINE_COLOR };
-            scene.add(verticalRedLine);
-            verticalRedLines.push(verticalRedLine);
-    
-            // Add text label next to vertical red line
-            const name = entry["NAME"] || "Unknown"; // Get the name or default to "Unknown"
-            const textString = `${name}\n${pastAge}`; // Combine name and past age with a newline
-    
-            // Create text geometry for the label
-            const labelGeometry = new THREE.TextGeometry(textString, {
-                font: font,          // Ensure 'font' is loaded and accessible
-                size: 3,             // Adjust size as needed
-                height: 0.1,
-                curveSegments: 12,
-            });
-    
-            // Compute bounding box for alignment
-            labelGeometry.computeBoundingBox();
-            const labelMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
-    
-            // Create the label mesh
-            const labelMesh = new THREE.Mesh(labelGeometry, labelMaterial);
-    
-            // Calculate offsets to position the label next to the vertical line
-            const padding = 2; // Adjust padding as needed
-            const xOffset = -lineLength + padding; // Position to the right of the vertical line
-            const yOffset = yPosition + verticalRedLineHeight / 2; // Align vertically with the vertical line
-    
-            // Position the label mesh
-            labelMesh.position.set(
-                xOffset,
-                yOffset,
-                zPosition
-            );
-    
-            // Rotate the label to face upwards (align with other text in the scene)
-            labelMesh.rotation.x = -Math.PI / 8; // Rotate 90 degrees in radians
-    
-            // Mark the mesh as a label for potential future reference
-            labelMesh.userData.isLabel = true;
-    
-            // Add the label mesh to the scene
-            scene.add(labelMesh);
-    
-            // Associate the label with the line
-            redLine.userData.label = labelMesh;
-        }
+// Add past age of earth line if data exists
+if (entry["PAST AGE OF EARTH"]) {
+    const pastAge = entry["PAST AGE OF EARTH"];
+    if (pastAge === '∞') {
+        // Add a sphere for infinity value
+        const sphereGeometry = new THREE.SphereGeometry(2.5, 32, 32); // Adjust size as needed (half the size)
+        const sphereMaterial = new THREE.MeshBasicMaterial({ color: DATA_COLOR });
+        const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+        sphere.position.set(0, yPosition, zPosition); // Position on the central vertical line
+        sphere.userData = { entry, originalColor: DATA_COLOR };
+        scene.add(sphere);
+        planeMeshes.push(sphere); // Add sphere to planeMeshes for hover detection
+    } else {
+        const lineLength = mapToLinearScale(pastAge);
+
+        const redLineMaterial = new THREE.MeshBasicMaterial({ color: DATA_COLOR }); 
+        const redLineGeometry = new THREE.BoxGeometry(lineLength, DATA_LINE_THICKNESS, DATA_LINE_THICKNESS);
+        const redLine = new THREE.Mesh(redLineGeometry, redLineMaterial);
+        redLine.position.set(-lineLength / 200, yPosition, zPosition);
+        redLine.userData = { entry, originalColor: DATA_COLOR };
+        scene.add(redLine);
+        redLines.push(redLine);
+
+        // Set the desired height for the vertical red line
+        const verticalRedLineHeight = 20; // Adjust this value as needed
+
+        const verticalRedLineGeometry = new THREE.BoxGeometry(
+            DATA_LINE_THICKNESS,
+            verticalRedLineHeight,
+            DATA_LINE_THICKNESS
+        );
+        const verticalRedLine = new THREE.Mesh(verticalRedLineGeometry, new THREE.MeshBasicMaterial({ color: DATA_COLOR }));
+        
+        verticalRedLine.position.set(
+            -lineLength + DATA_LINE_THICKNESS / 2 - 0.5, // Adjust to overlap slightly
+            yPosition + verticalRedLineHeight / 2,
+            zPosition
+        );
+        verticalRedLine.userData = { entry, originalColor: DATA_COLOR };
+        scene.add(verticalRedLine);
+        verticalRedLines.push(verticalRedLine);
+
+        // Add text label next to vertical red line
+        const name = entry["NAME"] || "Unknown"; // Get the name or default to "Unknown"
+        const textString = `${name}\n${pastAge}`; // Combine name and past age with a newline
+
+        // Create text geometry for the label
+        const labelGeometry = new THREE.TextGeometry(textString, {
+            font: font,          // Ensure 'font' is loaded and accessible
+            size: 3,             // Adjust size as needed
+            height: 0.1,
+            curveSegments: 12,
+        });
+
+        // Compute bounding box for alignment
+        labelGeometry.computeBoundingBox();
+        const labelMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
+
+        // Create the label mesh
+        const labelMesh = new THREE.Mesh(labelGeometry, labelMaterial);
+
+        // Calculate offsets to position the label next to the vertical line
+        const padding = 2; // Adjust padding as needed
+        const xOffset = -lineLength + padding; // Position to the right of the vertical line
+        const yOffset = yPosition + verticalRedLineHeight / 2; // Align vertically with the vertical line
+
+        // Position the label mesh
+        labelMesh.position.set(
+            xOffset,
+            yOffset,
+            zPosition
+        );
+
+        // Rotate the label to face upwards (align with other text in the scene)
+        labelMesh.rotation.x = 0; // Rotate 90 degrees in radians
+
+        // Mark the mesh as a label for potential future reference
+        labelMesh.userData.isLabel = true;
+
+        // Add the label mesh to the scene
+        scene.add(labelMesh);
+
+        // Associate the label with the line
+        redLine.userData.label = labelMesh;
     }
+}
     
-    // Add future habitability of earth line if data exists
-    if (entry["FUTURE HABITABILITY ON EARTH"]) {
-        const futureHabitability = entry["FUTURE HABITABILITY ON EARTH"];
-        if (futureHabitability === '∞') {
-            // Add a sphere for infinity value
-            const sphereGeometry = new THREE.SphereGeometry(2.5, 32, 32); // Adjust size as needed (half the size)
-            const sphereMaterial = new THREE.MeshBasicMaterial({ color: 0x0000ff });
-            const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
-            sphere.position.set(0, yPosition, zPosition); // Position on the central vertical line
-            sphere.userData = { entry, originalColor: 0x0000ff };
-            scene.add(sphere);
-            planeMeshes.push(sphere);
-        } else {
-            // Ensure positive length for future habitability
-            const lineLength = Math.abs(mapToLinearScale(futureHabitability));
-    
-            const blueLineMaterial = new THREE.MeshBasicMaterial({ color: 0x0000ff });
-            const blueLineGeometry = new THREE.BoxGeometry(lineLength, DATA_LINE_THICKNESS, DATA_LINE_THICKNESS);
-    
-            // Create horizontal blue line extending forward (positive X-axis)
-            const blueLine = new THREE.Mesh(blueLineGeometry, blueLineMaterial);
-            blueLine.position.set(lineLength / 2, yPosition, zPosition); // Start at the center, extend forward
-            blueLine.userData = { entry, originalColor: 0x0000ff };
-            scene.add(blueLine);
-            blueLines.push(blueLine);
-    
-            // Add a vertical blue line
-            const verticalBlueLineHeight = 20;
-            const verticalBlueLineGeometry = new THREE.BoxGeometry(
-                DATA_LINE_THICKNESS,
-                verticalBlueLineHeight,
-                DATA_LINE_THICKNESS
-            );
-            const verticalBlueLine = new THREE.Mesh(verticalBlueLineGeometry, blueLineMaterial.clone());
-            verticalBlueLine.position.set(
-                lineLength,
-                yPosition + verticalBlueLineHeight / 2,
-                zPosition
-            );
-            verticalBlueLine.userData = { entry, originalColor: 0x0000ff };
-            scene.add(verticalBlueLine);
-            verticalBlueLines.push(verticalBlueLine);
-    
-            // Add a label for the future habitability line
-            const name = entry["NAME"] || "Unknown";
-            const textString = `${name}\n${futureHabitability}`;
-    
-            const labelGeometry = new THREE.TextGeometry(textString, {
-                font: font,
-                size: 3,
-                height: 0.1,
-                curveSegments: 12,
-            });
-            labelGeometry.computeBoundingBox();
-            const labelMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
-            const labelMesh = new THREE.Mesh(labelGeometry, labelMaterial);
-    
-            const xOffset = lineLength + 5; // Add padding to position the label
-            const yOffset = yPosition + verticalBlueLineHeight / 2;
-    
-            labelMesh.position.set(xOffset, yOffset, zPosition);
-            labelMesh.rotation.x = -Math.PI / 8; // Rotate 90 degrees in radians
-            labelMesh.userData.isLabel = true;
-    
-            scene.add(labelMesh);
-    
-            // Associate the label with the line
-            blueLine.userData.label = labelMesh;
-        }
+// Add future habitability of earth line if data exists
+if (entry["FUTURE HABITABILITY ON EARTH"]) {
+    const futureHabitability = entry["FUTURE HABITABILITY ON EARTH"];
+    if (futureHabitability === '∞') {
+        // Add a sphere for infinity value
+        const sphereGeometry = new THREE.SphereGeometry(2.5, 32, 32); // Adjust size as needed (half the size)
+        const sphereMaterial = new THREE.MeshBasicMaterial({ color: DATA_COLOR });
+        const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+        sphere.position.set(0, yPosition, zPosition); // Position on the central vertical line
+        sphere.userData = { entry, originalColor: DATA_COLOR };
+        scene.add(sphere);
+        planeMeshes.push(sphere);
+    } else {
+        // Ensure positive length for future habitability
+        const lineLength = Math.abs(mapToLinearScale(futureHabitability));
+
+        const blueLineMaterial = new THREE.MeshBasicMaterial({ color: DATA_COLOR });
+        const blueLineGeometry = new THREE.BoxGeometry(lineLength, DATA_LINE_THICKNESS, DATA_LINE_THICKNESS);
+        const blueLine = new THREE.Mesh(blueLineGeometry, blueLineMaterial);
+
+        blueLine.position.set(lineLength / 2, yPosition, zPosition); // Start at the center, extend forward
+        blueLine.userData = { entry, originalColor: DATA_COLOR };
+        scene.add(blueLine);
+        blueLines.push(blueLine);
+
+        // Add a vertical blue line
+        const verticalBlueLineHeight = 20;
+        const verticalBlueLineGeometry = new THREE.BoxGeometry(
+            DATA_LINE_THICKNESS,
+            verticalBlueLineHeight,
+            DATA_LINE_THICKNESS
+        );
+        const verticalBlueLine = new THREE.Mesh(verticalBlueLineGeometry, new THREE.MeshBasicMaterial({ color: DATA_COLOR }));
+        verticalBlueLine.position.set(
+            lineLength - DATA_LINE_THICKNESS / 2 + 0.5, // Adjust to overlap slightly
+            yPosition + verticalBlueLineHeight / 2,
+            zPosition
+        );
+        verticalBlueLine.userData = { entry, originalColor: DATA_COLOR };
+        scene.add(verticalBlueLine);
+        verticalBlueLines.push(verticalBlueLine);
+
+        // Add a label for the future habitability line
+        const name = entry["NAME"] || "Unknown";
+        const textString = `${name}\n${futureHabitability}`;
+
+        const labelGeometry = new THREE.TextGeometry(textString, {
+            font: font,
+            size: 3,
+            height: 0.1,
+            curveSegments: 12,
+        });
+        labelGeometry.computeBoundingBox();
+        const labelMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
+        const labelMesh = new THREE.Mesh(labelGeometry, labelMaterial);
+
+        const xOffset = lineLength + 5; // Add padding to position the label
+        const yOffset = yPosition + verticalBlueLineHeight / 2;
+
+        labelMesh.position.set(xOffset, yOffset, zPosition);
+        labelMesh.rotation.x = 0; 
+        labelMesh.userData.isLabel = true;
+
+        scene.add(labelMesh);
+
+        // Associate the label with the line
+        blueLine.userData.label = labelMesh;
     }
+}
 });
 
 // After adding all entries, create the central vertical line
@@ -471,7 +481,7 @@ function addCentralVerticalLine() {
     }
 
     // Define the thickness of the rectangle
-    const thickness = 0.5; // Adjust for the width of the line
+    const thickness = 2; // Adjust for the width of the line
 
     // Calculate the length based on the distance between the first and last textMeshes
     const firstTextPosition = textMeshes[0].position;
@@ -779,18 +789,19 @@ document.getElementById('position2-btn').addEventListener('click', () => switchC
 document.getElementById('position3-btn').addEventListener('click', () => switchCameraPosition(2));
 document.getElementById('position4-btn').addEventListener('click', () => switchCameraPosition(3));
 
-// Function to switch to target camera position immediately or smoothly
 function switchCameraPosition(positionIndex) {
     const target = cameraPositions[positionIndex];
     targetPosition.set(target.position.x, target.position.y, target.position.z);
     targetRotation.set(target.rotation.x, target.rotation.y, target.rotation.z);
 
-    isTransitioning = true; // Start transitioning to the new position
-    userInteracting = false; // Prevent scrolling during the transition
-    scrollVelocity = 0; // Reset scroll velocity
+    isTransitioning = true; 
+    userInteracting = false; 
+    scrollVelocity = 0; 
 
-    // Set the base position to target position when the transition completes
     basePositionZ = target.position.z;
+
+    // Set the target scale width based on the chosen camera position
+    targetScaleWidth = target.targetScale;
 }
 
 // Track the current camera position index
@@ -799,7 +810,6 @@ let currentCameraIndex = 0;
 // Scroll position handling
 let basePositionZ = camera.position.z;
 
-// `animate` function for smooth scrolling and transitioning independently
 function animate() {
     requestAnimationFrame(animate);
 
@@ -815,22 +825,29 @@ function animate() {
         camera.rotation.y += (targetRotation.y - camera.rotation.y) * transitionSpeed;
         camera.rotation.z += (targetRotation.z - camera.rotation.z) * transitionSpeed;
 
+        // Interpolate the scale width
+        scaleWidth += (targetScaleWidth - scaleWidth) * transitionSpeed;
+
+        // Update the scene with the new scale width
+        updateSceneWithScaleWidth(scaleWidth);
+
         const positionTolerance = 0.1;
         const rotationTolerance = 0.001;
+        const scaleTolerance = 0.01;
 
         // Check if the transition is complete
         if (
             camera.position.distanceTo(targetPosition) < positionTolerance &&
             Math.abs(camera.rotation.x - targetRotation.x) < rotationTolerance &&
             Math.abs(camera.rotation.y - targetRotation.y) < rotationTolerance &&
-            Math.abs(camera.rotation.z - targetRotation.z) < rotationTolerance
+            Math.abs(camera.rotation.z - targetRotation.z) < rotationTolerance &&
+            Math.abs(scaleWidth - targetScaleWidth) < scaleTolerance
         ) {
             isTransitioning = false;
             basePositionZ = targetPosition.z; // Update the base position after transition
             scrollOffset = 0;
         }
     }
-
 
     renderer.render(scene, camera);
 }
@@ -859,10 +876,10 @@ window.addEventListener('keydown', function(event) {
     }
 });
 
-// Function to log camera data
 function logCameraData() {
     console.log(`Camera Position: x=${camera.position.x}, y=${camera.position.y}, z=${camera.position.z}`);
     console.log(`Camera Rotation: x=${camera.rotation.x}, y=${camera.rotation.y}, z=${camera.rotation.z}`);
+    console.log(`Scale Width: ${scaleWidth}`);
 }
 
 // Add an event listener to switch camera positions with the 'C' key
