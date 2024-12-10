@@ -81,10 +81,10 @@ sceneContainer.appendChild(renderer.domElement);
 // Set the renderer size to match the right half of the window
 renderer.setSize(halfWidth, fullHeight);
 
-// Position the renderer's DOM element (canvas) to the right half
+// Position the renderer's DOM element (canvas) to the left half
 renderer.domElement.style.position = 'absolute';
 renderer.domElement.style.top = '0px';
-renderer.domElement.style.left = `${halfWidth}px`;
+renderer.domElement.style.left = '0px';
 
 // Adjust the camera's aspect ratio
 camera.aspect = halfWidth / fullHeight;
@@ -221,7 +221,7 @@ function updateSceneWithScaleWidth(scaleWidth) {
 }
 
 // Global variables for data line thickness and color
-const DATA_LINE_THICKNESS = 1;
+const DATA_LINE_THICKNESS = .75;
 
 // Arrays to store meshes
 const textMeshes = [];
@@ -362,7 +362,7 @@ if (entry["PAST AGE OF EARTH"]) {
 
         // Compute bounding box for alignment
         labelGeometry.computeBoundingBox();
-        const labelMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
+        const labelMaterial = new THREE.MeshBasicMaterial({ color: DATA_COLOR });
 
         // Create the label mesh
         const labelMesh = new THREE.Mesh(labelGeometry, labelMaterial);
@@ -446,7 +446,7 @@ if (entry["FUTURE HABITABILITY ON EARTH"]) {
             curveSegments: 12,
         });
         labelGeometry.computeBoundingBox();
-        const labelMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
+        const labelMaterial = new THREE.MeshBasicMaterial({ color: DATA_COLOR });
         const labelMesh = new THREE.Mesh(labelGeometry, labelMaterial);
 
         const xOffset = lineLength + 5; // Add padding to position the label
@@ -481,7 +481,7 @@ function addCentralVerticalLine() {
     }
 
     // Define the thickness of the rectangle
-    const thickness = 2; // Adjust for the width of the line
+    const thickness = 1; // Adjust for the width of the line
 
     // Calculate the length based on the distance between the first and last textMeshes
     const firstTextPosition = textMeshes[0].position;

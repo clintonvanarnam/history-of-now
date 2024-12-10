@@ -1,8 +1,8 @@
 [Position 0]
-<h2>MIT JOURNAL — ACCOMPANYING NARRATIVE</h2>
-<p>Thomas Moynihan</p>
-
-<h2>PREAMBLE #1</h2>
+<h2>MIT Journal — Accompanying Narrative</h2>
+<h3>Thomas Moynihan</h3>
+<p>§</p>
+<h2>Preamble 1</h2>
 <p>Humans are almost certainly the only creatures to have ever asked, and begun answering, the question ‘where is now?’. We are the only animals that have attempted to figure out how much past was required to produce our living present and to gauge how much future might be ahead.</p>
 <p>We are orienting creatures, after all. We seek to map the world, to better navigate our way through it. All knowledge is, ultimately, knowhow. And to orient ourselves within this cosmos we need to seek our location not only in space but also within time.</p>
 <p>The following is the story of how our species gained its bearings in time. It is about how, throughout human history, we have come to grasp how large the established past is and how long the future ahead might be.</p>
@@ -14,7 +14,7 @@
 <p>Over the generations, the ratio of time behind to time ahead has shifted, sometimes dramatically. The following is an attempt to map this, to plot how our answers to the question ‘where is now?’ have evolved over time.</p>
 <p>§</p>
 
-<h2>PREAMBLE #2</h2>
+<h2>Preamble 2</h2>
 <p>Why does any of this matter? Because we need to orient ourselves in the world before we can act. We need orientation to know how to make our actions matter.</p>
 <p>In each of our individual lives, having a sense of where we might be within our biographies is of obvious practical importance. After all, if I somehow learned I am much closer to the end of my life, than to its beginning, this would undoubtedly change my outlook and behaviour drastically.</p>
 <p>This is why gaining our bearings in time is important. But this isn’t just about magnitude. It isn’t just about gauging the sheer amount of time behind versus how much future could be left ahead. It is also about fathoming how much of what happens is not inevitable, and thus how long the consequences of present choices will resonate.</p>
@@ -35,11 +35,11 @@
 <p>§</p>
 
 [Position 1]
-<h2>ANCIENT</h2>
+<h2>Ancient</h2>
 <p>It must be noted here that many non-European cultures have long held extremely expansive outlooks on time. To give just one example, Hindu cosmology measures the lifespan of Brahma, a Mahākalpa, in 311,040,000,000,000 years.</p>
 <p>But this massive interval was nested in a wider cycle of recurrence, which was expected to repeat. Indeed, within and without Europe—throughout the ancient world—the assumption was largely that time was eternal.</p>
 <p>Prior to the compiling of an archaeological and fossil record spanning all Earth’s continents, it was impossible to falsify the suspicion that human history never properly begun nor could ever properly end. Thus, people were liable to assume that human history had instead simply been going, much in the same way, forever. There was not yet evidence to disqualify such assumption.</p>
-<p>Accordingly, the Ancient Greeks and Romans tended to assume that time was eternal and that the future would, in the longer term, look like the past. Both Aristotle and Plato clamed that the past was such an “infinite period of time”, that all the possibilities of human history had not only been manifested, but had been manifested innumerably many times. As Aristotle put it:</p>
+<p>Accordingly, the Ancient Greeks and Romans tended to assume that time was eternal and that the future would, in the longer term, look like the past. Both <a href="">Aristotle</a> and Plato clamed that the past was such an “infinite period of time”, that all the possibilities of human history had not only been manifested, but had been manifested innumerably many times. As Aristotle put it:</p>
 <p>each art and science has often been developed as far as possible and has again perished […] not once nor twice nor occasionally, but infinitely often.</p>
 <p>By the same token, they believed they would all, inevitably, be manifested again, unceasingly throughout the measureless future, regardless of what happens now. In other words, you can’t irreversibly lose human possibilities, nor the possibility of human history as such. Plato and others spoke of the:</p>
 <p>…periodic destruction at long intervals of the surface of the earth by massive conflagrations…</p>
@@ -47,13 +47,13 @@
 <p>Before moving onward, it is important here to note that this is why ‘deep time’ is not just a different concept from ‘eternity’, but is, in important ways, contrary to it. In eternity, there is no orienting oneself. Indeed, Aristotle once reasoned that, if history cycles, then it doesn’t make sense to say we come after our ancestors, because, in another sense, we also come before them.</p>
 <p>In time, decisions can matter because not every possible outcome will eventually come to pass regardless. Possibilities can remain forever unrealised: meaning that taking one course of action, over any of the alternates, becomes consequential. In eternity, this is not so. In time, legacies can last and their influences run deep, but in eternity the only trajectory is an orbit. Eternity is shallow. It took accepting that the time ahead and behind is not only finite, but enormously finite, for the present to realise just how deep the consequences of its decisions might become entrenched.</p>
 <p>§</p>
-<h2>MEDIEVAL</h2>
+<h2>Medieval</h2>
 <p>With the rise of Christianity and later Islam during the Medieval period, belief in eternity was toppled. It was replaced with teaching that there is a universal direction to time: arcing from Genesis to Judgement Day. All worldly things have a beginning and will have an end. But this didn’t inculcate a sense of spacious future ahead. This was because the Abrahamic religions taught that apocalypse was imminent. Throughout the Middle Ages, each generation assumed it might be the last. They assumed they lived much nearer history’s end than its beginning.</p>
 <p>Moreover, most believers, throughout this time, actively wanted this end to come. It would liberate them, they believed, of their Earthly suffering and consecrate the final sorting of Good from Evil. Existence was considered fatally alloyed; the only way to purify it was to end it. Accordingly, it became a matter of interest predicting when the world might terminate.</p>
-<p>During this time, thinkers began using scripture to attempt calculating creation’s chronology and to ascertain its ambit. The Church Fathers, from Theophilus to Augustine to Jerome, converged on the conclusion that the Earth was several thousand years old, and that there could only be a few centuries ahead at most.</p>
+<p>During this time, thinkers began using scripture to attempt calculating creation’s chronology and to ascertain its ambit. The Church Fathers, from Theophilus to <a href="">Augustine</a> to Jerome, converged on the conclusion that the Earth was several thousand years old, and that there could only be a few centuries ahead at most.</p>
 <p>§</p>
-<h2>EARLY MODERN</h2>
-<p>Such belief persisted long after the Renaissance, persisting into the Early Modern period. Methods for measuring the bookends of time remained scriptural. Around 1650, the Irish theologian James Ussher famously calculated the world was created on 4004 BC and would end in around 2000 AD. He arrived at this conclusion, in part, by counting the number of ‘begats’ in the Old Testament: a way of tracing how many generations had passed since Adam.</p>
+<h2>Early Modern</h2>
+<p>Such belief persisted long after the Renaissance, persisting into the Early Modern period. Methods for measuring the bookends of time remained scriptural. Around 1650, the Irish theologian <a href = "google.com">James Ussher</a> famously calculated the world was created on 4004 BC and would end in around 2000 AD. He arrived at this conclusion, in part, by counting the number of ‘begats’ in the Old Testament: a way of tracing how many generations had passed since Adam.</p>
 <p>By this time, it was orthodox to assume the world was around five or six thousand years old, and would last for a further several centuries.</p>
 <p>Such a sense, of living nearer history’s beginning than its end, effected how people saw the world. It made them feel there simply wasn’t the room ahead within which current decisions or deeds could meaningfully resonate. Writing in 1658, Sir Thomas Browne perfectly captured this overriding sentiment. “’Tis too late to be ambitious”, he wrote:</p>
 <p>The great mutations of the world are acted, or time may be too short for our designes. […] We whose generations are ordained in this setting part of time, [are] necessitated to eye the remaining particle of futurity, [and] cannot excusably [anticipate any future] duration, which maketh pyramids pillars of snow, and all that’s past a moment.</p>
@@ -62,7 +62,7 @@
 <p>Why? Because this is the date when the “probability” of the New Testament’s message will have, rationally speaking, dwindled to zero. Thus, it is only reasonable to expect that, by that date, no one will believe in Christ anymore. The world, therefore, will be filled with unbelievers at this time. This, in the Bible, is given as a precondition for Jesus’s Second Coming and the end of the world. Hence, Craig forecast a future roughly 1,450 years long.</p>
 <p>By applying probability to the question of how plausible certain statements are, Craig’s mathematics was innovative. But his application of it has, of course, not stood time’s test. Nonetheless, it marks an interesting transitory link between scriptural prophecy and more recognisably scientific methods. Across the following, as this transition becomes starker, there is also a shift from definitive declarations of date toward estimates for upper bounds on how long the future could be, accidents aside.</p>
 <p>§</p>
-<h2>ENLIGHTENMENT</h2>
+<h2>Enlightenment</h2>
 <p>But then, as the 1700s opened, naturalists began looking to the physical Earth itself, rather than to Biblical scripture, to answer the question of where the present was located in time. Geology, in other words, had begun consolidating as a science.</p>
 <p>In 1763, the Russian polymath Mikhail Lomonosov appended an essay entitled ‘On the Strata of the Earth’ to a voluminous textbook on mining. In it, he referenced the prior attempts of “Christian chronologists”, before hinting that the testimony of the Earth itself must trump that of the Bible. Our planet, after all, is the “most senior Chronicler of all”. Lomonosov concluded the Eart “appears to be greater” than previous calculations had indicated.</p>
 <p>Having put the question to the rocks, it wasn’t long before scientists were widely accepting that the Earth had been around for leagues longer than was previously expected. Unsurprisingly, it became natural to expect that it might stick around for longer, too. So, the question was asked: given the testimony of the rocks, how long is left ahead?</p>
@@ -80,7 +80,7 @@
 <p>Far more concretely, in 1810, the German astronomer Wilhelm Olbers added yet another method to the mix. Rather than rely on cooling to put an upper limit on the planetary future, he wanted to ascertain how long it would take for a comet to collide with our planet, destroying it. Olbers put together a mathematical model for calculating the probability of a celestial body intersecting with Earth’s orbit, before calculating the likelihood of a collision. He output “219,631,150 Jahren”, or 220 million years.</p>
 <p>Olbers wasn’t saying that other eventualities might intervene in the meantime to make our planet uninhabitable, but it remains an innovative testament to the ways that, extrapolating from physical processes, forecasts on the future were gradually increasing.</p>
 <p>§</p>
-<h2>ROMANTIC</h2>
+<h2>Romantic</h2>
 <p>But we have a tendency to perceive infinity in any interval or distance that is larger than what we were previously familiar with. The fact we find some magnitude difficult to circumscribe in our limited minds is no evidence that, in reality, it lacks circumference. But, again, it can be easy to miss this. After all, being featureless and dimensionless, eternity is, in many ways, an easier thing to conceive than a count or collection of a billion discrete things. At the least, historically speaking, when people have encountered something whose limits they cannot directly see, they have tended to assume that it simply lacks limits. The same, of course, applies to chronology, beyond tangible scales.</p>
 <p>Hence, as timescales were bursting beyond prior limits, there was bound to be some who, in this, saw evidence of eternity.  There was to be something of an return to Aristotle’s picture of a globe without beginning nor end.</p>
 <p>Back in the 1780s, the Scottish geologist James Hutton reasoned that we should, in explaining geological effects, only conscript causes that are currently observable. But rallying everyday causes, like erosion, to explain canyons and mountains seemingly requires abundant aeons.</p>
@@ -92,7 +92,7 @@
 <p>§</p>
 
 [Position 2]
-<h2>INDUSTRIAL</h2>
+<h2>Industrial</h2>
 <p>But how much longer did life have left, here in this Solar System? What further development might be possible? Answering this question involved estimating how long it had take for life to arrive at its current grandeur and diversity, so as to gauge how much further development could be cumulated in the time left ahead.</p>
 <p>By the middle of the 1800s, the question of Earth’s future habitability was, by now, understood to hinge primarily upon the sun’s remaining lifespan. As one Scottish chemist wrote in 1852, it was now, thanks to “recent investigations of Carnot, Joule, W. Thomson, and others”, appreciated that all “mechanical effect (except in a few cases, such as tide miles, volcanic action, and a few more)” on Earth is ultimately “derived from the solar rays, directly or indirectly”. That is, either mediately or immediately, almost everything happening on Earth’s surface is driven by solar power.</p>
 <p>This was due to the birth of thermodynamics: the branch of mathematics enabling the modelling of flows of heat and the measurement of sources of energy. As John Tyndall wrote in 1863:</p>
@@ -161,7 +161,7 @@
 <p>1950s & 1960s</p>
 <p>Through the 1950s and 1960s, even better understanding of solar fusion was attained, again revising down estimates. In the 1965 sixth edition of his Biography of the Earth, Gamow changed his estimates to reflect this. Now, he wrote:</p>
 <p>…our sun is about 5 billion years old [and] it still has another 5 billion years to live…</p>
-<p>But, around this time, a rebellion was fomenting against the building evidence for a universe with a finite lifespan. Throughout the middle decades of the 20th century, Fred Hoyle—along with his collaborators Hermann Bondi and Thomas Gold—became convinced that evidence of expansion was not evidence of a cosmic beginning. They argued that the universe doesn’t age, and remains in a steady state over time, hypothesising that the appearance of expansion is caused by new matter and energy spontaneously emerging in the cosmic gaps between the galaxies. Accordingly, over time, the cosmos will always look the same at the largest levels. This was the last-ditch scientific attempt to return to the type of cosmos that Aristotle and Hutton had envisaged: one where, in the main, time has no bite. It was Hoyle who referred to the competing model as “the Big Bang Theory”, during a BBC interview, in an attempt to deride it.</p>
+<p>But, around this time, a rebellion was fomenting against the building evidence for a universe with a finite lifespan. Throughout the middle decades of the 20th century, Fred Hoyle—along with his collaborators Hermann Bondi and Thomas Gold—became convinced that evidence of expansion was not evidence of a cosmic beginning. They argued that the universe doesn’t age, and remains in a steady state over time, hypothesising that the appearance of expansion is caused by new matter and energy spontaneously emerging in the cosmic gaps between the galaxies. Accordingly, over time, the cosmos will always look the same at the largest levels. This was the last-ditch scientific attempt to return to the type of cosmos that <a href="">Aristotle</a> and <a href="">Hutton</a> had envisaged: one where, in the main, time has no bite. It was Hoyle who referred to the competing model as “the Big Bang Theory”, during a BBC interview, in an attempt to deride it.</p>
 <p>Such theorisation, however, was largely toppled in 1964. In this year, two radio astronomers discovered the ‘Cosmic Microwave Background Radiation’: essentially, an echo from the universe’s beginning. This was received as overwhelming evidence for the Big Bang Theory. It was tantamount to confirmation that the observable cosmos itself must have had a beginning, & has limits in space.</p>
 <p>Suddenly this meant that the old longing for eternal recurrence evaporated. No longer could there be comforting conviction that, regardless of what happens here and now, there will be repeats and recurrences of Earth and its life throughout eternity. By giving time bookends, in other words, the Big Bang cosmology implies that what happens here and now might matter forever. There won’t be reruns. We have one shot and one shot only.</p>
 <p>1970s & 1980s</p>
@@ -178,7 +178,7 @@
 <p>In 1983, a team of scientists laid out various far-flung scenarios in an article in The Scientific American. They were bold enough to make claims about how the evolution of the universe might impinge on its ability to support life over the longest term. They predicted that baryonic matter, the type of matter we are all made of, might evaporate within 10^32 years. But, looking past this, they argued this might not prove entirely fatal. After the decay of protons, intelligent life, they argued, might feed off blackholes. But, at 10^100 years, even these blackholes might evaporate. “Any constant rate of energy consumption by life forms”, they concluded, “will in due course become untenable”. Published in the same year, Jamal Nazrul Islam agreed with this hypothesis, forecasting proton decay in “approximately 10^45 -10^50 years”.</p>
 <p>As the previous millennium drew to a close, in 1999, astrophysicists Fred Adams and Greg Laughlin published their pathbreaking The Five Ages of the Universe. This provided the first book length treatment of the question of physical eschatology. Concurring larger with the aforementioned publication, Adams & Laughlin put proton decay, and the end of complex life, at 10^40 years in the future.</p>
 <p>But, between then and now, is a long time.</p>
-<h2>OUR PRECARIOUS PRESENT</h2>
+<h2>Our Precarious Present</h2>
 <p>[Conclusion tbd. On Fermi Paradox, cosmic silence, & the question: are we the first to ask the question ‘are we the first?’]</p>
 
 

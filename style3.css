@@ -1,10 +1,4 @@
-body, html {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-}
+
 @font-face {
   font-family: 'Copernicus Book';
   src: url(fonts/Copernicus-Book.ttf) format('truetype');
@@ -14,6 +8,32 @@ body, html {
   font-family: 'Copernicus Bold';
   src: url(fonts/Copernicus-Bold.ttf) format('truetype');
 }
+
+
+@font-face {
+  font-family: 'Copernicus Book';
+  src: url(fonts/Copernicus-Book.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Copernicus Bold';
+  src: url(fonts/Copernicus-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Cosmica Bold';
+  src: url(fonts/Cosmica-Bold.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Cosmica Book';
+  src: url(fonts/Cosmica-Book.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Cosmica Medium';
+  src: url(fonts/Cosmica-Medium.otf) format('opentype');
+}
 p {
   font-family: 'Copernicus Book', serif;
 }
@@ -21,15 +41,31 @@ p {
 h {
   font-family: 'Copernicus Bold', serif;
 }
-
-canvas {
-  display: block;
-  width: 50vw; /* Full viewport width */
-  height: 100vh; /* Full viewport height */
-  position: absolute; /* Ensures no extra margin/padding from the browser */
-  top: 0;
-  left: 50vw; /* Position canvas on the right half */
+h2 {
+  font-family: 'Cosmica Medium', sans-serif;
+ 
 }
+
+h3 {
+  font-family: 'Cosmica Medium', sans-serif;
+
+}
+
+
+a {
+  font-family: 'Cosmica Medium', sans-serif;
+  color: red;
+  font-size: 17px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 
 /* Bottom logarithmic scales */
 .log-scale {
@@ -100,41 +136,57 @@ canvas {
   z-index: 10;
 }
 
-/* style.css */
 body, html {
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  width: 100%;
   height: 100%;
 }
 
+/* Container uses flex to split the screen */
 .container {
   display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.scene-container {
+  width: 50%;
+  position: relative;
+  background: #ccc;
   height: 100%;
 }
 
-/* Adjust the essay-container to allow hiding */
+
+/* Essay container on the right side */
 .essay-container {
   width: 50%;
   overflow-y: auto;
   height: 100vh;
   padding: 20px;
   box-sizing: border-box;
-  background-color: #f9f9f9;
+  background-color: white;
   z-index: 10;
-  transition: width 2s; /* Add transition for smoothness */
+  transition: width 2s;
 }
 
-/* When in full-screen mode, hide the essay-container */
+.scene-container canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* When in full-screen mode, hide the essay-container and let scene-container expand */
 .fullscreen .essay-container {
   display: none;
 }
 
-/* Adjust the scene-container to occupy full width when in full-screen */
 .fullscreen .scene-container {
   width: 100%;
 }
 
-/* Adjust the canvas when in full-screen */
 .fullscreen canvas {
   width: 100vw;
   height: 100vh;
