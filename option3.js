@@ -186,7 +186,7 @@ window.addEventListener('load', () => {
                     planeMeshes.push(planeMesh);
 
                     const lineMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
-                    const lineGeometry = new THREE.BoxGeometry(2000, 0.5, 0.5);
+                    const lineGeometry = new THREE.BoxGeometry(2000, 0.25, 0.25);
                     const line = new THREE.Mesh(lineGeometry, lineMaterial);
                     line.position.set(0, yPosition, zPosition);
                     scene.add(line);
@@ -304,7 +304,7 @@ window.addEventListener('load', () => {
             return;
         }
 
-        const thickness = 1;
+        const thickness = .5;
         const firstTextPosition = textMeshes[0].position;
         const lastTextPosition = textMeshes[textMeshes.length - 1].position;
         const length = Math.abs(lastTextPosition.z - firstTextPosition.z) + 100;
