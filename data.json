@@ -1,619 +1,778 @@
 {
   "Sheet1": [
     {
-      "NAME": "Aristotle",
-      "DATE": "-300",
+      "NAME": "ARISTOTLE",
+      "DATE": "-350",
       "PAST AGE OF EARTH": "∞",
-      "PAST HABITABILITY": "∞",
       "FUTURE HABITABILITY ON EARTH": "∞",
       "EXPLANATION TYPE": "Metaphysical.",
-      "KILL MECHANISM": "n/a",
-      "UPPER BOUND": "No bound: eternal."
+      "SOURCE": "Aristotle, Physics, trans. C.D.C. Reeve (Cambridge, MA: Hackett, 1972)"
     },
     {
-      "NAME": "Hippolytus",
-      "DATE": "234",
-      "PAST AGE OF EARTH": "5734",
-      "FUTURE HABITABILITY ON EARTH": "266"
+      "NAME": "JESUS CHRIST",
+      "DATE": "30",
+      "FUTURE HABITABILITY ON EARTH": "30",
+      "EXPLANATION TYPE": "Prophetic.",
+      "KILL MECHANISM": "Divine.",
+      "SOURCE": "Matthew 24:34; Mark 13:30; Luke 21:32."
     },
     {
-      "NAME": "Augustine",
-      "DATE": "426",
-      "PAST AGE OF EARTH": "5600"
+      "NAME": "THEOPHILUS",
+      "DATE": "170",
+      "PAST AGE OF EARTH": "5,698",
+      "FUTURE HABITABILITY ON EARTH": "302",
+      "EXPLANATION TYPE": "Biblical.",
+      "KILL MECHANISM": "Divine.",
+      "SOURCE": "Theophilus, 'To Autolycus', in Ante-Nicene Fathers, ed. A. Roberts & J. Donaldson (Peabody, MA: Hendrickson, 1995), vol.II, 120."
     },
     {
-      "NAME": "Church Fathers",
-      "DATE": "c.500",
+      "NAME": "JULIUS AFRICANUS",
+      "DATE": "220",
+      "PAST AGE OF EARTH": "5,720",
+      "FUTURE HABITABILITY ON EARTH": "280",
+      "EXPLANATION TYPE": "Biblical.",
+      "KILL MECHANISM": "Divine.",
+      "SOURCE": "Julius Africanus, 'On Daniel', in Ante-Nicene Fathers, ed. A. Roberts & J. Donaldson (Peabody, MA: Hendrickson, 1995), vol.VI, 138."
+    },
+    {
+      "NAME": "HIPPOLYTUS",
+      "DATE": "204",
+      "PAST AGE OF EARTH": "5,704",
+      "FUTURE HABITABILITY ON EARTH": "270",
+      "EXPLANATION TYPE": "Biblical.",
+      "KILL MECHANISM": "Divine.",
+      "SOURCE": "Hippolytus of Rome, 'On Daniel', in Ante-Nicene Fathers, ed. A. Roberts & J. Donaldson (Peabody, MA: Hendrickson, 1995), vol.V, 179."
+    },
+    {
+      "NAME": "LACTANTIUS",
+      "DATE": "300",
+      "PAST AGE OF EARTH": "5,800",
+      "FUTURE HABITABILITY ON EARTH": "200",
+      "EXPLANATION TYPE": "Biblical.",
+      "KILL MECHANISM": "Divine.",
+      "SOURCE": "Lactantius, 'The Divine Institutes', in Ante-Nicene Fathers, ed. A. Roberts & J. Donaldson (Peabody, MA: Hendrickson, 1995), vol.VII, 220."
+    },
+    {
+      "NAME": "EUSEBIUS",
+      "DATE": "303",
+      "PAST AGE OF EARTH": "5,531",
+      "FUTURE HABITABILITY ON EARTH": "469",
+      "EXPLANATION TYPE": "Biblical.",
+      "KILL MECHANISM": "Divine.",
+      "SOURCE": "Eusebius, Chronicon (c.303 CE)"
+    },
+    {
+      "NAME": "HILARY OF POITIERS",
+      "DATE": "356",
+      "PAST AGE OF EARTH": "5,500",
       "FUTURE HABITABILITY ON EARTH": "500",
       "EXPLANATION TYPE": "Biblical.",
-      "KILL MECHANISM": "Divine."
+      "KILL MECHANISM": "Divine.",
+      "SOURCE": "Hilary of Poitiers, Commentary on Matthew, trans. D.H. Williams (Washington: Catholic Univeristy Press, 2012), XX, 6."
     },
     {
-      "NAME": "Bede",
+      "NAME": "AUGUSTINE",
+      "DATE": "420",
+      "PAST AGE OF EARTH": "5,500",
+      "EXPLANATION TYPE": "Biblical.",
+      "SOURCE": "Augustine, 'De Civitate Dei', in Nicene & Post-Nicene Fathers, ed. P. Schaff (Peabody, MA: Hendrickson, 1995), vol.II, 233."
+    },
+    {
+      "NAME": "GREGORY OF TOURS",
+      "DATE": "590",
+      "PAST AGE OF EARTH": "5,774",
+      "FUTURE HABITABILITY ON EARTH": "226",
+      "EXPLANATION TYPE": "Biblical.",
+      "SOURCE": "Gregorius Turonensis,  Historiarum  libri  X, ed. W. Arndt & B. Krusch (Hannoverae: Impensis Bibliopolii Hahniani, 1951), IV, 51."
+    },
+    {
+      "NAME": "BEDE",
       "DATE": "731",
-      "PAST AGE OF EARTH": "4683",
+      "PAST AGE OF EARTH": "4,683",
       "EXPLANATION TYPE": "Biblical.",
-      "KILL MECHANISM": "Divine."
+      "SOURCE": "Bede, De Temporibus (c.703 CE)."
     },
     {
-      "NAME": "John Lightfoot",
+      "NAME": "GEORGE SYNKELLOS",
+      "DATE": "810",
+      "PAST AGE OF EARTH": "6,302",
+      "EXPLANATION TYPE": "Biblical.",
+      "SOURCE": "George Synkellos, The Chronography of George Synkellos, trans. W. Adler & P. Tuffin (Oxford:  OUP, 2002)."
+    },
+    {
+      "NAME": "CHRISTEN LONGOMONATUS",
+      "DATE": "1622",
+      "PAST AGE OF EARTH": "5,586",
+      "EXPLANATION TYPE": "Astronomical (apogee).",
+      "SOURCE": "Christianus S. Longomonatus, Astronomia Danica (Amsterdam, 1622), I.2."
+    },
+    {
+      "NAME": "JOHANNES KEPLER",
+      "DATE": "1627",
+      "PAST AGE OF EARTH": "5,620",
+      "EXPLANATION TYPE": "Astronomical (apogee).",
+      "SOURCE": "Johannes Kepler, Tabulæ Rudolphinæ (Ulm, 1627), 54."
+    },
+    {
+      "NAME": "JOHN LIGHTFOOT",
       "DATE": "1644",
-      "PAST AGE OF EARTH": "5572",
+      "PAST AGE OF EARTH": "5,573",
       "EXPLANATION TYPE": "Biblical.",
-      "KILL MECHANISM": "Divine."
+      "SOURCE": "John Lightfoot,  The Harmony of the Four Evangelists (London, 1644)."
     },
     {
-      "NAME": "James Ussher",
+      "NAME": "JAMES USSHER",
       "DATE": "1650",
-      "PAST AGE OF EARTH": "5654"
+      "PAST AGE OF EARTH": "5,654",
+      "SOURCE": "James Ussher,  Annales Veteris Testamenti, a Prima Mundi Origine Deducti (London, 1650)."
     },
     {
-      "NAME": "Isaac Newton",
-      "DATE": "1704",
-      "PAST AGE OF EARTH": "5700",
-      "FUTURE HABITABILITY ON EARTH": "356",
-      "EXPLANATION TYPE": "Biblical.",
-      "KILL MECHANISM": "Divine."
+      "NAME": "HENRY POWER",
+      "DATE": "1664",
+      "PAST AGE OF EARTH": "5,000",
+      "FUTURE HABITABILITY ON EARTH": "150,000",
+      "EXPLANATION TYPE": "Astronomical (apogee).",
+      "KILL MECHANISM": "Divine.",
+      "SOURCE": "Henry Power,  Experimental Philosophy (London, 1665), 189-190."
+
     },
     {
-      "NAME": "John Craig",
-      "DATE": "1711",
-      "FUTURE HABITABILITY ON EARTH": "1,411"
-    },
-    {
-      "NAME": "Telliamed",
+      "NAME": "ISAAC NEWTON",
       "DATE": "1727",
-      "PAST AGE OF EARTH": "100,000",
-      "PAST HABITABILITY": "50,000",
-      "FUTURE HABITABILITY ON EARTH": "50,000",
-      "EXPLANATION TYPE": "Quasi-scientific.",
-      "KILL MECHANISM": "Dessication?"
+      "PAST AGE OF EARTH": "5715",
+      "EXPLANATION TYPE": "Biblical.",
+      "FUTURE HABITABILITY ON EARTH": "333",
+      "EXPLANATION TYPE": "Biblical.",
+      "KILL MECHANISM": "Divine.",
+      "SOURCE": "J.D. North 'Chronology & the Age of the World', in W. Yourgrau & A.D. Breck (eds.) Cosmology, History, & Theology (London: Plenum, 1977), 307; & S.D. Snobelen, 'Isaac Newton, the Apocalypse, & 2060 A.D.', Canadian Journal of History, 38 (2003), 537-551."
     },
     {
-      "NAME": "Mikhail Lomonosov",
-      "DATE": "1763",
-      "PAST AGE OF EARTH": "100,000",
-      "EXPLANATION TYPE": "Quasi-scientific.",
-      "KILL MECHANISM": "n/a"
+      "NAME": "JOHN CRAIG",
+      "DATE": "1711",
+      "FUTURE HABITABILITY ON EARTH": "1,411",
+      "EXPLANATION TYPE": "Probabilistic.",
+      "KILL MECHANISM": "Divine.",
+      "SOURCE": "J. Craig,  Christianae Principia Mathematica (London, 1699)."
     },
     {
-      "NAME": "Buffon",
+      "NAME": "BENOÎT DE MAILLET",
+      "DATE": "1727",
+      "PAST AGE OF EARTH": "2,000,000,000",
+      "FUTURE HABITABILITY ON EARTH": "1,000,000,000",
+      "EXPLANATION TYPE": "Speculative.",
+      "KILL MECHANISM": "Global dessication.",
+      "SOURCE": "Benoît de Maillet, Telliamed; or, Conversations between an Indian Philosopher & a French Missionary on the Diminution of the Sea, trans. A. V. Carozzi (Chicago: University of Illinois Press, 1968)."
+    },
+    {
+      "NAME": "BUFFON",
       "DATE": "1774",
       "PAST AGE OF EARTH": "74,832",
-      "PAST HABITABILITY": "38,849",
+      "PAST HABITABILITY OF EARTH": "38,849",
       "FUTURE HABITABILITY ON EARTH": "93,291.00",
       "EXPLANATION TYPE": "Scientific.",
-      "KILL MECHANISM": "Internal refrigeration"
+      "KILL MECHANISM": "Global freezing.",
+      "SOURCE": "Georges Buffon, Histoire naturelle, générale et particuliére (Paris, 1749-1804), vol.XXXI, 404 & 513."
     },
     {
-      "NAME": "Hutton",
-      "DATE": "1780",
-      "PAST AGE OF EARTH": "∞",
-      "PAST HABITABILITY": "∞",
-      "FUTURE HABITABILITY ON EARTH": "∞",
-      "EXPLANATION TYPE": "Scientific/metaphysical",
-      "KILL MECHANISM": "n/a"
-    },
-    {
-      "NAME": "Delisle de Sales",
-      "DATE": "1789",
+      "NAME": "JEAN DE SALES",
+      "DATE": "1777",
       "PAST AGE OF EARTH": "140,000",
-      "FUTURE HABITABILITY ON EARTH": "100,000"
+      "FUTURE HABITABILITY ON EARTH": "100,000",
+      "EXPLANATION TYPE": "Astronomical (obliquity).",
+      "KILL MECHANISM": "Planetary decrepitude.",
+      "SOURCE": "Jeans de Sales, De la philosophie de la nature (London, 1777), vol.I, 187."
     },
     {
-      "NAME": "Charles Fourier",
+      "NAME": "JAMES HUTTON",
+      "DATE": "1788",
+      "PAST AGE OF EARTH": "∞",
+      "FUTURE HABITABILITY ON EARTH": "∞",
+      "EXPLANATION TYPE": "Uniformitarian.",
+      "KILL MECHANISM": "None.",
+      "SOURCE": "James Hutton, ‘Theory of the Earth; or an Investigation of the Laws Observable in the Composition, Dissolution, and Restoration of Land upon the Globe’, Transactions of the Royal Society of Edinburgh, 1:2 (1788)."
+    },
+    {
+      "NAME": "CHARLES FOURIER",
       "DATE": "1808",
-      "PAST AGE OF EARTH": "5000",
+      "PAST AGE OF EARTH": "5,000",
       "FUTURE HABITABILITY ON EARTH": "75,000.00",
-      "EXPLANATION TYPE": "Metaphysical.",
-      "KILL MECHANISM": "Orbital inclination"
+      "EXPLANATION TYPE": "Astronomical (obliquity).",
+      "KILL MECHANISM": "Extreme weather.",
+      "SOURCE": "Charles Fourier, Théorie des quatre mouvemens et des destinées générales (Leipzig, 1808)."
     },
     {
-      "NAME": "Olbers",
+      "NAME": "WILHELM OLBERS",
       "DATE": "1810",
-      "FUTURE HABITABILITY ON EARTH": "220,000,000",
-      "EXPLANATION TYPE": "Scientific.",
-      "KILL MECHANISM": "Comet collision."
+      "FUTURE HABITABILITY ON EARTH": "219,531,150",
+      "EXPLANATION TYPE": "Probabilsitic.",
+      "KILL MECHANISM": "Probability of comet collision.",
+      "SOURCE": "Wilhelm Olbers, ‘Über die Möglichkeit, daß ein Comet mit der Erde zusammenstoßen könne’, Monatliche Correspondenz zur Beförderung der Erd- und Himmelskunde, 22 (1810), 409-50."
     },
     {
-      "NAME": "Lord Kelvin",
+      "NAME": "CHARLES LYELL",
+      "DATE": "1830",
+      "PAST AGE OF EARTH": "∞",
+      "FUTURE HABITABILITY ON EARTH": "∞",
+      "EXPLANATION TYPE": "Uniformitarian.",
+      "KILL MECHANISM": "None.",
+      "SOURCE": "Charles Lyell, Principles of Geology (London, 1830-33)."
+    },
+    {
+      "NAME": "WILLIAM THOMSON",
       "DATE": "1854",
       "PAST AGE OF EARTH": "32,000",
       "FUTURE HABITABILITY ON EARTH": "300,000",
-      "EXPLANATION TYPE": "Scientific ",
-      "KILL MECHANISM": "Solar cooling."
+      "EXPLANATION TYPE": "Thermodynamic.",
+      "KILL MECHANISM": "Solar aging & cooling.",
+      "SOURCE": "William Thomson, ‘On the Mechanical Energies of the Solar System’, Transaction of the Royal Society of Edinburgh, 21 (1854), 78."
     },
     {
-      "NAME": "Prestwich",
-      "DATE": "1859",
-      "HUMAN EMERGENCE": "20,000"
-    },
-    {
-      "NAME": "Lord Kelvin",
-      "DATE": "1862",
+      "NAME": "HERMANN VON HELMHOLTZ",
+      "DATE": "1854",
       "PAST AGE OF EARTH": "20,000,000",
-      "FUTURE HABITABILITY ON EARTH": "1,000,000",
-      "KILL MECHANISM": "Solar cooling."
+      "EXPLANATION TYPE": "Thermodynamic.",
+      "KILL MECHANISM": "Solar aging & cooling.",
+      "SOURCE": "Hermann von Helmholtz, ‘On the Interaction of Natural Forces’, Philosophical Magazine, 11 (1856), 489-578."
     },
     {
-      "NAME": "Lord Kelvin",
+      "NAME": "WILLIAM THOMSON",
       "DATE": "1862",
-      "PAST AGE OF EARTH": "400,000,000",
-      "FUTURE HABITABILITY ON EARTH": "4,000,000"
+      "PAST AGE OF EARTH": "20,000,000 - 400,000,000",
+      "EXPLANATION TYPE": "Thermodynamic.",
+      "KILL MECHANISM": "Earth's internal heat dissipation.",
+      "SOURCE": "William Thomson, ‘On the Secular Cooling of the Earth’, Transactions of the Royal Society of Edinburgh, 153 (1863), 157-170."
     },
     {
-      "NAME": "Lyell",
-      "DATE": "1863",
-      "HUMAN EMERGENCE": "100,000"
+      "NAME": "WILLIAM THOMSON",
+      "DATE": "1862",
+      "PAST AGE OF EARTH": "100,000,000 - 500,000,000",
+      "FUTURE HABITABILITY ON EARTH": "5,000,000 - 10,000,000",
+      "EXPLANATION TYPE": "Thermodynamic.",
+      "KILL MECHANISM": "Earth's internal heat dissipation.",
+      "SOURCE": "William Thomson, ‘On the Age of the Sun’s Heat’, Macmillan’s Magazine, Wednesday March 5th (1862), 293."
     },
     {
-      "NAME": "Lord Kelvin",
+      "NAME": "WILLIAM THOMSON",
       "DATE": "1868",
-      "PAST HABITABILITY": "100,000,000"
+      "PAST HABITABILITY ON EARTH": "100,000,000",
+      "EXPLANATION TYPE": "Thermodynamic.",
+      "KILL MECHANISM": "Earth's internal heat dissipation.",
+      "SOURCE": "William Thomson, ‘On Geological Time — 1868’, in Popular Lectures & Addresses (London, 1894), vol.II, 64."
     },
     {
-      "NAME": "Helmholtz",
+      "NAME": "HERMANN VON HELMHOLTZ",
       "DATE": "1871",
+      "PAST AGE OF EARTH": "22,000,000,000",
       "FUTURE HABITABILITY ON EARTH": "17,000,000",
-      "KILL MECHANISM": "Solar cooling."
+      "EXPLANATION TYPE": "Thermodynamic.",
+      "KILL MECHANISM": "Solar aging & cooling.",
+      "SOURCE": "Hermann von Helmholtz, ‘Ueber die Entstehung des Planetensystems — 1871’, in Vorträge & Reden (Braunschweig, 1884), vol.II, 84-85."
     },
     {
-      "NAME": "Lord Kelvin",
-      "DATE": "1876",
-      "PAST AGE OF EARTH": "50,000,000"
-    },
-    {
-      "NAME": "Newcomb",
+      "NAME": "SIMON NEWCOMB",
       "DATE": "1878",
       "FUTURE HABITABILITY ON EARTH": "12,000,000",
-      "EXPLANATION TYPE": "Scientific.",
-      "KILL MECHANISM": "Solar cooling."
+      "EXPLANATION TYPE": "Thermodynamic.",
+      "KILL MECHANISM": "Solar aging & cooling.",
+      "SOURCE": "Simon Newcomb, Popular Astronomy (New York, 1878), 513."
     },
     {
-      "NAME": "Young",
+      "NAME": "GEORGE DARWIN",
+      "DATE": "1879",
+      "PAST AGE OF EARTH": "54,000,000",
+      "EXPLANATION TYPE": "Astronomical (tidal forces).",
+      "KILL MECHANISM": "Earth-Moon tidal retardation.",
+      "SOURCE": "George H. Darwin, 'On the Precession of a Viscous Spheroid, & on the Remote History of the Earth', Philosphical Transactions of the Royal Soceity of London, 170 (1879), 447-538; George H. Darwin, 'On the Secular Changes in the Elements of the Orbit of a Satellite Revolving about a Tidally Distorted Planet', Philosphical Transactions of the Royal Soceity of London, 171 (1880), 713-891."
+    },
+    {
+      "NAME": "CHARLES AUGUSTUS YOUNG",
       "DATE": "1881",
       "FUTURE HABITABILITY ON EARTH": "10,000,000",
-      "KILL MECHANISM": "Solar cooling."
+      "EXPLANATION TYPE": "Thermodynamic.",
+      "KILL MECHANISM": "Solar aging & cooling.",
+      "SOURCE": "Charles A. Young, The Sun (New York, 1881), 276."
     },
     {
-      "NAME": "Lord Kelvin",
-      "DATE": "1881",
-      "PAST AGE OF EARTH": "50,000,000"
-    },
-    {
-      "DATE": "1881",
-      "PAST AGE OF EARTH": "20,000,000"
-    },
-    {
-      "NAME": "Lord Kelvin",
-      "DATE": "1897",
-      "PAST AGE OF EARTH": "20,000,000",
-      "FUTURE HABITABILITY ON EARTH": "5,000,000"
-    },
-    {
-      "NAME": "Lord Kelvin",
-      "DATE": "1897",
-      "PAST AGE OF EARTH": "40,000,000",
-      "FUTURE HABITABILITY ON EARTH": "6,000,000",
-      "EXPLANATION TYPE": "Scientific.",
-      "KILL MECHANISM": "Solar cooling."
-    },
-    {
-      "NAME": "Robert S Ball",
+      "NAME": "ROBERT S. BALL",
       "DATE": "1892",
-      "FUTURE HABITABILITY ON EARTH": "4,000,000",
-      "KILL MECHANISM": "Solar cooling."
+      "FUTURE HABITABILITY ON EARTH": "4,000,000 - 6,000,000",
+      "EXPLANATION TYPE": "Thermodynamic.",
+      "KILL MECHANISM": "Solar aging & cooling.",
+      "SOURCE": "Rrobert .S. Ball, ‘How Long Can the Earth Sustain Life?’, Forthnightly Review, 51 (1892), 490."
     },
     {
-      "NAME": "Camille Flammarion",
-      "DATE": "1894",
-      "FUTURE HABITABILITY ON EARTH": "20,000,000",
+      "NAME": "CAMILLE FLAMMARION",
+      "DATE": "1893",
+      "FUTURE HABITABILITY ON EARTH": "20,000,000 - 40,000,000",
       "EXPLANATION TYPE": "Fictional.",
-      "KILL MECHANISM": "Solar cooling."
+      "KILL MECHANISM": "Solar aging & cooling.",
+      "SOURCE": "Camille Flammarion, L'Astronomie populaire (Paris, 1893), 105."
     },
     {
-      "NAME": "Camille Flammarion",
-      "DATE": "1894",
-      "FUTURE HABITABILITY ON EARTH": "40,000,000"
-    },
-    {
-      "NAME": "H.G. Wells",
+      "NAME": "H.G. WELLS",
       "DATE": "1895",
       "FUTURE HABITABILITY ON EARTH": "30,000,000",
       "EXPLANATION TYPE": "Fictional.",
-      "KILL MECHANISM": "Solar cooling."
+      "KILL MECHANISM": "Solar aging & cooling.",
+      "SOURCE": "H.G. Wells, The Time Machine (London, 1895)."
     },
     {
-      "NAME": "Geike",
+      "NAME": "WILLIAM THOMSON (LORD KELVIN)",
+      "DATE": "1897",
+      "PAST AGE OF EARTH": "20,000,000 - 40,000,000",
+      "EXPLANATION TYPE": "Thermodynamic.",
+      "KILL MECHANISM": "Solar aging & cooling.",
+      "SOURCE": "William Thomson, 'The Age of the Earth as an Abode Fitted for life', Annual Report of the Smithsonian Institution (Washington, 1897), 337-357."
+    },
+    {
+      "NAME": "ARCHIBALD GEIKE",
       "DATE": "1899",
-      "PAST AGE OF EARTH": "100,000,000"
+      "PAST AGE OF EARTH": "100,000,000",
+      "EXPLANATION TYPE": "Sedimentological.",
+      "KILL MECHANISM": "Sediment accumulation.",
+      "SOURCE": "Archibald Geike, 'Address of the President', Report of the 69th Meeting of the British Assocation for the Advancement of Science (1899), 718-730."
     },
     {
-      "NAME": "Joly",
-      "DATE": "1908",
-      "PAST AGE OF EARTH": "80,000,000"
+      "NAME": "JOHN JOLY",
+      "DATE": "1900",
+      "PAST AGE OF EARTH": "95,000,000",
+      "EXPLANATION TYPE": "Ocean chemistry.",
+      "SOURCE": "John Joly, 'On the Geological Age of the Earth', British Association for the Advancement of Science, Report of the Seventeenth Meeting (1900), 369-379."
     },
     {
-      "NAME": "Arrhenius",
-      "DATE": "1908",
-      "FUTURE HABITABILITY ON EARTH": "5,000,000,000",
-      "EXPLANATION TYPE": "Scientific"
+      "NAME": "GEORGE DARWIN",
+      "DATE": "1903",
+      "FUTURE HABITABILITY ON EARTH": "100,000,000",
+      "EXPLANATION TYPE": "Nuclear physics.",
+      "KILL MECHANISM": "Solar aging & cooling.",
+      "SOURCE": "G.H. Darwin, ‘Radio-activity and the Age of the Sun’, Nature, 68 (1903), 496."
     },
     {
-      "NAME": "Arrhenius",
-      "DATE": "1908",
-      "FUTURE HABITABILITY ON EARTH": "1,000,000,000,000",
-      "EXPLANATION TYPE": "Scientific",
-      "KILL MECHANISM": "Solar colling."
+      "NAME": "SVANTE ARRHENIUS",
+      "DATE": "1906",
+      "FUTURE HABITABILITY ON EARTH": "300,000,000 - 3,000,000,000",
+      "EXPLANATION TYPE": "Nuclear physics.",
+      "KILL MECHANISM": "Solar aging & cooling.",
+      "SOURCE": "Svante Arrhenius, Worlds in the Making, trans. H. Borns (London, Harper, 1908) 93."
     },
     {
-      "NAME": "T.C. Chamberlin",
+      "NAME": "FRANK LESTER WARD",
+      "DATE": "1907",
+      "PAST AGE OF EARTH": "72,000,000",
+      "FUTURE HABITABILITY ON EARTH": "25,000,000",
+      "EXPLANATION TYPE": "Comparative planetology.",
+      "KILL MECHANISM": "Global decrepitude.",
+      "SOURCE": "Frank Lester Ward, 'Mars & Its Lesson', Brown Alumni Monthly, 7:8 (1907), 159-165.."
+    },
+    {
+      "NAME": "THOMAS CHROWDER CHAMBERLIN",
       "DATE": "1909",
-      "FUTURE HABITABILITY ON EARTH": "5,000,000",
-      "EXPLANATION TYPE": "Scientific.",
-      "KILL MECHANISM": "Solar cooling."
+      "FUTURE HABITABILITY ON EARTH": "5,000,000 - 50,000,000",
+      "EXPLANATION TYPE": "Nuclear physics.",
+      "KILL MECHANISM": "Solar aging & cooling.",
+      "SOURCE": "Thomas Chrowder Chamberlin, 'Geologic Forecast of the Future Opportunities of Our Race', Science, 30:783 (1909), 937-949."
     },
     {
-      "NAME": "T.C. Chamberlin",
-      "DATE": "1909",
-      "FUTURE HABITABILITY ON EARTH": "50,000,000"
-    },
-    {
-      "NAME": "Joly",
+      "NAME": "JOHN JOLY",
       "DATE": "1909",
       "FUTURE HABITABILITY ON EARTH": "100,000,000",
-      "KILL MECHANISM": "Earth's internal radiogenic heating."
+      "EXPLANATION TYPE": "Nuclear physics.",
+      "KILL MECHANISM": "Earth's internal radiogenic heating.",
+      "SOURCE": "John Joly, Radioactivity & Geology (London: Constable, 1909), 170."
     },
     {
-      "NAME": "Joseph McCabe",
+      "NAME": "ARTHUR HOLMES",
+      "DATE": "1913",
+      "PAST AGE OF EARTH": "320,000,000",
+      "EXPLANATION TYPE": "Sedimentological (limestone accumulation).",
+      "SOURCE": "Arthur Holmes, The Age of the Earth (London: Harper, 1913)."
+    },
+    {
+      "NAME": "HENRY ADAMS",
+      "DATE": "1919",
+      "FUTURE HABITABILITY ON EARTH": "20,000,000",
+      "EXPLANATION TYPE": "Thermodynamic.",
+      "KILL MECHANISM": "Solar aging & cooling ('...man & beast can look forward to a diversified agony of twenty million years...')",
+      "SOURCE": "Henry Adams, The Tendency of History (London: Macmillan, 1919), 48."
+    },
+    {
+      "NAME": "ARTHUR S. EDDINGTON",
+      "DATE": "1920",
+      "FUTURE HABITABILITY ON EARTH": "15,000,000,000",
+      "EXPLANATION TYPE": "Nuclear physics.",
+      "KILL MECHANISM": "Solar aging & cooling.",
+      "SOURCE": "A.S. Eddington, ‘The Internal Constitution of Stars’, The Observatory, 43:557 (1920), 298."
+    },
+    {
+      "NAME": "JOSEPH McCABE",
       "DATE": "1921",
-      "BEHAVIOURAL MODERNITY": "50,000",
-      "AGE OF CIVILIZATION": "10,000",
-      "FUTURE HABITABILITY ON EARTH": "4,000,000",
-      "EXPLANATION TYPE": "Scientific.",
-      "KILL MECHANISM": "Solar cooling."
+      "FUTURE HABITABILITY ON EARTH": "4,000,000 - 10,000,000",
+      "EXPLANATION TYPE": "Nuclear physics.",
+      "KILL MECHANISM": "Solar aging & cooling.",
+      "SOURCE": "Joseph McCabe, The End of the World (London: Routledge, 1921), 112-115."
     },
     {
-      "NAME": "Joseph McCabe",
-      "DATE": "1921",
-      "FUTURE HABITABILITY ON EARTH": "4,000,000,000"
-    },
-    {
-      "NAME": "Friedman",
+      "NAME": "ALEXANDER FRIEDMANN",
       "DATE": "1923",
-      "AGE OF UNIVERSE": "10,000,000,000"
+      "PAST AGE OF UNIVERSE": "10,000,000,000",
+      "EXPLANATION TYPE": "Relativistic physics.",
+      "SOURCE": "Alexander Friedmann, Мир как пространство и время (Petrograd: Academia, 1923)."
     },
     {
-      "NAME": "Mather",
+      "NAME": "KIRTLEY F. MATHER",
       "DATE": "1924",
-      "HUMAN EMERGENCE": "40,000",
-      "FUTURE HABITABILITY ON EARTH": "5,000,000",
-      "EXPLANATION TYPE": "Scientific.",
-      "KILL MECHANISM": "Solar cooling."
+      "FUTURE HABITABILITY ON EARTH": "5,000,000 - 50,000,000",
+      "EXPLANATION TYPE": "Geologic.",
+      "KILL MECHANISM": "Solar aging & cooling.",
+      "SOURCE": "Kirtley F. Mather, 'Geologic Factors in Organic Evolution', Ohio Journal of Science, 24:3 (1924), 141."
     },
     {
-      "NAME": "Mather",
-      "DATE": "1924",
-      "FUTURE HABITABILITY ON EARTH": "50,000,000"
-    },
-    {
-      "NAME": "E.E. Fournier",
+      "NAME": "E.E. FOURNIER",
       "DATE": "1925",
-      "AGE OF GALAXY": "7,000,000,000,000",
-      "PAST AGE OF EARTH": "1,000,000,000",
-      "HUMAN EMERGENCE": "500,000",
-      "AGE OF CIVILIZATION": "5,000",
-      "FUTURE HABITABILITY ON EARTH": "1,000,000,000,000",
-      "KILL MECHANISM": "Solar cooling."
+      "PAST AGE OF EARTH": "100,000,000",
+      "FUTURE HABITABILITY ON EARTH": "10,000,000",
+      "EXPLANATION TYPE": "Nuclear physics.",
+      "KILL MECHANISM": "Solar aging & cooling.",
+      "SOURCE": "Joseph McCabe, The End of the World (London: Routledge, 1921), 112-115."
     },
     {
-      "NAME": "Haldane",
+      "NAME": "J.B.S. HALDANE",
       "DATE": "1926",
-      "FUTURE HABITABILITY ON EARTH": "36,000,000",
-      "UPPER BOUND FOR LIFE BEYOND EARTH": "80,000,000,000,000",
-      "KILL MECHANISM": "Lunar disintegration",
-      "UPPER BOUND": "Galactic habitability."
+      "FUTURE HABITABILITY ON EARTH": "1,000,000,000,000",
+      "FUTURE FOR LIFE IN WIDER UNIVERSE": "80,000,000,000,000",
+      "EXPLANATION TYPE": "Speculative.",
+      "SOURCE": "J.B.S. Haldane, The Last Judgement (London: Harper's, 1927), 36."
     },
     {
-      "NAME": "Jeans",
+      "NAME": "ARTHUR HOLMES",
+      "DATE": "1927",
+      "PAST AGE OF EARTH": "1,600,000,000 - 3,500,000,000",
+      "EXPLANATION TYPE": "Radiometric dating (uranium decay in crust).",
+      "SOURCE": "Arthur Holmes, The Age of the Earth: An Introduction to Geological Ideas (London: Benn, 1927)."
+    },
+    {
+      "NAME": "JAMES JEANS",
       "DATE": "1928",
-      "AGE OF GALAXY": "5,000,000,000,000",
-      "AGE OF SUN": "7,000,000,000,000"
+      "PAST AGE OF THE UNIVERSE": "10,000,000,000,000",
+      "PAST AGE OF EARTH": "7,000,000,000,000 - 8,000,000,000,000",
+      "EXPLANATION TYPE": "Cosmological (equipartition of stellar motions).",
+      "SOURCE": "James Jeans, 'The Physics of the Universe', Supplement to Nature, 3079 (1928), 692-697."
     },
     {
-      "NAME": "Jeans",
-      "DATE": "1928",
-      "AGE OF GALAXY": "10,000,000,000,000",
-      "AGE OF SUN": "8,000,000,000,000"
-    },
-    {
-      "NAME": "Jeans",
+      "NAME": "JAMES JEANS",
       "DATE": "1929",
-      "HUMAN EMERGENCE": "300,000",
-      "ESTIMATE FOR HOMO SAPIENS SURVIVAL": "2,000,000,000"
-    },
-    {
-      "NAME": "Jeans",
-      "DATE": "1929",
-      "ESTIMATE FOR HOMO SAPIENS SURVIVAL": "2,000,000,000,000"
-    },
-    {
-      "NAME": "Rutherford",
-      "DATE": "1930",
-      "PAST AGE OF EARTH": "3,400,000,000.00"
-    },
-    {
-      "NAME": "James Jeans",
-      "DATE": "1930",
-      "AGE OF UNIVERSE": "200,000,000,000,000",
-      "AGE OF GALAXY": "5,000,000,000,000",
-      "AGE OF SUN": "7,000,000,000,000",
+      "PAST AGE OF THE UNIVERSE": "200,000,000,000,000",
       "PAST AGE OF EARTH": "2,000,000,000",
       "PAST HABITABILITY": "300,000,000",
-      "HUMAN EMERGENCE": "300,000",
-      "BEHAVIOURAL MODERNITY": "100,000",
-      "AGE OF CIVILIZATION": "5000",
-      "FUTURE HABITABILITY ON EARTH": "2,000,000,000",
-      "EXPLANATION TYPE": "Scientific.",
-      "KILL MECHANISM": "Solar cooling."
+      "FUTURE HABITABILITY ON EARTH": "1,000,000,000,000",
+      "EXPLANATION TYPE": "Cosmological & nuclear physics.",
+      "KILL MECHANISM": "Solar aging & cooling."
     },
     {
-      "NAME": "James Jeans",
-      "DATE": "1930",
-      "AGE OF GALAXY": "5,000,000,000,000",
-      "FUTURE HABITABILITY ON EARTH": "1,000,000,000,000"
-    },
-    {
-      "NAME": "Barnes",
+      "NAME": "E.W. BARNES",
       "DATE": "1931",
-      "AGE OF GALAXY": "5,000,000,000,000",
+      "PAST AGE OF UNIVERSE": "5,000,000,000,000",
       "PAST AGE OF EARTH": "3,000,000,000",
-      "PAST HABITABILITY": "1,000,000,000"
+      "EXPLANATION TYPE": "Cosmological (equipartition of stellar motions).",
+      "SOURCE": "E.W. Barnes, 'Evolution of the Universe', Nature, 128 (1931), 710-722."
     },
     {
-      "NAME": "Eddington",
+      "NAME": "ARTHUR S. EDDINGTON",
       "DATE": "1933",
-      "AGE OF UNIVERSE": "10,000,000,000",
-      "AGE OF SUN": "10,000,000,000"
+      "PAST AGE OF UNIVERSE": "10,000,000,000",
+      "EXPLANATION TYPE": "Cosmic expansion.",
+      "SOURCE": "Arthur S. Eddington, The Expanding Universe (Cambridge: CUP, 1933), 80."
     },
     {
-      "NAME": "Barnes",
+      "NAME": "E.W. BARNES",
       "DATE": "1933",
-      "UPPER BOUND FOR LIFE BEYOND EARTH": "50,000,000,000,000",
-      "UPPER BOUND": "Heat death."
+      "FUTURE FOR LIFE IN WIDER UNIVERSE": "10,000,000,000,000",
+      "EXPLANATON TYPE": "Thermodynamic.",
+      "KILL MECHANISM": "Heat death.",
+      "SOURCE": "E.W. Barnes, Scientific Theory & Religion (London: Macmillan, 1933), 404."
     },
     {
-      "NAME": "C.E.M. Joad",
+      "NAME": "C.E.M. JOAD",
       "DATE": "1934",
-      "PAST HABITABILITY": "1,200,000,000",
-      "HUMAN EMERGENCE": "1,000,000",
-      "AGE OF CIVILIZATION": "3,000",
-      "FUTURE HABITABILITY ON EARTH": "1,000,000,000,000",
-      "EXPLANATION TYPE": "Scientific (probably sourced from Jeans)",
-      "KILL MECHANISM": "Solar cooling."
+      "PAST AGE OF EARTH": "1,200,000,000",
+      "FUTURE HABITABILITY ON EARTH": "1,200,000,000,000",
+      "EXPLANATION TYPE": "Speculative.",
+      "KILL MECHANISM": "Solar cooling.",
+      "SOURCE": "C.E.M. Joad, 'The Future & Prospects of Life', The Contemporary Review, 145 (1934), 177-183."
     },
     {
-      "NAME": "Haldane",
+      "NAME": "J.B.S. HALDANE",
       "DATE": "1935",
-      "UPPER BOUND FOR LIFE BEYOND EARTH": "80,000,000,000,000",
-      "UPPER BOUND": "Galactic Habitability"
+      "FUTURE FOR LIFE IN WIDER UNIVERSE": "80,000,000,000,000",
+      "EXPLANATION TYPE": "Speculative.",
+      "KILL MECHANISM": "?",
+      "SOURCE": "J.B.S. Haldane, The Outlook of Science (London: Kegan Paul, 1935), 137."
     },
     {
-      "NAME": "H.P. Maxim",
-      "DATE": "1936",
-      "HUMAN EMERGENCE": "500,000",
-      "AGE OF CIVILIZATION": "5,000",
-      "FUTURE HABITABILITY ON EARTH": "1,000,000,000,000",
-      "EXPLANATION TYPE": "Scientific",
-      "KILL MECHANISM": "Solar cooling."
-    },
-    {
-      "NAME": "E. Hubble",
+      "NAME": "EDWIN HUBBLE",
       "DATE": "1937",
-      "AGE OF UNIVERSE": "2,000,000,000"
+      "PAST AGE OF UNIVERSE": "1,860,000,000",
+      "EXPLANATION TYPE": "Hubble Constant",
+      "SOURCE": "Edwin Hubble,The Observational Approach to Cosmology (Oxford: OUP, 1937), 42-43."
     },
     {
-      "NAME": "Gamov",
+      "NAME": "GEORGE GAMOW",
       "DATE": "1940",
       "FUTURE HABITABILITY ON EARTH": "10,000,000,000",
-      "EXPLANATION TYPE": "Scientific.",
-      "KILL MECHANISM": "Solar expansion."
+      "EXPLANATION TYPE": "Nuclear physics.",
+      "KILL MECHANISM": "Solar aging & expansion.",
+      "SOURCE": "G. Gamow, The Birth & Death of the Sun (New York: Viking Press, 1940)."
     },
     {
-      "NAME": "H.N. Russell",
+      "NAME": "HENRY NORRIS RUSSELL",
       "DATE": "1940",
-      "AGE OF UNIVERSE": "2,000,000,000",
+      "PAST AGE OF UNIVERSE": "2,000,000,000",
       "PAST AGE OF EARTH": "1,800,000,000",
       "FUTURE HABITABILITY ON EARTH": "10,000,000,000",
-      "UPPER BOUND FOR LIFE BEYOND EARTH": "100,000,000,000",
-      "KILL MECHANISM": "Solar expansion.",
-      "UPPER BOUND": "Heat death."
+      "FUTURE FOR LIFE IN WIDER UNIVERSE": "100,000,000,000",
+      "EXPLANATION TYPE": "Cosmological.",
+      "KILL MECHANISM": "Solar aging (Earth); Heat death (wider universe).",
+      "SOURCE": "Henry Norris Russell,'The Time-Scale of the Universe', Science, 92:2376 (1940), 19-27."
     },
     {
-      "NAME": "Mather",
+      "NAME": "KIRTLEY F. MATHER",
       "DATE": "1940",
-      "PAST AGE OF EARTH": "1,500,000,000",
-      "FUTURE HABITABILITY ON EARTH": "60,000,000",
-      "ESTIMATE FOR HOMO SAPIENS SURVIVAL": "500,000"
+      "FUTURE HABITABILITY ON EARTH": "1,500,000,000 - 2,000,000,000",
+      "EXPLANATION TYPE": "Geological & cosmological.",
+      "KILL MECHANISM": "Solar aging & cooling.",
+      "SOURCE": "Kirtley F. Mather, 'The Future of Man as an Inhabitant of the Earth', Sigma Xi Quarterly, 28:1 (1940), 3-14, 20."
     },
     {
-      "NAME": "Mather",
+      "NAME": "KIRTLEY F. MATHER",
       "DATE": "1940",
-      "FUTURE HABITABILITY ON EARTH": "600,000,000",
-      "EXPLANATION TYPE": "Scientific.",
-      "KILL MECHANISM": "Geological."
+      "FUTURE HABITABILITY ON EARTH": "1,500,000,000 - 2,000,000,000",
+      "EXPLANATION TYPE": "Geological & cosmological.",
+      "KILL MECHANISM": "Solar aging & cooling.",
+      "SOURCE": "Kirtley F. Mather, 'Man's Earthly Future: How Long Will Our Earth Survive & How Long Will the Species Called Man Endure on It?, Scientific American, 162:4 (1940), 210-212."
     },
     {
-      "NAME": "Gamow",
+      "NAME": "GEORGE GAMOW",
       "DATE": "1941",
       "PAST AGE OF EARTH": "2,000,000,000",
-      "PAST HABITABILITY": "1,000,000,000",
-      "HUMAN EMERGENCE": "500,000",
-      "AGE OF CIVILIZATION": "6000",
       "FUTURE HABITABILITY ON EARTH": "10,000,000,000",
-      "EXPLANATION TYPE": "Scientific.",
-      "KILL MECHANISM": "Solar expansion."
+      "EXPLANATION TYPE": "Nuclear physics.",
+      "KILL MECHANISM": "Solar aging & expansion.",
+      "SOURCE": "G. Gamow, The Biography of the Earth (New York: Viking Press, 1941), 189."
     },
     {
-      "NAME": "Holmes",
+      "NAME": "ARTHUR HOLMES",
       "DATE": "1947",
-      "PAST AGE OF EARTH": "3,350,000,000"
+      "PAST AGE OF EARTH": "3,350,000,000",
+      "EXPLANATION TYPE": "Radiometric dating (lead isotopes in crust).",
+      "SOURCE": "Arthur Holmes, 'A Revised Estimate of the Age of the Earth', Nature, 159 (1947), 127-128."
     },
     {
-      "NAME": "Hoyle, Bondi, & Gold",
+      "NAME": "HERMANN BONDI, THOMAS GOLD, & FRED HOYLE",
       "DATE": "1948",
-      "AGE OF UNIVERSE": "100",
-      "UPPER BOUND FOR LIFE BEYOND EARTH": "100"
+      "AGE OF UNIVERSE": "∞",
+      "FUTURE FOR LIFE IN WIDER UNIVERSE": "∞",
+      "EXPLANATION TYPE": "Continuous Creation.",
+      "SOURCE": "H. Bondi, T. Gold, F. Hoyle, ‘The Steady-State Theory of the Expanding Universe’, Monthly Notices of the Royal Astronomical Society, 108:3 (1948), 252-270."
     },
     {
-      "NAME": "A.G. Wilson",
-      "DATE": "1950",
-      "AGE OF UNIVERSE": "3,000,000,000",
-      "AGE OF GALAXY": "3,000,000,000",
-      "FUTURE HABITABILITY ON EARTH": "4,000,000,000",
-      "KILL MECHANISM": "Solar expansion."
+      "NAME": "ALBERT G. WILSON",
+      "DATE": "1953",
+      "PAST AGE OF UNIVERSE": "3,000,000,000",
+      "FUTURE HABITABILITY ON EARTH": "4,000,000,000 - 5,000,000,000",
+      "EXPLANATION TYPE": "Geological & cosmological.",
+      "KILL MECHANISM": "Solar aging & expansion.",
+      "SOURCE": "Albert G. Wilson, 'Astronomy & Eschatology', Engineering & Science, 16 (1953), 7-20."
     },
     {
-      "NAME": "Gamow",
+      "NAME": "ERNST ÖPIK",
+      "DATE": "1954",
+      "PAST AGE OF UNVERSE": "6,000,000,000",
+      "PAST AGE OF EARTH": "3,500,000,000",
+      "EXPLANATION TYPE": "Geological, radiometric, stellar, & cosmological.",
+      "SOURCE": "Ernst Öpik, 'The Time Scale of Our Universe', Irish Astronomical Journal, 3:4 (1954)"
+    },
+    {
+      "NAME": "ALLAN SANDAGE",
+      "DATE": "1957",
+      "PAST AGE OF EARTH": "6,000,000,000",
+      "FUTURE HABITABILITY ON EARTH": "6,000,000,000",
+      "EXPLANATION TYPE": "Stellar astronomy.",
+      "KILL MECHANISM": "Solar aging & expansion.",
+      "SOURCE": "Allan Sandage, 'The Birth & Death of a Star', Engineering & Science, 20 (1957), 17-21."
+    },
+    {
+      "NAME": "CECILIA PAYNE-GAPOSCHKIN",
+      "DATE": "1959",
+      "FUTURE HABITABILITY ON EARTH": "5,000,000,000",
+      "EXPLANATION TYPE": "Stellar astronomy.",
+      "KILL MECHANISM": "Solar aging & expansion.",
+      "SOURCE": "Cecilia Payne-Gaposchkin, 'The Physical Universe', in Man's Contracting World in an Expanding Universe: Proceedings of Convocation Held in Providence, October 21, 22, & 23, 1959 (Providence: Brown University Press, 1960), 58."
+    },
+    {
+      "NAME": "W.B. BONNOR",
+      "DATE": "1960",
+      "AGE OF UNIVERSE": "8,000,000,000",
+      "EXPLANATION TYPE:": "Relativistic physics.",
+      "SOURCE": "W.B. Bonnor, 'Relativistc Theories of the Universe', in Rival Theories of Cosmology (Oxford: OUP, 1960), 4."
+    },
+    {
+      "NAME": "PAUL B. SEARS",
+      "DATE": "1961",
+      "PAST AGE OF EARTH": "5,000,000,000",
+      "EXPLANATION TYPE": "Nuclear physics.",
+      "KILL MECHANISM": "Radiometric dating.",
+      "SOURCE": "Paul B. Sears, 'The Perspective of Time', Bulletin of the Atomic Scientists (October, 1961), 324."
+    },
+    {
+      "NAME": "GEORGE GAMOW",
+      "DATE": "1963",
+      "FUTURE HABITABILITY ON EARTH": "5,000,000,000",
+      "EXPLANATION TYPE": "Nuclear physics.",
+      "KILL MECHANISM": "Solar aging & expansion.",
+      "SOURCE": "G. Gamow, A Planet Called Earth (New York: Viking, 1963), 247."
+    },
+    {
+      "NAME": "GEORGE GAMOW",
       "DATE": "1964",
       "FUTURE HABITABILITY ON EARTH": "5,000,000,000",
-      "KILL MECHANISM": "Solar expansion."
+      "EXPLANATION TYPE": "Nuclear physics.",
+      "KILL MECHANISM": "Solar aging & expansion.",
+      "SOURCE": "G. Gamow, A Star Called the Sun (New York: Viking, 1964), 160."
     },
-    {
-      "NAME": "Leakey/Butzer",
-      "DATE": "1969",
-      "HUMAN EMERGENCE": "130,000"
-    },
-    {
-      "NAME": "Sagan & Mullen",
+    { 
+      "NAME": "CARL SAGAN & GEORGE MULLEN",
       "DATE": "1972",
-      "FUTURE HABITABILITY ON EARTH": "3,000,000,000",
-      "EXPLANATION TYPE": "Scientific.",
-      "KILL MECHANISM": "Runaway greenhouse."
+      "FUTURE HABITABILITY ON EARTH": "3,000,000,000 - 4,500,000,000",
+      "EXPLANATION TYPE": "Climatological.",
+      "KILL MECHANISM": "Runaway greenhouse.",
+      "SOURCE": "Carl Sagan & George Mullen, 'Earth & Mars: Evolution of Atmospheres & Surface Temperatures', Science, 177:4043 (1972), 55." 
     },
     {
-      "NAME": "Sagan & Mullen",
-      "DATE": "1972",
-      "FUTURE HABITABILITY ON EARTH": "4,500,000,000",
-      "EXPLANATION TYPE": "Scientific."
-    },
-    {
-      "NAME": "Opik",
+      "NAME": "ERNST ÖPIK",
       "DATE": "1973",
-      "AGE OF SUN": "4,500,000,000",
-      "PAST HABITABILITY": "3,000,000,000",
-      "HUMAN EMERGENCE": "3,000,000",
-      "AGE OF CIVILIZATION": "10,000",
-      "FUTURE HABITABILITY ON EARTH": "1,000,000,000",
-      "KILL MECHANISM": "Runaway greenhouse."
+      "PAST AGE OF EARTH": "4,500,000,000",
+      "FUTURE HABITABILITY ON EARTH": "1,040,000,000",
+      "EXPLANATION TYPE": "Climatological.",
+      "KILL MECHANISM": "Runaway greenhouse.",
+      "SOURCE": "Ernst Öpik, 'Our Cosmic Destiny', The Irish Astronomical Journal, 11:4 (1973), 118."
     },
     {
-      "NAME": "Dyson",
+      "NAME": "FREEMAN DYSON",
       "DATE": "1979",
-      "UPPER BOUND FOR LIFE BEYOND EARTH": "100"
+      "FUTURE FOR LIFE IN WIDER UNIVERSE": "∞",
+      "EXPLANATION TYPE": "Conjectural.",
+      "SOURCE": "Freeman Dyson, 'Time Without End: Physics & Biology in an Open Universe', Reviews of Modern Physics, 51:3 (1979), 447-460."
     },
     {
-      "NAME": "Hutton & Kendig",
+      "NAME": "RICHARD HUTTON & FRANK KENDIG",
       "DATE": "1980",
-      "AGE OF UNIVERSE": "20,000,000,000",
-      "AGE OF GALAXY": "19900000000",
-      "AGE OF SUN": "5,000,000,000"
+      "PAST AGE OF UNIVERSE": "20,000,000,000",
+      "PAST AGE OF SUN": "5,000,000,000",
+      "EXPLANATION TYPE": "Cosmological.",
+      "SOURCE": "Richard Hutton & Frank Kendig, Life Spans: Or, How Long Things Last (New York: Holt, 1980)."
     },
     {
-      "NAME": "Schramm",
+      "NAME": "SIDNEY VAN DER BERGH",
+      "DATE": "1981",
+      "PAST AGE OF UNIVERSE": "15,000,000,000 - 20,000,000,000",
+      "EXPLANATION TYPE": "Cosmological.",
+      "SOURCE": "Sidney van der Bergh, 'Size & Age of the Universe', Science, 213:4510 (1981), 825-830."
+    },
+    {
+      "NAME": "DAVID N. SCHRAMM",
       "DATE": "1983",
-      "AGE OF UNIVERSE": "15,000,000,000"
+      "PAST AGE OF UNIVERSE": "15,000,000,000",
+      "EXPLANATION TYPE": "Nuclear physics.",
+      "SOURCE": "David N. Schramm, 'Nuclear Constraints on the Age of the Universe', Highlights of Astronomy, 6 (1983), 251."
     },
     {
-      "NAME": "Islam",
+      "NAME": "JAMAL NAZRUL ISLAM",
       "DATE": "1983",
-      "UPPER BOUND FOR LIFE BEYOND EARTH": "1e,+45",
-      "UPPER BOUND": "Proton Decay at 10^45-10^50 - though life could exist beyond?."
+      "FUTURE FOR LIFE IN WIDER UNIVERSE": "1e,+45 - 1e,+50",
+      "EXPLANATION TYPE": "Physical eschatology.",
+      "KILL MECHANISM": "Proton Decay (though life could exist beyond?).",
+      "SOURCE": "J.N. Islam, The Ultimate Fate of the Universe (Cambridge: Cambridge University Press, 1983)."
     },
     {
-      "NAME": "Islam",
+      "NAME": "DUANE A. DICUS et al.",
       "DATE": "1983",
-      "UPPER BOUND FOR LIFE BEYOND EARTH": "1e,+50"
+      "FUTURE FOR LIFE IN WIDER UNIVERSE": "1e,+32",
+      "EXPLANATION TYPE": "Physical eschatology.",
+      "KILL MECHANISM": "Blackhole Evaporation at 10^100, though life probably died at 10^32 due to Proton Decay.",
+      "SOURCE": "Duane A. Dicus et al., ‘The Future of the Universe’, Scientific American, 248 (1983), 74-85."
     },
     {
-      "NAME": "Dicus et al.",
-      "DATE": "1983",
-      "UPPER BOUND FOR LIFE BEYOND EARTH": "1e,+32",
-      "UPPER BOUND": "Blackhole evapation at 10^100 - though life probably died at 10^32 due to proton decay."
-    },
-    {
-      "NAME": "Cann, Stoneking, Wilson",
-      "DATE": "1987",
-      "HUMAN EMERGENCE": "200,000"
-    },
-    {
-      "NAME": "Dalrymple",
+      "NAME": "G. BRENT DALRYMPLE",
       "DATE": "1991",
-      "PAST AGE OF EARTH": "4,540,000,000"
+      "PAST AGE OF EARTH": "4,540,000,000",
+      "EXPLANATION TYPE": "Synoptic.",
+      "SOURCE": "G. Brent Dalrymple, The Age of the Earth (Stanford: Stanford University Press, 1991)."
     },
     {
-      "NAME": "Caldeira & Kasting",
+      "NAME": "KEN CALDEIRA & JAMES F. KASTING",
       "DATE": "1992",
-      "FUTURE HABITABILITY ON EARTH": "900,000,000"
+      "FUTURE HABITABILITY ON EARTH": "900,000,000 - 1,500,000,000",
+      "EXPLANATION TYPE": "Climatological.",
+      "KILL MECHANISM": "Runaway greenhouse",
+      "SOURCE": "Ken Cladeira & James F. Kasting, 'The Life Span of the Biosphere Revisited', Nature, 360 (1992), 721-732."
     },
     {
-      "NAME": "Caldeira & Kasting",
-      "DATE": "1992",
-      "FUTURE HABITABILITY ON EARTH": "1,500,000,000"
-    },
-    {
-      "NAME": "Adams & Laughlin",
+      "NAME": "FRED ADAMS & GREGORY P. LAUGHLIN",
       "DATE": "1999",
-      "AGE OF UNIVERSE": "10,000,000,000",
+      "PAST AGE OF UNIVERSE": "10,000,000,000",
       "PAST AGE OF EARTH": "4,500,000,000",
       "FUTURE HABITABILITY ON EARTH": "3,000,000,000",
-      "UPPER BOUND FOR LIFE BEYOND EARTH": "1e,+40",
-      "KILL MECHANISM": "Runaway greenhouse.",
-      "UPPER BOUND": "Proton decay - end of complex life."
+      "FUTURE FOR LIFE IN WIDER UNIVERSE": "1e,+40",
+      "EXPLANATION TYPE": "Physical eschatology.",
+      "KILL MECHANISM": "Runaway greenhouse (Earth); Proton decay (wider universe).",
+      "SOURCE": "F. Adams & G. Laughlin, The Five Ages of the Universe (New York: Free Press, 1999)."
     },
     {
-      "NAME": "Kraus & Starkman",
+      "NAME": "LAWRENCE M. KRAUS & GLENN D. STARKMAN",
       "DATE": "2000",
-      "UPPER BOUND FOR LIFE BEYOND EARTH": "1e,+50"
+      "FUTURE FOR LIFE IN WIDER UNIVERSE": "1e,+50",
+      "EXPLANATION TYPE": "Physical eschatology.",
+      "KILL MECHANISM": "Longterm astrophysical processes.",
+      "SOURCE": "Lawrence M. Krauss & Glenn D. Starkman, 'Life, the Universe, & Nothing', The Astrophysical Journal, 531 (2000), 22-30."
     },
     {
-      "NAME": "Kraus & Starkman",
-      "DATE": "2000",
-      "UPPER BOUND": "Longterm astrophysical processes."
-    },
-    {
-      "NAME": "Adams",
+      "NAME": "FRED ADAMS",
       "DATE": "2008",
-      "UPPER BOUND FOR LIFE BEYOND EARTH": "1e,+40",
-      "UPPER BOUND": "Proton decay - end of carbon-based life."
+      "FUTURE FOR LIFE IN WIDER UNIVERSE": "1e,+40",
+      "EXPLANATION TYPE": "Physical eschatology.",
+      "KILL MECHANISM": "Proton decay.",
+      "SOURCE": "Fred Adams, 'Long-term Astrophysical Processes', in Global Catastrophic Risks, ed. N. Bostrom & M. Cirkovic (Oxford: OUP, 2008), 41."
     },
     {
-      "NAME": "Wmap",
-      "DATE": "2012",
-      "AGE OF UNIVERSE": "13,772,000,000"
-    },
-    {
-      "NAME": "Rushby et al",
-      "DATE": "2013",
-      "FUTURE HABITABILITY ON EARTH": "1,750,000,000"
-    },
-    {
-      "NAME": "Rushby et al",
-      "DATE": "2013",
-      "FUTURE HABITABILITY ON EARTH": "3,250,000,000"
-    },
-    {
-      "NAME": "Plank",
-      "DATE": "2013",
-      "AGE OF UNIVERSE": "13,820,000,000"
-    },
-    {
-      "NAME": "Wolf & Toon",
+      "NAME": "E.T. WOLF & O.B. TOON",
       "DATE": "2015",
-      "FUTURE HABITABILITY ON EARTH": "2,000,000,000"
+      "FUTURE HABITABILITY ON EARTH": "1,500,000,000 - 2,000,000,000",
+      "EXPLANATON TYPE": "Climatological.",
+      "KILL MECHANISM": "Runaway greenhouse.",
+      "SOURCE": "E.T. Wolf & O.B. Toon, ‘The evolution of habitable climates under the brightening Sun’, JGR Atmospheres, 120:12 (2015): 5775-5794."
     },
     {
-      "AGE OF CIVILIZATION": "6000"
+      "NAME": "WMAP MISSION",
+      "DATE": "2012",
+      "PAST AGE OF UNIVERSE": "13,772,000,000",
+      "EXPLANATION TYPE": "Satellite mission.",
+      "SOURCE": "NASA's Wilkinson Microwave Anisotropy Probe."
+    },
+    {
+      "NAME": "ANDREW J RUSHBY et al.",
+      "DATE": "2013",
+      "FUTURE HABITABILITY ON EARTH": "1,750,000,000 - 3,250,000,000",
+      "EXPLANATION TYPE": "Comparative exoplanetology.",
+      "KILL MECHANISM": "Runaway greenhouse.",
+      "SOURCE": "Andrew J Rushby et al., 'Habitable Zone Lifetimes of Exoplanets Around Main Sequence Stars', Astrobiology, 13:9 (2013), 833-849."
+    },
+    {
+      "NAME": "PLANCK MISSION",
+      "DATE": "2013",
+      "PAST AGE OF UNIVERSE": "13,820,000,000",
+      "EXPLANATION TYPE": "Satellite mission.",
+      "SOURCE": "ESA's Planck Observatory."
     }
+    
   ]
 }

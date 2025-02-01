@@ -32,19 +32,19 @@ window.addEventListener('load', () => {
     // Define camera positions with a targetScale property
     const cameraPositions = [
         {
-            position: { x: 0, y: 99, z: -1610 },
+            position: { x: 0, y: 109, z: -1673 },
             rotation: { x: -0.74, y: 0, z: 0 },
-            targetScale: 1e10
+            targetScale: 10000000000
         },
         {
-            position: { x: 0, y: 139.5, z: -1202 },
+            position: { x: 0, y: 137.5, z: -1393 },
             rotation: { x: -0.68, y: 0, z: 0 },
-            targetScale: 1e9
+            targetScale: 9999999900
         },
         {
-            position: { x: 0, y: 250, z: -1047.6 },
+            position: { x: 0, y: 332.5, z: -515 },
             rotation: { x: -0.52, y: 0, z: 0 },
-            targetScale: 1e7
+            targetScale: 3981071
         },
         {
             position: { x: 0, y: 860.48, z: 900.7 },
@@ -96,23 +96,23 @@ window.addEventListener('load', () => {
         '1T': 1e12
     };
 
-    // Scale slider and label
-    const scaleSlider = document.getElementById('scale-slider');
-    const scaleValueLabel = document.getElementById('scale-value');
+// Scale slider and label
+const scaleSlider = document.getElementById('scale-slider');
+const scaleValueLabel = document.getElementById('scale-value');
 
-    scaleSlider.addEventListener('input', function () {
-        const exponent = parseFloat(scaleSlider.value);
-        scaleWidth = Math.pow(10, exponent);
-        const maxScale = 1e10;
-        const minScale = 1;
-        scaleWidth = clamp(scaleWidth, minScale, maxScale);
-        scaleValueLabel.textContent = exponent.toFixed(1);
-        updateSceneWithScaleWidth(scaleWidth);
-    });
+scaleSlider.addEventListener('input', function () {
+    const exponent = parseFloat(scaleSlider.value);
+    scaleWidth = Math.pow(10, exponent);
+    const maxScale = 1e13; // Increase the max scale to 1e13
+    const minScale = 1;
+    scaleWidth = clamp(scaleWidth, minScale, maxScale);
+    scaleValueLabel.textContent = exponent.toFixed(1);
+    updateSceneWithScaleWidth(scaleWidth);
+});
 
-    function clamp(value, min, max) {
-        return Math.min(Math.max(value, min), max);
-    }
+function clamp(value, min, max) {
+    return Math.min(Math.max(value, min), max);
+}
 
     function mapToLinearScale(value) {
         if (typeof value !== 'string') {
@@ -500,9 +500,9 @@ window.addEventListener('load', () => {
         isDragging = false;
         userInteracting = false;
     });
-
+    const fullscreenIcon = document.getElementById('fullscreen-icon');
     let isFullScreen = false;
-    document.getElementById('toggle-fullscreen-btn').addEventListener('click', toggleFullScreen);
+    fullscreenIcon.addEventListener('click', toggleFullScreen);
 
     function toggleFullScreen() {
         isFullScreen = !isFullScreen;
@@ -518,6 +518,7 @@ window.addEventListener('load', () => {
         renderer.setSize(window.innerWidth, window.innerHeight);
         camera.aspect = window.innerWidth / window.innerHeight;
         camera.updateProjectionMatrix();
+        fullscreenIcon.src = 'assets/close.png'; // Change icon to close.png
     }
 
     function exitFullScreen() {
@@ -527,7 +528,18 @@ window.addEventListener('load', () => {
         renderer.setSize(containerWidth, containerHeight);
         camera.aspect = containerWidth / containerHeight;
         camera.updateProjectionMatrix();
+        fullscreenIcon.src = 'assets/fullscreen.png'; // Change icon back to fullscreen.png
     }
+        // Add event listener to toggle controls with the 'C' key
+        const controlsContainer = document.querySelector('.controls-container');
+        let controlsVisible = false;
+    
+        window.addEventListener('keydown', (event) => {
+            if (event.key === 'c' || event.key === 'C') {
+                controlsVisible = !controlsVisible;
+                controlsContainer.style.display = controlsVisible ? 'flex' : 'none';
+            }
+        });
 
     document.getElementById('position1-btn').addEventListener('click', () => switchCameraPosition(0));
     document.getElementById('position2-btn').addEventListener('click', () => switchCameraPosition(1));
