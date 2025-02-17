@@ -126,15 +126,25 @@ a:hover {
 
 /* Tooltip */
 .tooltip {
+  font-size: 14px;
+  font-family: 'Copernicus Book', serif;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
+  background-color: #f3f3f2;
+  color: black;
   padding: 5px;
-  border-radius: 3px;
+  border-radius: 10px; /* Add rounded corners */
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.2s;
+  max-width: 350px; /* Set a maximum width */
+  word-wrap: break-word; /* Ensure text wraps within the max width */
   z-index: 10;
+}
+.bold {
+  font-family: 'Copernicus Bold';
+}
+.underline {
+  text-decoration: underline;
 }
 
 body, html {

@@ -202,7 +202,25 @@ function clamp(value, min, max) {
                             sphere.userData = { entry, originalColor: DATA_COLOR };
                             scene.add(sphere);
                             planeMeshes.push(sphere);
-                        } else {
+                        
+                            // Add name label above the sphere
+                            const name = entry["NAME"] ? entry["NAME"].toUpperCase() : "UNKNOWN"; // Convert name to uppercase
+                            const nameGeometry = new THREE.TextGeometry(name, {
+                                font: font,
+                                size: 3,
+                                height: 0.1,
+                                curveSegments: 12,
+                            });
+                            nameGeometry.computeBoundingBox();
+                            const nameMaterial = new THREE.MeshBasicMaterial({ color: DATA_COLOR });
+                            const nameMesh = new THREE.Mesh(nameGeometry, nameMaterial);
+                            const nameYOffset = yPosition + 10;
+                            nameMesh.position.set(0, nameYOffset, zPosition);
+                            nameMesh.rotation.x = 0; // Rotate the name label like the rest of the text labels
+                            nameMesh.userData.isLabel = true;
+                            scene.add(nameMesh);
+                        }
+                        else {
                             const lineLength = mapToLinearScale(pastAge);
                             const redLineMaterial = new THREE.MeshBasicMaterial({ color: DATA_COLOR });
                             const redLineGeometry = new THREE.BoxGeometry(lineLength, DATA_LINE_THICKNESS, DATA_LINE_THICKNESS);
@@ -220,7 +238,7 @@ function clamp(value, min, max) {
                             scene.add(verticalRedLine);
                             verticalRedLines.push(verticalRedLine);
 
-                            const name = entry["NAME"] || "Unknown";
+                            const name = entry["NAME"] ? entry["NAME"].toUpperCase() : "UNKNOWN"; // Convert name to uppercase
                             const textString = `${name}\n${pastAge}`;
                             const labelGeometry = new THREE.TextGeometry(textString, {
                                 font: font,
@@ -271,7 +289,7 @@ function clamp(value, min, max) {
                             scene.add(verticalBlueLine);
                             verticalBlueLines.push(verticalBlueLine);
 
-                            const name = entry["NAME"] || "Unknown";
+                            const name = entry["NAME"] ? entry["NAME"].toUpperCase() : "UNKNOWN"; // Convert name to uppercase
                             const textString = `${name}\n${futureHabitability}`;
                             const labelGeometry = new THREE.TextGeometry(textString, {
                                 font: font,
@@ -388,12 +406,12 @@ function clamp(value, min, max) {
 
             if (intersectedObject.userData.textMesh) {
                 intersectedObject.userData.textMesh.material.color.set(0xff0000);
-                tooltip.innerText = intersectedObject.userData.textMesh.name;
+                tooltip.innerHTML = `<span class="bold">${intersectedObject.userData.textMesh.name}</span>`;
                 highlightedObjects.push(intersectedObject.userData.textMesh);
             } else if (intersectedObject.userData.entry) {
                 const entry = intersectedObject.userData.entry;
                 highlightLines(entry);
-                tooltip.innerText = `Data: ${JSON.stringify(entry)}`;
+                tooltip.innerHTML = formatEntryData(entry); // Format the entry data
             }
 
             tooltip.style.opacity = 1;
@@ -409,12 +427,39 @@ function clamp(value, min, max) {
         }
     }
 
+    function formatEntryData(entry) {
+        const keysToInclude = {
+            "FUTURE HABITABILITY ON EARTH": "Future Earth Habitability",
+            "EXPLANATION TYPE": "Explanation Type",
+            "KILL MECHANISM": "Kill Mechanism",
+            "SOURCE": "Source",
+            "PAST AGE OF EARTH": "Past Age of Earth"
+        };
+
+        const name = entry["NAME"] ? `<span class="bold">${entry["NAME"]}</span>` : "";
+        const date = entry["DATE"] ? `, ${entry["DATE"]}` : "";
+        const nameAndDate = name || date ? `${name}${date}` : "";
+
+        const otherData = Object.entries(entry)
+            .filter(([key]) => key !== "NAME" && key !== "DATE")
+            .map(([key, value]) => keysToInclude[key] ? `<span class="underline">${keysToInclude[key]}</span>: ${value}` : value)
+            .join('<br>');
+
+        return nameAndDate ? `${nameAndDate}<br>${otherData}` : otherData;
+    }
+
+    renderer.domElement.addEventListener('mousemove', onMouseMove, false);
+
+
+
+
+
     function highlightLines(entry) {
         const associatedLines = [];
         const highlightAndCollect = (linesArray) => {
             linesArray.forEach(line => {
                 if (line.userData.entry === entry) {
-                    line.material.color.set(0x00ff00);
+                    line.material.color.set(0x000000); // Change color to black
                     associatedLines.push(line);
                 }
             });

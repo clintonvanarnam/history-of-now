@@ -1,7 +1,7 @@
 {
   "Sheet1": [
     {
-      "NAME": "ARISTOTLE",
+      "NAME": "Aristotle",
       "DATE": "-350",
       "PAST AGE OF EARTH": "∞",
       "FUTURE HABITABILITY ON EARTH": "∞",
@@ -9,7 +9,7 @@
       "SOURCE": "Aristotle, Physics, trans. C.D.C. Reeve (Cambridge, MA: Hackett, 1972)"
     },
     {
-      "NAME": "JESUS CHRIST",
+      "NAME": "Jesus Christ",
       "DATE": "30",
       "FUTURE HABITABILITY ON EARTH": "30",
       "EXPLANATION TYPE": "Prophetic.",
@@ -17,7 +17,7 @@
       "SOURCE": "Matthew 24:34; Mark 13:30; Luke 21:32."
     },
     {
-      "NAME": "THEOPHILUS",
+      "NAME": "Theophilus",
       "DATE": "170",
       "PAST AGE OF EARTH": "5,698",
       "FUTURE HABITABILITY ON EARTH": "302",
@@ -26,7 +26,7 @@
       "SOURCE": "Theophilus, 'To Autolycus', in Ante-Nicene Fathers, ed. A. Roberts & J. Donaldson (Peabody, MA: Hendrickson, 1995), vol.II, 120."
     },
     {
-      "NAME": "JULIUS AFRICANUS",
+      "NAME": "Julius Africanus",
       "DATE": "220",
       "PAST AGE OF EARTH": "5,720",
       "FUTURE HABITABILITY ON EARTH": "280",
@@ -35,7 +35,7 @@
       "SOURCE": "Julius Africanus, 'On Daniel', in Ante-Nicene Fathers, ed. A. Roberts & J. Donaldson (Peabody, MA: Hendrickson, 1995), vol.VI, 138."
     },
     {
-      "NAME": "HIPPOLYTUS",
+      "NAME": "Hippolytus",
       "DATE": "204",
       "PAST AGE OF EARTH": "5,704",
       "FUTURE HABITABILITY ON EARTH": "270",
@@ -44,7 +44,7 @@
       "SOURCE": "Hippolytus of Rome, 'On Daniel', in Ante-Nicene Fathers, ed. A. Roberts & J. Donaldson (Peabody, MA: Hendrickson, 1995), vol.V, 179."
     },
     {
-      "NAME": "LACTANTIUS",
+      "NAME": "Lactantius",
       "DATE": "300",
       "PAST AGE OF EARTH": "5,800",
       "FUTURE HABITABILITY ON EARTH": "200",
@@ -53,7 +53,7 @@
       "SOURCE": "Lactantius, 'The Divine Institutes', in Ante-Nicene Fathers, ed. A. Roberts & J. Donaldson (Peabody, MA: Hendrickson, 1995), vol.VII, 220."
     },
     {
-      "NAME": "EUSEBIUS",
+      "NAME": "Eusebius",
       "DATE": "303",
       "PAST AGE OF EARTH": "5,531",
       "FUTURE HABITABILITY ON EARTH": "469",
@@ -62,7 +62,7 @@
       "SOURCE": "Eusebius, Chronicon (c.303 CE)"
     },
     {
-      "NAME": "HILARY OF POITIERS",
+      "NAME": "Hilary of Poitiers",
       "DATE": "356",
       "PAST AGE OF EARTH": "5,500",
       "FUTURE HABITABILITY ON EARTH": "500",
@@ -71,14 +71,14 @@
       "SOURCE": "Hilary of Poitiers, Commentary on Matthew, trans. D.H. Williams (Washington: Catholic Univeristy Press, 2012), XX, 6."
     },
     {
-      "NAME": "AUGUSTINE",
+      "NAME": "Augustine",
       "DATE": "420",
       "PAST AGE OF EARTH": "5,500",
       "EXPLANATION TYPE": "Biblical.",
       "SOURCE": "Augustine, 'De Civitate Dei', in Nicene & Post-Nicene Fathers, ed. P. Schaff (Peabody, MA: Hendrickson, 1995), vol.II, 233."
     },
     {
-      "NAME": "GREGORY OF TOURS",
+      "NAME": "Gregory of Tours",
       "DATE": "590",
       "PAST AGE OF EARTH": "5,774",
       "FUTURE HABITABILITY ON EARTH": "226",
@@ -86,48 +86,48 @@
       "SOURCE": "Gregorius Turonensis,  Historiarum  libri  X, ed. W. Arndt & B. Krusch (Hannoverae: Impensis Bibliopolii Hahniani, 1951), IV, 51."
     },
     {
-      "NAME": "BEDE",
+      "NAME": "Bede",
       "DATE": "731",
       "PAST AGE OF EARTH": "4,683",
       "EXPLANATION TYPE": "Biblical.",
       "SOURCE": "Bede, De Temporibus (c.703 CE)."
     },
     {
-      "NAME": "GEORGE SYNKELLOS",
+      "NAME": "George Synkellos",
       "DATE": "810",
       "PAST AGE OF EARTH": "6,302",
       "EXPLANATION TYPE": "Biblical.",
       "SOURCE": "George Synkellos, The Chronography of George Synkellos, trans. W. Adler & P. Tuffin (Oxford:  OUP, 2002)."
     },
     {
-      "NAME": "CHRISTEN LONGOMONATUS",
+      "NAME": "Christen Longomonatus",
       "DATE": "1622",
       "PAST AGE OF EARTH": "5,586",
       "EXPLANATION TYPE": "Astronomical (apogee).",
       "SOURCE": "Christianus S. Longomonatus, Astronomia Danica (Amsterdam, 1622), I.2."
     },
     {
-      "NAME": "JOHANNES KEPLER",
+      "NAME": "Johannes Kepler",
       "DATE": "1627",
       "PAST AGE OF EARTH": "5,620",
       "EXPLANATION TYPE": "Astronomical (apogee).",
       "SOURCE": "Johannes Kepler, Tabulæ Rudolphinæ (Ulm, 1627), 54."
     },
     {
-      "NAME": "JOHN LIGHTFOOT",
+      "NAME": "John Lightfoot",
       "DATE": "1644",
       "PAST AGE OF EARTH": "5,573",
       "EXPLANATION TYPE": "Biblical.",
       "SOURCE": "John Lightfoot,  The Harmony of the Four Evangelists (London, 1644)."
     },
     {
-      "NAME": "JAMES USSHER",
+      "NAME": "James Ussher",
       "DATE": "1650",
       "PAST AGE OF EARTH": "5,654",
       "SOURCE": "James Ussher,  Annales Veteris Testamenti, a Prima Mundi Origine Deducti (London, 1650)."
     },
     {
-      "NAME": "HENRY POWER",
+      "NAME": "Henry Power",
       "DATE": "1664",
       "PAST AGE OF EARTH": "5,000",
       "FUTURE HABITABILITY ON EARTH": "150,000",
@@ -137,7 +137,7 @@
 
     },
     {
-      "NAME": "ISAAC NEWTON",
+      "NAME": "Isaac Newton",
       "DATE": "1727",
       "PAST AGE OF EARTH": "5715",
       "EXPLANATION TYPE": "Biblical.",
@@ -147,7 +147,7 @@
       "SOURCE": "J.D. North 'Chronology & the Age of the World', in W. Yourgrau & A.D. Breck (eds.) Cosmology, History, & Theology (London: Plenum, 1977), 307; & S.D. Snobelen, 'Isaac Newton, the Apocalypse, & 2060 A.D.', Canadian Journal of History, 38 (2003), 537-551."
     },
     {
-      "NAME": "JOHN CRAIG",
+      "NAME": "John Craig",
       "DATE": "1711",
       "FUTURE HABITABILITY ON EARTH": "1,411",
       "EXPLANATION TYPE": "Probabilistic.",
@@ -155,7 +155,7 @@
       "SOURCE": "J. Craig,  Christianae Principia Mathematica (London, 1699)."
     },
     {
-      "NAME": "BENOÎT DE MAILLET",
+      "NAME": "Benoît de Maillet",
       "DATE": "1727",
       "PAST AGE OF EARTH": "2,000,000,000",
       "FUTURE HABITABILITY ON EARTH": "1,000,000,000",
@@ -164,7 +164,7 @@
       "SOURCE": "Benoît de Maillet, Telliamed; or, Conversations between an Indian Philosopher & a French Missionary on the Diminution of the Sea, trans. A. V. Carozzi (Chicago: University of Illinois Press, 1968)."
     },
     {
-      "NAME": "BUFFON",
+      "NAME": "Buffon",
       "DATE": "1774",
       "PAST AGE OF EARTH": "74,832",
       "PAST HABITABILITY OF EARTH": "38,849",
@@ -174,7 +174,7 @@
       "SOURCE": "Georges Buffon, Histoire naturelle, générale et particuliére (Paris, 1749-1804), vol.XXXI, 404 & 513."
     },
     {
-      "NAME": "JEAN DE SALES",
+      "NAME": "Jeans de Sales",
       "DATE": "1777",
       "PAST AGE OF EARTH": "140,000",
       "FUTURE HABITABILITY ON EARTH": "100,000",
@@ -183,7 +183,7 @@
       "SOURCE": "Jeans de Sales, De la philosophie de la nature (London, 1777), vol.I, 187."
     },
     {
-      "NAME": "JAMES HUTTON",
+      "NAME": "James Hutton",
       "DATE": "1788",
       "PAST AGE OF EARTH": "∞",
       "FUTURE HABITABILITY ON EARTH": "∞",
@@ -192,7 +192,7 @@
       "SOURCE": "James Hutton, ‘Theory of the Earth; or an Investigation of the Laws Observable in the Composition, Dissolution, and Restoration of Land upon the Globe’, Transactions of the Royal Society of Edinburgh, 1:2 (1788)."
     },
     {
-      "NAME": "CHARLES FOURIER",
+      "NAME": "Charles Fourier",
       "DATE": "1808",
       "PAST AGE OF EARTH": "5,000",
       "FUTURE HABITABILITY ON EARTH": "75,000.00",
@@ -201,7 +201,7 @@
       "SOURCE": "Charles Fourier, Théorie des quatre mouvemens et des destinées générales (Leipzig, 1808)."
     },
     {
-      "NAME": "WILHELM OLBERS",
+      "NAME": "Wilhelm Olbers",
       "DATE": "1810",
       "FUTURE HABITABILITY ON EARTH": "219,531,150",
       "EXPLANATION TYPE": "Probabilsitic.",
@@ -209,7 +209,7 @@
       "SOURCE": "Wilhelm Olbers, ‘Über die Möglichkeit, daß ein Comet mit der Erde zusammenstoßen könne’, Monatliche Correspondenz zur Beförderung der Erd- und Himmelskunde, 22 (1810), 409-50."
     },
     {
-      "NAME": "CHARLES LYELL",
+      "NAME": "Charles Lyell",
       "DATE": "1830",
       "PAST AGE OF EARTH": "∞",
       "FUTURE HABITABILITY ON EARTH": "∞",
@@ -218,7 +218,7 @@
       "SOURCE": "Charles Lyell, Principles of Geology (London, 1830-33)."
     },
     {
-      "NAME": "WILLIAM THOMSON",
+      "NAME": "William Thomson",
       "DATE": "1854",
       "PAST AGE OF EARTH": "32,000",
       "FUTURE HABITABILITY ON EARTH": "300,000",
@@ -227,7 +227,7 @@
       "SOURCE": "William Thomson, ‘On the Mechanical Energies of the Solar System’, Transaction of the Royal Society of Edinburgh, 21 (1854), 78."
     },
     {
-      "NAME": "HERMANN VON HELMHOLTZ",
+      "NAME": "Hermann von Helmholtz",
       "DATE": "1854",
       "PAST AGE OF EARTH": "20,000,000",
       "EXPLANATION TYPE": "Thermodynamic.",
@@ -235,7 +235,7 @@
       "SOURCE": "Hermann von Helmholtz, ‘On the Interaction of Natural Forces’, Philosophical Magazine, 11 (1856), 489-578."
     },
     {
-      "NAME": "WILLIAM THOMSON",
+      "NAME": "William Thomson",
       "DATE": "1862",
       "PAST AGE OF EARTH": "20,000,000 - 400,000,000",
       "EXPLANATION TYPE": "Thermodynamic.",
@@ -243,7 +243,7 @@
       "SOURCE": "William Thomson, ‘On the Secular Cooling of the Earth’, Transactions of the Royal Society of Edinburgh, 153 (1863), 157-170."
     },
     {
-      "NAME": "WILLIAM THOMSON",
+      "NAME": "William Thomson",
       "DATE": "1862",
       "PAST AGE OF EARTH": "100,000,000 - 500,000,000",
       "FUTURE HABITABILITY ON EARTH": "5,000,000 - 10,000,000",
@@ -252,7 +252,7 @@
       "SOURCE": "William Thomson, ‘On the Age of the Sun’s Heat’, Macmillan’s Magazine, Wednesday March 5th (1862), 293."
     },
     {
-      "NAME": "WILLIAM THOMSON",
+      "NAME": "William Thomson",
       "DATE": "1868",
       "PAST HABITABILITY ON EARTH": "100,000,000",
       "EXPLANATION TYPE": "Thermodynamic.",
@@ -260,7 +260,7 @@
       "SOURCE": "William Thomson, ‘On Geological Time — 1868’, in Popular Lectures & Addresses (London, 1894), vol.II, 64."
     },
     {
-      "NAME": "HERMANN VON HELMHOLTZ",
+      "NAME": "Hermann von Helmholtz",
       "DATE": "1871",
       "PAST AGE OF EARTH": "22,000,000,000",
       "FUTURE HABITABILITY ON EARTH": "17,000,000",
@@ -269,7 +269,7 @@
       "SOURCE": "Hermann von Helmholtz, ‘Ueber die Entstehung des Planetensystems — 1871’, in Vorträge & Reden (Braunschweig, 1884), vol.II, 84-85."
     },
     {
-      "NAME": "SIMON NEWCOMB",
+      "NAME": "Simon Newcomb",
       "DATE": "1878",
       "FUTURE HABITABILITY ON EARTH": "12,000,000",
       "EXPLANATION TYPE": "Thermodynamic.",
@@ -277,7 +277,7 @@
       "SOURCE": "Simon Newcomb, Popular Astronomy (New York, 1878), 513."
     },
     {
-      "NAME": "GEORGE DARWIN",
+      "NAME": "George Darwin",
       "DATE": "1879",
       "PAST AGE OF EARTH": "54,000,000",
       "EXPLANATION TYPE": "Astronomical (tidal forces).",
@@ -285,7 +285,7 @@
       "SOURCE": "George H. Darwin, 'On the Precession of a Viscous Spheroid, & on the Remote History of the Earth', Philosphical Transactions of the Royal Soceity of London, 170 (1879), 447-538; George H. Darwin, 'On the Secular Changes in the Elements of the Orbit of a Satellite Revolving about a Tidally Distorted Planet', Philosphical Transactions of the Royal Soceity of London, 171 (1880), 713-891."
     },
     {
-      "NAME": "CHARLES AUGUSTUS YOUNG",
+      "NAME": "Charles Augustus Young",
       "DATE": "1881",
       "FUTURE HABITABILITY ON EARTH": "10,000,000",
       "EXPLANATION TYPE": "Thermodynamic.",
@@ -293,15 +293,15 @@
       "SOURCE": "Charles A. Young, The Sun (New York, 1881), 276."
     },
     {
-      "NAME": "ROBERT S. BALL",
+      "NAME": "Robert S. Ball",
       "DATE": "1892",
       "FUTURE HABITABILITY ON EARTH": "4,000,000 - 6,000,000",
       "EXPLANATION TYPE": "Thermodynamic.",
       "KILL MECHANISM": "Solar aging & cooling.",
-      "SOURCE": "Rrobert .S. Ball, ‘How Long Can the Earth Sustain Life?’, Forthnightly Review, 51 (1892), 490."
+      "SOURCE": "Robert S. Ball, ‘How Long Can the Earth Sustain Life?’, Forthnightly Review, 51 (1892), 490."
     },
     {
-      "NAME": "CAMILLE FLAMMARION",
+      "NAME": "Camille Flammarion",
       "DATE": "1893",
       "FUTURE HABITABILITY ON EARTH": "20,000,000 - 40,000,000",
       "EXPLANATION TYPE": "Fictional.",
@@ -309,7 +309,7 @@
       "SOURCE": "Camille Flammarion, L'Astronomie populaire (Paris, 1893), 105."
     },
     {
-      "NAME": "H.G. WELLS",
+      "NAME": "H.G. Wells",
       "DATE": "1895",
       "FUTURE HABITABILITY ON EARTH": "30,000,000",
       "EXPLANATION TYPE": "Fictional.",
@@ -317,7 +317,7 @@
       "SOURCE": "H.G. Wells, The Time Machine (London, 1895)."
     },
     {
-      "NAME": "WILLIAM THOMSON (LORD KELVIN)",
+      "NAME": "William Thomson (Lord Kelvin)",
       "DATE": "1897",
       "PAST AGE OF EARTH": "20,000,000 - 40,000,000",
       "EXPLANATION TYPE": "Thermodynamic.",
@@ -325,7 +325,7 @@
       "SOURCE": "William Thomson, 'The Age of the Earth as an Abode Fitted for life', Annual Report of the Smithsonian Institution (Washington, 1897), 337-357."
     },
     {
-      "NAME": "ARCHIBALD GEIKE",
+      "NAME": "Archibald Geike",
       "DATE": "1899",
       "PAST AGE OF EARTH": "100,000,000",
       "EXPLANATION TYPE": "Sedimentological.",
@@ -333,14 +333,14 @@
       "SOURCE": "Archibald Geike, 'Address of the President', Report of the 69th Meeting of the British Assocation for the Advancement of Science (1899), 718-730."
     },
     {
-      "NAME": "JOHN JOLY",
+      "NAME": "John Joly",
       "DATE": "1900",
       "PAST AGE OF EARTH": "95,000,000",
       "EXPLANATION TYPE": "Ocean chemistry.",
       "SOURCE": "John Joly, 'On the Geological Age of the Earth', British Association for the Advancement of Science, Report of the Seventeenth Meeting (1900), 369-379."
     },
     {
-      "NAME": "GEORGE DARWIN",
+      "NAME": "George Darwin",
       "DATE": "1903",
       "FUTURE HABITABILITY ON EARTH": "100,000,000",
       "EXPLANATION TYPE": "Nuclear physics.",
@@ -348,7 +348,7 @@
       "SOURCE": "G.H. Darwin, ‘Radio-activity and the Age of the Sun’, Nature, 68 (1903), 496."
     },
     {
-      "NAME": "SVANTE ARRHENIUS",
+      "NAME": "Svante Arrhenius",
       "DATE": "1906",
       "FUTURE HABITABILITY ON EARTH": "300,000,000 - 3,000,000,000",
       "EXPLANATION TYPE": "Nuclear physics.",
@@ -356,7 +356,7 @@
       "SOURCE": "Svante Arrhenius, Worlds in the Making, trans. H. Borns (London, Harper, 1908) 93."
     },
     {
-      "NAME": "FRANK LESTER WARD",
+      "NAME": "Frank Lester Ward",
       "DATE": "1907",
       "PAST AGE OF EARTH": "72,000,000",
       "FUTURE HABITABILITY ON EARTH": "25,000,000",
@@ -365,7 +365,7 @@
       "SOURCE": "Frank Lester Ward, 'Mars & Its Lesson', Brown Alumni Monthly, 7:8 (1907), 159-165.."
     },
     {
-      "NAME": "THOMAS CHROWDER CHAMBERLIN",
+      "NAME": "Thomas Chrowder Chamberlin",
       "DATE": "1909",
       "FUTURE HABITABILITY ON EARTH": "5,000,000 - 50,000,000",
       "EXPLANATION TYPE": "Nuclear physics.",
@@ -373,7 +373,7 @@
       "SOURCE": "Thomas Chrowder Chamberlin, 'Geologic Forecast of the Future Opportunities of Our Race', Science, 30:783 (1909), 937-949."
     },
     {
-      "NAME": "JOHN JOLY",
+      "NAME": "John Joly",
       "DATE": "1909",
       "FUTURE HABITABILITY ON EARTH": "100,000,000",
       "EXPLANATION TYPE": "Nuclear physics.",
@@ -381,14 +381,14 @@
       "SOURCE": "John Joly, Radioactivity & Geology (London: Constable, 1909), 170."
     },
     {
-      "NAME": "ARTHUR HOLMES",
+      "NAME": "Arthur Holmes",
       "DATE": "1913",
       "PAST AGE OF EARTH": "320,000,000",
       "EXPLANATION TYPE": "Sedimentological (limestone accumulation).",
       "SOURCE": "Arthur Holmes, The Age of the Earth (London: Harper, 1913)."
     },
     {
-      "NAME": "HENRY ADAMS",
+      "NAME": "Henry Adams",
       "DATE": "1919",
       "FUTURE HABITABILITY ON EARTH": "20,000,000",
       "EXPLANATION TYPE": "Thermodynamic.",
@@ -396,7 +396,7 @@
       "SOURCE": "Henry Adams, The Tendency of History (London: Macmillan, 1919), 48."
     },
     {
-      "NAME": "ARTHUR S. EDDINGTON",
+      "NAME": "Arthur S. Eddington",
       "DATE": "1920",
       "FUTURE HABITABILITY ON EARTH": "15,000,000,000",
       "EXPLANATION TYPE": "Nuclear physics.",
@@ -404,7 +404,7 @@
       "SOURCE": "A.S. Eddington, ‘The Internal Constitution of Stars’, The Observatory, 43:557 (1920), 298."
     },
     {
-      "NAME": "JOSEPH McCABE",
+      "NAME": "Joseph McCabe",
       "DATE": "1921",
       "FUTURE HABITABILITY ON EARTH": "4,000,000 - 10,000,000",
       "EXPLANATION TYPE": "Nuclear physics.",
@@ -412,14 +412,14 @@
       "SOURCE": "Joseph McCabe, The End of the World (London: Routledge, 1921), 112-115."
     },
     {
-      "NAME": "ALEXANDER FRIEDMANN",
+      "NAME": "Alexander Friedmann",
       "DATE": "1923",
       "PAST AGE OF UNIVERSE": "10,000,000,000",
       "EXPLANATION TYPE": "Relativistic physics.",
       "SOURCE": "Alexander Friedmann, Мир как пространство и время (Petrograd: Academia, 1923)."
     },
     {
-      "NAME": "KIRTLEY F. MATHER",
+      "NAME": "Kirtley F. Mather",
       "DATE": "1924",
       "FUTURE HABITABILITY ON EARTH": "5,000,000 - 50,000,000",
       "EXPLANATION TYPE": "Geologic.",
@@ -427,7 +427,7 @@
       "SOURCE": "Kirtley F. Mather, 'Geologic Factors in Organic Evolution', Ohio Journal of Science, 24:3 (1924), 141."
     },
     {
-      "NAME": "E.E. FOURNIER",
+      "NAME": "E.E. Fournier",
       "DATE": "1925",
       "PAST AGE OF EARTH": "100,000,000",
       "FUTURE HABITABILITY ON EARTH": "10,000,000",
@@ -436,7 +436,7 @@
       "SOURCE": "Joseph McCabe, The End of the World (London: Routledge, 1921), 112-115."
     },
     {
-      "NAME": "J.B.S. HALDANE",
+      "NAME": "J.B.S. Haldane",
       "DATE": "1926",
       "FUTURE HABITABILITY ON EARTH": "1,000,000,000,000",
       "FUTURE FOR LIFE IN WIDER UNIVERSE": "80,000,000,000,000",
@@ -444,14 +444,14 @@
       "SOURCE": "J.B.S. Haldane, The Last Judgement (London: Harper's, 1927), 36."
     },
     {
-      "NAME": "ARTHUR HOLMES",
+      "NAME": "Arthur Holmes",
       "DATE": "1927",
       "PAST AGE OF EARTH": "1,600,000,000 - 3,500,000,000",
       "EXPLANATION TYPE": "Radiometric dating (uranium decay in crust).",
       "SOURCE": "Arthur Holmes, The Age of the Earth: An Introduction to Geological Ideas (London: Benn, 1927)."
     },
     {
-      "NAME": "JAMES JEANS",
+      "NAME": "James Jeans",
       "DATE": "1928",
       "PAST AGE OF THE UNIVERSE": "10,000,000,000,000",
       "PAST AGE OF EARTH": "7,000,000,000,000 - 8,000,000,000,000",
@@ -459,7 +459,7 @@
       "SOURCE": "James Jeans, 'The Physics of the Universe', Supplement to Nature, 3079 (1928), 692-697."
     },
     {
-      "NAME": "JAMES JEANS",
+      "NAME": "James Jeans",
       "DATE": "1929",
       "PAST AGE OF THE UNIVERSE": "200,000,000,000,000",
       "PAST AGE OF EARTH": "2,000,000,000",
@@ -469,7 +469,7 @@
       "KILL MECHANISM": "Solar aging & cooling."
     },
     {
-      "NAME": "E.W. BARNES",
+      "NAME": "E.W. Barnes",
       "DATE": "1931",
       "PAST AGE OF UNIVERSE": "5,000,000,000,000",
       "PAST AGE OF EARTH": "3,000,000,000",
@@ -477,14 +477,14 @@
       "SOURCE": "E.W. Barnes, 'Evolution of the Universe', Nature, 128 (1931), 710-722."
     },
     {
-      "NAME": "ARTHUR S. EDDINGTON",
+      "NAME": "Arthur S. Eddington",
       "DATE": "1933",
       "PAST AGE OF UNIVERSE": "10,000,000,000",
       "EXPLANATION TYPE": "Cosmic expansion.",
       "SOURCE": "Arthur S. Eddington, The Expanding Universe (Cambridge: CUP, 1933), 80."
     },
     {
-      "NAME": "E.W. BARNES",
+      "NAME": "E.W. Barnes,",
       "DATE": "1933",
       "FUTURE FOR LIFE IN WIDER UNIVERSE": "10,000,000,000,000",
       "EXPLANATON TYPE": "Thermodynamic.",
@@ -492,7 +492,7 @@
       "SOURCE": "E.W. Barnes, Scientific Theory & Religion (London: Macmillan, 1933), 404."
     },
     {
-      "NAME": "C.E.M. JOAD",
+      "NAME": "C.E.M. Joad",
       "DATE": "1934",
       "PAST AGE OF EARTH": "1,200,000,000",
       "FUTURE HABITABILITY ON EARTH": "1,200,000,000,000",
@@ -501,7 +501,7 @@
       "SOURCE": "C.E.M. Joad, 'The Future & Prospects of Life', The Contemporary Review, 145 (1934), 177-183."
     },
     {
-      "NAME": "J.B.S. HALDANE",
+      "NAME": "J.B.S. Haldane",
       "DATE": "1935",
       "FUTURE FOR LIFE IN WIDER UNIVERSE": "80,000,000,000,000",
       "EXPLANATION TYPE": "Speculative.",
@@ -509,14 +509,14 @@
       "SOURCE": "J.B.S. Haldane, The Outlook of Science (London: Kegan Paul, 1935), 137."
     },
     {
-      "NAME": "EDWIN HUBBLE",
+      "NAME": "Edwin Hubble",
       "DATE": "1937",
       "PAST AGE OF UNIVERSE": "1,860,000,000",
       "EXPLANATION TYPE": "Hubble Constant",
-      "SOURCE": "Edwin Hubble,The Observational Approach to Cosmology (Oxford: OUP, 1937), 42-43."
+      "SOURCE": "Edwin Hubble, The Observational Approach to Cosmology (Oxford: OUP, 1937), 42-43."
     },
     {
-      "NAME": "GEORGE GAMOW",
+      "NAME": "George Gamow",
       "DATE": "1940",
       "FUTURE HABITABILITY ON EARTH": "10,000,000,000",
       "EXPLANATION TYPE": "Nuclear physics.",
@@ -524,7 +524,7 @@
       "SOURCE": "G. Gamow, The Birth & Death of the Sun (New York: Viking Press, 1940)."
     },
     {
-      "NAME": "HENRY NORRIS RUSSELL",
+      "NAME": "Henry Norris Russell",
       "DATE": "1940",
       "PAST AGE OF UNIVERSE": "2,000,000,000",
       "PAST AGE OF EARTH": "1,800,000,000",
@@ -535,7 +535,7 @@
       "SOURCE": "Henry Norris Russell,'The Time-Scale of the Universe', Science, 92:2376 (1940), 19-27."
     },
     {
-      "NAME": "KIRTLEY F. MATHER",
+      "NAME": "Kirtley F. Mather",
       "DATE": "1940",
       "FUTURE HABITABILITY ON EARTH": "1,500,000,000 - 2,000,000,000",
       "EXPLANATION TYPE": "Geological & cosmological.",
@@ -543,7 +543,7 @@
       "SOURCE": "Kirtley F. Mather, 'The Future of Man as an Inhabitant of the Earth', Sigma Xi Quarterly, 28:1 (1940), 3-14, 20."
     },
     {
-      "NAME": "KIRTLEY F. MATHER",
+      "NAME": "Kirtley F. Mather",
       "DATE": "1940",
       "FUTURE HABITABILITY ON EARTH": "1,500,000,000 - 2,000,000,000",
       "EXPLANATION TYPE": "Geological & cosmological.",
@@ -551,7 +551,7 @@
       "SOURCE": "Kirtley F. Mather, 'Man's Earthly Future: How Long Will Our Earth Survive & How Long Will the Species Called Man Endure on It?, Scientific American, 162:4 (1940), 210-212."
     },
     {
-      "NAME": "GEORGE GAMOW",
+      "NAME": "George Gamow",
       "DATE": "1941",
       "PAST AGE OF EARTH": "2,000,000,000",
       "FUTURE HABITABILITY ON EARTH": "10,000,000,000",
@@ -560,14 +560,14 @@
       "SOURCE": "G. Gamow, The Biography of the Earth (New York: Viking Press, 1941), 189."
     },
     {
-      "NAME": "ARTHUR HOLMES",
+      "NAME": "Arthur Holmes",
       "DATE": "1947",
       "PAST AGE OF EARTH": "3,350,000,000",
       "EXPLANATION TYPE": "Radiometric dating (lead isotopes in crust).",
       "SOURCE": "Arthur Holmes, 'A Revised Estimate of the Age of the Earth', Nature, 159 (1947), 127-128."
     },
     {
-      "NAME": "HERMANN BONDI, THOMAS GOLD, & FRED HOYLE",
+      "NAME": "Hermann Bondi, Thomas Gold, & Fred Hoyle",
       "DATE": "1948",
       "AGE OF UNIVERSE": "∞",
       "FUTURE FOR LIFE IN WIDER UNIVERSE": "∞",
@@ -575,7 +575,7 @@
       "SOURCE": "H. Bondi, T. Gold, F. Hoyle, ‘The Steady-State Theory of the Expanding Universe’, Monthly Notices of the Royal Astronomical Society, 108:3 (1948), 252-270."
     },
     {
-      "NAME": "ALBERT G. WILSON",
+      "NAME": "Albert G. Wilson",
       "DATE": "1953",
       "PAST AGE OF UNIVERSE": "3,000,000,000",
       "FUTURE HABITABILITY ON EARTH": "4,000,000,000 - 5,000,000,000",
@@ -584,7 +584,7 @@
       "SOURCE": "Albert G. Wilson, 'Astronomy & Eschatology', Engineering & Science, 16 (1953), 7-20."
     },
     {
-      "NAME": "ERNST ÖPIK",
+      "NAME": "Ernst Öpik",
       "DATE": "1954",
       "PAST AGE OF UNVERSE": "6,000,000,000",
       "PAST AGE OF EARTH": "3,500,000,000",
@@ -592,7 +592,7 @@
       "SOURCE": "Ernst Öpik, 'The Time Scale of Our Universe', Irish Astronomical Journal, 3:4 (1954)"
     },
     {
-      "NAME": "ALLAN SANDAGE",
+      "NAME": "Allan Sandage",
       "DATE": "1957",
       "PAST AGE OF EARTH": "6,000,000,000",
       "FUTURE HABITABILITY ON EARTH": "6,000,000,000",
@@ -601,7 +601,7 @@
       "SOURCE": "Allan Sandage, 'The Birth & Death of a Star', Engineering & Science, 20 (1957), 17-21."
     },
     {
-      "NAME": "CECILIA PAYNE-GAPOSCHKIN",
+      "NAME": "Cecilia Payne-Gaposchkin",
       "DATE": "1959",
       "FUTURE HABITABILITY ON EARTH": "5,000,000,000",
       "EXPLANATION TYPE": "Stellar astronomy.",
@@ -609,14 +609,14 @@
       "SOURCE": "Cecilia Payne-Gaposchkin, 'The Physical Universe', in Man's Contracting World in an Expanding Universe: Proceedings of Convocation Held in Providence, October 21, 22, & 23, 1959 (Providence: Brown University Press, 1960), 58."
     },
     {
-      "NAME": "W.B. BONNOR",
+      "NAME": "W.B. Bonnor",
       "DATE": "1960",
       "AGE OF UNIVERSE": "8,000,000,000",
       "EXPLANATION TYPE:": "Relativistic physics.",
       "SOURCE": "W.B. Bonnor, 'Relativistc Theories of the Universe', in Rival Theories of Cosmology (Oxford: OUP, 1960), 4."
     },
     {
-      "NAME": "PAUL B. SEARS",
+      "NAME": "Paul B. Sears",
       "DATE": "1961",
       "PAST AGE OF EARTH": "5,000,000,000",
       "EXPLANATION TYPE": "Nuclear physics.",
@@ -624,7 +624,7 @@
       "SOURCE": "Paul B. Sears, 'The Perspective of Time', Bulletin of the Atomic Scientists (October, 1961), 324."
     },
     {
-      "NAME": "GEORGE GAMOW",
+      "NAME": "George Gamow",
       "DATE": "1963",
       "FUTURE HABITABILITY ON EARTH": "5,000,000,000",
       "EXPLANATION TYPE": "Nuclear physics.",
@@ -632,7 +632,7 @@
       "SOURCE": "G. Gamow, A Planet Called Earth (New York: Viking, 1963), 247."
     },
     {
-      "NAME": "GEORGE GAMOW",
+      "NAME": "George Gamow",
       "DATE": "1964",
       "FUTURE HABITABILITY ON EARTH": "5,000,000,000",
       "EXPLANATION TYPE": "Nuclear physics.",
@@ -640,7 +640,7 @@
       "SOURCE": "G. Gamow, A Star Called the Sun (New York: Viking, 1964), 160."
     },
     { 
-      "NAME": "CARL SAGAN & GEORGE MULLEN",
+      "NAME": "Carl Sagan & George Mullen",
       "DATE": "1972",
       "FUTURE HABITABILITY ON EARTH": "3,000,000,000 - 4,500,000,000",
       "EXPLANATION TYPE": "Climatological.",
@@ -648,7 +648,7 @@
       "SOURCE": "Carl Sagan & George Mullen, 'Earth & Mars: Evolution of Atmospheres & Surface Temperatures', Science, 177:4043 (1972), 55." 
     },
     {
-      "NAME": "ERNST ÖPIK",
+      "NAME": "Ernst Öpik",
       "DATE": "1973",
       "PAST AGE OF EARTH": "4,500,000,000",
       "FUTURE HABITABILITY ON EARTH": "1,040,000,000",
@@ -657,14 +657,14 @@
       "SOURCE": "Ernst Öpik, 'Our Cosmic Destiny', The Irish Astronomical Journal, 11:4 (1973), 118."
     },
     {
-      "NAME": "FREEMAN DYSON",
+      "NAME": "Freeman Dyson",
       "DATE": "1979",
       "FUTURE FOR LIFE IN WIDER UNIVERSE": "∞",
       "EXPLANATION TYPE": "Conjectural.",
       "SOURCE": "Freeman Dyson, 'Time Without End: Physics & Biology in an Open Universe', Reviews of Modern Physics, 51:3 (1979), 447-460."
     },
     {
-      "NAME": "RICHARD HUTTON & FRANK KENDIG",
+      "NAME": "Richard Hutton & Frank Kendig",
       "DATE": "1980",
       "PAST AGE OF UNIVERSE": "20,000,000,000",
       "PAST AGE OF SUN": "5,000,000,000",
@@ -672,21 +672,21 @@
       "SOURCE": "Richard Hutton & Frank Kendig, Life Spans: Or, How Long Things Last (New York: Holt, 1980)."
     },
     {
-      "NAME": "SIDNEY VAN DER BERGH",
+      "NAME": "Sidney van der Bergh",
       "DATE": "1981",
       "PAST AGE OF UNIVERSE": "15,000,000,000 - 20,000,000,000",
       "EXPLANATION TYPE": "Cosmological.",
       "SOURCE": "Sidney van der Bergh, 'Size & Age of the Universe', Science, 213:4510 (1981), 825-830."
     },
     {
-      "NAME": "DAVID N. SCHRAMM",
+      "NAME": "David N. Schramm",
       "DATE": "1983",
       "PAST AGE OF UNIVERSE": "15,000,000,000",
       "EXPLANATION TYPE": "Nuclear physics.",
       "SOURCE": "David N. Schramm, 'Nuclear Constraints on the Age of the Universe', Highlights of Astronomy, 6 (1983), 251."
     },
     {
-      "NAME": "JAMAL NAZRUL ISLAM",
+      "NAME": "Jamal Nazrul Islam",
       "DATE": "1983",
       "FUTURE FOR LIFE IN WIDER UNIVERSE": "1e,+45 - 1e,+50",
       "EXPLANATION TYPE": "Physical eschatology.",
@@ -694,7 +694,7 @@
       "SOURCE": "J.N. Islam, The Ultimate Fate of the Universe (Cambridge: Cambridge University Press, 1983)."
     },
     {
-      "NAME": "DUANE A. DICUS et al.",
+      "NAME": "Duane A. Dicus et al.",
       "DATE": "1983",
       "FUTURE FOR LIFE IN WIDER UNIVERSE": "1e,+32",
       "EXPLANATION TYPE": "Physical eschatology.",
@@ -702,14 +702,14 @@
       "SOURCE": "Duane A. Dicus et al., ‘The Future of the Universe’, Scientific American, 248 (1983), 74-85."
     },
     {
-      "NAME": "G. BRENT DALRYMPLE",
+      "NAME": "G. Brent Dalrymple",
       "DATE": "1991",
       "PAST AGE OF EARTH": "4,540,000,000",
       "EXPLANATION TYPE": "Synoptic.",
       "SOURCE": "G. Brent Dalrymple, The Age of the Earth (Stanford: Stanford University Press, 1991)."
     },
     {
-      "NAME": "KEN CALDEIRA & JAMES F. KASTING",
+      "NAME": "Ken Cladeira & James F. Kasting",
       "DATE": "1992",
       "FUTURE HABITABILITY ON EARTH": "900,000,000 - 1,500,000,000",
       "EXPLANATION TYPE": "Climatological.",
@@ -717,7 +717,7 @@
       "SOURCE": "Ken Cladeira & James F. Kasting, 'The Life Span of the Biosphere Revisited', Nature, 360 (1992), 721-732."
     },
     {
-      "NAME": "FRED ADAMS & GREGORY P. LAUGHLIN",
+      "NAME": "Fred Adams & Gregory P. Laughlin",
       "DATE": "1999",
       "PAST AGE OF UNIVERSE": "10,000,000,000",
       "PAST AGE OF EARTH": "4,500,000,000",
@@ -728,7 +728,7 @@
       "SOURCE": "F. Adams & G. Laughlin, The Five Ages of the Universe (New York: Free Press, 1999)."
     },
     {
-      "NAME": "LAWRENCE M. KRAUS & GLENN D. STARKMAN",
+      "NAME": "Lawrence M. Krauss & Glenn D. Starkman",
       "DATE": "2000",
       "FUTURE FOR LIFE IN WIDER UNIVERSE": "1e,+50",
       "EXPLANATION TYPE": "Physical eschatology.",
@@ -736,7 +736,7 @@
       "SOURCE": "Lawrence M. Krauss & Glenn D. Starkman, 'Life, the Universe, & Nothing', The Astrophysical Journal, 531 (2000), 22-30."
     },
     {
-      "NAME": "FRED ADAMS",
+      "NAME": "Fred Adams",
       "DATE": "2008",
       "FUTURE FOR LIFE IN WIDER UNIVERSE": "1e,+40",
       "EXPLANATION TYPE": "Physical eschatology.",
@@ -744,7 +744,7 @@
       "SOURCE": "Fred Adams, 'Long-term Astrophysical Processes', in Global Catastrophic Risks, ed. N. Bostrom & M. Cirkovic (Oxford: OUP, 2008), 41."
     },
     {
-      "NAME": "E.T. WOLF & O.B. TOON",
+      "NAME": "E.T. Wolf & O.B. Toon",
       "DATE": "2015",
       "FUTURE HABITABILITY ON EARTH": "1,500,000,000 - 2,000,000,000",
       "EXPLANATON TYPE": "Climatological.",
@@ -752,14 +752,14 @@
       "SOURCE": "E.T. Wolf & O.B. Toon, ‘The evolution of habitable climates under the brightening Sun’, JGR Atmospheres, 120:12 (2015): 5775-5794."
     },
     {
-      "NAME": "WMAP MISSION",
+      "NAME": "WMAP Mission",
       "DATE": "2012",
       "PAST AGE OF UNIVERSE": "13,772,000,000",
       "EXPLANATION TYPE": "Satellite mission.",
       "SOURCE": "NASA's Wilkinson Microwave Anisotropy Probe."
     },
     {
-      "NAME": "ANDREW J RUSHBY et al.",
+      "NAME": "Andrew J Rushby et al.",
       "DATE": "2013",
       "FUTURE HABITABILITY ON EARTH": "1,750,000,000 - 3,250,000,000",
       "EXPLANATION TYPE": "Comparative exoplanetology.",
@@ -767,7 +767,7 @@
       "SOURCE": "Andrew J Rushby et al., 'Habitable Zone Lifetimes of Exoplanets Around Main Sequence Stars', Astrobiology, 13:9 (2013), 833-849."
     },
     {
-      "NAME": "PLANCK MISSION",
+      "NAME": "Planck Mission",
       "DATE": "2013",
       "PAST AGE OF UNIVERSE": "13,820,000,000",
       "EXPLANATION TYPE": "Satellite mission.",
