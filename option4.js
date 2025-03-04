@@ -161,10 +161,14 @@ window.addEventListener('load', () => {
                     // If this is a dummy entry (only DATE) and not divisible by 10, skip rendering marker
                     if (Object.keys(entry).length === 1 && yearNum % 10 !== 0) return;
 
+                    // Use black for decade markers, red for data entries
+                    const isDummy = Object.keys(entry).length === 1;
+                    const textSize = isDummy ? 10 : 5; // Bigger size for decade markers
+
                     // Otherwise, render a text marker
                     const textGeometry = new THREE.TextGeometry(entry.DATE.toString(), {
                         font: font,
-                        size: 5,
+                        size: textSize,
                         height: 0.1,
                         curveSegments: 12,
                     });
@@ -172,13 +176,11 @@ window.addEventListener('load', () => {
                     const xOffset = -textGeometry.boundingBox.min.x;
                     textGeometry.translate(xOffset, 0, 0);
 
-                    // Use black for decade markers, red for data entries
-                    const isDummy = Object.keys(entry).length === 1;
                     const material = new THREE.MeshBasicMaterial({ color: isDummy ? 0x000000 : 0xff0000, side: THREE.DoubleSide });
                     const textMesh = new THREE.Mesh(textGeometry, material);
 
                     const yPosition = -10;
-                    const zPosition = -((maxYear - yearNum) * 20);
+                    const zPosition = -((maxYear - yearNum) * 10);
                     textMesh.position.set(0, yPosition, zPosition);
                     textMesh.rotation.x = -Math.PI / 2;
                     textMesh.userData = { isYear: true, originalColor: isDummy ? 0x000000 : 0xff0000 };
