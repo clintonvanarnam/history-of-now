@@ -188,6 +188,13 @@ window.addEventListener('load', () => {
                     scene.add(textMesh);
                     textMeshes.push(textMesh);
 
+                     // Draw horizontal line marker
+                     const lineMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
+                     const lineGeometry = new THREE.BoxGeometry(2000, 0.25, 0.25);
+                     const line = new THREE.Mesh(lineGeometry, lineMaterial);
+                     line.position.set(0, yPosition, zPosition);
+                     scene.add(line);
+
                     // Render data visualization (lines, spheres, etc.) only if there is extra data
                     if (!isDummy) {
                         // Create an invisible plane for interaction
@@ -202,12 +209,7 @@ window.addEventListener('load', () => {
                         scene.add(planeMesh);
                         planeMeshes.push(planeMesh);
 
-                        // Draw horizontal line marker
-                        const lineMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
-                        const lineGeometry = new THREE.BoxGeometry(2000, 0.25, 0.25);
-                        const line = new THREE.Mesh(lineGeometry, lineMaterial);
-                        line.position.set(0, yPosition, zPosition);
-                        scene.add(line);
+                       
 
                         // Data-specific graphics: Past Age of Earth and Future Habitability
                         if (entry["PAST AGE OF EARTH"]) {
@@ -322,8 +324,10 @@ window.addEventListener('load', () => {
                     }
                 });
 
+                
+
                 addCentralVerticalLine();
-                addLinearGridLines();
+                // addLinearGridLines();
             });
         });
 
