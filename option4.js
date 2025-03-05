@@ -52,6 +52,7 @@ window.addEventListener('load', () => {
     ];
 
     let scaleWidth = cameraPositions[0].targetScale;
+    let nowMesh; // Declare nowMesh in the global scope
 
     // Global variables
     const DATA_COLOR = 0xff0000; // Red color
@@ -139,197 +140,253 @@ window.addEventListener('load', () => {
 
     // Load font and create text meshes and data visualization
     const loader = new THREE.FontLoader();
-    fetch('data.json')
-        .then(response => response.json())
-        .then(data => {
-            loader.load('fonts/Cosmica.json', function (font) {
-                // Generate a complete list of years from the data range
-                const years = data.Sheet1.map(entry => parseInt(entry.DATE)).filter(year => !isNaN(year));
-                const minYear = Math.min(...years);
-                const maxYear = Math.max(...years);
-                const allYears = Array.from({length: maxYear - minYear + 1}, (_, i) => (minYear + i).toString());
-                // Merge data with complete list (dummy entries have only DATE)
-                const fullEntries = allYears.map(year => data.Sheet1.find(entry => entry.DATE === year) || { DATE: year });
-                // Reverse to maintain desired order
-                entries = fullEntries;
-                // Render entries:
-                // - Only render a marker if the year is divisible by 10
-                // - OR if the entry has additional data (dummy entries only have DATE)
-                entries.forEach((entry, index) => {
-                    const yearNum = parseInt(entry.DATE);
-                    
-                    // If this is a dummy entry (only DATE) and not divisible by 10, skip rendering marker
-                    if (Object.keys(entry).length === 1 && yearNum % 10 !== 0) return;
 
-                    // Use black for decade markers, red for data entries
-                    const isDummy = Object.keys(entry).length === 1;
-                    const textSize = isDummy ? 10 : 5; // Bigger size for decade markers
-
-                    // Otherwise, render a text marker
-                    const textGeometry = new THREE.TextGeometry(entry.DATE.toString(), {
-                        font: font,
-                        size: textSize,
-                        height: 0.1,
-                        curveSegments: 12,
-                    });
-                    textGeometry.computeBoundingBox();
-                    const xOffset = -textGeometry.boundingBox.min.x;
-                    textGeometry.translate(xOffset, 0, 0);
-
-                    const material = new THREE.MeshBasicMaterial({ color: isDummy ? 0x000000 : 0xff0000, side: THREE.DoubleSide });
-                    const textMesh = new THREE.Mesh(textGeometry, material);
-
-                    const yPosition = -10;
-                    const zPosition = -((maxYear - yearNum) * 10);
-                    textMesh.position.set(0, yPosition, zPosition);
-                    textMesh.rotation.x = -Math.PI / 2;
-                    textMesh.userData = { isYear: true, originalColor: isDummy ? 0x000000 : 0xff0000 };
-                    textMesh.name = `Year_${entry.DATE}`;
-                    scene.add(textMesh);
-                    textMeshes.push(textMesh);
-
-                     // Draw horizontal line marker
-                     const lineMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
-                     const lineGeometry = new THREE.BoxGeometry(2000, 0.25, 0.25);
-                     const line = new THREE.Mesh(lineGeometry, lineMaterial);
-                     line.position.set(0, yPosition, zPosition);
-                     scene.add(line);
-
-                    // Render data visualization (lines, spheres, etc.) only if there is extra data
-                    if (!isDummy) {
-                        // Create an invisible plane for interaction
-                        const width = textGeometry.boundingBox.max.x - textGeometry.boundingBox.min.x;
-                        const height = textGeometry.boundingBox.max.y - textGeometry.boundingBox.min.y;
-                        const planeGeometry = new THREE.PlaneGeometry(width * 1.2, height * 1.2);
-                        const planeMaterial = new THREE.MeshBasicMaterial({ opacity: 0, transparent: true, side: THREE.DoubleSide });
-                        const planeMesh = new THREE.Mesh(planeGeometry, planeMaterial);
-                        planeMesh.position.copy(textMesh.position);
-                        planeMesh.rotation.copy(textMesh.rotation);
-                        planeMesh.userData = { textMesh: textMesh };
-                        scene.add(planeMesh);
-                        planeMeshes.push(planeMesh);
-
-                       
-
-                        // Data-specific graphics: Past Age of Earth and Future Habitability
-                        if (entry["PAST AGE OF EARTH"]) {
-                            const pastAge = entry["PAST AGE OF EARTH"];
-                            if (pastAge === '∞') {
-                                const sphereGeometry = new THREE.SphereGeometry(2.5, 32, 32);
-                                const sphereMaterial = new THREE.MeshBasicMaterial({ color: DATA_COLOR });
-                                const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
-                                sphere.position.set(0, yPosition, zPosition);
-                                sphere.userData = { entry, originalColor: DATA_COLOR };
-                                scene.add(sphere);
-                                planeMeshes.push(sphere);
-                                const nameText = entry["NAME"] ? entry["NAME"].toUpperCase() : "UNKNOWN";
-                                const nameGeometry = new THREE.TextGeometry(nameText, {
-                                    font: font,
-                                    size: 3,
-                                    height: 0.1,
-                                    curveSegments: 12,
-                                });
-                                nameGeometry.computeBoundingBox();
-                                const nameMaterial = new THREE.MeshBasicMaterial({ color: DATA_COLOR });
-                                const nameMesh = new THREE.Mesh(nameGeometry, nameMaterial);
-                                const nameYOffset = yPosition + 10;
-                                nameMesh.position.set(0, nameYOffset, zPosition);
-                                nameMesh.rotation.x = 0;
-                                nameMesh.userData.isLabel = true;
-                                scene.add(nameMesh);
-                            } else {
-                                const lineLength = mapToLinearScale(pastAge);
-                                const redLineMaterial = new THREE.MeshBasicMaterial({ color: DATA_COLOR });
-                                const redLineGeometry = new THREE.BoxGeometry(lineLength, DATA_LINE_THICKNESS, DATA_LINE_THICKNESS);
-                                const redLine = new THREE.Mesh(redLineGeometry, redLineMaterial);
-                                redLine.position.set(-lineLength / 200, yPosition, zPosition);
-                                redLine.userData = { entry, originalColor: DATA_COLOR };
-                                scene.add(redLine);
-                                redLines.push(redLine);
-                                const verticalRedLineHeight = 20;
-                                const verticalRedLineGeometry = new THREE.BoxGeometry(DATA_LINE_THICKNESS, verticalRedLineHeight, DATA_LINE_THICKNESS);
-                                const verticalRedLine = new THREE.Mesh(verticalRedLineGeometry, new THREE.MeshBasicMaterial({ color: DATA_COLOR }));
-                                verticalRedLine.position.set(-lineLength + DATA_LINE_THICKNESS / 2 - 0.5, yPosition + verticalRedLineHeight / 2, zPosition);
-                                verticalRedLine.userData = { entry, originalColor: DATA_COLOR };
-                                scene.add(verticalRedLine);
-                                verticalRedLines.push(verticalRedLine);
-                                const nameText = entry["NAME"] ? entry["NAME"].toUpperCase() : "UNKNOWN";
-                                const textString = `${nameText}\n${pastAge}`;
-                                const labelGeometry = new THREE.TextGeometry(textString, {
-                                    font: font,
-                                    size: 3,
-                                    height: 0.1,
-                                    curveSegments: 12,
-                                });
-                                labelGeometry.computeBoundingBox();
-                                const labelMaterial = new THREE.MeshBasicMaterial({ color: DATA_COLOR });
-                                const labelMesh = new THREE.Mesh(labelGeometry, labelMaterial);
-                                const padding = 2;
-                                const xOffset = -lineLength + padding;
-                                const yOffset = yPosition + verticalRedLineHeight / 2;
-                                labelMesh.position.set(xOffset, yOffset, zPosition);
-                                labelMesh.rotation.x = 0;
-                                labelMesh.userData.isLabel = true;
-                                scene.add(labelMesh);
-                                redLine.userData.label = labelMesh;
-                            }
-                        }
-
-                        if (entry["FUTURE HABITABILITY ON EARTH"]) {
-                            const futureHabitability = entry["FUTURE HABITABILITY ON EARTH"];
-                            if (futureHabitability === '∞') {
-                                const sphereGeometry = new THREE.SphereGeometry(2.5, 32, 32);
-                                const sphereMaterial = new THREE.MeshBasicMaterial({ color: DATA_COLOR });
-                                const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
-                                sphere.position.set(0, yPosition, zPosition);
-                                sphere.userData = { entry, originalColor: DATA_COLOR };
-                                scene.add(sphere);
-                                planeMeshes.push(sphere);
-                            } else {
-                                const lineLength = Math.abs(mapToLinearScale(futureHabitability));
-                                const blueLineMaterial = new THREE.MeshBasicMaterial({ color: DATA_COLOR });
-                                const blueLineGeometry = new THREE.BoxGeometry(lineLength, DATA_LINE_THICKNESS, DATA_LINE_THICKNESS);
-                                const blueLine = new THREE.Mesh(blueLineGeometry, blueLineMaterial);
-                                blueLine.position.set(lineLength / 2, yPosition, zPosition);
-                                blueLine.userData = { entry, originalColor: DATA_COLOR };
-                                scene.add(blueLine);
-                                blueLines.push(blueLine);
-                                const verticalBlueLineHeight = 20;
-                                const verticalBlueLineGeometry = new THREE.BoxGeometry(DATA_LINE_THICKNESS, verticalBlueLineHeight, DATA_LINE_THICKNESS);
-                                const verticalBlueLine = new THREE.Mesh(verticalBlueLineGeometry, new THREE.MeshBasicMaterial({ color: DATA_COLOR }));
-                                verticalBlueLine.position.set(lineLength - DATA_LINE_THICKNESS / 2 + 0.5, yPosition + verticalBlueLineHeight / 2, zPosition);
-                                verticalBlueLine.userData = { entry, originalColor: DATA_COLOR };
-                                scene.add(verticalBlueLine);
-                                verticalBlueLines.push(verticalBlueLine);
-                                const nameText = entry["NAME"] ? entry["NAME"].toUpperCase() : "UNKNOWN";
-                                const textString = `${nameText}\n${futureHabitability}`;
-                                const labelGeometry = new THREE.TextGeometry(textString, {
-                                    font: font,
-                                    size: 3,
-                                    height: 0.1,
-                                    curveSegments: 12,
-                                });
-                                labelGeometry.computeBoundingBox();
-                                const labelMaterial = new THREE.MeshBasicMaterial({ color: DATA_COLOR });
-                                const labelMesh = new THREE.Mesh(labelGeometry, labelMaterial);
-                                const xOffset = lineLength + 5;
-                                const yOffset = yPosition + verticalBlueLineHeight / 2;
-                                labelMesh.position.set(xOffset, yOffset, zPosition);
-                                labelMesh.rotation.x = 0;
-                                labelMesh.userData.isLabel = true;
-                                scene.add(labelMesh);
-                                blueLine.userData.label = labelMesh;
-                            }
-                        }
-                    }
-                });
-
-                
-
-                addCentralVerticalLine();
-                // addLinearGridLines();
-            });
+fetch('data.json')
+.then(response => response.json())
+.then(data => {
+    loader.load('fonts/Cosmica.json', function (font) {
+        // Generate a complete list of years from the data range
+        const years = data.Sheet1.map(entry => parseInt(entry.DATE)).filter(year => !isNaN(year));
+        const minYear = Math.min(...years);
+        const maxYear = Math.max(...years);
+        const allYears = Array.from({length: maxYear - minYear + 1}, (_, i) => (minYear + i).toString());
+        
+        // Track which years we've already created text for
+        const yearTextCreated = {};
+        
+        // Track how many data entries we've seen for each year (for offset calculation)
+        const yearDataCount = {};
+        
+        // Get all data entries first, then add dummy entries for years without data
+        const dataEntries = data.Sheet1.slice(); // Clone data
+        
+        // Add dummy entries for years that don't have data
+        allYears.forEach(year => {
+            if (!dataEntries.some(entry => entry.DATE === year)) {
+                dataEntries.push({ DATE: year });
+            }
         });
+        
+        // Sort entries by year
+        dataEntries.sort((a, b) => parseInt(a.DATE) - parseInt(b.DATE));
+        
+        // Store for reference
+        entries = dataEntries;
+        
+        // Process each entry
+        entries.forEach((entry) => {
+            const yearNum = parseInt(entry.DATE);
+            const isDummy = Object.keys(entry).length === 1;
+            
+            // Skip dummy entries that aren't decades
+            if (isDummy && yearNum % 10 !== 0) return;
+            
+            // Calculate offset for data visualization if this is a duplicate
+            let offset = 0;
+            let duplicateOffset = 5;
+            if (!isDummy) {
+                if (!yearDataCount[yearNum]) {
+                    yearDataCount[yearNum] = 0;
+                }
+                offset = yearDataCount[yearNum] * duplicateOffset; // Offset by 5 units for each duplicate
+                yearDataCount[yearNum]++;
+            }
+            
+            // Create text only once per year
+            if (!yearTextCreated[yearNum]) {
+                const textSize = isDummy ? 10 : 5;
+                const textGeometry = new THREE.TextGeometry(entry.DATE.toString(), {
+                    font: font,
+                    size: textSize,
+                    height: 0.1,
+                    curveSegments: 12,
+                });
+                textGeometry.computeBoundingBox();
+                const xOffset = -textGeometry.boundingBox.min.x;
+                textGeometry.translate(xOffset, 0, 0);
+
+                const material = new THREE.MeshBasicMaterial({ color: isDummy ? 0x000000 : 0xff0000, side: THREE.DoubleSide });
+                const textMesh = new THREE.Mesh(textGeometry, material);
+
+                const yPosition = -10;
+                const zPosition = -((maxYear - yearNum) * 10);
+                textMesh.position.set(0, yPosition, zPosition);
+                textMesh.rotation.x = -Math.PI / 2;
+                textMesh.userData = { isYear: true, originalColor: isDummy ? 0x000000 : 0xff0000 };
+                textMesh.name = `Year_${entry.DATE}`;
+                scene.add(textMesh);
+                textMeshes.push(textMesh);
+
+                // Draw horizontal line marker (shared across all entries for this year)
+                const lineMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
+                const lineGeometry = new THREE.BoxGeometry(2000, 0.25, 0.25);
+                const line = new THREE.Mesh(lineGeometry, lineMaterial);
+                line.position.set(0, yPosition, zPosition);
+                scene.add(line);
+                
+                yearTextCreated[yearNum] = true;
+            }
+
+            // Only add data visualization for non-dummy entries
+            if (!isDummy) {
+                const yPosition = -10;
+                const zPosition = -((maxYear - yearNum) * 10);
+                
+                // Create an invisible plane for interaction (with offset)
+                const planeGeometry = new THREE.PlaneGeometry(20, 10);
+                const planeMaterial = new THREE.MeshBasicMaterial({ opacity: 0, transparent: true, side: THREE.DoubleSide });
+                const planeMesh = new THREE.Mesh(planeGeometry, planeMaterial);
+                planeMesh.position.set(0, yPosition, zPosition + offset);                planeMesh.rotation.x = -Math.PI / 2;
+                planeMesh.userData = { entry, originalColor: DATA_COLOR };
+                scene.add(planeMesh);
+                planeMeshes.push(planeMesh);
+
+                // Data-specific graphics with offset
+                if (entry["PAST AGE OF EARTH"]) {
+                    const pastAge = entry["PAST AGE OF EARTH"];
+                    if (pastAge === '∞') {
+                        const sphereGeometry = new THREE.SphereGeometry(2.5, 32, 32);
+                        const sphereMaterial = new THREE.MeshBasicMaterial({ color: DATA_COLOR });
+                        const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+                        sphere.position.set(offset, yPosition, zPosition); // Apply offset
+                        sphere.userData = { entry, originalColor: DATA_COLOR };
+                        scene.add(sphere);
+                        planeMeshes.push(sphere);
+                        
+                        // Name text with offset
+                        const nameText = entry["NAME"] ? entry["NAME"].toUpperCase() : "UNKNOWN";
+                        const nameGeometry = new THREE.TextGeometry(nameText, {
+                            font: font,
+                            size: 3,
+                            height: 0.1,
+                            curveSegments: 12,
+                        });
+                        nameGeometry.computeBoundingBox();
+                        const nameMaterial = new THREE.MeshBasicMaterial({ color: DATA_COLOR });
+                        const nameMesh = new THREE.Mesh(nameGeometry, nameMaterial);
+                        const nameYOffset = yPosition + 10;
+                        nameMesh.position.set(offset, nameYOffset, zPosition); // Apply offset
+                        nameMesh.rotation.x = 0;
+                        nameMesh.userData.isLabel = true;
+                        scene.add(nameMesh);
+                    } else {
+                        // Red line with offset
+                        const lineLength = mapToLinearScale(pastAge);
+                        const redLineMaterial = new THREE.MeshBasicMaterial({ color: DATA_COLOR });
+                        const redLineGeometry = new THREE.BoxGeometry(lineLength, DATA_LINE_THICKNESS, DATA_LINE_THICKNESS);
+                        const redLine = new THREE.Mesh(redLineGeometry, redLineMaterial);
+                        redLine.position.set(-lineLength / 2, yPosition, zPosition + offset);
+                        redLine.userData = { entry, originalColor: DATA_COLOR, offset: offset };
+                        scene.add(redLine);
+                        redLines.push(redLine);
+                        
+                        // Vertical line with offset
+                        const verticalRedLineHeight = 20;
+                        const verticalRedLineGeometry = new THREE.BoxGeometry(DATA_LINE_THICKNESS, verticalRedLineHeight, DATA_LINE_THICKNESS);
+                        const verticalRedLine = new THREE.Mesh(verticalRedLineGeometry, new THREE.MeshBasicMaterial({ color: DATA_COLOR }));
+                        verticalRedLine.position.set(-lineLength + DATA_LINE_THICKNESS / 2 - 0.5,
+                            yPosition + verticalRedLineHeight / 2,
+                            zPosition + offset);// Apply offset
+                        verticalRedLine.userData = { entry, originalColor: DATA_COLOR, offset: offset };
+                        scene.add(verticalRedLine);
+                        verticalRedLines.push(verticalRedLine);
+                        
+                        // Label with offset
+                        const nameText = entry["NAME"] ? entry["NAME"].toUpperCase() : "UNKNOWN";
+                        const textString = `${nameText}\n${pastAge}`;
+                        const labelGeometry = new THREE.TextGeometry(textString, {
+                            font: font,
+                            size: 3,
+                            height: 0.1,
+                            curveSegments: 12,
+                        });
+                        labelGeometry.computeBoundingBox();
+                        const labelMaterial = new THREE.MeshBasicMaterial({ color: DATA_COLOR });
+                        const labelMesh = new THREE.Mesh(labelGeometry, labelMaterial);
+                        const padding = 2;
+                        const xOffset = offset - lineLength + padding;
+                        const yOffset = yPosition + verticalRedLineHeight / 2;
+                        labelMesh.position.set(xOffset, yOffset, zPosition + offset);
+                        labelMesh.rotation.x = 0;
+                        labelMesh.userData.isLabel = true;
+                        scene.add(labelMesh);
+                        redLine.userData.label = labelMesh;
+                    }
+                }
+
+                if (entry["FUTURE HABITABILITY ON EARTH"]) {
+                    // Apply the same offset pattern to future habitability visualization
+                    // (Code similar to above but for the blue lines)
+                    const futureHabitability = entry["FUTURE HABITABILITY ON EARTH"];
+                    if (futureHabitability === '∞') {
+                        const sphereGeometry = new THREE.SphereGeometry(2.5, 32, 32);
+                        const sphereMaterial = new THREE.MeshBasicMaterial({ color: DATA_COLOR });
+                        const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+                        sphere.position.set(offset, yPosition, zPosition); // Apply offset
+                        sphere.userData = { entry, originalColor: DATA_COLOR };
+                        scene.add(sphere);
+                        planeMeshes.push(sphere);
+                    } else {
+                        const lineLength = Math.abs(mapToLinearScale(futureHabitability));
+                        const blueLineMaterial = new THREE.MeshBasicMaterial({ color: DATA_COLOR });
+                        const blueLineGeometry = new THREE.BoxGeometry(lineLength, DATA_LINE_THICKNESS, DATA_LINE_THICKNESS);
+                        const blueLine = new THREE.Mesh(blueLineGeometry, blueLineMaterial);
+                        blueLine.position.set(lineLength / 2, yPosition, zPosition + offset);
+                        blueLine.userData = { entry, originalColor: DATA_COLOR, offset: offset };
+                        scene.add(blueLine);
+                        blueLines.push(blueLine);
+                        
+                        // Vertical blue line with offset
+                        const verticalBlueLineHeight = 20;
+                        const verticalBlueLineGeometry = new THREE.BoxGeometry(DATA_LINE_THICKNESS, verticalBlueLineHeight, DATA_LINE_THICKNESS);
+                        const verticalBlueLine = new THREE.Mesh(verticalBlueLineGeometry, new THREE.MeshBasicMaterial({ color: DATA_COLOR }));
+                        verticalBlueLine.position.set(
+                            lineLength - DATA_LINE_THICKNESS / 2 + 0.5,
+                            yPosition + verticalBlueLineHeight / 2,
+                            zPosition + offset);
+                            
+                            // Apply offset
+                        verticalBlueLine.userData = { entry, originalColor: DATA_COLOR, offset: offset };                        scene.add(verticalBlueLine);
+                        verticalBlueLines.push(verticalBlueLine);
+                        
+                        // Label with offset
+                        const nameText = entry["NAME"] ? entry["NAME"].toUpperCase() : "UNKNOWN";
+                        const textString = `${nameText}\n${futureHabitability}`;
+                        const labelGeometry = new THREE.TextGeometry(textString, {
+                            font: font,
+                            size: 3,
+                            height: 0.1,
+                            curveSegments: 12,
+                        });
+                        labelGeometry.computeBoundingBox();
+                        const labelMaterial = new THREE.MeshBasicMaterial({ color: DATA_COLOR });
+                        const labelMesh = new THREE.Mesh(labelGeometry, labelMaterial);
+                        const xOffset = offset + lineLength + 5;
+                        const yOffset = yPosition + verticalBlueLineHeight / 2;
+                        labelMesh.position.set(xOffset, yOffset, zPosition + offset);                        labelMesh.rotation.x = 0;
+                        labelMesh.userData.isLabel = true;
+                        scene.add(labelMesh);
+                        blueLine.userData.label = labelMesh;
+                    }
+                }
+            }
+        });
+
+        addCentralVerticalLine();
+        nowMesh = addNowText(font); // Assign to the global variable instead of creating a new const        updateSceneWithScaleWidth(scaleWidth); // Add this line to apply initial scaling
+
+       
+// Then replace the animate function mosdification with:
+const originalAnimate = animate;
+animate = function() {
+    // No need to update NOW text position every frame
+    // as it's fixed to the timeline, not to the camera
+    
+    // Call the original animation function
+    originalAnimate();
+};
+    });
+});
 
     function addCentralVerticalLine() {
         if (textMeshes.length === 0) {
@@ -347,6 +404,76 @@ window.addEventListener('load', () => {
         rectangle.position.set(0, firstTextPosition.y, midZ);
         scene.add(rectangle);
     }
+
+    function addNowText(font) {
+        // Create the "NOW" text
+        const textGeometry = new THREE.TextGeometry("NOW", {
+            font: font,
+            size: 100, // Larger size for visibility
+            height: 0.1,
+            curveSegments: 12,
+        });
+        
+        // Compute bounding box to help with right-justification
+        textGeometry.computeBoundingBox();
+        
+        // Right-justify the text (move it left by its width)
+        const textWidth = textGeometry.boundingBox.max.x - textGeometry.boundingBox.min.x;
+        textGeometry.translate(-textWidth, 0, 0);
+        
+        // Create the text mesh with black material
+        const material = new THREE.MeshBasicMaterial({ color: 0x000000, side: THREE.DoubleSide });
+        const nowMesh = new THREE.Mesh(textGeometry, material);
+        
+        // Set rotation to match year numbers (flat on ground)
+        nowMesh.rotation.x = -Math.PI / 2;
+        
+        // Position near the central vertical line
+        const yPosition = -10; // Same y-position as the years
+        nowMesh.position.set(-5, yPosition, 0); // Fixed position along the central line
+        
+        // Add to scene
+        scene.add(nowMesh);
+        
+        // Store reference to update position
+        return nowMesh;
+    }
+    
+    // Then replace the animate function modification with:
+// Update the animate function
+const originalAnimate = animate;
+animate = function() {
+    // Position NOW text relative to camera on z-axis but fixed to the central line
+    if (nowMesh) {
+        // Calculate where the camera is looking on the z-axis
+        // For our purposes, we want to find a point along the timeline (z-axis)
+        // that's visible to the camera
+        
+        // Use camera position and rotation to find a good z-position
+        let targetZ;
+        
+        // For camera positions with negative z (looking forward into negative z)
+        if (camera.position.z < 0) {
+            // Position text ahead of camera
+            targetZ = camera.position.z - 200;
+        } 
+        // For camera positions with positive z (looking backward into positive z)
+        else {
+            // Position text ahead of camera in the positive direction
+            targetZ = camera.position.z + 200;
+        }
+        
+        // Keep fixed x,y position but update z position to remain visible
+        nowMesh.position.set(-5, -10, targetZ);
+        
+        // Use a small scale to make sure it's visible but not overwhelming
+        const scaleFactor = 0.2;
+        nowMesh.scale.set(scaleFactor, scaleFactor, scaleFactor);
+    }
+    
+    // Call the original animation function
+    originalAnimate();
+};
 
     function addLinearGridLines() {
         const lineMaterial = new THREE.MeshBasicMaterial({ color: 0x808080 });
@@ -734,54 +861,68 @@ window.addEventListener('load', () => {
     }
 
     function updateSceneWithScaleWidth(scaleWidth) {
+        // Debug info
+        console.log(`Updating scene with scale: ${scaleWidth}, red lines: ${redLines.length}, blue lines: ${blueLines.length}`);
+        
         redLines.forEach((line) => {
             const entry = line.userData.entry;
+            const offset = line.userData.offset || 0;
             const pastAge = entry["PAST AGE OF EARTH"];
             if (pastAge !== "∞") {
                 const lineLength = mapToLinearScale(pastAge);
                 line.scale.x = lineLength / line.geometry.parameters.width;
-                line.position.x = -lineLength / 2;
+                line.position.x = -lineLength / 2; // No offset on X axis
+                // Z position remains unchanged with offset already applied
                 const label = line.userData.label;
                 if (label) {
                     const padding = 2;
-                    const xOffset = -lineLength + padding;
+                    const xOffset = -lineLength + padding; // No offset on X
                     const yOffset = line.position.y + 10;
-                    label.position.set(xOffset, yOffset, line.position.z);
+                    label.position.x = xOffset;
+                    label.position.y = yOffset;
+                    // Z position was already set with offset during creation
                 }
             }
         });
+        
         blueLines.forEach((line) => {
             const entry = line.userData.entry;
             const futureHabitability = entry["FUTURE HABITABILITY ON EARTH"];
             if (futureHabitability !== "∞") {
                 const lineLength = Math.abs(mapToLinearScale(futureHabitability));
                 line.scale.x = lineLength / line.geometry.parameters.width;
-                line.position.x = lineLength / 2;
+                line.position.x = lineLength / 2; // Remove offset from X axis
                 const label = line.userData.label;
                 if (label) {
                     const padding = 5;
-                    const xOffset = lineLength + padding;
+                    const xOffset = lineLength + padding; // Remove offset from X
                     const yOffset = line.position.y + 10;
-                    label.position.set(xOffset, yOffset, line.position.z);
+                    label.position.x = xOffset;
+                    // Z position was already set with offset during creation
                 }
             }
         });
+        
         verticalRedLines.forEach((line) => {
             const entry = line.userData.entry;
             const pastAge = entry["PAST AGE OF EARTH"];
             if (pastAge !== "∞") {
                 const lineLength = mapToLinearScale(pastAge);
-                line.position.x = -lineLength;
+                line.position.x = -lineLength; // Remove offset from X axis
+                // Z position remains unchanged with offset already applied
             }
         });
+        
         verticalBlueLines.forEach((line) => {
             const entry = line.userData.entry;
             const futureHabitability = entry["FUTURE HABITABILITY ON EARTH"];
             if (futureHabitability !== "∞") {
                 const lineLength = Math.abs(mapToLinearScale(futureHabitability));
-                line.position.x = lineLength;
+                line.position.x = lineLength; // Remove offset from X axis
+                // Z position remains unchanged with offset already applied
             }
         });
+        
         renderer.render(scene, camera);
     }
 });
