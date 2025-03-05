@@ -1,197 +1,980 @@
 [Position 0]
-<h2>MIT Journal — Accompanying Narrative</h2>
-<h3>Thomas Moynihan</h3>
-<p>§</p>
-<h2>Preamble 1</h2>
-<p>Humans are almost certainly the only creatures to have ever asked, and begun answering, the question ‘where is now?’. We are the only animals that have attempted to figure out how much past was required to produce our living present and to gauge how much future might be ahead.</p>
-<p>We are orienting creatures, after all. We seek to map the world, to better navigate our way through it. All knowledge is, ultimately, knowhow. And to orient ourselves within this cosmos we need to seek our location not only in space but also within time.</p>
-<p>The following is the story of how our species gained its bearings in time. It is about how, throughout human history, we have come to grasp how large the established past is and how long the future ahead might be.</p>
-<p>But here, of course, ‘time’ cannot be constrained to the familiar scale of a life, bookended by birth and death and meted out in decades. Nor can it be limited to traditional human history, measured in generations, centuries, and the crumbling of empires. To fully answer the riddle of where we find ourselves in time, we must seek our place relative to the evolution of all life, the unfolding chronicle of the planet, and even the aging of the entire universe—stretching from the Big Bang to its ultimate ends. But, of course, answering such questions did not happen overnight.</p>
-<p>We now know that the Earth is roughly 4.5 billion years old. Life begun not long afterward. Ever since, evolution has been cumulating innovations and aptitudes, storing them in the script we call genes. There is grandeur in this view of life: in knowing each of one of us is the way we are, rather than any other way, because of chance encounters going back not only to our early childhoods and births but also to life’s very beginning. Every individual is a result of a memory bank billions of years in the making.</p>
-<p>We also now know our planet has been home to things you and me would recognise as ‘animals’—that is, multicellular and mobile forms of life—for just over half a billion years. This is the tract of time within which there have been eyes to witness and minds to model this aging world.</p>
-<p>Today’s experts predict that Earth may remain habitable—that is, a place where complex life can go about doing complex and interesting things—for something on the order of a further billion years. Our species, by comparison, has only been around for a measly few hundred thousand years. So, compared to all that’s past, we have only just appeared. Relative to all that might yet come, the story of life that is like us may have only just begun.</p>
-<p>But answers to this question, of how much past is behind and how much future might be ahead, has not always been this way. Our sense of where we are in time has changed over time, as our species has learned more about this universe and its workings. That is, as our kind has compiled records, cumulated lessons, and conversed with itself as it ages.</p>
-<p>Over the generations, the ratio of time behind to time ahead has shifted, sometimes dramatically. The following is an attempt to map this, to plot how our answers to the question ‘where is now?’ have evolved over time.</p>
-<p>§</p>
+  <h1>THE HISTORY OF ‘NOW’ — Thomas Moynihan</h1>
+  <h2>THE HISTORY OF ‘NOW’</h2>
+  <p>by Thomas Moynihan</p>
 
-<h2>Preamble 2</h2>
-<p>Why does any of this matter? Because we need to orient ourselves in the world before we can act. We need orientation to know how to make our actions matter.</p>
-<p>In each of our individual lives, having a sense of where we might be within our biographies is of obvious practical importance. After all, if I somehow learned I am much closer to the end of my life, than to its beginning, this would undoubtedly change my outlook and behaviour drastically.</p>
-<p>This is why gaining our bearings in time is important. But this isn’t just about magnitude. It isn’t just about gauging the sheer amount of time behind versus how much future could be left ahead. It is also about fathoming how much of what happens is not inevitable, and thus how long the consequences of present choices will resonate.</p>
-<p>After all, actions only matter when we acknowledge the consequences they unleash would not otherwise have happened; and they matter more in proportion to how lasting these impacts are; particularly so if they are irreversible.</p>
-<p>After all, if I break my legs badly enough, I know I might never walk ever again. But, because I know this isn’t inevitable, I endeavour to avoid it.</p>
-<p>In our own lives, such chains of reasoning are crucial, sometimes marking the distinction between life and death. They allow us to assess how much what’s happening now might permanently alter our entire future in potentially avoidable ways.</p>
-<p>This is why having some sense of orientation, within our own personal biographies, is important. But, these days, we cannot merely limit this type of thinking to our own fleeting biographies. Indeed, our societies now struggle, daily, with the fact that what happens now has the potential to alter the future for Earth’s entire unfolding biosphere.</p>
-<p>Another way of looking at is like this. Thanks to our luxuriant central nervous systems, each of us is capable of something psychologists refer to as ‘mental time travel’. This is the ability to recall the past and predict the future. It is the skill that allows us not only to keep track of our biographies, but also, to a degree, to actively author them.</p>
-<p>But is it possible to imagine an entire planet—ploughing its way through deep time—gaining such an aptitude? That is, the faculty of recollection and foresight?</p>
-<p>Is it possible, even, to imagine a whole universe, as it ages and transitions between states, gaining such a capacity?</p>
-<p>Indeed, until now, our planet was amnesiac. That is, no part of it was reflectively aware of the place of the present moment relative to the established past nor expected future. But then peculiar animals emerged, capable—no matter how fallibly—of cooperation, abstraction, & invention.</p>
-<p>In the last blink of geologic time, through the collaboration of these animals with their increasingly cunning artefacts, this state of planetary amnesia has begun being cured.</p>
-<p>That is, through us, our planet is falteringly becoming aware of its own unfolding biography.</p>
-<p>In our attempts to model our world, alongside our growing legion of planet-encompassing sensors, the Earth system has developed a way of recollecting its deepest past and tracking the changing complexities of its present, so as to forecast its furthest future.</p>
-<p>Through the collective endeavours we refer to with words like ‘climate science’, a cosmos becomes apperceptive, even autobiographical. Through us, our globe becomes aware of its biography. But, again, this nascent capacity did not appear overnight. After all, just like organisms and ecosystems, knowledge and knowhow are things produced only by time. Which is to say, it took time for our kind to realise we were made by deep time. It took time for our kind to realise we could also, perhaps, influence the deep future left ahead.</p>
-<p>So, the following is an attempt to chart the path to today’s view of where the present finds itself within time’s wider expanses. It maps how our sense of the past behind and future ahead has changed over the centuries, as investigation has accumulated insights about the world and new evidence has jettisoned old assumptions, often in dramatic ways.</p>
-<p>It is important to trace how our worldviews got made. In 1973, the Ukrainian-American geneticist Theodosius Dobzhansky declared that “nothing in biology makes sense except in the light of evolution”. It is the same with ideas and our sense of orientation within this world. Our understanding of things is a living, developing process, and no part of it makes sense except in light of its historical development. Retracing its development, moreover, is the only way of gaining grasp of the headroom on possibilities for future deepening of insight. Only by attending to how far we have already come in our understanding, that is, do we gain any sense of the proportions of what we might yet be missing today when we assess the biggest priorities, perils, and potentials facing us as a species.</p>
-<p>§</p>
+  <h2>0—WHERE IS NOW?</h2>
+  <p>
+    Humans are the only creatures to have asked, and begun answering, the question ‘where is now?’.
+    That is, how much past was required to produce our living present and how much future might be left ahead, waiting to be produced.
+    No matter how fallibly, humans have long sought to gain their bearings in time.
+  </p>
+  <p>
+    We are orienting creatures, after all. We seek to map the world, to better navigate our way through it.<sup>[1]</sup>
+    And to orient ourselves within this cosmos we need to seek our location not only in space but also within time.
+  </p>
+  <p>
+    In 1543, Nicolaus Copernicus published a book initiating a string of discoveries eventually proving our planet pirouettes around a star, which is one amongst many, within a universe ungraspably large.<sup>[2]</sup>
+    This revolution — revealing our position within cosmic space — is celebrated and widely recognised.<sup>[3]</sup>
+    Less recognised is the parallel series of scientific breakthroughs that have pinpointed our place within cosmic time.
+  </p>
+  <p>§</p>
+  <p>
+    What follows presents the story of how our species gained its bearings in time.
+    It is about how, across history, human creatures have come to gauge how large the established past is and how long the future ahead could be.
+  </p>
+  <p>
+    Why does this matter? Because time is the sole medium within which actions come to matter, wherein what comes before influences everything that comes thereafter.
+    Figuring out how long the influence of our actions might reach is a crucial consideration, altering behaviour in concrete ways.
+    If I knew I was dying tomorrow, I probably wouldn’t bother paying rent or maintaining my home today.
+    But, believing otherwise, I act accordingly.
+  </p>
+  <p>
+    Today, we all need to extend this type of reasoning beyond our own fleeting biographies.
+    Humanity has become a planetary force, causing climate change and mass extinction.<sup>[4]</sup>
+    Decisions and deeds unfolding in our present have the potential to alter the entire future for life on Earth.
+    It’s crucial we grapple with how long this prospect might be, so we appreciate what is at stake.
+  </p>
+  <p>
+    We now do not doubt that the Earth is roughly 4.5 billion — or, 4,500,000,000 — years old.
+    Today’s experts predict that Earth may remain habitable, and a place where complex life can be doing interesting things, for something on the order of a further 1,500,000,000 years.<sup>[5]</sup>
+    Our species, by comparison, has only been around for a measly few hundred thousand — or, 300,000 — years.
+  </p>
+  <p>
+    Beyond that, we know the wider universe is just under 14 billion, or 14,000,000,000, years old.
+    According to our best understanding of largescale cosmological processes, it will remain capable of supporting complex life for many trillions of years more.
+  </p>
+  <p>
+    Compared to all that’s past, we have only just appeared.
+    Relative to all that might yet come, the story of life that is like us — talkative and technological — may have only just begun.
+    This is our current sense of the whereabouts of ‘now’: of how much past is behind, required to produce inquiring things like us, and how much future might remain ahead.
+  </p>
+  <p>
+    But answers to the question ‘where is now?’ have been wildly different in the past.
+    Our sense of where we find ourselves within time’s wider expanses has changed over time, as our species has learned more about this universe and its workings.
+    That is, as our kind has compiled records, cumulated lessons, and conversed with itself as it ages.
+  </p>
+  <p>
+    Over the generations, the ratio of time behind to time ahead has shifted and warped, sometimes dramatically.
+  </p>
+  <p>
+    The following is an attempt to map this, to plot how answers to the question ‘where is now?’ have evolved.
+    It is the story of how, over the centuries, the estimated age of creation has expanded from 5,000 years to 13,800,000,000 years, whilst the expected future ahead for life has ballooned from a prospect measured in centuries to one meted in strides of trillions of years, and how this has transformed our very sense of who we are and what we might yet achieve…
+  </p>
 
+  <h2>1—SCRIPTURAL PROPHECY</h2>
+  <p>
+    Many cultures throughout human history have assumed time is eternal.
+    This meant asking how much time was behind or ahead was meaningless, as eternity is measureless.
+    But with the rise of Christianity — and later Islam — such belief was toppled.
+    Conviction in an imminent apocalypse, dictated by divinity, became widespread.
+    People presumed they live much nearer the end than the beginning of time.
+    It was widely believed there have been several millennia behind, and only a handful of centuries left ahead.
+  </p>
+
+  <h2>1.1—ANCIENT (4000 BC – 0 AD)</h2>
+  <p>
+    Throughout human history, across continents and cultures, different people have held wildly diverging attitudes to time.
+    Some have been expansive, some less so.
+    The Aztec and Nahua peoples of Mesoamerica, for example, believed the universe would end tomorrow if they stopped offering blood to the gods.<sup>[6]</sup>
+    By contrast, Hindu cosmology measured the lifespan of Brahma, named a Mahākalpa, in spans of 311,040,000,000,000 years.
+    But this massive interval was nested in a wider cycle of recurrence, which was expected to repeat.
+    Indeed, throughout the ancient world the assumption was often that time was eternal.
+    There were, of course, countless conflicting, alternate views.
+    But what’s important for understanding the ancient sense of time is that there wasn’t yet sufficient evidence to disqualify hunches that — beyond familiar scales — time unceasingly cycles and everything eternally renews.
+  </p>
+  <p>
+    §
+  </p>
+  <p>
+    Historically speaking, when people have encountered something whose limits they cannot directly see, they have tended — ahead of evidence to the contrary — to assume it simply lacks limits.
+    Staggered by size into stupor, we conflate extremely large things with limitless things.
+    For most of human history, it proved no different with time, at least beyond tangible spans.
+    A millennium ago, it would have been evident human lives have delimited bookends.
+    But, based on available evidence, it would have remained underdetermined as to whether or not, beyond this tangible span, things don’t just boundlessly recur and repeat.
+  </p>
+  <p>
+    In the premodern world, the globe had yet to be fully mapped.
+    Accordingly, it was possible to assume that everything chronicled and achieved on one’s own continent had already been achieved — and would thereafter ceaselessly reoccur — in other, uncontacted lands.
+    Prior to the compiling and cross-referencing of an archaeological and fossil record spanning all Earth’s continents—that is, not remaining constrained within one landmass—it was impossible to falsify the suspicion that human history never properly begun, nor could thus ever properly end.
+    Eternal things cannot die.
+    People were liable to assume that the human history had instead simply been going, much in the same way, forever, and would so continue.
+    There was not yet evidence to disqualify such an assumption.
+  </p>
+
+  <h2>1.2—MEDIEVAL (0 AD – 1500)</h2>
+  <p>
+    Jesus’s crucifixion on Golgotha split history in two.
+    For his disciples, at least, it introduced a crisp ‘before’ and ‘after’: absolving all humans of their sins, thus applying everywhere equally, and being incapable of reversal or repetition.
+    Previously, there was no universal reference point against which to anchor ‘now’ and determine ‘before’ or ‘after’.
+    For believers, this obliterated Aristotle’s doubt as to whether we can truly say we come ‘after’ our ancestors.
+    God can only sacrifice himself once, after all.
+    If one time was not enough then the objective of the act — of universal salvation, of the saving of the souls of everyone, everywhere — wouldn’t have been fulfilled.
+    Divinity, being omnipotent, doesn’t work in half-measures.
+  </p>
+  <p>
+    With the rise of Christianity and later Islam during the Medieval period, Hellenistic belief in eternity was toppled.
+    It was replaced with teaching that there is a universal direction to time, applying everywhere, equally, arcing from Genesis to Judgement Day.
+  </p>
+  <p>
+    The new doctrine proclaimed that all worldly things had a beginning and will have an end.
+    But this didn’t inculcate a sense of a spacious future ahead.
+    This was because the Abrahamic religions taught that the apocalypse — whose date was predetermined by divinity itself — was imminent.
+    Jesus himself said to his disciples that they would be the last generation.<sup>[13]</sup>
+    When, six hundred years later, writers in Judea started to speak of yet another prophet — raising armies in the east and spreading a new creed — his message was similarly apocalyptic.<sup>[14]</sup>
+    That prophet was called Muhammad.
+    His early followers, like those of Jesus, believed the world only had paltry time left.
+  </p>
+  <p>
+    Accordingly, across Eastern and Western Europe, belief spread that history was much nearer its end than its beginning.
+    Each generation assumed it might be the last.
+    The average person, throughout the medieval period, believed their ‘now’ was closer to time’s conclusion than its dawn.
+  </p>
+  <p>
+    Most believers, during the Middle Ages, actively wanted the end to come.
+    It would liberate them, they believed, of their Earthly suffering and consecrate the final sorting of Good from Evil.
+    Existence was considered irredeemably alloyed with sin; the only way to purify it was to end it.
+  </p>
+  <p>
+    Accordingly, it became a matter of scholarly and mass interest to predict when the world might terminate.
+    Theologians used scripture to attempt to calculate creation’s chronology and ascertain its ambit.
+    Church fathers and theologians, from Theophilus and Hippolytus to Bede, converged on the conclusion that the Earth was several thousand years old, and there would only be a few centuries ahead at most before creation met its end.<sup>[15]</sup>
+  </p>
+
+  <h2>1.3—EARLY MODERN (1500-1700)</h2>
+  <p>
+    Such conviction, that the end was always near, continued throughout the Renaissance, persisting well into the Early Modern period.
+    Methods for measuring the bookends of time remained scriptural.
+    Around 1650, the Irish theologian James Ussher famously calculated the world was created on 4004 BC and would end in around 2000 AD.
+    He arrived at this conclusion, in part, by counting the chains of “begats” in the Old Testament: a way of tracing how many generations had passed since Adam.<sup>[18]</sup>
+  </p>
+  <p>
+    It remained orthodox to assume the world was around five or six thousand years old, and would last a further several centuries.
+    This sense, of living nearer to history’s culmination than its beginning, affected how people saw their world.
+    Writing in 1658, Sir Thomas Browne perfectly captured this overriding sentiment. “’Tis too late to be ambitious”, he declared:
+  </p>
+  <p>
+    “The great mutations of the world are acted, or time may be too short for our designes. […] We whose generations are ordained in this setting part of time, [are] necessitated to eye the remaining particle of futurity, [and] cannot excusably [anticipate any future] duration, which maketh pyramids pillars of snow, and all that’s past a moment.”<sup>[19]</sup>
+  </p>
 [Position 1]
-<h2>Ancient</h2>
-<p>It must be noted here that many non-European cultures have long held extremely expansive outlooks on time. To give just one example, Hindu cosmology measures the lifespan of Brahma, a Mahākalpa, in 311,040,000,000,000 years.</p>
-<p>But this massive interval was nested in a wider cycle of recurrence, which was expected to repeat. Indeed, within and without Europe—throughout the ancient world—the assumption was largely that time was eternal.</p>
-<p>Prior to the compiling of an archaeological and fossil record spanning all Earth’s continents, it was impossible to falsify the suspicion that human history never properly begun nor could ever properly end. Thus, people were liable to assume that human history had instead simply been going, much in the same way, forever. There was not yet evidence to disqualify such assumption.</p>
-<p>Accordingly, the Ancient Greeks and Romans tended to assume that time was eternal and that the future would, in the longer term, look like the past. Both <a href="">Aristotle</a> and Plato clamed that the past was such an “infinite period of time”, that all the possibilities of human history had not only been manifested, but had been manifested innumerably many times. As Aristotle put it:</p>
-<p>each art and science has often been developed as far as possible and has again perished […] not once nor twice nor occasionally, but infinitely often.</p>
-<p>By the same token, they believed they would all, inevitably, be manifested again, unceasingly throughout the measureless future, regardless of what happens now. In other words, you can’t irreversibly lose human possibilities, nor the possibility of human history as such. Plato and others spoke of the:</p>
-<p>…periodic destruction at long intervals of the surface of the earth by massive conflagrations…</p>
-<p>Before clarifying that “the human race has often been destroyed in various ways—as it will be in the future too”. The presupposition was that, even if humankind should be extinguished, it would eventually simply return. No influences of the present persist into the further future, because it will repeat the past regardless. Nothing can be lost, nothing gained. It was for this reason that Cicero clamed there was little point in seeking to impart legacies that are “durable for any long time”.</p>
-<p>Before moving onward, it is important here to note that this is why ‘deep time’ is not just a different concept from ‘eternity’, but is, in important ways, contrary to it. In eternity, there is no orienting oneself. Indeed, Aristotle once reasoned that, if history cycles, then it doesn’t make sense to say we come after our ancestors, because, in another sense, we also come before them.</p>
-<p>In time, decisions can matter because not every possible outcome will eventually come to pass regardless. Possibilities can remain forever unrealised: meaning that taking one course of action, over any of the alternates, becomes consequential. In eternity, this is not so. In time, legacies can last and their influences run deep, but in eternity the only trajectory is an orbit. Eternity is shallow. It took accepting that the time ahead and behind is not only finite, but enormously finite, for the present to realise just how deep the consequences of its decisions might become entrenched.</p>
-<p>§</p>
-<h2>Medieval</h2>
-<p>With the rise of Christianity and later Islam during the Medieval period, belief in eternity was toppled. It was replaced with teaching that there is a universal direction to time: arcing from Genesis to Judgement Day. All worldly things have a beginning and will have an end. But this didn’t inculcate a sense of spacious future ahead. This was because the Abrahamic religions taught that apocalypse was imminent. Throughout the Middle Ages, each generation assumed it might be the last. They assumed they lived much nearer history’s end than its beginning.</p>
-<p>Moreover, most believers, throughout this time, actively wanted this end to come. It would liberate them, they believed, of their Earthly suffering and consecrate the final sorting of Good from Evil. Existence was considered fatally alloyed; the only way to purify it was to end it. Accordingly, it became a matter of interest predicting when the world might terminate.</p>
-<p>During this time, thinkers began using scripture to attempt calculating creation’s chronology and to ascertain its ambit. The Church Fathers, from Theophilus to <a href="">Augustine</a> to Jerome, converged on the conclusion that the Earth was several thousand years old, and that there could only be a few centuries ahead at most.</p>
-<p>§</p>
-<h2>Early Modern</h2>
-<p>Such belief persisted long after the Renaissance, persisting into the Early Modern period. Methods for measuring the bookends of time remained scriptural. Around 1650, the Irish theologian <a href = "google.com">James Ussher</a> famously calculated the world was created on 4004 BC and would end in around 2000 AD. He arrived at this conclusion, in part, by counting the number of ‘begats’ in the Old Testament: a way of tracing how many generations had passed since Adam.</p>
-<p>By this time, it was orthodox to assume the world was around five or six thousand years old, and would last for a further several centuries.</p>
-<p>Such a sense, of living nearer history’s beginning than its end, effected how people saw the world. It made them feel there simply wasn’t the room ahead within which current decisions or deeds could meaningfully resonate. Writing in 1658, Sir Thomas Browne perfectly captured this overriding sentiment. “’Tis too late to be ambitious”, he wrote:</p>
-<p>The great mutations of the world are acted, or time may be too short for our designes. […] We whose generations are ordained in this setting part of time, [are] necessitated to eye the remaining particle of futurity, [and] cannot excusably [anticipate any future] duration, which maketh pyramids pillars of snow, and all that’s past a moment.</p>
-<p>Expectations on the future centuries ahead could invariably be counted on the fingers of one hand. Even luminaries of the emerging scientific method, such as Isaac Newton, produced prophecies—again based on scripture—predicting the world will end sometime around 2060 AD.</p>
-<p>In 1698, the Scottish mathematician John Craig added another method to the mix. In his Theologiae Christianae Principia Mathematica, he proposed a mathematical method for computing how the plausibility of a statement decays over time. That is, the most distant we are from an original oral or written testimony, the more we should suspect it. The more time elapsed since the primary source, the less credence we should give it. Craig used this method to computer that our world will end exactly in 3150 AD.</p>
-<p>Why? Because this is the date when the “probability” of the New Testament’s message will have, rationally speaking, dwindled to zero. Thus, it is only reasonable to expect that, by that date, no one will believe in Christ anymore. The world, therefore, will be filled with unbelievers at this time. This, in the Bible, is given as a precondition for Jesus’s Second Coming and the end of the world. Hence, Craig forecast a future roughly 1,450 years long.</p>
-<p>By applying probability to the question of how plausible certain statements are, Craig’s mathematics was innovative. But his application of it has, of course, not stood time’s test. Nonetheless, it marks an interesting transitory link between scriptural prophecy and more recognisably scientific methods. Across the following, as this transition becomes starker, there is also a shift from definitive declarations of date toward estimates for upper bounds on how long the future could be, accidents aside.</p>
-<p>§</p>
-<h2>Enlightenment</h2>
-<p>But then, as the 1700s opened, naturalists began looking to the physical Earth itself, rather than to Biblical scripture, to answer the question of where the present was located in time. Geology, in other words, had begun consolidating as a science.</p>
-<p>In 1763, the Russian polymath Mikhail Lomonosov appended an essay entitled ‘On the Strata of the Earth’ to a voluminous textbook on mining. In it, he referenced the prior attempts of “Christian chronologists”, before hinting that the testimony of the Earth itself must trump that of the Bible. Our planet, after all, is the “most senior Chronicler of all”. Lomonosov concluded the Eart “appears to be greater” than previous calculations had indicated.</p>
-<p>Having put the question to the rocks, it wasn’t long before scientists were widely accepting that the Earth had been around for leagues longer than was previously expected. Unsurprisingly, it became natural to expect that it might stick around for longer, too. So, the question was asked: given the testimony of the rocks, how long is left ahead?</p>
-<p>§</p>
-<p>Sometime in the 1720s, the French diplomat Benoît de Maillet handwrote a manuscript and circulated it amongst friends. He wrote it pseudonymously—pretending to be “an Indian philosopher”—to avoid censure for the radical claims therein. He didn’t camouflage himself too much, however. The title of the manuscript, Telliamed, is an anagram of de Maillet’s name.</p>
-<p>Far ahead of his time, de Maillet predicted that the age of the Earth was a staggering “deux milliard d’annes”. That’s two billion years. He believed the Earth to have once been entirely covered in ocean and arrived at this eye-watering figure from measuring the steady diminution of the sea in various locales, before estimating how long it would have taken for the current amount of landmass to emerge. Based on his highly speculative model of how Solar Systems age, de Maillet’s theory gave another billion years ahead.</p>
-<p>Unfortunately, when Telliamed was posthumously published, its editor—an Abbé with an eye for orthodoxy—removed all references to actual numbers, replacing them with “millions” or indeterminate phrases like “an immensity of time”. In English translation, they were removed entirely. As such, though bewilderingly prescient, de Maillet’s contribution did not become canon.</p>
-<p>§</p>
-<p>In the 1770s, the French polymath Georges Buffon presented the first theory comprehensively predicting both the past & future of the Earth system, based on the rudimentary hypothesis that the planet was irreversibly losing an original & finite fund of internal heat.</p>
-<p>Buffon theorised Earth had started life as a molten globule, ripped off the sun by a colliding comet. He pictured this globule crusting over in space’s void, eventually cooling enough to become habitable. The conclusion was that global temperatures would steadily, irreversibly decline over time, until the Earth would freeze completely & die.</p>
-<p>Assuming all this, Buffon heated iron globes, then measured their cool-down times, scaling this up to the size of the planet, to produce his planetary forecast.  He estimated Earth was around 74,832 years old; that life emerged upon it 35,983 years ago; and that it would remain habitable for another 93,291 years. Rounding numbers was not yet scientific convention.</p>
-<p>In the 1770s, the Buffon’s compatriot, Jean-Baptiste-Claude Delisle de Sales, published a book in which he disagreed with Buffon. He questioned the analogy between “small white-hot iron balls” and the “torrent of most subtle matter” that is our planet. Nonetheless, de Sales provided his own estimates. Citing some earlier calculations provided by Jean-Jacques de Mairan on changes to the obliquity of Earth’s orbit, de Sales claimed that Earth was probably 140,000 years old. Dismissing potential catastrophes, that might limit the lifespan of the globe, he surmised that it “still seems in its puberty” and “will probably take more than ten thousand centuries before it reaches its decrepitude”.</p>
-<p>Not long afterward, another Frenchman, the socialist philosopher Charles Fourier, provided his own vision. Again, reasoning from changes to Earth’s axial tilt over time, Fourier declared that it had taken five to seven millennia for it to get to its present state. He extrapolated shifts in our planet’s tilt forward, forecasting its tilt would eventually become extreme, creating seasonal extremes, making Earth uninhabitable. Fourier was confident that this would happen in precisely 80,000 years. Confidently, he boasted this calculation accurate “to within one-eighth”. Elsewhere, Fourier predicted that the Earth would become a utopia and the oceans turn to lemonade. His philosophy is fascinating, but based on wistful speculation more than much that was concrete, even by the standards of the time.</p>
-<p>§</p>
-<p>Far more concretely, in 1810, the German astronomer Wilhelm Olbers added yet another method to the mix. Rather than rely on cooling to put an upper limit on the planetary future, he wanted to ascertain how long it would take for a comet to collide with our planet, destroying it. Olbers put together a mathematical model for calculating the probability of a celestial body intersecting with Earth’s orbit, before calculating the likelihood of a collision. He output “219,631,150 Jahren”, or 220 million years.</p>
-<p>Olbers wasn’t saying that other eventualities might intervene in the meantime to make our planet uninhabitable, but it remains an innovative testament to the ways that, extrapolating from physical processes, forecasts on the future were gradually increasing.</p>
-<p>§</p>
-<h2>Romantic</h2>
-<p>But we have a tendency to perceive infinity in any interval or distance that is larger than what we were previously familiar with. The fact we find some magnitude difficult to circumscribe in our limited minds is no evidence that, in reality, it lacks circumference. But, again, it can be easy to miss this. After all, being featureless and dimensionless, eternity is, in many ways, an easier thing to conceive than a count or collection of a billion discrete things. At the least, historically speaking, when people have encountered something whose limits they cannot directly see, they have tended to assume that it simply lacks limits. The same, of course, applies to chronology, beyond tangible scales.</p>
-<p>Hence, as timescales were bursting beyond prior limits, there was bound to be some who, in this, saw evidence of eternity.  There was to be something of an return to Aristotle’s picture of a globe without beginning nor end.</p>
-<p>Back in the 1780s, the Scottish geologist James Hutton reasoned that we should, in explaining geological effects, only conscript causes that are currently observable. But rallying everyday causes, like erosion, to explain canyons and mountains seemingly requires abundant aeons.</p>
-<p>Having thus sensed an “abyss of time”, Hutton surmised that, considered properly, Earth’s age may be measureless. His mantra is famous. “We find no vestige of a beginning,—no prospect of an end”. This was because Hutton, a religious man, believed that there is “wisdom, system, consistency” everywhere in nature. Accordingly, to him, a living world that unceasingly renews itself and never truly changes—nor ages—is more admirable and rational. This led him even to suspect that the world had ever been “sterile”, nor had there ever been a time when it didn’t contain “neither plant nor animal”.</p>
-<p>Hutton’s views had limited influence until his protégé, Charles Lyell, made them mainstream in the 1830s. Their attitude to time—essentially, assuming it has no bounds—became incredibly influential.</p>
-<p>§</p>
-<p>Indeed, though other scientists were now putting bounds on Earth’s history, they all broadly assumed that Earth’s species would continue after the planet’s death. Invariably, it was there would be other planets, elsewhere or elsewhen, with identical animals on them. Given a cosmos unlimited in both space and time, as was then the consensus assumption, this was inevitable. In eternity and infinity, everything possible happens, and everything lost returns, without limit or cessation.</p>
-<p>“Let us add that since nothing is annihilated in nature”, de Sales had written: the time of our planet’s “ruin will only be that of its renewal”. For his part, Fourier had assumed our “souls” would somehow be transported, to other habitable “globes”, throughout “eternity”.</p>
-<p>§</p>
 
-[Position 2]
-<h2>Industrial</h2>
-<p>But how much longer did life have left, here in this Solar System? What further development might be possible? Answering this question involved estimating how long it had take for life to arrive at its current grandeur and diversity, so as to gauge how much further development could be cumulated in the time left ahead.</p>
-<p>By the middle of the 1800s, the question of Earth’s future habitability was, by now, understood to hinge primarily upon the sun’s remaining lifespan. As one Scottish chemist wrote in 1852, it was now, thanks to “recent investigations of Carnot, Joule, W. Thomson, and others”, appreciated that all “mechanical effect (except in a few cases, such as tide miles, volcanic action, and a few more)” on Earth is ultimately “derived from the solar rays, directly or indirectly”. That is, either mediately or immediately, almost everything happening on Earth’s surface is driven by solar power.</p>
-<p>This was due to the birth of thermodynamics: the branch of mathematics enabling the modelling of flows of heat and the measurement of sources of energy. As John Tyndall wrote in 1863:</p>
-<p>“Look at the integrated energies of our world—the stored power of our coal-fields; our winds and rivers; our fleets, armies, and guns. What are they? They are all generated by a portion of the sun’s energy.”</p>
-<p>Though Buffon had presciently attached our future and Earth’s lifespan to an inexorable process of cooling, he had assumed we relied on a primarily internal fund of heat. Now it was understood that the vast majority of life’s appetite for energy is disbursed from the sun. Another conclusion quickly arrived at, due to the birth of thermodynamics, was the realisation that, though energy can be spent renewing things and reverse wear-and-tear, this itself irreversibly consumes energy, such that, in the main, energy is being terminally used up. In other words, our sun will, one day, exhaust itself, going forever dark. Suns don’t flicker on or off, in an eternal cycle, as was previously a plausible. They all, eventually, die.</p>
-<p>So, the question was quickly asked: how long has our sun been outpouring heat, and how much longer can it continue to wring out energy for our sustenance?</p>
-<p>But, at this time, it was uncertain how our star produces its outpouring. Scientists had already decided it couldn’t simply be combusting, like a gigantic coal, since a cinder the size of our sun would burn itself up far more rapidly than seemed plausible. It jarred with the timescales required to explain geological features on Earth. So, various explanations were proposed, assuming that stars shine through some mechanical process. Throughout the 1850s, the most popular of these, proposed by Lord Kevlin (then William Thomson) and Herman Helmholtz, was that the sun produces its heat by languorously collapsing under its own vast weight. Grinding on its own matter as it compacts, and outputting heat and light as the result.</p>
-<p>Assuming this theory, Kelvin became the first to crunch the numbers and output an estimate for the past and future. In 1854, Kelvin used his equations to “trace” backwards in time to a period before which life could exist on Earth—a time when the planet must have been “tenantless”—before then shuttling forward to a time when life must again cease to exist. He did so as if he was causally winding back and forth the cogs of a little toy machine. Dispassionately, he calculated that Earth has been “efficiently illuminated” by the sun for around “32,000 years”, but that this “cannot last” for another “300,000 years”.</p>
-<p>By 1861, he revised his numbers upwards. But not by all too much. Thomson now claimed that Earth’s “inhabitants” cannot have “many million years longer”. Nine years later, Helmholtz made his own attempt, also assuming the sun is powered by implosive friction. He announced we cannot expect our sun “to maintain an additional 17,000,000 of years the same intensity of sunshine as that which is now the source of all terrestrial life. In 1869, the Canadian-American astronomer Simon Newcomb chimed in, calculating that in about “12,000,000 years” our sun will “rapidly cease to radiate the heat necessary to support life on the globe”. The US spectroscopist Charles Augustus Young entered the fray in 1881, professing it is unlikely the sun can offer “sufficient heat to support life on earth” for “ten million years from the present time”.</p>
-<p>Around this time, prehistoric archaeology was maturing as a field of study. Evidence was accumulating, confirming that the human species was far elder than the traditional chronology of 6,000 years, still clung to by the theologically-minded. Evidence of tools from caves implied humanity was, at the last, tens of thousands of years old. More luxuriant estimates were provided by Charles Lyell, who, in his 1863 Geological Evidence of the Antiquity of Man, went for an age of around 100,000 years for the human species. It baffled many that the species had been around for so long without signs of “progress”, but this put into further relief the sheer recency of the thing we call “civilisation”. Having taken so long to appear in the world, it seemed a shame there was more time behind than ahead, given current estimates on the lifespan of the sun.</p>
-<p>By the closing decades of the century, forecasts on the future varied, but largely clustered around a prospect on the order of the very low tens of millions. The scientific community had converged on a kind of consensus.  The sun would die in several million years’ time.</p>
-<p>Some ignored this prospect entirely, calling it “repugnant to the moral sense and against all law, clinging to the hope that “old sol” will shine “forever”. Others retreated to the comfort of the afterlife. Newspapers quipped that it “may be news to know that the world will wind up in ten million years, but the news will become stale before that time”.</p>
-<p>Writers and illustrators produced lurid visions of the last human family, huddling together, about to be picked off by inexorable cold. There was a mood of pessimism.</p>
-<p>Forecasts of ten million years were admittedly much more commodious than Buffon’s earlier estimates, not to mention those of earlier Christians. However, in the century since Buffon, the sense of life’s unexplored potentials had grown. Darwin’s theory of evolution, now widely accepted, taught that the human might be far from the final, nor the most perfect, outcome of organic evolution’s aeons-long toil.</p>
-<p>But the theory that the sun produces heat via collapsing on itself led physicists to conclude that the ratio of ‘past spent’ to ‘future ahead’ was unforgiving. If it had started life as a diffuse cloud, our star—now relatively compact and dense—must clearly be at an advanced, geriatric stage of its life’s arc.</p>
-<p>Moreover, around this time, prehistoric archaeology was maturing as a field of study. Evidence was accumulating, confirming that the human species was far elder than the traditional chronology of 6,000 years, still clung to by the theologically minded. Evidence of cave tools implied humanity was, at the least, tens of thousands of years old. More luxuriant estimates were provided by Charles Lyell, who, in his 1863 Geological Evidence of the Antiquity of Man, went for an age of around 100,000 years for the human species. It baffled many that the species had been around for so long without signs of “progress”, but this put into further relief the sheer recency of the thing we call “civilisation”. Having taken so long to appear in the world, it seemed a shame there was more time behind than ahead, given current estimates on the lifespan of the sun.</p>
-<p>Expressing the mood in a much-quoted passage from 1892, the Irish astronomer Robert Ball declared there is a “distinct limit to man’s existence on our earth”. Our sun, he announced, “has dissipated four-fifths of the energy with which it may have originally been endowed”. It may hold out for 4,000,000 years, or for 5,000,000, Ball professed, but not for 20,000,000. He concluded:</p>
-<p>The race is as mortal as the individual, and, so far as we know, its span cannot under any circumstances be run out beyond a number of millions of years which can certainly be told on the fingers of both hands, and probably on the fingers of one.</p>
-<p>In an 1893 lecture delivered in Oxford’s ornate Sheldonian theatre, the prominent naturalist Thomas Henry Huxley looked forward miserably to a protracted, senile death in the not-too-distant future. He imagined the slow, inglorious squander of the accumulated complexity of aeons of past evolution, as our sun slowly shuts down. Life is past its prime, Huxley pronounced, and we can look forward to a future populated by increasingly simple lifeforms, withering on a diet of dwindling sunlight. One day, there will only be lichen and moss left.</p>
-<p>One attendee at Huxley’s lecture reacted to the depressing implications of the current picture of where the present finds itself within time’s wider expanses. He pointed to the many “millions of years” spent “bringing us up to the present point” of organic evolution, before bemoaning the fact “no sufficient time” appeared to remain ahead, within which “to evolve all the possibilities of our actual state”:</p>
-<p>This is sad indeed. Waste, sheer waste, on the most gigantic scale…</p>
-<p>Huxley had decreed that not even the “most daring imagination” can find a way to “arrest” the coming of this end. But, then, as the 1800s close, and the 1900s open, an entirely new force of nature was discovered, blowing the ceiling off all previous upper bounds on time past and future.</p>
-<p>1900 & 1910s</p>
-<p>Uranium rays were first noticed, by very fortuitous mistake, by Henri Becquerel in 1896. He noticed that, curiously, uranium crystals seem to be emitting energetic rays spontaneously, without any exchange with their surroundings. Not long after, Marie Skłodowska-Curie and her husband, Pierre Curie, decide to investigate this mysterious phenomenon.</p>
-<p>Having coined the word “radio-activité”, Marie Curie successfully isolates radium in 1902. Not long after, she proves that the element expels energy without itself losing heat. Radioactive atoms, she showed, were tiny furnaces.</p>
-<p>Around the same time, it was established that this happened as the atoms themselves slowly disintegrated. And slow it was: some elements, it was quickly revealed, decay over a period stretching into the multiple billions of years. The British physicist Robert Strutt, in 1903, was inspired to make a clock, powered by a miniscule amount of radium, projected to keep ticking for multiple millennia.</p>
-<p>Timescales couldn’t help but expand. The revelations of Curie almost immediately triggered a flurry of excited responses from scientists across fields ranging from geology to astronomy. By September of 1903, the geophysicist George Darwin (son of the biologist) celebrated Curie’s “unexpected” discovery of this “new source of energy”. If the Sun powers itself by “liberating atomic energy”, he conjectured, rather than mere gravitational collapse, then we may have to expand the “cosmical time-scale” by “some such factor as ten or twenty”.</p>
-<p>Not long after, The Daily Mail reported jubilantly on the matter. “Lord Kelvin”, the reporter wrote, “in his most desponding moments, only assigned a beggarly five or six million years to the duration of the life-giving sun”. But here, they continued, comes “radium to the rescue”: lightning our species’s “expectation of life by several hundred million years”.</p>
-<p>By 1907, the physicist Ernest Rutherford concurred, writing that we can expect solar “brilliancy” for orders of magnitudes more than Kelvin’s considerations of no “more than 12 million years and probably much less”. Curie’s “new source of heat”, Rutherford wrote, probably suffices to power the “sun for a longer period’, thus vouchsafing a much greater ‘time for habitation of our globe’. Robert Stout, former prime minister of New Zealand, summed up the situation in 1914:</p>
-<p>Before radium was discovered, the greatest age the physicists would give our earth was a hundred million years; now it may be many thousands of millions. Nature is on a vaster scale than our imagination can grasp.</p>
-<p>By 1920, Arthur Eddington—an authority of physics—was venturing that our Sun, powered by atomic reservoirs, would be able to “maintain its output of heat for 15 billion years” more. To hammer home his point, he referred to the gravitational theory of Kelvin and Helmholtz as a “corpse”.</p>
-<p>From meagre millions, the expected future had ballooned into the multiple billions. In following years, as the twenties roared, and skirt hems became shorter, timescales continued to become yet longer. In 1928, the English cosmologist Sir James Jeans produced even more eye-watering forecasts. Declaring atoms are “pure bottled energy”, he produced his own theory for how they uncork themselves in the sun, believing that they collide and convert each other into pure energy. He boldly estimated that the star retains enough “unbroken bottles” for a trillion years more sunlight.</p>
-<p>§</p>
-<p>But what did this mean to people, practically speaking? For a start, almost as soon as Curie’s revelations were unleashed on the world, people started proclaiming that they are probably living far closer to the beginning of the human story than its ending.</p>
-<p>Communicating the potential scale of the future in his 1929 bestseller The Universe Around Us, Jeans visualised a stamp atop a penny, balanced upon a 20m-high (66ft) obelisk. The stamp's thickness represented recorded history. The stamp and penny combined represented our species' existence. The distance from the stamp down to the obelisk-base was the age of Earth.</p>
-<p>Jeans didn't stop there. He calculated the height of postage stamps, stacked one atop the other, you'd need for a trillion further years of habitability on Earth. “A pile as high as Mont Blanc”, he concluded. Jeans deemed us “creatures of the dawn”, with “unimaginable opportunities for accomplishment” and “unexplored potentialities” ahead.</p>
-<p>Reporting updated knowledge from archaeology, Jeans relayed that humankind has “existed on earth for something like 300,000 years”, and civilisation has only existed for around 5,000 years. He continued:</p>
-<p>"Old Mother Earth must regard man as a very recent apparition indeed; he has just appeared. […] If he [has done] so much in the first few moments of his existence, she may well wonder what is in store for her in the long future ages in which he is destined to labour on her surface. For in all probability the life in front of the human race must enormously exceed the short life behind it."</p>
-<p>Not only did radium reveal new sources of heat in the sun, capable of keeping it alive for longer than was previously assumed, it similarly unveiled new ways for our planet itself to generate heat.</p>
-<p>§</p>
-<p>Not only did radium reveal a capacious future, it also lifted previous limits on evolution’s past. Another of Kelvin’s lines of reasoning, and justifications for his short timescale, was the well-known fact that it is warm underground and gets hotter the further you dig down. From this, Kelvin calculated that a rock the size of Earth cannot have been spilling its internal warmth into space for all too long. Accordingly, he had billed Earth’s age somewhere between 20 and 40 million years old. But the new science of nuclear physics didn’t just reveal new sources of energy in the sun, but also within the Earth too.</p>
-<p>Not long after Curier’s discoveries, the Irish geophysicist John Joly reasoned that, if it should turn out that there are radioactive ores packed throughout the Earth’s crust, then the planet also gains a new fund of internal heat, explaining why it remains toasty underground. Not long after this was first suggested, surprisingly large amounts of radioactive matter were found in common garden soil. What’s more, given that they decays at unvarying rates, radioactive elements proved to be extremely accurate hourglasses. Curie’s discoveries, that is, also revealed the first methods of radiometric dating, which, over coming decades, proved beyond doubt that our planetary home is billions of years old.</p>
-<p>§</p>
-<p>1920s & 1930s</p>
-<p>But then, throughout the 1920s and 1930s, observational and theoretical evidence had begun building that the universe is actually expanding. Astronomers like Edwin Hubble noticed that the other galaxies are receding away from us, and accelerating as they do so.</p>
-<p>Astronomers began speaking tentatively about a “universal evolutionary process”, whilst acknowledging that, if this expansion is true, the “observable” universe cannot be “unlimited”. Moreover, it implied that “all the galaxies” may have “originally” been compacted together.</p>
-<p>Simply put, extrapolating backwards this implied an explosive beginning. Extrapolating forwards, it implies a rarefied end. In other words, the universe—previously assumed eternal and infinite—now appeared to be gaining limits in space and time. All things, it appeared, had a beginning and will have an end.</p>
-<p>These developments were also inspired, in part, by Curie’s discovery. In 1930s, the French priest and physicist Georges Lemaitre was the first to propose that the universe began with a primordial explosion. He proposed that it began life as a “primeval atom” that explosively disintegrated, like a radioactive element, bursting into the receding galaxies we see today. Poetically, he wrote:</p>
-<p>The evolution of the universe can be compared to a display of fireworks that has just ended: some few red wisps, ashes and smoke. Standing on a well-chilled cinder, we see the  slow fading of the suns, [&] recall the vanished brilliance of the origin of worlds.</p>
-<p>By the 1920s, some cosmologists had felt confident enough putting tentative ages on the universe, but these were few and far between. Reasoning that the stars seem to move through space at a more or less equal speed, in 1928, Jeans had proposed that they had evened out their momentum by passing close to each other. Calculating how unlikely it is that two stars pass near enough each other to exert drag on each other, and inferring how long it would take for the current average speed to coalesce, he proposed an age for the stars between five and ten trillion years.</p>
-<p>But now these enormous timescales began being revised downward. The fact that universe, as a whole, appeared to have one explosive beginning, from which all evolutionary processes are unveiling as aftereffects, made cosmologists far more confident in their estimation of their capacity to put an age to the entire cosmos. Another pioneer of the expanding universe hypothesis, Alexander Friedmann in 1923 proposed that ten billion years had passed since the “creation of the world”. In 1933, Arthur Eddington arrived at a similar number, given similar assumptions.</p>
-<p>Moreover, with the discovery of radium there arrived new promise for the possibility of humankind one day overcoming the penury of being planet-locked. It became clear that our species had not yet come anywhere near tapping ceiling on harnessing available energy. This keyed directly into the first concrete hopes that Homo sapiens may decouple its future from that of the sun.</p>
-<p>In 1912, the French astronautics pioneer Robert Esnault-Pelterie arrived that conclusion that atomic power makes space flight much more feasible. He calculated that “400 kg of radium”, propelling a “1,000 kg vehicle”, would be enough “for the journey to Venus and back”. A year afterward, the American scientists Robert Goddard arrived at an even bolder conclusion. He wrote in notebooks that “navigation of interplanetary space must be effected to insure the continuance” of our species, and that there would be no “greater possible calamity” than allowing its “cessation”. Accordingly, he asked:</p>
-<p>[w]ill it be possible to travel to the planets which are around the fixed stars, when the sun and the earth have cooled to such an extent that life is no longer possible on the earth?</p>
-<p>He reasoned that it will be, on the condition that it is “possible to unlock, and control, intra-atomic energy”. He even imagined the use of a “radium alarm clock” to wake up pilots intermittently throughout the unimaginably long flight. He proposed migration to areas in the galaxy where “stars are thickly clustered, so that further migration would be easy”.</p>
-<p>With this, it became possible to speculate that, if terrestrial life ever managed to liberate itself from its parent planet, then the future ahead for living things might not be coupled to that of a sun. In other words, it would instead be bounded above by the future lifespan of the wider cosmos itself. Thankfully, and given the rapid developments in cosmology, some scientists were now happy to put estimates on this ultimate upper bound.</p>
-<p>Perhaps the first to do so was the British-Indian geneticist, communist, and iconoclast J.B.S. Haldane. In a visionary 1927 short story, he wrote that a “generation ago it seemed very plausible” that a cooling sun would make our Earth uninhabitable in “a few million years”, but now “[m]odern physics suggests […] that it will last for at least a million million years”. Given this, he reasoned it is not unreasonable to assume that, if it is possible, our descendants may one day invent the means to propel rockets to other stars. Thereafter, he provided what is likely the first quantitative estimate of how long the future of Earthly life might be, should it achieve interstellar exodus. He surmised our “galaxy has a probable life of at least eighty million million years”, a figure he would reiterate a few years later. He concluded his speculation, piquantly adding: “And there are other galaxies”.</p>
-<p>1930s & 1940s</p>
-<p>As the 1930s drew to a close, thanks to the work of Lise Meitner and others, understanding of nuclear fission coalesces. Around the same time, the German-American physicist Hans Bethe proposed a model for how the sun produces its heat: through the fusion of hydrogen into helium atoms. This better understanding of what powers the sun, far less efficient than Jeans’s earlier model of atomic annihilation, meant that estimates on the future of our star had to be revised down.</p>
-<p>Understanding of fusion, also led to realisation that, as it uses up its hydrogen fuel, our sun will expand, not contract, as it ages. As H.N. Russel explained in 1940, the sun “will keep on shining for at least 10 billion years in the future [and] it will grow brighter as the hydrogen gets used up”. Reflecting this, in his pioneering 1941, Biography of the Earth, the Russian-American physicist Georges Gamow wrote that “10 billion years” separate us from the “epoch of the death of the sun”. By this time, Gamow predicted the sun will have become a hundred times bigger than it is at present, boiling Earth’s seas and cremating any remaining life.</p>
-<p>Reflecting these new estimates, Jeans updated his visualisation of the future. Though disagreeing with the claim that the sun will expand as it ages, Jeans concurred that ten billion years now seems plausible as the “possible future for the existence of life on earth”. Accordingly, he had to update the imagery in his post-stamp metaphor. No longer was the future a pile of stamps higher than Mont Blanc. Instead, in the fourth edition of The Universe Around Us, published in 1945, he changed it to a pile “as high as the towers of Westminster Abbey”.</p>
-<p>Given that the backdrop for such statements was the atrocity of World War 2, Jeans also updated his tone. In a talk given in 1944, in which he referenced the recent hardships of the Blitz, Jeans was far more circumspect when it came to humanity’s future. He proclaimed:</p>
-<p>Astronomically the earth will probably remain suitable for human habitation for thousands of [millions of] years yet to come, but will mankind still inhabit it at the end of this time, or will some other form of life have superseded him?</p>
-<p>He now worried that the technoscientific progress, which he previously assumed implacable and unstoppable might, “cannot go on for ever”.</p>
-<p>…where will it land us?—in a crash?</p>
-<p>1950s & 1960s</p>
-<p>Through the 1950s and 1960s, even better understanding of solar fusion was attained, again revising down estimates. In the 1965 sixth edition of his Biography of the Earth, Gamow changed his estimates to reflect this. Now, he wrote:</p>
-<p>…our sun is about 5 billion years old [and] it still has another 5 billion years to live…</p>
-<p>But, around this time, a rebellion was fomenting against the building evidence for a universe with a finite lifespan. Throughout the middle decades of the 20th century, Fred Hoyle—along with his collaborators Hermann Bondi and Thomas Gold—became convinced that evidence of expansion was not evidence of a cosmic beginning. They argued that the universe doesn’t age, and remains in a steady state over time, hypothesising that the appearance of expansion is caused by new matter and energy spontaneously emerging in the cosmic gaps between the galaxies. Accordingly, over time, the cosmos will always look the same at the largest levels. This was the last-ditch scientific attempt to return to the type of cosmos that <a href="">Aristotle</a> and <a href="">Hutton</a> had envisaged: one where, in the main, time has no bite. It was Hoyle who referred to the competing model as “the Big Bang Theory”, during a BBC interview, in an attempt to deride it.</p>
-<p>Such theorisation, however, was largely toppled in 1964. In this year, two radio astronomers discovered the ‘Cosmic Microwave Background Radiation’: essentially, an echo from the universe’s beginning. This was received as overwhelming evidence for the Big Bang Theory. It was tantamount to confirmation that the observable cosmos itself must have had a beginning, & has limits in space.</p>
-<p>Suddenly this meant that the old longing for eternal recurrence evaporated. No longer could there be comforting conviction that, regardless of what happens here and now, there will be repeats and recurrences of Earth and its life throughout eternity. By giving time bookends, in other words, the Big Bang cosmology implies that what happens here and now might matter forever. There won’t be reruns. We have one shot and one shot only.</p>
-<p>1970s & 1980s</p>
-<p>Throughout the 1960s, humanity sent its first probes to other bodies in the Solar System, making the field of inquiry which Gamow once called “comparative planetology” a reality.</p>
-<p>On December 1962, the US’s Mariner II probe streaked within 35,000km of Venus. This was humankind’s first successful flyby of another planet, spurred by the simmering Space Race.</p>
-<p>Previous generations fell in love with Venus, on account of awareness that it has a thick, swirling atmosphere. Coated in highly reflective clouds, making the planet twinkle in our morning and evening skies, this meant Venus’s surface was impenetrable to traditional telescopes. Accordingly, it became a blank slate upon which wishful fantasies could be projected. It became Earth’s mirror image, assumed to be tropical and sweltering, teeming with exotic life.</p>
-<p>But the Mariner’s flyby burst this bubble. It revealed that our planetary neighbour is an inhospitable, heat-scorched hellscape. When, in 1967, the Soviet Union’s Venera IV Probe became the first mission to enter the Venusian atmosphere, and alight on its surface, this was further confirmed. Venus is hell. Not only is its surface hot enough to melt lead, it is also fearsomely pressurised.</p>
-<p>It didn’t take long for scientists to start arguing our twin-planet was not always so hellish. In the Solar System’s early days, Venus may have been quite clement, oceanic, even habitable. But, then, something happened to trigger its terrible transformation. In 1969, Andrew P. Ingersoll proposed the “runaway greenhouse effect” as an explanation. This describes a process whereby increases in temperature cause water to evaporate, causing heightened atmospheric heat retention, triggering temperatures to continue rising in a reinforcing loop.</p>
-<p>This is how revealing that Venus is a hellscape helped lend impetus to the growing field of climate science, inculcating greater awareness of the sensitivity of planetary atmospheres and their capacity to go fatally awry.</p>
-<p>It wasn’t long before scientists began realising that, long before the sun dies, its expansion will cause a runaway greenhouse to take place on Earth, killing all life. Accordingly, estimates on the Earthly future were, once again, revised down. In 1973, the Estonian astronomer Ernst Öpik produced a model predicting this would happen within one billion years; months later, Carl Sagan and George Mullen produced slightly more liberal forecasts, giving a terrestrial future somewhere in the range of 3.5 to 4 billion further years.</p>
-<p>In the decades since, predictions have converged toward Öpik’s estimate of something like one billion further years for complex life on Earth.</p>
-<p>1990s, & 2000s</p>
-<p>The range of future for life on Earth may have been slashed drastically from the trillions of years that Jeans had estimated back in the late 1920s. However, the news was not all bad, as cosmology had been making leaps and strides in the meantime. The field of “physical eschatology”, studying the far future of the cosmos at large, was, by the 1980s and 1990s, far more confident making claims on the upper limits for the future time within which our universe might be able to host complex life.</p>
-<p>In 1983, a team of scientists laid out various far-flung scenarios in an article in The Scientific American. They were bold enough to make claims about how the evolution of the universe might impinge on its ability to support life over the longest term. They predicted that baryonic matter, the type of matter we are all made of, might evaporate within 10^32 years. But, looking past this, they argued this might not prove entirely fatal. After the decay of protons, intelligent life, they argued, might feed off blackholes. But, at 10^100 years, even these blackholes might evaporate. “Any constant rate of energy consumption by life forms”, they concluded, “will in due course become untenable”. Published in the same year, Jamal Nazrul Islam agreed with this hypothesis, forecasting proton decay in “approximately 10^45 -10^50 years”.</p>
-<p>As the previous millennium drew to a close, in 1999, astrophysicists Fred Adams and Greg Laughlin published their pathbreaking The Five Ages of the Universe. This provided the first book length treatment of the question of physical eschatology. Concurring larger with the aforementioned publication, Adams & Laughlin put proton decay, and the end of complex life, at 10^40 years in the future.</p>
-<p>But, between then and now, is a long time.</p>
-<h2>Our Precarious Present</h2>
-<p>[Conclusion tbd. On Fermi Paradox, cosmic silence, & the question: are we the first to ask the question ‘are we the first?’]</p>
+  <h2>2—GEOLOGY & ARCHAEOLOGY</h2>
+  <p>
+    Throughout the 1700s, people began looking beyond scripture to understand the past and future.
+    Geology began maturing as a science, relying on the testimony of rocks — rather than the Bible — to gauge the age of the Earth and the procession of its creatures.
+    No fossil humans could be found in the eldest strata, implying that humans are a recent addition to an ancient Earth.
+    Results from the first experiments attempting to pinpoint the placement of ‘now’ imply the Earth is several tens of thousands of years old and might remain habitable for a similar interval of time.
+  </p>
 
+  <h2>2.1—ENLIGHTENMENT (1700-1800)</h2>
+  <p>
+    The 1600s saw the advent of modern, empirical science, culminating in the undeniable success of Isaac Newton’s application of its methodology to the study of the heavens.
+    Following this, as the 1700s opened, naturalists began looking to the physical Earth itself, rather than to the Bible, to answer the question of where the present was located in time.
+    They began turning to the testimony of the rocks, rather than of scripture.
+    The geological study of the Earth, as a physical whole planet, had begun consolidating.
+  </p>
+  <p>
+    In 1763, the Russian polymath Mikhail Lomonosov appended an essay entitled “On the Strata of the Earth” to a voluminous textbook on mining.
+    In it, he referenced the prior attempts of “Christian chronologists”, before hinting that the testimony of the Earth itself must trump that of the Bible.
+    After all, our planet, Lomonosov explained, is the “most senior Chronicler of all”.
+    Lomonosov concluded the Earth “appears to be greater” than previous calculations had indicated.<sup>[21]</sup>
+  </p>
+  <p>
+    Having put the question to the rocks, it wasn’t long before scientists were widely accepting the Earth had been around for leagues longer than was previously expected.
+    Thousands of year estimates swelled into tens of thousands.
+    Unsurprisingly, it became natural to expect that it might stick around — into the future — for a similar length of time.
+    So, the question was asked: can geological evidence tell us how long is left ahead for Earth?
+  </p>
+  <p>
+    §
+  </p>
+  <p>
+    Sometime in the 1720s, the French diplomat Benoît de Maillet handwrote a manuscript and circulated it amongst friends.
+    He wrote it pseudonymously—pretending to be “an Indian philosopher”—to avoid censure for the radical claims therein.
+    He didn’t camouflage himself too much, however.
+    The manuscript’s title, <em>Telliamed</em>, is an anagram of de Maillet’s name.
+    Fathoms ahead of his time, de Maillet predicted that the age of the Earth was a staggering “deux milliard d’annes”.
+    That’s two billion years.
+    He believed the Earth to have once been entirely covered in ocean and arrived at this eye-watering figure from measuring the steady diminution of the sea in various locales, before guesstimating how long it would have taken for the current amount of landmass to emerge.
+    Based on his highly speculative model of how planets age, de Maillet’s theory gave another billion years ahead.
+  </p>
+  <p>
+    Unfortunately, when <em>Telliamed</em> was posthumously published, its editor — an Abbé with an eye for orthodoxy — removed all references to actual numbers, replacing them with indeterminate phrases like “an immensity of time”.<sup>[22]</sup> In English translation, they were removed entirely.<sup>[23]</sup>
+    As such, though bewilderingly prescient, de Maillet’s contribution was lost.
+  </p>
 
+  <h2>2.2—REVOLUTION (1800-1830)</h2>
+  <p>
+    The end of the 1700s and opening of the 1800s was an age of revolutions.
+    Ruptures in the political world — where the unprecedented replaces what came before it — were echoed by growing evidence that similarly dramatic upheavals punctuated prehistoric time.
+    As Romantic writers renovated poetry, palaeontologists — unearthing extinct beasts — were reorganising ideas about time.
+  </p>
+  <p>
+    Not only did it appear to palaeontologists that humans represent a late addition to a vastly elder Earth, but it also appeared this prehuman tract was filled — not with stasis — but with turmoil and drama.
+    Digging deeper and deeper into the Earth, palaeontologists noticed the skeletons change drastically — becoming progressively less familiar at deeper depths.
+    Based on the fossils, the world appeared to have passed through, first, an “Age of Fish”, then an “Age of Reptiles”, before, finally, our current “Age of Mammals”.
+  </p>
+  <p>
+    In response, romantics and revolutionaries began asking: if so much change had unfolded in the past, who’s to say that there isn’t scope for similarly unprecedented alteration in the lengthening future too?
+  </p>
+  <p>
+    In 1831, Honoré de Balzac compared the leading palaeontologist of the day — Georges Cuvier — to Lord Byron.
+    Balzac provoked: “Is not Cuvier the greatest poet of our century?”
+    The naturalist, he explained, has “reconstructed worlds from whitened bone”, and shone light into the “fathomless abyss of the past”.
+    “Cuvier is a poet by mere numbers”, Balzac concluded.
+    His findings imply an Earthly biography measured in the “thousand millions of years”.<sup>[28]</sup>
+    Given that time’s ambits were bursting, and consensus was far from reach, there were bound to be some who, in this vastness, instead saw evidence of infinity.
+    Eternity recurred.
+  </p>
 
-<h1>Another Section</h1>
+  <h2>2.3—THERMIDOR (1830-1850)</h2>
+  <p>
+    We have a tendency to perceive infinity in any interval or distance that is larger than the largest span we were previously familiar with.
+    But the fact we find some magnitude difficult to circumscribe in our minds is no evidence that, in reality, it lacks circumference and limit.
+    Nonetheless, it can be easy to miss this.
+    After all, because it lacks proportion, eternity is, in some ways, an easier thing to conceive than a count or collection of a trillion moments.
+  </p>
+  <p>
+    Historically, when people have encountered something whose limits they cannot directly see or easily grasp, they have tended to assume it simply lacks limits.
+    The same applied to chronology, beyond tangible scales.
+  </p>
+  <p>
+    §
+  </p>
+  <p>
+    Toward the close of the 1700s, the Scottish geologist James Hutton reasoned that we should, in explaining geological effects, only conscript causes that are currently observable.
+    Following this rule, and rallying everyday causes (like erosion or sedimentation, which work at piecemeal pace), it becomes evident unthinkable aeons are required to explain Earth’s vast mountains and dramatic canyons.
+  </p>
+  <p>
+    Hutton’s methodology — focusing exclusively on currently observable factors — worked as a way of excising supernatural or unverifiable explanations from the science of geology, but it also came to be overapplied.
+    He came to believe the Earth system had never looked dramatically different from how it looks today, and that unprecedented systemic change, in the future, was also impossible.
+    From this, he surmised that, considered properly, the Earth’s established age and future lifespan may be — literally — measureless.
+    Hutton’s mantra is famous: “We find no vestige of a beginning, no prospect of an end”.<sup>[29]</sup>
+  </p>
+  <p>
+    This was because Hutton, a deeply religious man, believed there is “wisdom, system, consistency” everywhere in nature.
+    Accordingly, to him, a living world that unceasingly renews itself and never truly changes — nor ages — is more rational than one that is born and dies.
+    This led him to suspect that the world had ever fully been “sterile”, doubting there had ever been a time when it housed neither “neither plant nor animal”.<sup>[30]</sup>
+  </p>
+  <p>
+    Hutton’s voluminous writings were elegantly summarised and communicated by his protégé, Charles Lyell, in the 1830s.
+    Lyell, following Hutton, assumed the Earth was a steady state system, wherein nothing is truly lost nor ever truly gained.
+    His sense of the boundlessness of Earth’s lifespan led him to surmise that, in some distant future, dinosaurs would — somehow — return to stomp the English countryside.
+    In eternity, after all, everything recurs and nothing is truly new.<sup>[31]</sup>
+  </p>
 
-<p>This is the first paragraph of another section.</p>
+  <p>
+    Nonetheless, Buffon’s view — that the Earth’s biography has determinate, and measurable, bookends in time — eventually won the day.<sup>[32]</sup>
+    Evidence accumulated, eventually becoming undeniable, for vestiges of a beginning and prospects of an end.
+    But, beyond this, in the immensities of outer space, it was hard to say whether everything currently happening here and now would endlessly repeat, without beginning nor end.
+    Prior to Darwinism, scientists did not agree that other planets would certainly not house identical species to those we find on Earth.
+    Accordingly, even though the planet had gained biographical bookends, it was still an open question as to whether the species upon it were truly mortal or immortal.
+  </p>
+  <p>
+    The cosmos itself was, at this time, considered unlimited in space and time.
+    Again, in eternity and infinity, everything possible happens, and everything lost returns, without limit or cessation.
+    “Let us add that since nothing is annihilated in nature”, de Sales had reassured: the time of our individual planet’s “ruin will only be that of its renewal”.<sup>[33]</sup>
+    For his own part, Fourier had assumed our “souls” would somehow be transmigrated to other habitable “globes”, ensuring our resurrection throughout “eternity”.<sup>[34]</sup>
+  </p>
 
-<h2>Subsection</h2>
+  <h2>3—THERMODYNAMICS</h2>
+  <p>
+    Developed during the 1800s, thermodynamics is the mathematics of heat, enabling measurement of its sources and modelling of its flows.
+    By the middle of the century, scientists accepted that — as all life ultimately is fuelled by the sun — we should look to our sun’s age to gauge how long life has been around and how long it might persist on Earth.
+    Long before knowledge of atomic energy, scientists assumed the sun produces heat by a mechanical frictional process.
+    Given this, it is presumed our sun is much nearer its senility than youth.
+    Consensus forms around a prediction of several million years left ahead.
+    But this proved depressing as it was believed evolution’s past was four or five times longer than its oncoming prospect.
+    It had taken life to get this far, but — comparatively — it seemed there wasn’t time ahead to explore further possibilities.
+    ‘Now’ remained nearer the conclusion than the dawn.
+  </p>
 
-<p>Further details in a subsection.</p>
+  <h2>3.1—INDUSTRIAL (1830-1870)</h2>
+  <p>
+    Eternity still held sway in the sidereal immensities and outer nebulae, then being pried at by the first large reflecting telescopes.
+    But how much longer did life have left, here, within our Solar System?
+    What further development might be possible?
+    Answering this question involved estimating how long it had taken for life to arrive at its current grandeur and diversity on Earth, so as to gauge how much further development could be cumulated in the time left ahead.
+    And answering this required looking to the furnaces fuelling the snowballing Industrial Revolution.
+  </p>
+  <p>
+    The dynamo driving industrialisation, dredging wealth out of the Earth, was coal burning.
+    Without coincidence, it was at this time — through the early 1800s — that the science of heat was developed.
+    By 1854, the Scottish scientist William Thomson (later Lord Kelvin) gave it its name: thermodynamics.
+  </p>
+  <p>
+    This provided far better tools, for gauging the placement of ‘now’, than the rudimentary ones available to Buffon less than a handful of generations before.
+  </p>
+  <p>
+    Thermodynamics is the mathematics of energy, enabling measuring of sources of heat and the modelling of its flows.
+    It proved all work and activity expends energy, and, because spent energy cannot be recouped, all activity depends on the disbursing of some expendable fund.
+    Thermodynamics, for the first time, threw into crisp relief the truth that almost all activity on Earth is ultimately fuelled by one wellspring: the sun.
+    Even coal, after all, is fossilised sunshine.
+  </p>
+  <p>
+    As John Tyndall wrote in 1863: 
+  </p>
+  <p>
+    “Every tree, plant, and flower grows and flourishes by the grace and bounty of the sun. […] There is not a hammer raised, a wheel turned, or a shuttle thrown, that is not raised, and turned, and thrown by the sun. […] Look at the integrated energies of the world — the stored power of our coal-fields; our winds and rivers; our fleets, armies, and guns. What are they? They are all generated by a portion of the sun’s energy.”<sup>[35]</sup>
+  </p>
+  <p>
+    Scientists now saw clearly that — as all life on Earth is ultimately fuelled by our star — we should look to the sun’s lifespan to gauge how long life has been around and how long it might yet persist on our planet.
+    Buffon had assumed we relied primarily on an internal fund of heat within Earth; now it was understood that the length of life’s past and future depends on the sun’s birth and death.
+  </p>
+  <p>
+    Indeed, another upshot of thermodynamics was the firm conclusion our sun must one day itself die.
+    If spent energy cannot be recouped, solar luxuriance must one distant day bankrupt itself.
+    Suns don’t flicker on and off in an eternal cycle, as was previously thought plausible.
+    They all eventually die.
+  </p>
+  <p>
+    So, physicists began asking: how long has our sun been outpouring heat, and how much longer can it continue to wring out energy for our sustenance?
+  </p>
 
-[Position 3]
-<h1>Conclusion</h1>
+  <h2>3.1—DECADENCE (1870-1900)</h2>
+  <p>
+    By 1861, Thomson revised his numbers upwards, but not by all too much.
+    He now claimed Earth’s “inhabitants” cannot have “many million years longer”.<sup>[40]</sup>
+    Ten years later, Helmholtz made his own attempt.
+    He announced that our sun has been shining for 22,000,000 years, and we cannot expect it “to maintain an additional 17,000,000 of years the same intensity of sunshine as that which is now the source of all terrestrial life”.<sup>[41]</sup>
+    By 1878, the Canadian-American astronomer Simon Newcomb chimed in, calculating that sometime before “12,000,000 years” hence, our star will “rapidly cease to radiate the heat necessary to support life on the globe”.<sup>[42]</sup>
+    The US spectroscopist Charles Augustus Young, in 1881, echoed Newcomb’s conclusion: the sun will “continue to give sufficient heat to support life on earth” for “ten million years from the present time”.<sup>[43]</sup>
+  </p>
+  <p>
+    §
+  </p>
+  <p>
+    By the closing decades of the century, thermodynamic forecasts on Earth’s future varied, but they clustered around a prospect of around 10,000,000 further years.
+    The scientific community had converged on a kind of consensus.
+    The sun would die, killing Earth by cold, in several million years’ time.
+    There was not yet consensus on the age of the Earth.
+    Debate raged between physicists who preferred shorter timescales and biologists who, because of the time required for evolution by natural selection, preferred longer ones.
+    Nonetheless, estimates ranged between Kelvin’s 20,000,000 and 100,000,000 years for the past.<sup>[44]</sup>
+    It seemed humanity was, once more, living nearer the end than the beginning.
+  </p>
+  <p>
+    Some dismissed the prospect of the sun’s death entirely, calling it “repugnant to the moral sense and against all law”, claiming “old sol” will shine “forever”.<sup>[45]</sup>
+    British newspapers quipped that it “may be news to know that the world will wind up in ten million years, but the news will become stale before that time”.<sup>[46]</sup>
+    Others took it more seriously.
+    Writers and illustrators produced lurid visions of the last human family, huddling together, about to be picked off by inexorably creeping cold.
+    There was a mood of pessimism.
+  </p>
+  <p>
+    Forecasts of 10,000 further years were admittedly much more commodious than Buffon’s earlier estimates, not to mention those of earlier Christians.
+    However, in the century since Buffon, the sense of life’s unexplored potentials had grown — largely thanks to Darwin’s theories.
+  </p>
+  <p>
+    What’s more, the theory that the sun produces heat via collapsing on itself led physicists to conclude the ratio of ‘past spent’ to ‘future ahead’ was unforgiving.
+    If it had started life as a diffuse cloud, our star — now relatively compact and dense — seemed at an advanced, geriatric stage of life’s arc.
+    It was believed evolution’s past was four or five times longer than the time left ahead.
+    Communicating this in a much-quoted passage from 1892, the Irish astronomer Robert S. Ball declared there is a “distinct limit to man’s existence on our earth”.
+    Our sun, he announced, “has dissipated four-fifths of the energy with which it may have originally been endowed”.
+    It may hold out for 4,000,000 years, or for 5,000,000, Ball professed, but not for 20,000,000.<sup>[47]</sup>
+    He concluded:
+  </p>
+  <p>
+    “The race is as mortal as the individual, and, so far as we know, its span cannot under any circumstances be run out beyond a number of millions of years which can certainly be told on the fingers of both hands, and probably on the fingers of one.”
+  </p>
+  <p>
+    The placement of ‘now’ — relative to established past and potential future — had returned to a position similar to that of the early Christians.
+  </p>
+  <p>
+    §
+  </p>
+  <p>
+    In an 1893 lecture delivered in Oxford’s ornate Sheldonian theatre, the prominent naturalist Thomas Henry Huxley looked forward miserably to a protracted, senile death in the not-too-distant future.<sup>[48]</sup>
+    Life is past its prime, Huxley pronounced.
+    We can look to a future populated by increasingly simple lifeforms, withering on a diet of dwindling sunlight.
+    One day, there will only be lichen and moss left.
+    An attendee at Huxley’s lecture reacted to the depressing implications.
+    He pointed to the many “million s of years” spent “bringing us up to the present point” of organic evolution, before bemoaning the fact “no sufficient time” appeared to remain ahead, within which “to evolve all the possibilities of our actual state”: 
+  </p>
+  <p>
+    “This is sad indeed. Waste, sheer waste, on the most gigantic scale…”<sup>[49]</sup>
+  </p>
+  <p>
+    Huxley had decreed that not even the “most daring imagination” can find a way to “arrest” the coming of this end.<sup>[50]</sup>
+    But, then, as the 1800s closed, and the 1900s opened, an entirely new force of nature was discovered, blowing the ceiling off all previous upper bounds on time past and future.
+  </p>
 
-<p>Final thoughts and summary.</p>
+  <h2>4—RADIUM</h2>
+  <p>
+    In the opening years of the 1900s, following the discovery of radioactivity, Marie Curie proved atoms expel vast amounts of energy without taking any from their surroundings.
+    This reveals that a shocking wealth of extra energy is locked up within mundane matter, hitherto previously unacknowledged.
+    Immediately, scientists claim atomic energy might power the sun.
+    Estimates for the future explode overnight.
+    So too, does radioactivity provide a way to begin accurately dating the Earth:
+    radiometric dating of rocks finally confirms our earth is not millions, but billions, of years old.
+    In contrast, given new theories of solar heat, some scientists feel confident claiming it will remain habitable for a further trillion years…
+    Suddenly, ‘now’ seemed far closer to the breaking dawn of time, rather than its decrepit end.
+  </p>
+
+  <h2>4.1—1900 &amp; 1910s</h2>
+  <p>
+    Uranium rays were first noticed, by fortuitous mistake, by Henri Becquerel in 1896.
+    He noticed that, curiously, uranium crystals seem to be emitting energetic rays spontaneously, without any exchange with their surroundings.
+    Not long after, Marie Skłodowska-Curie and her husband, Pierre Curie, decided to investigate this mysterious phenomenon.
+  </p>
+  <p>
+    §
+  </p>
+
+  [Position 2]
+
+  <p>
+    Having coined the word “radio-activité”, Marie Curie successfully isolated radium in 1902.
+    Not long after, she proved that the element expels energy without itself losing heat.
+    Radioactive atoms, she showed, were tiny furnaces.
+    In parallel, it was established this happened as the atoms themselves gradually disintegrated.
+    Gradual it was: some elements, it was quickly revealed, decay over periods stretching into the multiple billions of years.
+  </p>
+  <p>
+    The revelations of Curie almost immediately triggered a flurry of excited responses from scientists across fields ranging from geology to astronomy.
+    By September of 1903, the geophysicist George Darwin (son of the biologist) celebrated Curie’s “unexpected” discovery of this “new source of energy”.
+    If the sun powers itself by “liberating atomic energy”, he conjectured, rather than mere gravitational collapse, then we may have to expand the “cosmical time-scale” by “some such factor as ten or twenty”.<sup>[51]</sup>
+  </p>
+  <p>
+    Not long after, The Daily Mail reported jubilantly on the matter.
+    “Lord Kelvin” (as William Thomson was now known), the reporter wrote, “in his most desponding moments, only assigned a beggarly five or six million years to the duration of the life-giving sun”.
+    But here, they continued, comes “radium to the rescue”: lengthening our species’s “expectation of life by several hundred million years”.<sup>[52]</sup>
+  </p>
+  <p>
+    By 1907, the physicist Ernest Rutherford concurred, writing that we can expect solar “brilliancy” for orders of magnitudes more than Kelvin’s considerations of no “more than 12 million years and probably much less”.
+    Curie’s “new source of heat”, Rutherford wrote, probably suffices to power the “sun for a longer period”, thus vouchsafing a much greater “time for habitation of our globe”.<sup>[53]</sup>
+    By 1920, prominent physicist Arthur Eddington was venturing that our sun, powered by subatomic reservoirs, would be able to “maintain its output of heat for 15 billion years” more.
+    To hammer home his point, he referred to the gravitational theory of Kelvin and Helmholtz as a “corpse”.<sup>[54]</sup>
+  </p>
+  <p>
+    From meagre millions, the expected future had ballooned into the multiple billions.
+    In following years, as the twenties roared, timescales continued to become even longer.
+    The English cosmologist Sir James Jeans, in 1928, produced even more eye-watering forecasts.
+    Comparing atoms to “pure bottled energy”, he produced his own theory for how they uncork themselves in the sun:
+    believing they collide, perfectly annihilating each other’s matter, converting their entire mass into pure energy.
+    Albert Einstein’s mass-energy equivalence equation (E=mc²) dictated that the resulting energy would be mass multiplied by the speed of light (which is 299,792,458 metres per second),
+    which meant that Jeans’s resulting calculations for the solar future proved mind-boggling.
+    He boldly estimated that our star retains enough “unbroken bottles” for a “million million years” more sunlight.
+    That is 1,000,000,000,000 years.<sup>[56]</sup>
+  </p>
+  <p>
+    But what did this mean for people? Almost as soon as Curie’s revelations were unleashed on the world, people started proclaiming they were living far closer to the very beginning of the human story than its ending.
+  </p>
+  <p>
+    Communicating the potential scale of the future in his 1929 bestseller <em>The Universe Around Us</em>, Jeans visualised a stamp atop a penny, balanced upon a 20m-high (66ft) obelisk.
+    The stamp's thickness represented recorded history.
+    The stamp and penny combined represented our species’s existence.
+    The distance from the stamp down to the obelisk-base was the age of Earth.
+  </p>
+  <p>
+    Jeans didn't stop there.
+    He calculated the height of postage stamps, stacked one atop the other, you'd need for a trillion further years of habitability on Earth.
+    “A pile as high as Mont Blanc”, he concluded.
+    Jeans deemed us “creatures of the dawn”, with “unimaginable opportunities for accomplishment” and “unexplored potentialities” ahead.<sup>[57]</sup>
+  </p>
+  <p>
+    Elsewhere, reporting updated knowledge from archaeology, Jeans relayed that humankind has “existed on earth for something like 300,000 years”, and civilisation has only existed for around 5,000 years.
+    He continued:
+    “Old Mother Earth must regard man as a very recent apparition indeed; he has just appeared. […] If he [has done] so much in the first few moments of his existence, she may well wonder what is in store for her in the long future ages in which he is destined to labour on her surface.
+    For in all probability the life in front of the human race must enormously exceed the short life behind it.”<sup>[58]</sup>
+  </p>
+  <p>
+    But that wasn’t all: not only did radium reveal a capacious future, it also lifted previous limits on evolution’s past by revealing new ways to date the Earth’s age.
+  </p>
+
+  <h2>5—COSMOLOGY</h2>
+  <p>
+    Through the 1920s and 1930s, Edwin Hubble noticed that other galaxies are receding from us.
+    Extrapolating backwards, this implies the cosmos itself had a beginning; looking forwards, it implies it will have a rarefied end.
+    Previously considered eternal, the universe itself was gaining bookends in time.
+    Buoyed by revelations in nuclear physics, cosmologists began predicting how old the universe was and how long it might remain capable of hosting complex life beyond Earth.
+    It becomes possible to pinpoint the placement of ‘now’, not just within the unfolding biography of our planet, but also of the wider cosmos.
+    Happily, this also coincides with the first claims that nuclear-powered rockets might, one distant day, allow Earthly life to outlive our dying sun by migrating elsewhere.
+    Consensus emerges that our cosmos is over ten billion years old, but will remain habitable for orders of magnitudes longer than this.
+    Once again, and in a far more profound sense, we are revealed to be “creatures of the dawn”.
+  </p>
+
+  <h2>5.1—1920s &amp; 1930s</h2>
+  <p>
+    In the 1920s, astronomers like Edwin Hubble noticed that other galaxies are flinging away from us, and accelerating as they do.
+    Extrapolating back, this implied the cosmos itself had a compact beginning; peering forward, it indicated that it will have a rarefied end, as matter centrifuges into nullity.
+    Previously, the assumption was that — though planets and suns had bookended biographies, such that they are born, live shorter or longer, and die — the cosmos itself didn’t suffer such inconveniences.
+    It was thought the universe itself lacked boundaries in space and time.
+  </p>
+  <p>
+    But, though such claims initially remained highly contentious, astronomers now began speaking tentatively about a “universal evolutionary process”.<sup>[62]</sup>
+    Some acknowledged that, if this expansion is true, the “observable” universe cannot be “unlimited” in time and space.<sup>[63]</sup>
+  </p>
+  <p>
+    These developments were also inspired, in part, by Curie.
+    In the 1930s, the French priest and physicist Georges Lemaître was the first to propose the universe began with a primordial explosion.
+    He proposed that it began life as a “primeval atom” that explosively disintegrated, like a radioactive element, bursting into the receding galaxies we see today.
+    Poetically, he wrote:
+  </p>
+  <p>
+    “The evolution of the universe can be compared to a display of fireworks that has just ended: some few red wisps, ashes and smoke.
+    Standing on a well-chilled cinder, we see the slow fading of the suns, [&] recall the vanished brilliance of the origin of worlds.”<sup>[64]</sup>
+  </p>
+  <p>
+    By the 1920s, though they remained few and far between, some cosmologists began feeling confident enough to put tentative ages on the universe itself.
+    In these early days, the numbers varied wildly: from Jeans’s 1929 estimate, based on the rate of matter’s radioactive decay, of an age of 200,000,000,000,000 years to Alexander Friedmann’s 1923 guess of 10,000,000,000 years.<sup>[65]</sup>
+  </p>
+  <p>
+    Another ingenious, albeit incorrect, method Jeans conjured to assess the age of the universe was looking at the velocities of stars, and calculating how long it would take for them to arrive at the current velocity distribution, assuming they interact—exerting gravitational drag on each other when passing by—like particles in a cloud of gas.
+  </p>
+  <p>
+    For several years there was a debate over a “long time scale”, assuming a universe trillions of years old, and the “short time scale”, of billions.
+    But, as evidence for and understanding of the cosmos’s expansion itself expanded, the latter eventually came to be accepted.
+  </p>
+  <p>
+    Moreover, now that radioactivity had revealed new sources of energetic abundance, the fledgling field of nuclear physics presented a new promise for the possibility of humankind one day overcoming the penury of being locked to one planet.
+    It became clear our species has not yet come anywhere close to tapping the ceiling on maximally harnessing available energy.
+    This keyed directly into the first concrete hopes Earthly life may one day decouple its future from that of the sun.
+  </p>
+  <p>
+    In 1912, the French astronautics pioneer Robert Esnault-Pelterie arrived at the conclusion that atomic power makes spaceflight much more feasible.
+    He calculated that “400 kg of radium”, propelling a “1,000 kg vehicle”, would be enough “for the journey to Venus and back”.<sup>[66]</sup>
+  </p>
+  <p>
+    A year afterward, the American scientist Robert Goddard arrived at an even bolder conclusion.
+    He wrote in notebooks that “navigation of interplanetary space must be effected to insure the continuance” of our species, and that there would be no “greater possible calamity” than allowing its “cessation”.<sup>[67]</sup>
+    Accordingly, he asked:
+  </p>
+  <p>
+    “[w]ill it be possible to travel to the planets which are around the fixed stars, when the sun and the earth have cooled to such an extent that life is no longer possible on the earth?”
+  </p>
+  <p>
+    He reasoned that it will be, on the condition that it is “possible to unlock, and control, intra-atomic energy”.
+    He even imagined the use of a “radium alarm clock” to wake up pilots intermittently throughout the unimaginably long flight.
+    He proposed migration to areas in the galaxy where “stars are thickly clustered, so that further migration would be easy”.<sup>[68]</sup>
+  </p>
+  <p>
+    With this, it became possible to speculate: if terrestrial life ever managed to liberate itself from gravity in such a way, then the future ahead for living things might not be coupled to that of a sun.
+    In other words, it would instead be bounded above by the future lifespan of the wider cosmos itself.
+    Thankfully, and given the rapid developments in cosmology, some scientists were now happy to put estimates on this ultimate upper bound.
+  </p>
+  <p>
+    Perhaps the first to do so was the British-Indian geneticist, communist, and iconoclast J.B.S. Haldane.
+    In a visionary 1927 short story, he wrote that a “generation ago it seemed very plausible” that a cooling sun would make our Earth uninhabitable in “a few million years”, but now physics suggests “that it will last for at least a million million years”, or, in other words, a 1,000,000,000,000 years.
+    Given this available time, Haldane reasoned it is not unreasonable to assume that, if it is at all possible, our descendants may one day invent the means to propel rockets to other stars.
+    Thereafter, he provided what is likely the first quantitative estimate of how long the future of Earthly life might be, should it achieve interstellar exodus.
+    He surmised our “galaxy has a probable life of at least eighty million million years”, a figure he would reiterate a few years later.
+    He concluded his speculation, by adding, piquantly: “And there are other galaxies”.<sup>[69]</sup>
+  </p>
+
+  <h2>5—COSMOLOGY</h2>
+  <p>
+    Through the 1920s and 1930s, Edwin Hubble noticed that other galaxies are receding from us.
+    Extrapolating backwards, this implies the cosmos itself had a beginning; looking forwards, it implies it will have a rarefied end.
+    Previously considered eternal, the universe itself was gaining bookends in time.
+    Buoyed by revelations in nuclear physics, cosmologists began predicting how old the universe was and how long it might remain capable of hosting complex life beyond Earth.
+    It became possible to pinpoint the placement of ‘now’, not just within the unfolding biography of our planet, but also of the wider cosmos.
+    Happily, this also coincides with the first claims that nuclear-powered rockets might, one distant day, allow Earthly life to outlive our dying sun by migrating elsewhere.
+    Consensus emerges that our cosmos is over ten billion years old, but will remain habitable for orders of magnitudes longer than this.
+    Once again, and in a far more profound sense, we are revealed to be “creatures of the dawn”.
+  </p>
+
+  <h2>5.1—1920s &amp; 1930s</h2>
+  <p>
+    In the 1920s, astronomers like Edwin Hubble noticed that other galaxies are flinging away from us, and accelerating as they do.
+    Extrapolating back, this implied the cosmos itself had a compact beginning; peering forward, it indicated that it will have a rarefied end, as matter centrifuges into nullity.
+    Previously, the assumption was that — though planets and suns had bookended biographies, such that they are born, live shorter or longer, and die — the cosmos itself didn’t suffer such inconveniences.
+    It was thought the universe itself lacked boundaries in space and time.
+  </p>
+  <p>
+    But, though such claims initially remained highly contentious, astronomers now began speaking tentatively about a “universal evolutionary process”.<sup>[62]</sup>
+    Some acknowledged that, if this expansion is true, the “observable” universe cannot be “unlimited” in time and space.<sup>[63]</sup>
+  </p>
+  <p>
+    These developments were also inspired, in part, by Curie.
+    In the 1930s, the French priest and physicist Georges Lemaître was the first to propose the universe began with a primordial explosion.
+    He proposed that it began life as a “primeval atom” that explosively disintegrated, like a radioactive element, bursting into the receding galaxies we see today.
+    Poetically, he wrote:
+  </p>
+  <p>
+    “The evolution of the universe can be compared to a display of fireworks that has just ended: some few red wisps, ashes and smoke.
+    Standing on a well-chilled cinder, we see the slow fading of the suns, [&] recall the vanished brilliance of the origin of worlds.”<sup>[64]</sup>
+  </p>
+  <p>
+    By the 1920s, though they remained few and far between, some cosmologists began feeling confident enough to put tentative ages on the universe itself.
+    In these early days, the numbers varied wildly: from Jeans’s 1929 estimate, based on the rate of matter’s radioactive decay, of an age of 200,000,000,000,000 years to Alexander Friedmann’s 1923 guess of 10,000,000,000 years.<sup>[65]</sup>
+  </p>
+  <p>
+    Another ingenious, albeit incorrect, method Jeans conjured to assess the age of the universe was looking at the velocities of stars, and calculating how long it would take for them to arrive at the current velocity distribution, assuming they interact—exerting gravitational drag on each other when passing by—like particles in a cloud of gas.
+  </p>
+  <p>
+    For several years there was a debate over a “long time scale”, assuming a universe trillions of years old, and the “short time scale”, of billions.
+    But, as evidence for and understanding of the cosmos’s expansion itself expanded, the latter eventually came to be accepted.
+  </p>
+  <p>
+    Moreover, now that radioactivity had revealed new sources of energetic abundance, the fledgling field of nuclear physics presented a new promise for the possibility of humankind one day overcoming the penury of being locked to one planet.
+    It became clear our species has not yet come anywhere close to tapping the ceiling on maximally harnessing available energy.
+    This keyed directly into the first concrete hopes Earthly life may one day decouple its future from that of the sun.
+  </p>
+  <p>
+    In 1912, the French astronautics pioneer Robert Esnault-Pelterie arrived at the conclusion that atomic power makes spaceflight much more feasible.
+    He calculated that “400 kg of radium”, propelling a “1,000 kg vehicle”, would be enough “for the journey to Venus and back”.<sup>[66]</sup>
+  </p>
+  <p>
+    A year afterward, the American scientist Robert Goddard arrived at an even bolder conclusion.
+    He wrote in notebooks that “navigation of interplanetary space must be effected to insure the continuance” of our species, and that there would be no “greater possible calamity” than allowing its “cessation”.<sup>[67]</sup>
+    Accordingly, he asked:
+  </p>
+
+    [Position 3]
+
+  <p>
+    “[w]ill it be possible to travel to the planets which are around the fixed stars, when the sun and the earth have cooled to such an extent that life is no longer possible on the earth?”
+  </p>
+  <p>
+    He reasoned that it will be, on the condition that it is “possible to unlock, and control, intra-atomic energy”.
+    He even imagined the use of a “radium alarm clock” to wake up pilots intermittently throughout the unimaginably long flight.
+    He proposed migration to areas in the galaxy where “stars are thickly clustered, so that further migration would be easy”.<sup>[68]</sup>
+  </p>
+  <p>
+    With this, it became possible to speculate: if terrestrial life ever managed to liberate itself from gravity in such a way, then the future ahead for living things might not be coupled to that of a sun.
+    In other words, it would instead be bounded above by the future lifespan of the wider cosmos itself.
+    Thankfully, and given the rapid developments in cosmology, some scientists were now happy to put estimates on this ultimate upper bound.
+  </p>
+  <p>
+    Perhaps the first to do so was the British-Indian geneticist, communist, and iconoclast J.B.S. Haldane.
+    In a visionary 1927 short story, he wrote that a “generation ago it seemed very plausible” that a cooling sun would make our Earth uninhabitable in “a few million years”, but now physics suggests “that it will last for at least a million million years”, or, in other words, a 1,000,000,000,000 years.
+    Given this available time, Haldane reasoned it is not unreasonable to assume that, if it is at all possible, our descendants may one day invent the means to propel rockets to other stars.
+    Thereafter, he provided what is likely the first quantitative estimate of how long the future of Earthly life might be, should it achieve interstellar exodus.
+    He surmised our “galaxy has a probable life of at least eighty million million years”, a figure he would reiterate a few years later.
+    He concluded his speculation, by adding, piquantly: “And there are other galaxies”.<sup>[69]</sup>
+  </p>
+
+  <h2>5—COSMOLOGY</h2>
+  <p>
+    Through the 1920s and 1930s, Edwin Hubble noticed that other galaxies are receding from us.
+    Extrapolating backwards, this implies the cosmos itself had a beginning; looking forwards, it implies it will have a rarefied end.
+    Previously considered eternal, the universe itself was gaining bookends in time.
+    Buoyed by revelations in nuclear physics, cosmologists began predicting how old the universe was and how long it might remain capable of hosting complex life beyond Earth.
+    It became possible to pinpoint the placement of ‘now’, not just within the unfolding biography of our planet, but also of the wider cosmos.
+    Happily, this also coincides with the first claims that nuclear-powered rockets might, one distant day, allow Earthly life to outlive our dying sun by migrating elsewhere.
+    Consensus emerges that our cosmos is over ten billion years old, but will remain habitable for orders of magnitudes longer than this.
+    Once again, and in a far more profound sense, we are revealed to be “creatures of the dawn”.
+  </p>
+
+  <h2>5.1—1920s &amp; 1930s</h2>
+  <p>
+    In the 1920s, astronomers like Edwin Hubble noticed that other galaxies are flinging away from us, and accelerating as they do.
+    Extrapolating back, this implied the cosmos itself had a compact beginning; peering forward, it indicated that it will have a rarefied end, as matter centrifuges into nullity.
+    Previously, the assumption was that — though planets and suns had bookended biographies, such that they are born, live shorter or longer, and die — the cosmos itself didn’t suffer such inconveniences.
+    It was thought the universe itself lacked boundaries in space and time.
+  </p>
+  <p>
+    But, though such claims initially remained highly contentious, astronomers now began speaking tentatively about a “universal evolutionary process”.<sup>[62]</sup>
+    Some acknowledged that, if this expansion is true, the “observable” universe cannot be “unlimited” in time and space.<sup>[63]</sup>
+  </p>
+  <p>
+    These developments were also inspired, in part, by Curie.
+    In the 1930s, the French priest and physicist Georges Lemaître was the first to propose the universe began with a primordial explosion.
+    He proposed that it began life as a “primeval atom” that explosively disintegrated, like a radioactive element, bursting into the receding galaxies we see today.
+    Poetically, he wrote:
+  </p>
+  <p>
+    “The evolution of the universe can be compared to a display of fireworks that has just ended: some few red wisps, ashes and smoke.
+    Standing on a well-chilled cinder, we see the slow fading of the suns, [&] recall the vanished brilliance of the origin of worlds.”<sup>[64]</sup>
+  </p>
+  <p>
+    By the 1920s, though they remained few and far between, some cosmologists began feeling confident enough to put tentative ages on the universe itself.
+    In these early days, the numbers varied wildly: from Jeans’s 1929 estimate, based on the rate of matter’s radioactive decay, of an age of 200,000,000,000,000 years to Alexander Friedmann’s 1923 guess of 10,000,000,000 years.<sup>[65]</sup>
+  </p>
+  <p>
+    Another ingenious, albeit incorrect, method Jeans conjured to assess the age of the universe was looking at the velocities of stars, and calculating how long it would take for them to arrive at the current velocity distribution, assuming they interact—exerting gravitational drag on each other when passing by—like particles in a cloud of gas.
+  </p>
+  <p>
+    For several years there was a debate over a “long time scale”, assuming a universe trillions of years old, and the “short time scale”, of billions.
+    But, as evidence for and understanding of the cosmos’s expansion itself expanded, the latter eventually came to be accepted.
+  </p>
+  <p>
+    Moreover, now that radioactivity had revealed new sources of energetic abundance, the fledgling field of nuclear physics presented a new promise for the possibility of humankind one day overcoming the penury of being locked to one planet.
+    It became clear our species has not yet come anywhere close to tapping the ceiling on maximally harnessing available energy.
+    This keyed directly into the first concrete hopes Earthly life may one day decouple its future from that of the sun.
+  </p>
+  <p>
+    In 1912, the French astronautics pioneer Robert Esnault-Pelterie arrived at the conclusion that atomic power makes spaceflight much more feasible.
+    He calculated that “400 kg of radium”, propelling a “1,000 kg vehicle”, would be enough “for the journey to Venus and back”.<sup>[66]</sup>
+  </p>
+  <p>
+    A year afterward, the American scientist Robert Goddard arrived at an even bolder conclusion.
+    He wrote in notebooks that “navigation of interplanetary space must be effected to insure the continuance” of our species, and that there would be no “greater possible calamity” than allowing its “cessation”.<sup>[67]</sup>
+    Accordingly, he asked:
+  </p>
+  <p>
+    “[w]ill it be possible to travel to the planets which are around the fixed stars, when the sun and the earth have cooled to such an extent that life is no longer possible on the earth?”
+  </p>
+  <p>
+    He reasoned that it will be, on the condition that it is “possible to unlock, and control, intra-atomic energy”.
+    He even imagined the use of a “radium alarm clock” to wake up pilots intermittently throughout the unimaginably long flight.
+    He proposed migration to areas in the galaxy where “stars are thickly clustered, so that further migration would be easy”.<sup>[68]</sup>
+  </p>
+  <p>
+    With this, it became possible to speculate: if terrestrial life ever managed to liberate itself from gravity in such a way, then the future ahead for living things might not be coupled to that of a sun.
+    In other words, it would instead be bounded above by the future lifespan of the wider cosmos itself.
+    Thankfully, and given the rapid developments in cosmology, some scientists were now happy to put estimates on this ultimate upper bound.
+  </p>
+  <p>
+    Perhaps the first to do so was the British-Indian geneticist, communist, and iconoclast J.B.S. Haldane.
+    In a visionary 1927 short story, he wrote that a “generation ago it seemed very plausible” that a cooling sun would make our Earth uninhabitable in “a few million years”, but now physics suggests “that it will last for at least a million million years”, or, in other words, a 1,000,000,000,000 years.
+    Given this available time, Haldane reasoned it is not unreasonable to assume that, if it is at all possible, our descendants may one day invent the means to propel rockets to other stars.
+    Thereafter, he provided what is likely the first quantitative estimate of how long the future of Earthly life might be, should it achieve interstellar exodus.
+    He surmised our “galaxy has a probable life of at least eighty million million years”, a figure he would reiterate a few years later.
+    He concluded his speculation, by adding, piquantly: “And there are other galaxies”.<sup>[69]</sup>
+  </p>
+
+  <h2>6—CLIMATOLOGY</h2>
+  <p>
+    Throughout the Cold War, whilst predictions were wildly expanding on how long the universe itself might be capable of hosting life beyond Earth, the potential future for life on Earth was — ironically — being slashed downward.
+    Better understanding of how the sun fuels itself, via nuclear fusion, reveals that it will expand — rather than shrink as it ages.
+    The Earth will cook, not freeze, as it is engulfed by our swelling star.
+    Estimates for a trillion years of terrestrial future shrunk to ten billion in the 1940s, and to 5 billion in the 1960s.
+    Since then, improved understanding of climate change — revealing just how fragile planetary atmospheres can be — has revealed that our Earth will become uninhabitable long before the sun engulfs it.
+    But, during this time, estimates for how long life beyond Earth might persist begin to become truly eye-watering…
+    This way, taking a cosmic — rather than terrestrial — perspective, we are, indeed, still “creatures of the dawn” to an unimaginable degree.
+  </p>
+
+  <h2>6.1—1960s</h2>
+  <p>
+    Throughout the 1950s, even better understanding of solar evolution was attained, again revising down estimates for the future of our sun.
+    In his 1963 rewrite of <em>Biography of the Earth</em>, Gamow changed his forecast to reflect this changing picture.
+    He now wrote: “…our sun is about 5 billion years old [and] it still has another 5 billion years to live…”<sup>[74]</sup>
+    But, around this time, a rebellion was fomenting against building evidence for a universe with a finite lifespan.
+    Eternity recurred, once again.
+    Throughout the middle decades of the 1900s, the English astronomer Fred Hoyle — along with collaborators Hermann Bondi and Thomas Gold — argued evidence of expansion was not an indication of a cosmic beginning.
+    They theorised the universe doesn’t age, and remains in a steady state over time, hypothesising the appearance of cosmic explosion is caused by new matter and energy spontaneously and continuously emerging in the cosmic gaps between galaxies.<sup>[75]</sup>
+    This way, our cosmos could have been expanding forever.
+    Yet another attempt to return to the type of existence imagined by Aristotle and Hutton: one where time has no bookends, such that everything repeats and, eventually, resurrects.
+    There is, clearly, comfort in such a notion. It insulates from loss.
+    In Hoyle’s universe, Earth will repeat.
+    But again, it is only in a universe where time is bookended that consequences matter, losses gain bite, and unprecedented change is possible at the most systemic levels.
+    With bookends, not everything that can happen will happen, such that events that lock in certain outcomes — over other possibilities — become consequential.
+    Hoyle’s courageous attempt to bring eternity back into the universe, however, was largely toppled in 1964.
+    In this year, two astronomers discovered the Cosmic Microwave Background Radiation.
+    After cleaning pigeon droppings from the insides of their radio telescope in New Jersey, Arno Allen Penzias and Robert Woodrow Wilson realised their antenna had captured something strange.
+    It was a faint reverberation coming at Earth from all angles.
+    Rather than pigeons rustling, they’d accidentally recorded the omnipresent echo of our universe’s pyrotechnic birth.<sup>[76]</sup>
+    This was overwhelming proof for what had come to be called the Big Bang Theory.
+    Our universe, it came to be agreed, was a determinate age.
+    Over coming decades, estimates on this age would expand from around 2,000,000,000 up to over 10,000,000,000.
+  </p>
+
+  <h2>6.2—1970s</h2>
+  <p>
+    Throughout the 1960s, humanity sent its first probes to other bodies in the Solar System, making the field of inquiry Gamow once called “comparative planetology” a reality.<sup>[79]</sup>
+    On December 14th, 1962, the US’s Mariner II probe streaked within 35,000 km of Venus.
+    This was humankind’s first successful flyby of another planet, spurred by the simmering Space Race.
+    Previous generations fell in love with Venus, on account of awareness that it has a thick, swirling atmosphere.
+    Coated in highly reflective clouds, making the planet twinkle in our morning and evening skies, this meant Venus’s surface was impenetrable to traditional telescopes.
+    Accordingly, it became a blank slate upon which wishful fantasies could be projected.
+    It became Earth’s mirror image, assumed to be tropical and sweltering, teeming with exotic life.
+    But the Mariner’s flyby burst this bubble.
+    It revealed that our planetary neighbour is an inhospitable, heat-scorched hellscape.
+    When, in 1967, the Soviet Union’s Venera IV Probe became the first mission to enter the Venusian atmosphere, and alight on its surface, this was further confirmed.
+    Venus is hell.
+    Not only is its surface hot enough to melt lead, it is also fearsomely pressurised.
+  </p>
+  <p>
+    It didn’t take long for scientists to start arguing that our neighbouring planet was not always so hellish.
+    In the Solar System’s early days, Venus may have been quite clement, oceanic, even habitable.
+    But, then, something happened to trigger its terrible transformation.
+    In 1969, Andrew P. Ingersoll proposed the “runaway greenhouse effect” as an explanation.<sup>[80]</sup>
+    This describes a process whereby increases in temperature cause water to evaporate, causing heightened atmospheric heat retention, triggering temperatures to continue rising in a reinforcing loop.
+  </p>
+  <p>
+    Revealing how Venus became a hellscape this way, and how planetary atmospheres can tip from one state to another with the right forcing, helped lend impetus to the growing field of climate science.
+    Many began worrying whether human action — dumping greenhouse gas into the atmosphere via industry — might cause a similar runaway on Earth.<sup>[81]</sup>
+  </p>
+  <p>
+    Scientists rapidly began realising that, long before the expanding sun consumes Earth outright, its swelling will cause a runaway greenhouse effect on Earth, making it uninhabitable.
+    This provided a newly truncated upper bound to Earth’s habitable future.
+    Accordingly, estimates on the Earthly future were, once again, revised down.
+    In 1973, the Estonian astronomer Ernst Öpik produced a model predicting this would happen within 1,000,000,000 years; the previous year, the planetary scientists Carl Sagan and George Mullen produced slightly more liberal forecasts, giving a terrestrial future somewhere in the range of 3,500,000,000 to 4,000,000,000 further years for life on Earth.<sup>[82]</sup>
+  </p>
+
+  <h2>6.3—1980s &amp; 1990s</h2>
+  <p>
+    The range of future for life on Earth may have been slashed drastically from the trillions of years that Jeans had once estimated.
+    However, the news was not all bad, as cosmology had been making leaps and strides in the meantime.
+    The field of “physical eschatology”, studying the far future of the cosmos at large, was, by the 1980s and 1990s, far more confident making claims on the upper limits for the future time within which our universe might be able to host complex life.
+    In 1983, a team of scientists laid out various far-flung scenarios in an article in <em>The Scientific American</em>.
+    They were bold enough to make claims about how the evolution of the universe might impinge on its ability to support life over the longest term.
+    They predicted that baryonic matter, the type of matter we are all made of, might evaporate within 10^32 years.
+    But, looking past this, they argued this might not prove entirely fatal.
+    After the decay of protons, they argued, intelligent life might feed off black holes.
+    But, at 10^100 years, even these black holes might evaporate.
+    “Any constant rate of energy consumption by life forms”, they concluded, “will in due course become untenable”.<sup>[84]</sup>
+    Publishing in the same year, the Bangladeshi cosmologist Jamal Nazrul Islam agreed with this hypothesis, forecasting proton decay in “approximately 10^45 -10^50 years”.<sup>[85]</sup>
+    As the second millennium shaded into the third, in 1999, astrophysicists Fred Adams and Greg Laughlin published their pathbreaking <em>The Five Ages of the Universe</em>.
+    This provided the first book-length treatment of the question of physical eschatology.
+    Concurring with Islam, Adams and Laughlin put proton decay, and the end of complex life, at 10^40 years in the future.
+    That’s 10,000,000,000,000,000,000,000,000,000,000,000,000,000 years away.
+    Between then and now is — it’s fair to say — a very long way.
+  </p>
+
+  <h2>6.3—OUR PRECARIOUS PRESENT</h2>
+  <p>
+    Humans are orienting creatures.
+    We orient ourselves in the world to better navigate our way through it.
+    We seek to know how things work, to better manipulate them; we seek to know how things are, to better assess our priorities.
+    Over the centuries, our species has oriented itself not just in space, but also in time.
+    In seeking to answer the riddle ‘where is now?’, our species embarked on a journey taking us far from the familiar scale of a life, bookended by birth and death and meted out in decades.
+    It took us beyond the traditional limits of human history, measured in generations, centuries, and the crumbling of empires.
+    To fully answer the riddle of where we find ourselves in time, we had to seek our place relative to the evolution of all life, the unfolding chronicle of the planet, and even the aging of the entire universe—stretching from the Big Bang to its ultimate ends.
+  </p>
+  <p>
+    We now know that the Earth is roughly 4.5 billion years old.
+    Life began not long afterward.
+    Ever since, evolution has been cumulating innovations and aptitudes, storing them in the script we call genes.
+    There is grandeur in this view of life: in knowing that each one of us is the way we are, rather than any other way, because of chance encounters going back not only to our early childhoods and births but also to life’s very beginning.
+    Every individual is a result of a memory bank billions of years in the making.
+  </p>
+  <p>
+    We also now know our planet has been home to things you and I would recognise as “animals” — that is, multicellular and mobile forms of life — for just over half a billion years.
+    This is the tract of time within which there have been eyes to witness and minds to model this aging world.
+  </p>
+  <p>
+    Today’s experts predict that Earth may remain habitable — that is, a place where complex life can go about doing complex and interesting things — for something on the order of a further billion years.
+    Our species, by comparison, has only been around for a measly few hundred thousand years.
+    So, compared to all that’s past, we have only just appeared.
+    Relative to all that might yet come, the story of life that is like us may have only just begun.
+  </p>
+  <p>
+    What’s more, we also now know that each one of us — in a very physical, very physiological way — is 13.8 billion years old.
+    This is the age of the universe.
+    It took the universe this long to forge the elements, and to build up the cumulative complexity that makes things like us possible.
+  </p>
+  <p>
+    The heavier elements that make up our bodies are forged from the diastole of dying suns, which it took the entire cosmos generations of stars to achieve.
+    It took the universe 13.8 billion years to create creatures capable of realising they are the result of a process this long-winding.
+  </p>
+  <p>
+    What’s more, pinpointing the placement of ‘now’ relative to time’s ultimate bookends also falsified ancient assumptions that we have the luxury of eternal repeats:
+    that there might, within this cosmos, be repeats of what’s currently happening on Earth.
+    We now know we have one shot.
+  </p>
+  <p>
+    There’s one final point.
+    Previously, when cosmic time lacked proportions and appeared eternal, it was possible to assume certain things simply weren’t possible.
+    In a universe without a beginning, everything that can happen, necessarily already has happened, given the time available is limitless.
+    Accordingly, unprecedented change — at the largest, most systemic scales — is unthinkable.
+    People used to use this reasoning to dismiss the possibility of interstellar travel and of life ever getting a foothold above the planetary scale.
+    None other than Fred Hoyle, believing he was living in an eternal universe, made just such a claim.
+    In 1964, he wrote of what he thought a “good” argument “against deep space travel”: 
+  </p>
+  <p>
+    “If we could do it, so could somebody else. […] Lots of others would have arrived here before now. Why would they have left? The planet is valuable real estate.”<sup>[87]</sup>
+  </p>
+  <p>
+    In an eternal universe, if biologisation at scales above the planetary were possible, it would have already happened.
+    We would have been visited from without.
+    But we now know we don’t live in an eternal universe.
+    What’s more, we now know we live in a young one: one that is over ten billion years old, but will remain hospitable for trillions of years further.
+  </p>
+  <p>
+    This is the crucial point.
+    It now is feasible to assume not everything that can happen has already happened.
+    Unprecedented change, at the largest levels, is now conceivable.
+  </p>
+  <p>
+    Might life be the spark that inflicts the change: tipping the cosmos from its currently seemingly inorganic state into something more biological? Something more cephalised?
+    Would this necessarily be inherently good? I don’t know.
+    Is it inevitable? Almost certainly not.
+    But, and this is the crucial point, it is now at least plausible we are simply living during that epoch before which life spills beyond its planet, coming to reorganise matter and energy at much larger scales.
+  </p>
+  <p>
+    Of course, we don’t see any evidence of this already happening.
+    But we can now ask ourselves the question: are we simply the first living, thinking world to ask what living, thinking worlds might ultimately be capable of?
+    To me, this is the lesson of our generations-long quest to unveil the placement of ‘now’ within time’s wider expanses.
+  </p>
+
+  <hr>
+  <div class="footnotes">
+    <h2>Footnotes</h2>
+    <p>[1] W. Sellars, ‘Philosophy and the Scientific Image of Man’, in Frontiers of Science and Philosophy, ed. R. Colodny (Pittsburgh: University of Pittsburgh Press, 1962), 35-78.</p>
+    <p>[2] N. Copernicus, De revolutionibus orbium coelestium (Nuremberg, 1543).</p>
+    <p>[3] H. Blumenberg, The Genesis of the Copernican World, trans. R.M. Wallace (Cambridge, MA: MIT Press, 1989).</p>
+    <p>[4] R. Leakey &amp; R. Lewin, The Sixth Extinction: Patterns of Life and the Future of Humankind (New York: Doubleday, 1995).</p>
+    <p>[5] E.g., E.T. Wolf &amp; O.B. Toon, ‘The evolution of habitable climates under the brightening Sun’, JGR Atmospheres, 120:12 (2015): 5775-5794.</p>
+    <p>[6] B.C. Brundage, Fifth Sun: Aztec Gods, Aztec World (Texas: University of Texas Press, 2014).</p>
+    <p>[7] Plato, The Laws, trans. T. Griffith (Cambridge: Cambridge University Press, 2016), 676a-c.</p>
+    <p>[8] Aristotle, The Complete Works of Aristotle: The Revised Oxford Translation, ed. Jonathan Barnes (Princeton: Princeton University Press, 1984), vol.2, 1698.</p>
+    <p>[9] Plato, Timaeus &amp; Critias, trans. R. Waterfield (Oxford: Oxford University Press, 2008), 9-10.</p>
+    <p>[10] Hippolytus, Refutation of All Heresies, trans. M. David Litwa (Atlanta: SBL Press, 2016), 49.</p>
+    <p>[11] Cicero, De Re Publica: Selections, ed. J.E.G. Zetzel (Cambridge: Cambridge University Press, 1995), 90.</p>
+    <p>[12] Aristotle, Complete Works of Aristotle, vol.2, 1426.</p>
+    <p>[13] Matthew, 24:34.</p>
+    <p>[14] S.W. Anthony, ‘Muḥammad, the Keys to Paradise, and the Doctrina Iacobi: A Late Antique Puzzle’, Der Islam, 91:2 (2014), 243-265.</p>
+    <p>[15] R. Landes, ‘Lest the Millennium Be Fulfilled’, in The Use and Abuse of Eschatology in the Middle Ages, ed. W. Verbeke, D. Verhelst, &amp; A. Welkenhuysen (Leuven: Leuven University Press, 1988), 137-211</p>
+    <p>[16] R. Bacon, Opus maius, pars quarta, trans. R.B. Burke (Philadelphia: University of Pennsylvania Press, 1928), vol.II, 417.</p>
+    <p>[17] H. Schedel, Liber chronicarum (Nuremberg, 1493).</p>
+    <p>[18] J. Ussher, Annales Veteris Testamenti, a Prima Mundi Origine Deducti (London, 1650).</p>
+    <p>[19] T. Browne, Hydriotaphia (London, 1658), 73-74.</p>
+    <p>[20] J. Craig, Christianae Principia Mathematica (London, 1699).</p>
+    <p>[21] M. Lomonsov, Первые основания металлургии или рудных дел (St Petersburg, 1763), 393-394.</p>
+    <p>[22] B. de Maillet, Telliamed; or, Conversations between an Indian Philosopher &amp; a French Missionary on the Diminution of the Sea, trans. A. V. Carozzi (Chicago: University of Illinois Press, 1968).</p>
+    <p>[23] B. de Maillet, Telliamed (London, 1750).</p>
+    <p>[24] G. Buffon, Histoire naturelle, générale et particuliére (Paris, 1749-1804), vol.XXXI, 404 &amp; 513.</p>
+    <p>[25] J. Sales, De la philosophie de la nature (London, 1777), vol.I, 187; D. de Mairan, Lettres de M. de Mairan au R. P. Parrenin, missionnaire de la Compagnie de Jesus, à Peki: contentant diverse questions sur las Chine (Paris, 1759), 113.</p>
+    <p>[26] C. Fourier, Théorie des quatre mouvemens et des destinées générales (Leipzig, 1808).</p>
+    <p>[27] W. Olbers, ‘Über die Möglichkeit, daß ein Comet mit der Erde zusammenstoßen könne’, Monatliche Correspondenz zur Beförderung der Erd- und Himmelskunde, 22 (1810), 409-50.</p>
+    <p>[28] H. Balzac, La Peau de chagrin (Paris, 1831), 88-89.</p>
+    <p>[29] J. Hutton, ‘Theory of the Earth; or an Investigation of the Laws Observable in the Composition, Dissolution, and Restoration of Land upon the Globe’, Transactions of the Royal Society of Edinburgh, 1:2 (1788), 304.</p>
+    <p>[30] J. Hutton, Theory of the Earth, with Proofs &amp; Illustrations (Edinburgh, 1795), vol.1, 360-362.</p>
+    <p>[31] C. Lyell, Principles of Geology (London, 1830), vol.1, 123.</p>
+    <p>[32] E.g., R. Chambers, Vestiges of the Natural History of Creation (London, 1884).</p>
+    <p>[33] Sales, De la philosophie de la nature, vol.I, 194.</p>
+    <p>[34] Fourier, Théorie des quatre mouvemens, 52.</p>
+    <p>[35] J. Tyndall, Heat Considered as a Mode of Motion (London, 1863), 445-447.</p>
+    <p>[36] Cf. H. Kragh, ‘The Source of Solar Energy, ca. 1840-1910: From Meteoric Hypothesis to Radioactive Speculations’, EPJ H, 41 (2016), 365-394.</p>
+    <p>[37] W. Thomson, ‘On the Mechanical Energies of the Solar System’, Transaction of the Royal Society of Edinburgh, 21 (1854), 78.</p>
+    <p>[38] W. Thomson, ‘On The Secular Cooling of the Earth’, Nature, Transactions of the Royal Society of Edinburgh, 153 (1863), 157-170.</p>
+    <p>[39] H. Helmholtz, ‘On the interaction of natural forces’, Philosophical Magazine, 11 (1856), 489-578.</p>
+    <p>[40] W. Thomson, ‘Age of the Sun’s Heat’, Macmillan’s Magazine, Wednesday March 5th (1862), 293.</p>
+    <p>[41] H. Helmholtz, ‘Ueber die Entstehung des Planetensystems’, in Vorträge &amp; Reden (Braunschweig, 1884), vol.II, 84-85.</p>
+    <p>[42] S. Newcomb, Popular Astronomy (New York, 1878), 513.</p>
+    <p>[43] C.A. Young, The Sun (New York, 1881), 276.</p>
+    <p>[44] G.B. Dalrymple, The Age of the Earth (Stanford: Stanford University Press, 1991), 14-17.</p>
+    <p>[45] A. Swagman, ‘Ingle-Hook’, The Western Star, Wednesday June 19th (1892), 3.</p>
+    <p>[46] Anonymous, ‘Alarming Situation’, Durham Globe, Monday May 16th (1892), 2.</p>
+    <p>[47] R.S. Ball, ‘How Long Can the Earth Sustain Life?’, Forthnightly Review, 51 (1892), 490.</p>
+    <p>[48] T.H. Huxley, ‘Evolution &amp; Ethics II’, Popular Science Monthly, 41 (1893), 178-191.</p>
+    <p>[49] L.M. Klein, ‘Huxley’s Evolution &amp; Ethics’, Dublin Review, 113 (1893), 598.</p>
+    <p>[50] Huxley, ‘Evolution &amp; Ethics II’, 190.</p>
+    <p>[51] G.H. Darwin, ‘Radio-activity and the Age of the Sun’, Nature, 68 (1903), 496.</p>
+    <p>[52] W.E. Garrett Fisher, ‘Our Expectation of Life’, Daily Mail, Monday 28th September (1903), 4.</p>
+    <p>[53] E. Rutherford, ‘Some Cosmical Aspects of Radioactivity’, Journal of the Royal Astronomical Society of Canada, 1:3 (1907), 145-165.</p>
+    <p>[54] A.S. Eddington, ‘The Internal Constitution of Stars’, The Observatory, 43:557 (1920), 298.</p>
+    <p>[55] J. Jeans, ‘Annihilation of Matter’, Supplement to Nature, 3220 (1931), 103-110.</p>
+    <p>[56] J. Jeans, Eos: Or, The Wider Aspects of Cosmogony (Kegan Paul: London, 1928), pp.42; J. Jeans, The Universe Around Us (Cambridge: Cambridge University Press, 1929), 341.</p>
+    <p>[57] Jeans, The Universe Around Us, 341-343.</p>
+    <p>[58] J. Jeans, ‘Wider Aspects of Cosmogony’, Nature, 26:5 (1928), 454-463.</p>
+    <p>[59] W. Thomson, ‘The Age of the Earth as an Abode Fitted for Life’, Annual Report of the Smithsonian Institution (1897), 337-357.</p>
+    <p>[60] J. Elster &amp; H. Geitel, ‘Über die radioaktive Emanation in der atmosphärischen Luft’, Physikalische Zeitschrift, 4:199 (1903), 522-530.</p>
+    <p>[61] A. Holmes, The Age of the Earth (Harper &amp; Bros.: London, 1913).</p>
+    <p>[62] Tolman, 304.</p>
+    <p>[63] H.P. Robertson, ‘On relativistic cosmology’, Philosophical Magazine &amp; Journal of Science, 5:31 (1933), 835-848.</p>
+    <p>[64] G. Lemaître, The Primeval Atom: An Essay on Cosmogony (New York: Van Nostrand, 1950), 78.</p>
+    <p>[65] Jeans, Universe Around Us, 327; A. Friedman, Мир как пространство и время (Petrograd: Academia, 1923).</p>
+    <p>[66] R. Esnault-Pelterie, ‘Considérations sur les résultats d’un allégement indéfini des moteurs’, in Journal de physique théorique et appliqué, 3:1 (1913), 218-230.</p>
+    <p>[67] R. Goddard, The Papers of Robert H. Goddard: 1898-1924 (New York: Mc-Graw-Hill, 1970), 117.</p>
+    <p>[68] R. Goddard, ‘The Final Migration’, in Beyond Reality, 31 (1978), 20-23 &amp; 60.</p>
+    <p>[69] J.B.S. Haldane, The Last Judgement (New York: Harper &amp; Bros, 1927), 36.</p>
+    <p>[70] H.N. Russell, ‘The Time-scale of the Universe’, Science, 92:2376 (1940), 19-27.</p>
+    <p>[71] G. Gamow, The Biography of the Earth (New York: Viking Press, 1941), 189.</p>
+    <p>[72] E.g., A. Knopf, ‘Age of the Earth — Summary of Principle Results’, in Physics of the Earth (Washington, D.C.: The National Academies Press, 1939), 3-9; A. Holmes, ‘An Estimate of the Age of the Earth’, Nature, 157 (1947), 127-128.</p>
+    <p>[73] J. Jeans, The Universe Around Us, 4th edition (Cambridge: Cambridge University Press), 287-288.</p>
+    <p>[74] G. Gamow, A Planet Called Earth (New York: Viking, 1963), 247.</p>
+    <p>[75] H. Bondi, T. Gold, F. Hoyle, ‘The Steady-State Theory of the Expanding Universe’, Monthly Notices of the Royal Astronomical Society, 108:3 (1948), 252-270.</p>
+    <p>[76] A.A. Penzias &amp; R.W. Wilson, ‘A Measurement of Excess Antennae Temperature at 4080 Mc/s’, Astrophysical Journal Letters, 142 (1965), 419-421.</p>
+    <p>[77] R.A. Millikan &amp; F.P. Stockbridge, ‘When the Sun Goes Cold’, Popular Science, March (1929), 141.</p>
+    <p>[78] A. Koestler, ‘The Boredom of Fantasy’, The Listener, 49:1265 (1953), 893.</p>
+    <p>[79] Gamow, Biography of the Earth, 71.</p>
+    <p>[80] A.P. Ingersoll, ‘The Runaway Greenhouse: A History of Water on Venus’, Journal of the Atmospheric Sciences, 26:6 (1969), 1191-1198.</p>
+    <p>[81] T. Donahue, in W. Hoffer, ‘Looking up to know ourselves’, Mosaic, September/October (1980), 40.</p>
+    <p>[82] E. Öpik, ‘Our Cosmic Destiny’, The Irish Astronomical Journal, 11:4 (1973), 113-124; C. Sagan &amp; G. Mullen, ‘Earth &amp; Mars: Evolution of Atmospheres &amp; Surface Temperatures’, Science, 177:4043 (1972), 52-56.</p>
+    <p>[83] E.g., E.T. Wolf &amp; O.B. Toon, ‘The evolution of habitable climates under the brightening Sun’, JGR Atmospheres, 120:12 (2015): 5775-5794.</p>
+    <p>[84] D.A. Dicus et al., ‘The Future of the Universe’, Scientific American, 248 (1983), 74-85.</p>
+    <p>[85] J.N. Islam, The Ultimate Fate of the Universe (Cambridge: Cambridge University Press, 2009).</p>
+    <p>[86] F. Adams &amp; G. Laughlin, The Five Ages of the Universe (New York: Free Press, 1999).</p>
+    <p>[87] F. Hoyle, Of Men &amp; Galaxies (London: Heinemann, 1964), 41.</p>

@@ -8,6 +8,11 @@ body, html {
   height: 100%;
 }
 
+body.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+
 /* Main container */
 .container {
   display: flex;

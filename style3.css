@@ -66,6 +66,15 @@ a:hover {
   text-decoration: underline;
 }
 
+body.dark-mode .essay-container {
+  background-color: #000;
+  color: #fff;
+}
+
+body.dark-mode .fullscreen-icon,
+body.dark-mode .close-icon {
+  filter: invert(100%);
+}
 
 /* Bottom logarithmic scales */
 .log-scale {
@@ -127,7 +136,7 @@ a:hover {
 /* Tooltip */
 .tooltip {
   font-size: 14px;
-  font-family: 'Copernicus Book', serif;
+  font-family: 'Cosmica Book', sans-serif;
   position: absolute;
   background-color: #f3f3f2;
   color: black;
@@ -141,7 +150,7 @@ a:hover {
   z-index: 10;
 }
 .bold {
-  font-family: 'Copernicus Bold';
+  font-family: 'Cosmica Bold';
 }
 .underline {
   text-decoration: underline;

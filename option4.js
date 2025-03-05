@@ -94,6 +94,46 @@ window.addEventListener('load', () => {
         '1T': 1e12
     };
 
+    
+    let isDarkMode = false;
+
+function toggleDarkMode() {
+    isDarkMode = !isDarkMode;
+
+    // Toggle renderer background
+    renderer.setClearColor(isDarkMode ? 0x000000 : 0xffffff, 1);
+
+    // Toggle non-red object colors
+    scene.traverse((object) => {
+        if (object.isMesh && object.material && object.material.color) {
+            // Skip objects that started red
+            if (object.userData?.originalColor === 0xff0000) return;
+
+            const currentHex = object.material.color.getHex();
+            // Black ↔ White
+            if (currentHex === 0x000000 || currentHex === 0xffffff) {
+                object.material.color.set(currentHex === 0x000000 ? 0xffffff : 0x000000);
+            }
+            // Gray ↔ Lighter Gray
+            if (currentHex === 0x808080 || currentHex === 0xaaaaaa) {
+                object.material.color.set(currentHex === 0x808080 ? 0xaaaaaa : 0x808080);
+            }
+        }
+    });
+
+    // Toggle a CSS class on the body element
+    document.body.classList.toggle('dark-mode', isDarkMode);
+     // Toggle icon class
+     const fullscreenIcon = document.getElementById('fullscreen-icon');
+     fullscreenIcon.classList.toggle('dark-mode', isDarkMode);
+}
+
+// Use the existing HTML button
+const darkModeBtn = document.getElementById('dark-mode-btn');
+darkModeBtn.addEventListener('click', toggleDarkMode);
+
+
+
     // Scale slider and label
     const scaleSlider = document.getElementById('scale-slider');
     const scaleValueLabel = document.getElementById('scale-value');
@@ -582,20 +622,25 @@ animate = function() {
     renderer.domElement.addEventListener('mousemove', onMouseMove, false);
 
     function highlightLines(entry) {
+        // Choose highlight color based on dark mode
+        const highlightColor = isDarkMode ? 0xffffff : 0x000000;
         const associatedLines = [];
+    
         const highlightAndCollect = (linesArray) => {
             linesArray.forEach(line => {
                 if (line.userData.entry === entry) {
-                    line.material.color.set(0x000000);
+                    line.material.color.set(highlightColor);
                     associatedLines.push(line);
                 }
             });
         };
+    
         highlightAndCollect(redLines);
         highlightAndCollect(verticalRedLines);
         highlightAndCollect(blueLines);
         highlightAndCollect(verticalBlueLines);
         highlightAndCollect(planeMeshes);
+    
         highlightedObjects = highlightedObjects.concat(associatedLines);
     }
 
