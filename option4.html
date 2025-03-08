@@ -12,7 +12,7 @@
             <!-- Logarithmic scales on both sides -->
             <div class="log-scale log-scale-left"></div>
             <div class="log-scale log-scale-right"></div>
-
+            <img id="toggle-controls" src="assets/ui.png" alt="Toggle Controls" />
             <!-- Controls -->
             <div class="controls-container">
                 <div>
@@ -22,15 +22,13 @@
                 <input type="range" id="scale-slider" min="1" max="12" value="5" step="0.1">
                 <label for="scale-slider">Scale Width (10^<span id="scale-value">5</span>)</label>
                 <div>
-                    <input type="checkbox" id="toggle-vertical-lines" checked> 
-                    <label for="toggle-vertical-lines">Toggle Vertical Lines</label>
-                </div>
-                <div>
                     <button id="position1-btn">Position 1</button>
                     <button id="position2-btn">Position 2</button>
                     <button id="position3-btn">Position 3</button>
                     <button id="position4-btn">Position 4</button>
                 </div>
+                <button id="dark-mode-btn">Toggle Dark Mode</button>
+
             </div>
 
             <!-- Tooltip -->
@@ -43,14 +41,12 @@
             <!-- Existing controls -->
             <label for="timeline-toggle">Toggle Timeline View:</label>
             <input type="checkbox" id="timeline-toggle">
-            <button id="dark-mode-btn">Toggle Dark Mode</button>
-
         </div>
+        <img id="fullscreen-icon" src="assets/fullscreen.png" alt="Fullscreen Icon" class="fullscreen-icon">
+
         <!-- Right Half: Essay -->
         <div id="essay-content" class="essay-container"></div> <!-- Correctly closed -->
 
-        <!-- Fullscreen Icon -->
-        <img id="fullscreen-icon" src="assets/fullscreen.png" alt="Fullscreen Icon" class="fullscreen-icon">
     </div>
 
     <!-- Include Three.js library -->

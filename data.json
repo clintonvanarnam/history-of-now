@@ -342,6 +342,8 @@
     {
       "NAME": "George Darwin",
       "DATE": "1903",
+      "IMAGE":"3.png",
+      "IMAGE CAPTION": "George Darwin, 1845-1912.",
       "FUTURE HABITABILITY ON EARTH": "100,000,000",
       "EXPLANATION TYPE": "Nuclear physics.",
       "KILL MECHANISM": "Solar aging & cooling.",
@@ -367,6 +369,8 @@
     {
       "NAME": "Thomas Chrowder Chamberlin",
       "DATE": "1909",
+      "IMAGE":"4.png",
+      "IMAGE CAPTION": "Thomas Chrowder Chamberlin, 1843-1928.",
       "FUTURE HABITABILITY ON EARTH": "5,000,000 - 50,000,000",
       "EXPLANATION TYPE": "Nuclear physics.",
       "KILL MECHANISM": "Solar aging & cooling.",
@@ -398,6 +402,8 @@
     {
       "NAME": "Arthur S. Eddington",
       "DATE": "1920",
+      "IMAGE": "2.png",
+      "IMAGE CAPTION": "Arthur S. Eddington, 1882-1944.",
       "FUTURE HABITABILITY ON EARTH": "15,000,000,000",
       "EXPLANATION TYPE": "Nuclear physics.",
       "KILL MECHANISM": "Solar aging & cooling.",

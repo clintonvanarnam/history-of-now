@@ -71,8 +71,7 @@ body.dark-mode .essay-container {
   color: #fff;
 }
 
-body.dark-mode .fullscreen-icon,
-body.dark-mode .close-icon {
+.fullscreen-icon.dark-mode {
   filter: invert(100%);
 }
 
@@ -210,6 +209,7 @@ body, html {
 }
 
 
+
 /* When in full-screen mode, hide the essay-container and let scene-container expand */
 .fullscreen .essay-container {
   display: none;
@@ -249,17 +249,30 @@ body, html {
   z-index: 100;
 }
 
+#toggle-controls {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: 50px; /* Adjust the size as needed */
+  height: 50px; /* Adjust the size as needed */
+  cursor: pointer;
+  z-index: 1000; /* Ensure it is on top of other elements */
+}
+
 
 .controls-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 10px;
+  display: none; /* Initially hidden */
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10000;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .controls-container label {

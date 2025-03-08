@@ -97,40 +97,47 @@ window.addEventListener('load', () => {
     
     let isDarkMode = false;
 
-function toggleDarkMode() {
-    isDarkMode = !isDarkMode;
-
-    // Toggle renderer background
-    renderer.setClearColor(isDarkMode ? 0x000000 : 0xffffff, 1);
-
-    // Toggle non-red object colors
-    scene.traverse((object) => {
-        if (object.isMesh && object.material && object.material.color) {
-            // Skip objects that started red
-            if (object.userData?.originalColor === 0xff0000) return;
-
-            const currentHex = object.material.color.getHex();
-            // Black ↔ White
-            if (currentHex === 0x000000 || currentHex === 0xffffff) {
-                object.material.color.set(currentHex === 0x000000 ? 0xffffff : 0x000000);
+    function toggleDarkMode() {
+        isDarkMode = !isDarkMode;
+    
+        // Toggle renderer background
+        renderer.setClearColor(isDarkMode ? 0x000000 : 0xffffff, 1);
+    
+        // Toggle non-red object colors, but skip textured images
+        scene.traverse((object) => {
+            if (object.isMesh && object.material) {
+                // Skip objects that have a texture map
+                if (object.material.map) return;
+                // Skip objects that started red
+                if (object.userData?.originalColor === 0xff0000) return;
+    
+                if (object.material.color) {
+                    const currentHex = object.material.color.getHex();
+                    // Black ↔ White
+                    if (currentHex === 0x000000 || currentHex === 0xffffff) {
+                        object.material.color.set(
+                            currentHex === 0x000000 ? 0xffffff : 0x000000
+                        );
+                    }
+                    // Gray ↔ Lighter Gray
+                    if (currentHex === 0x808080 || currentHex === 0xaaaaaa) {
+                        object.material.color.set(
+                            currentHex === 0x808080 ? 0xaaaaaa : 0x808080
+                        );
+                    }
+                }
             }
-            // Gray ↔ Lighter Gray
-            if (currentHex === 0x808080 || currentHex === 0xaaaaaa) {
-                object.material.color.set(currentHex === 0x808080 ? 0xaaaaaa : 0x808080);
-            }
-        }
-    });
-
-    // Toggle a CSS class on the body element
-    document.body.classList.toggle('dark-mode', isDarkMode);
-     // Toggle icon class
-     const fullscreenIcon = document.getElementById('fullscreen-icon');
-     fullscreenIcon.classList.toggle('dark-mode', isDarkMode);
-}
+        });
+    
+        document.body.classList.toggle('dark-mode', isDarkMode);
+        const fullscreenIcon = document.getElementById('fullscreen-icon');
+        fullscreenIcon.classList.toggle('dark-mode', isDarkMode);
+    }
 
 // Use the existing HTML button
 const darkModeBtn = document.getElementById('dark-mode-btn');
 darkModeBtn.addEventListener('click', toggleDarkMode);
+
 
 
 
@@ -280,7 +287,97 @@ fetch('data.json')
                 planeMesh.userData = { entry, originalColor: DATA_COLOR };
                 scene.add(planeMesh);
                 planeMeshes.push(planeMesh);
+                
+                function createImageCaption3D(imagePlane, captionText, font) {
+                    const textSize = 1.1;
+                    const planeWidth = imagePlane.geometry.parameters.width;
+                    const lines = wrapTextByWidth(captionText, font, textSize, planeWidth);
+                    
+                    // Increase the line spacing
+                    const lineSpacing = textSize * 1.8; // Adjust this value to increase the leading
+                
+                    // Keep a small offset only on Y
+                    const yOffsetStart = imagePlane.position.y - 2; // 1-unit margin
+                    const xLeft = imagePlane.position.x - planeWidth / 2; // flush to left
+                
+                    let yOffset = yOffsetStart;
+                
+                    lines.forEach((lineText) => {
+                        const lineGeometry = new THREE.TextGeometry(lineText, {
+                            font,
+                            size: textSize,
+                            height: 0.1,
+                            curveSegments: 12
+                        });
+                        lineGeometry.computeBoundingBox();
+                
+                        const textMesh = new THREE.Mesh(
+                            lineGeometry,
+                            new THREE.MeshBasicMaterial({ color: 0x000000 })
+                        );
+                
+                        // Position flush left, but slightly above the bottom
+                        textMesh.position.set(xLeft, yOffset, imagePlane.position.z);
+                        scene.add(textMesh);
+                
+                        yOffset -= lineSpacing;
+                    });
+                }
 
+                // Helper function to break a caption into multiple lines
+function wrapTextByWidth(text, font, size, maxWidth) {
+    const words = text.split(/\s+/);
+    const lines = [];
+    let currentLine = words.shift();
+
+    words.forEach(word => {
+        const testLine = currentLine + ' ' + word;
+        // Measure the testLine’s bounding box
+        const testGeometry = new THREE.TextGeometry(testLine, {
+            font,
+            size,
+            height: 0
+        });
+        testGeometry.computeBoundingBox();
+        const testWidth = testGeometry.boundingBox.max.x - testGeometry.boundingBox.min.x;
+
+        if (testWidth < maxWidth) {
+            currentLine = testLine; 
+        } else {
+            lines.push(currentLine);
+            currentLine = word; 
+        }
+    });
+
+    if (currentLine) lines.push(currentLine);
+    return lines;
+}
+
+                   // === show images ===
+                   if (entry["IMAGE"]) {
+                    const textureLoader = new THREE.TextureLoader();
+                    textureLoader.load(`assets/photos/${entry["IMAGE"]}`, (texture) => {
+                        const aspect = texture.image.width / texture.image.height;
+                        const planeHeight = 20;
+                        const planeWidth = planeHeight * aspect;
+                        const imagePlaneGeometry = new THREE.PlaneGeometry(planeWidth, planeHeight);
+                        imagePlaneGeometry.translate(0, planeHeight / 2, 0);
+                
+                        const imagePlaneMaterial = new THREE.MeshBasicMaterial({ map: texture, side: THREE.DoubleSide });
+                        const imagePlane = new THREE.Mesh(imagePlaneGeometry, imagePlaneMaterial);
+                
+                        // Shift image plane randomly
+                        const randomSign = Math.random() < 0.5 ? -1 : 1;
+                        const randomDistance = Math.random() * (60 - 30) + 30;
+                        imagePlane.position.set(offset + (randomDistance * randomSign), yPosition, zPosition + offset);
+                        scene.add(imagePlane);
+                
+                        // Instead of createImageCaption, call createImageCaption3D
+                        if (entry["IMAGE CAPTION"]) {
+                            createImageCaption3D(imagePlane, entry["IMAGE CAPTION"], font);
+                        }
+                    });
+                }
                 // Data-specific graphics with offset
                 if (entry["PAST AGE OF EARTH"]) {
                     const pastAge = entry["PAST AGE OF EARTH"];
@@ -416,15 +513,7 @@ fetch('data.json')
         nowMesh = addNowText(font); // Assign to the global variable instead of creating a new const        updateSceneWithScaleWidth(scaleWidth); // Add this line to apply initial scaling
 
        
-// Then replace the animate function mosdification with:
-const originalAnimate = animate;
-animate = function() {
-    // No need to update NOW text position every frame
-    // as it's fixed to the timeline, not to the camera
-    
-    // Call the original animation function
-    originalAnimate();
-};
+
     });
 });
 
@@ -554,14 +643,6 @@ animate = function() {
         camera.rotation.x = parseFloat(xRotationSlider.value);
     });
 
-    const toggleVerticalLinesCheckbox = document.getElementById('toggle-vertical-lines');
-    toggleVerticalLinesCheckbox.addEventListener('change', function () {
-        const showVertical = toggleVerticalLinesCheckbox.checked;
-        verticalRedLines.forEach(line => { line.visible = showVertical; });
-        verticalBlueLines.forEach(line => { line.visible = showVertical; });
-        redLines.forEach(line => { line.visible = true; });
-        blueLines.forEach(line => { line.visible = true; });
-    });
 
     const tooltip = document.getElementById('tooltip');
     const raycaster = new THREE.Raycaster();
@@ -613,8 +694,10 @@ animate = function() {
         const date = entry["DATE"] ? `, ${entry["DATE"]}` : "";
         const nameAndDate = name || date ? `${name}${date}` : "";
         const otherData = Object.entries(entry)
-            .filter(([key]) => key !== "NAME" && key !== "DATE")
-            .map(([key, value]) => keysToInclude[key] ? `<span class="underline">${keysToInclude[key]}</span>: ${value}` : value)
+            .filter(([key]) => key !== "NAME" && key !== "DATE" && key !== "IMAGE")
+            .map(([key, value]) =>
+                keysToInclude[key] ? `<span class="underline">${keysToInclude[key]}</span>: ${value}` : value
+            )
             .join('<br>');
         return nameAndDate ? `${nameAndDate}<br>${otherData}` : otherData;
     }
@@ -748,14 +831,38 @@ animate = function() {
         fullscreenIcon.src = 'assets/fullscreen.png';
     }
 
+    const toggleControlsButton = document.getElementById('toggle-controls');
     const controlsContainer = document.querySelector('.controls-container');
     let controlsVisible = false;
+
+    if (toggleControlsButton) {
+        console.log('Toggle controls button found');
+    } else {
+        console.error('Toggle controls button not found');
+    }
+
+    if (controlsContainer) {
+        console.log('Controls container found');
+    } else {
+        console.error('Controls container not found');
+    }
+
+    toggleControlsButton.addEventListener('click', () => {
+        console.log('Toggle controls button clicked');
+        controlsVisible = !controlsVisible;
+        controlsContainer.style.display = controlsVisible ? 'flex' : 'none';
+        console.log(`Controls container display: ${controlsContainer.style.display}`);
+    });
+
     window.addEventListener('keydown', (event) => {
         if (event.key === 'c' || event.key === 'C') {
+            console.log('C key pressed');
             controlsVisible = !controlsVisible;
             controlsContainer.style.display = controlsVisible ? 'flex' : 'none';
+            console.log(`Controls container display: ${controlsContainer.style.display}`);
         }
     });
+
 
     document.getElementById('position1-btn').addEventListener('click', () => switchCameraPosition(0));
     document.getElementById('position2-btn').addEventListener('click', () => switchCameraPosition(1));
