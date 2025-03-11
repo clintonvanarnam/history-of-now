@@ -391,7 +391,7 @@ function wrapTextByWidth(text, font, size, maxWidth) {
                         planeMeshes.push(sphere);
                         
                         // Name text with offset
-                        const nameText = entry["NAME"] ? entry["NAME"].toUpperCase() : "UNKNOWN";
+                        const nameText = entry["NAME"] ? entry["NAME"] : "UNKNOWN";
                         const nameGeometry = new THREE.TextGeometry(nameText, {
                             font: font,
                             size: 3,
@@ -429,7 +429,7 @@ function wrapTextByWidth(text, font, size, maxWidth) {
                         verticalRedLines.push(verticalRedLine);
                         
                         // Label with offset
-                        const nameText = entry["NAME"] ? entry["NAME"].toUpperCase() : "UNKNOWN";
+                        const nameText = entry["NAME"] ? entry["NAME"] : "UNKNOWN";
                         const textString = `${nameText}\n${pastAge}`;
                         const labelGeometry = new THREE.TextGeometry(textString, {
                             font: font,
@@ -510,7 +510,7 @@ function wrapTextByWidth(text, font, size, maxWidth) {
         });
 
         addCentralVerticalLine();
-        nowMesh = addNowText(font); // Assign to the global variable instead of creating a new const        updateSceneWithScaleWidth(scaleWidth); // Add this line to apply initial scaling
+        // nowMesh = addNowText(font); // Assign to the global variable instead of creating a new const        updateSceneWithScaleWidth(scaleWidth); // Add this line to apply initial scaling
 
        
 
@@ -534,75 +534,75 @@ function wrapTextByWidth(text, font, size, maxWidth) {
         scene.add(rectangle);
     }
 
-    function addNowText(font) {
-        // Create the "NOW" text
-        const textGeometry = new THREE.TextGeometry("NOW", {
-            font: font,
-            size: 100, // Larger size for visibility
-            height: 0.1,
-            curveSegments: 12,
-        });
+    // function addNowText(font) {
+    //     // Create the "NOW" text
+    //     const textGeometry = new THREE.TextGeometry("NOW", {
+    //         font: font,
+    //         size: 100, // Larger size for visibility
+    //         height: 0.1,
+    //         curveSegments: 12,
+    //     });
         
-        // Compute bounding box to help with right-justification
-        textGeometry.computeBoundingBox();
+    //     // Compute bounding box to help with right-justification
+    //     textGeometry.computeBoundingBox();
         
-        // Right-justify the text (move it left by its width)
-        const textWidth = textGeometry.boundingBox.max.x - textGeometry.boundingBox.min.x;
-        textGeometry.translate(-textWidth, 0, 0);
+    //     // Right-justify the text (move it left by its width)
+    //     const textWidth = textGeometry.boundingBox.max.x - textGeometry.boundingBox.min.x;
+    //     textGeometry.translate(-textWidth, 0, 0);
         
-        // Create the text mesh with black material
-        const material = new THREE.MeshBasicMaterial({ color: 0x000000, side: THREE.DoubleSide });
-        const nowMesh = new THREE.Mesh(textGeometry, material);
+    //     // Create the text mesh with black material
+    //     const material = new THREE.MeshBasicMaterial({ color: 0x000000, side: THREE.DoubleSide });
+    //     const nowMesh = new THREE.Mesh(textGeometry, material);
         
-        // Set rotation to match year numbers (flat on ground)
-        nowMesh.rotation.x = -Math.PI / 2;
+    //     // Set rotation to match year numbers (flat on ground)
+    //     nowMesh.rotation.x = -Math.PI / 2;
         
-        // Position near the central vertical line
-        const yPosition = -10; // Same y-position as the years
-        nowMesh.position.set(-5, yPosition, 0); // Fixed position along the central line
+    //     // Position near the central vertical line
+    //     const yPosition = -10; // Same y-position as the years
+    //     nowMesh.position.set(-5, yPosition, 0); // Fixed position along the central line
         
-        // Add to scene
-        scene.add(nowMesh);
+    //     // Add to scene
+    //     scene.add(nowMesh);
         
-        // Store reference to update position
-        return nowMesh;
-    }
+    //     // Store reference to update position
+    //     return nowMesh;
+    // }
     
     // Then replace the animate function modification with:
 // Update the animate function
-const originalAnimate = animate;
-animate = function() {
-    // Position NOW text relative to camera on z-axis but fixed to the central line
-    if (nowMesh) {
-        // Calculate where the camera is looking on the z-axis
-        // For our purposes, we want to find a point along the timeline (z-axis)
-        // that's visible to the camera
+// const originalAnimate = animate;
+// animate = function() {
+//     // Position NOW text relative to camera on z-axis but fixed to the central line
+//     if (nowMesh) {
+//         // Calculate where the camera is looking on the z-axis
+//         // For our purposes, we want to find a point along the timeline (z-axis)
+//         // that's visible to the camera
         
-        // Use camera position and rotation to find a good z-position
-        let targetZ;
+//         // Use camera position and rotation to find a good z-position
+//         let targetZ;
         
-        // For camera positions with negative z (looking forward into negative z)
-        if (camera.position.z < 0) {
-            // Position text ahead of camera
-            targetZ = camera.position.z - 200;
-        } 
-        // For camera positions with positive z (looking backward into positive z)
-        else {
-            // Position text ahead of camera in the positive direction
-            targetZ = camera.position.z + 200;
-        }
+//         // For camera positions with negative z (looking forward into negative z)
+//         if (camera.position.z < 0) {
+//             // Position text ahead of camera
+//             targetZ = camera.position.z - 200;
+//         } 
+//         // For camera positions with positive z (looking backward into positive z)
+//         else {
+//             // Position text ahead of camera in the positive direction
+//             targetZ = camera.position.z + 200;
+//         }
         
-        // Keep fixed x,y position but update z position to remain visible
-        nowMesh.position.set(-5, -10, targetZ);
+//         // Keep fixed x,y position but update z position to remain visible
+//         nowMesh.position.set(-5, -10, targetZ);
         
-        // Use a small scale to make sure it's visible but not overwhelming
-        const scaleFactor = 0.2;
-        nowMesh.scale.set(scaleFactor, scaleFactor, scaleFactor);
-    }
+//         // Use a small scale to make sure it's visible but not overwhelming
+//         const scaleFactor = 0.2;
+//         nowMesh.scale.set(scaleFactor, scaleFactor, scaleFactor);
+//     }
     
-    // Call the original animation function
-    originalAnimate();
-};
+//     // Call the original animation function
+//     originalAnimate();
+// };
 
     function addLinearGridLines() {
         const lineMaterial = new THREE.MeshBasicMaterial({ color: 0x808080 });

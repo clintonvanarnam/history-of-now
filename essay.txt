@@ -1,6 +1,5 @@
 [Position 0]
-  <h1>THE HISTORY OF ‘NOW’ — Thomas Moynihan</h1>
-  <h2>THE HISTORY OF ‘NOW’</h2>
+  <h1>THE HISTORY OF ‘NOW’</h1>
   <p>by Thomas Moynihan</p>
 
   <h2>0—WHERE IS NOW?</h2>
