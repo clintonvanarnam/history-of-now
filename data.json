@@ -420,7 +420,7 @@
     {
       "NAME": "Alexander Friedmann",
       "DATE": "1923",
-      "PAST AGE OF UNIVERSE": "10,000,000,000",
+      "PAST AGE OF UNIVERSE": "10,000",
       "EXPLANATION TYPE": "Relativistic physics.",
       "SOURCE": "Alexander Friedmann, Мир как пространство и время (Petrograd: Academia, 1923)."
     },
@@ -673,7 +673,6 @@
       "NAME": "Richard Hutton & Frank Kendig",
       "DATE": "1980",
       "PAST AGE OF UNIVERSE": "20,000,000,000",
-      "PAST AGE OF SUN": "5,000,000,000",
       "EXPLANATION TYPE": "Cosmological.",
       "SOURCE": "Richard Hutton & Frank Kendig, Life Spans: Or, How Long Things Last (New York: Holt, 1980)."
     },
@@ -744,7 +743,7 @@
     {
       "NAME": "Fred Adams",
       "DATE": "2008",
-      "FUTURE FOR LIFE IN WIDER UNIVERSE": "1e,+40",
+      "FUTURE FOR LIFE IN WIDER UNIVERSE": "1,000,000,000,000",
       "EXPLANATION TYPE": "Physical eschatology.",
       "KILL MECHANISM": "Proton decay.",
       "SOURCE": "Fred Adams, 'Long-term Astrophysical Processes', in Global Catastrophic Risks, ed. N. Bostrom & M. Cirkovic (Oxford: OUP, 2008), 41."

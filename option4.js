@@ -56,6 +56,7 @@ window.addEventListener('load', () => {
 
     // Global variables
     const DATA_COLOR = 0xff0000; // Red color
+    const COSMOLOGICAL_COLOR = 0x800080; // Purple color
     let scrollVelocity = 0;
     let scrollOffset = 0;
     let isTransitioning = false;
@@ -149,7 +150,7 @@ darkModeBtn.addEventListener('click', toggleDarkMode);
         const exponent = parseFloat(scaleSlider.value);
         scaleWidth = Math.pow(10, exponent);
         const maxScale = 1e13;
-        const minScale = 1;
+        const minScale = 0.0001; // Updated minimum scale
         scaleWidth = clamp(scaleWidth, minScale, maxScale);
         scaleValueLabel.textContent = exponent.toFixed(1);
         updateSceneWithScaleWidth(scaleWidth);
@@ -159,7 +160,7 @@ darkModeBtn.addEventListener('click', toggleDarkMode);
         return Math.min(Math.max(value, min), max);
     }
 
-    function mapToLinearScale(value) {
+    function mapToLinearScale(value, isCosmological = false) {
         if (typeof value !== 'string') {
             value = value.toString();
         }
@@ -170,8 +171,15 @@ darkModeBtn.addEventListener('click', toggleDarkMode);
         const minLinear = 1;
         const maxLinear = 1e12;
         const clampedValue = clamp(parsedValue, minLinear, maxLinear);
-        const length = scaleWidth * (clampedValue - minLinear) / (maxLinear - minLinear);
-        const maxLength = 1e6;
+    
+        // Normalize the clamped value to a range between 0 and 1
+        const normalizedValue = (clampedValue - minLinear) / (maxLinear - minLinear);
+    
+        // Determine the maximum length based on whether it's cosmological data
+        const maxLength = isCosmological ? 10000 : 1000; // Adjust these values as needed
+    
+        // Scale the normalized value by the appropriate maximum length
+        const length = scaleWidth * normalizedValue;
         return clamp(length, 0, maxLength);
     }
 
@@ -182,6 +190,8 @@ darkModeBtn.addEventListener('click', toggleDarkMode);
     const blueLines = [];
     const verticalRedLines = [];
     const verticalBlueLines = [];
+    const cosmologicalLines = [];
+    const verticalCosmologicalLines = [];
     let entries = [];
     let centralLine;
 
@@ -462,7 +472,6 @@ function wrapTextByWidth(text, font, size, maxWidth) {
                         sphere.position.set(offset, yPosition, zPosition); // Apply offset
                         sphere.userData = { entry, originalColor: DATA_COLOR };
                         scene.add(sphere);
-                        planeMeshes.push(sphere);
                     } else {
                         const lineLength = Math.abs(mapToLinearScale(futureHabitability));
                         const blueLineMaterial = new THREE.MeshBasicMaterial({ color: DATA_COLOR });
@@ -504,6 +513,113 @@ function wrapTextByWidth(text, font, size, maxWidth) {
                         labelMesh.userData.isLabel = true;
                         scene.add(labelMesh);
                         blueLine.userData.label = labelMesh;
+                    }
+                }
+
+                if (entry["PAST AGE OF UNIVERSE"]) {
+                    const pastAgeUniverse = entry["PAST AGE OF UNIVERSE"];
+                    if (pastAgeUniverse === '∞') {
+                        const sphereGeometry = new THREE.SphereGeometry(2.5, 32, 32);
+                        const sphereMaterial = new THREE.MeshBasicMaterial({ color: COSMOLOGICAL_COLOR });
+                        const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+                        sphere.position.set(offset, yPosition, zPosition); // Apply offset
+                        sphere.userData = { entry, originalColor: COSMOLOGICAL_COLOR };
+                        scene.add(sphere);
+                        planeMeshes.push(sphere);
+                    } else {
+                        const lineLength = mapToLinearScale(pastAgeUniverse);
+                        const cosmologicalLineMaterial = new THREE.MeshBasicMaterial({ color: COSMOLOGICAL_COLOR });
+                        const cosmologicalLineGeometry = new THREE.BoxGeometry(lineLength, DATA_LINE_THICKNESS, DATA_LINE_THICKNESS);
+                        const cosmologicalLine = new THREE.Mesh(cosmologicalLineGeometry, cosmologicalLineMaterial);
+                        cosmologicalLine.position.set(-lineLength / 2, yPosition, zPosition + offset);
+                        cosmologicalLine.userData = { entry, originalColor: COSMOLOGICAL_COLOR, offset: offset };
+                        scene.add(cosmologicalLine);
+                        cosmologicalLines.push(cosmologicalLine);
+
+                        const verticalCosmologicalLineHeight = 20;
+                        const verticalCosmologicalLineGeometry = new THREE.BoxGeometry(DATA_LINE_THICKNESS, verticalCosmologicalLineHeight, DATA_LINE_THICKNESS);
+                        const verticalCosmologicalLine = new THREE.Mesh(verticalCosmologicalLineGeometry, new THREE.MeshBasicMaterial({ color: COSMOLOGICAL_COLOR }));
+                        verticalCosmologicalLine.position.set(
+                            -lineLength + DATA_LINE_THICKNESS / 2 - 0.5,
+                            yPosition + verticalCosmologicalLineHeight / 2,
+                            zPosition + offset
+                        );
+                        verticalCosmologicalLine.userData = { entry, originalColor: COSMOLOGICAL_COLOR, offset: offset };
+                        scene.add(verticalCosmologicalLine);
+                        verticalCosmologicalLines.push(verticalCosmologicalLine);
+
+                        const nameText = entry["NAME"] ? entry["NAME"] : "UNKNOWN";
+                        const textString = `${nameText}\n${pastAgeUniverse}`;
+                        const labelGeometry = new THREE.TextGeometry(textString, {
+                            font: font,
+                            size: 3,
+                            height: 0.1,
+                            curveSegments: 12,
+                        });
+                        labelGeometry.computeBoundingBox();
+                        const labelMaterial = new THREE.MeshBasicMaterial({ color: COSMOLOGICAL_COLOR });
+                        const labelMesh = new THREE.Mesh(labelGeometry, labelMaterial);
+                        const padding = 2;
+                        const xOffset = offset - lineLength + padding;
+                        const yOffset = yPosition + verticalCosmologicalLineHeight / 2;
+                        labelMesh.position.set(xOffset, yOffset, zPosition + offset);
+                        labelMesh.rotation.x = 0;
+                        labelMesh.userData.isLabel = true;
+                        scene.add(labelMesh);
+                        cosmologicalLine.userData.label = labelMesh;
+                    }
+                }
+
+                if (entry["FUTURE FOR LIFE IN WIDER UNIVERSE"]) {
+                    const futureLifeUniverse = entry["FUTURE FOR LIFE IN WIDER UNIVERSE"];
+                    if (futureLifeUniverse === '∞') {
+                        const sphereGeometry = new THREE.SphereGeometry(2.5, 32, 32);
+                        const sphereMaterial = new THREE.MeshBasicMaterial({ color: COSMOLOGICAL_COLOR });
+                        const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+                        sphere.position.set(offset, yPosition, zPosition); // Apply offset
+                        sphere.userData = { entry, originalColor: COSMOLOGICAL_COLOR };
+                        scene.add(sphere);
+                        planeMeshes.push(sphere);
+                    } else {
+                        const lineLength = Math.abs(mapToLinearScale(futureLifeUniverse));
+                        const cosmologicalLineMaterial = new THREE.MeshBasicMaterial({ color: COSMOLOGICAL_COLOR });
+                        const cosmologicalLineGeometry = new THREE.BoxGeometry(lineLength, DATA_LINE_THICKNESS, DATA_LINE_THICKNESS);
+                        const cosmologicalLine = new THREE.Mesh(cosmologicalLineGeometry, cosmologicalLineMaterial);
+                        cosmologicalLine.position.set(lineLength / 2, yPosition, zPosition + offset);
+                        cosmologicalLine.userData = { entry, originalColor: COSMOLOGICAL_COLOR, offset: offset };
+                        scene.add(cosmologicalLine);
+                        cosmologicalLines.push(cosmologicalLine);
+
+                        const verticalCosmologicalLineHeight = 20;
+                        const verticalCosmologicalLineGeometry = new THREE.BoxGeometry(DATA_LINE_THICKNESS, verticalCosmologicalLineHeight, DATA_LINE_THICKNESS);
+                        const verticalCosmologicalLine = new THREE.Mesh(verticalCosmologicalLineGeometry, new THREE.MeshBasicMaterial({ color: COSMOLOGICAL_COLOR }));
+                        verticalCosmologicalLine.position.set(
+                            lineLength - DATA_LINE_THICKNESS / 2 + 0.5,
+                            yPosition + verticalCosmologicalLineHeight / 2,
+                            zPosition + offset
+                        );
+                        verticalCosmologicalLine.userData = { entry, originalColor: COSMOLOGICAL_COLOR, offset: offset };
+                        scene.add(verticalCosmologicalLine);
+                        verticalCosmologicalLines.push(verticalCosmologicalLine);
+
+                        const nameText = entry["NAME"] ? entry["NAME"].toUpperCase() : "UNKNOWN";
+                        const textString = `${nameText}\n${futureLifeUniverse}`;
+                        const labelGeometry = new THREE.TextGeometry(textString, {
+                            font: font,
+                            size: 3,
+                            height: 0.1,
+                            curveSegments: 12,
+                        });
+                        labelGeometry.computeBoundingBox();
+                        const labelMaterial = new THREE.MeshBasicMaterial({ color: COSMOLOGICAL_COLOR });
+                        const labelMesh = new THREE.Mesh(labelGeometry, labelMaterial);
+                        const xOffset = offset + lineLength + 5;
+                        const yOffset = yPosition + verticalCosmologicalLineHeight / 2;
+                        labelMesh.position.set(xOffset, yOffset, zPosition + offset);
+                        labelMesh.rotation.x = 0;
+                        labelMesh.userData.isLabel = true;
+                        scene.add(labelMesh);
+                        cosmologicalLine.userData.label = labelMesh;
                     }
                 }
             }
@@ -654,7 +770,7 @@ animate = function() {
         mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
         mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
         raycaster.setFromCamera(mouse, camera);
-        const intersects = raycaster.intersectObjects([...planeMeshes, ...redLines, ...blueLines, ...verticalRedLines, ...verticalBlueLines], false);
+        const intersects = raycaster.intersectObjects([...planeMeshes, ...redLines, ...blueLines, ...verticalRedLines, ...verticalBlueLines, ...cosmologicalLines, ...verticalCosmologicalLines], false);
         if (intersects.length > 0) {
             const intersectedObject = intersects[0].object;
             if (highlightedObjects.length > 0 && !highlightedObjects.includes(intersectedObject)) {
@@ -722,6 +838,8 @@ animate = function() {
         highlightAndCollect(verticalRedLines);
         highlightAndCollect(blueLines);
         highlightAndCollect(verticalBlueLines);
+        highlightAndCollect(cosmologicalLines);
+        highlightAndCollect(verticalCosmologicalLines);
         highlightAndCollect(planeMeshes);
     
         highlightedObjects = highlightedObjects.concat(associatedLines);
@@ -1012,69 +1130,131 @@ animate = function() {
         });
     }
 
-    function updateSceneWithScaleWidth(scaleWidth) {
-        // Debug info
-        console.log(`Updating scene with scale: ${scaleWidth}, red lines: ${redLines.length}, blue lines: ${blueLines.length}`);
+   function updateSceneWithScaleWidth(scaleWidth) {
+    // Debug info
+    console.log(`Updating scene with scale: ${scaleWidth}, red lines: ${redLines.length}, blue lines: ${blueLines.length}`);
+    
+    // Update Earth past age lines (red)
+    redLines.forEach((line) => {
+        const entry = line.userData.entry;
+        const offset = line.userData.offset || 0;
+        const pastAge = entry["PAST AGE OF EARTH"];
+        if (pastAge !== "∞") {
+            const lineLength = mapToLinearScale(pastAge);
+            line.scale.x = lineLength / line.geometry.parameters.width;
+            line.position.x = -lineLength / 2;
+            
+            // Update label position
+            const label = line.userData.label;
+            if (label) {
+                const padding = 2;
+                const xOffset = -lineLength + padding;
+                const yOffset = line.position.y + 10;
+                label.position.x = xOffset;
+                label.position.y = yOffset;
+            }
+            
+            // Find and update matching vertical line
+            for (let i = 0; i < verticalRedLines.length; i++) {
+                if (verticalRedLines[i].userData.entry === entry) {
+                    verticalRedLines[i].position.x = -lineLength;
+                    break;
+                }
+            }
+        }
+    });
+    
+    // Update Earth future habitability lines (blue)
+    blueLines.forEach((line) => {
+        const entry = line.userData.entry;
+        const futureHabitability = entry["FUTURE HABITABILITY ON EARTH"];
+        if (futureHabitability !== "∞") {
+            const lineLength = Math.abs(mapToLinearScale(futureHabitability));
+            line.scale.x = lineLength / line.geometry.parameters.width;
+            line.position.x = lineLength / 2;
+            
+            // Update label position
+            const label = line.userData.label;
+            if (label) {
+                const padding = 5;
+                const xOffset = lineLength + padding;
+                const yOffset = line.position.y + 10;
+                label.position.x = xOffset;
+            }
+            
+            // Find and update matching vertical line
+            for (let i = 0; i < verticalBlueLines.length; i++) {
+                if (verticalBlueLines[i].userData.entry === entry) {
+                    verticalBlueLines[i].position.x = lineLength;
+                    break;
+                }
+            }
+        }
+    });
+
+    // Update cosmological past age lines (purple)
+    cosmologicalLines.forEach((line) => {
+        const entry = line.userData.entry;
         
-        redLines.forEach((line) => {
-            const entry = line.userData.entry;
-            const offset = line.userData.offset || 0;
-            const pastAge = entry["PAST AGE OF EARTH"];
-            if (pastAge !== "∞") {
-                const lineLength = mapToLinearScale(pastAge);
+        // Handle past age universe lines
+        if (entry["PAST AGE OF UNIVERSE"]) {
+            const pastAgeUniverse = entry["PAST AGE OF UNIVERSE"];
+            if (pastAgeUniverse !== "∞") {
+                const lineLength = mapToLinearScale(pastAgeUniverse, true);
                 line.scale.x = lineLength / line.geometry.parameters.width;
-                line.position.x = -lineLength / 2; // No offset on X axis
-                // Z position remains unchanged with offset already applied
+                line.position.x = -lineLength / 2;
+                
+                // Update label position
                 const label = line.userData.label;
                 if (label) {
                     const padding = 2;
-                    const xOffset = -lineLength + padding; // No offset on X
+                    const xOffset = -lineLength + padding;
                     const yOffset = line.position.y + 10;
                     label.position.x = xOffset;
                     label.position.y = yOffset;
-                    // Z position was already set with offset during creation
+                }
+                
+                // Find and update matching vertical line
+                for (let i = 0; i < verticalCosmologicalLines.length; i++) {
+                    if (verticalCosmologicalLines[i].userData.entry === entry && 
+                        entry["PAST AGE OF UNIVERSE"] === pastAgeUniverse) {
+                        verticalCosmologicalLines[i].position.x = -lineLength + DATA_LINE_THICKNESS / 2 - 0.5;
+                        break;
+                    }
                 }
             }
-        });
+        }
         
-        blueLines.forEach((line) => {
-            const entry = line.userData.entry;
-            const futureHabitability = entry["FUTURE HABITABILITY ON EARTH"];
-            if (futureHabitability !== "∞") {
-                const lineLength = Math.abs(mapToLinearScale(futureHabitability));
+        // Handle future for life in universe lines
+        if (entry["FUTURE FOR LIFE IN WIDER UNIVERSE"]) {
+            const futureLifeUniverse = entry["FUTURE FOR LIFE IN WIDER UNIVERSE"];
+            if (futureLifeUniverse !== "∞") {
+                const lineLength = Math.abs(mapToLinearScale(futureLifeUniverse, true));
                 line.scale.x = lineLength / line.geometry.parameters.width;
-                line.position.x = lineLength / 2; // Remove offset from X axis
+                line.position.x = lineLength / 2;
+                
+                // Update label position
                 const label = line.userData.label;
                 if (label) {
                     const padding = 5;
-                    const xOffset = lineLength + padding; // Remove offset from X
+                    const xOffset = lineLength + padding;
                     const yOffset = line.position.y + 10;
                     label.position.x = xOffset;
-                    // Z position was already set with offset during creation
+                }
+                
+                // Find and update matching vertical line
+                for (let i = 0; i < verticalCosmologicalLines.length; i++) {
+                    if (verticalCosmologicalLines[i].userData.entry === entry && 
+                        entry["FUTURE FOR LIFE IN WIDER UNIVERSE"] === futureLifeUniverse) {
+                        verticalCosmologicalLines[i].position.x = lineLength - DATA_LINE_THICKNESS / 2 + 0.5;
+                        break;
+                    }
                 }
             }
-        });
-        
-        verticalRedLines.forEach((line) => {
-            const entry = line.userData.entry;
-            const pastAge = entry["PAST AGE OF EARTH"];
-            if (pastAge !== "∞") {
-                const lineLength = mapToLinearScale(pastAge);
-                line.position.x = -lineLength; // Remove offset from X axis
-                // Z position remains unchanged with offset already applied
-            }
-        });
-        
-        verticalBlueLines.forEach((line) => {
-            const entry = line.userData.entry;
-            const futureHabitability = entry["FUTURE HABITABILITY ON EARTH"];
-            if (futureHabitability !== "∞") {
-                const lineLength = Math.abs(mapToLinearScale(futureHabitability));
-                line.position.x = lineLength; // Remove offset from X axis
-                // Z position remains unchanged with offset already applied
-            }
-        });
-        
-        renderer.render(scene, camera);
-    }
+        }
+    });
+    
+    // Render the updated scene
+    renderer.render(scene, camera);
+}
 });
