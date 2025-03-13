@@ -1,8 +1,8 @@
 [Position 0]
-  <h1>THE HISTORY OF ‘NOW’</h1>
+  <h1>THE <br>HISTORY <br>OF <br>‘NOW’</h1>
   <p>by Thomas Moynihan</p>
 
-  <h2>0—WHERE IS NOW?</h2>
+  <h2>0—Where is Now?</h2>
   <p>
     Humans are the only creatures to have asked, and begun answering, the question ‘where is now?’.
     That is, how much past was required to produce our living present and how much future might be left ahead, waiting to be produced.
@@ -61,7 +61,7 @@
     It is the story of how, over the centuries, the estimated age of creation has expanded from 5,000 years to 13,800,000,000 years, whilst the expected future ahead for life has ballooned from a prospect measured in centuries to one meted in strides of trillions of years, and how this has transformed our very sense of who we are and what we might yet achieve…
   </p>
 
-  <h2>1—SCRIPTURAL PROPHECY</h2>
+  <h2>1—Scriptural Prophecy</h2>
   <p>
     Many cultures throughout human history have assumed time is eternal.
     This meant asking how much time was behind or ahead was meaningless, as eternity is measureless.
@@ -71,7 +71,7 @@
     It was widely believed there have been several millennia behind, and only a handful of centuries left ahead.
   </p>
 
-  <h2>1.1—ANCIENT (4000 BC – 0 AD)</h2>
+  <h2>1.1—Ancient (4000 BC – 0 AD)</h2>
   <p>
     Throughout human history, across continents and cultures, different people have held wildly diverging attitudes to time.
     Some have been expansive, some less so.
@@ -101,7 +101,7 @@
     There was not yet evidence to disqualify such an assumption.
   </p>
 
-  <h2>1.2—MEDIEVAL (0 AD – 1500)</h2>
+  <h2>1.2—Medieval (0 AD – 1500)</h2>
   <p>
     Jesus’s crucifixion on Golgotha split history in two.
     For his disciples, at least, it introduced a crisp ‘before’ and ‘after’: absolving all humans of their sins, thus applying everywhere equally, and being incapable of reversal or repetition.
@@ -140,7 +140,7 @@
     Church fathers and theologians, from Theophilus and Hippolytus to Bede, converged on the conclusion that the Earth was several thousand years old, and there would only be a few centuries ahead at most before creation met its end.<sup>[15]</sup>
   </p>
 
-  <h2>1.3—EARLY MODERN (1500-1700)</h2>
+  <h2>1.3—Early Modern (1500-1700)</h2>
   <p>
     Such conviction, that the end was always near, continued throughout the Renaissance, persisting well into the Early Modern period.
     Methods for measuring the bookends of time remained scriptural.
@@ -157,7 +157,7 @@
   </p>
 [Position 1]
 
-  <h2>2—GEOLOGY & ARCHAEOLOGY</h2>
+  <h2>2—Geology & Archeology</h2>
   <p>
     Throughout the 1700s, people began looking beyond scripture to understand the past and future.
     Geology began maturing as a science, relying on the testimony of rocks — rather than the Bible — to gauge the age of the Earth and the procession of its creatures.
@@ -165,7 +165,7 @@
     Results from the first experiments attempting to pinpoint the placement of ‘now’ imply the Earth is several tens of thousands of years old and might remain habitable for a similar interval of time.
   </p>
 
-  <h2>2.1—ENLIGHTENMENT (1700-1800)</h2>
+  <h2>2.1—Enlightenment (1700-1800)</h2>
   <p>
     The 1600s saw the advent of modern, empirical science, culminating in the undeniable success of Isaac Newton’s application of its methodology to the study of the heavens.
     Following this, as the 1700s opened, naturalists began looking to the physical Earth itself, rather than to the Bible, to answer the question of where the present was located in time.
@@ -202,7 +202,7 @@
     As such, though bewilderingly prescient, de Maillet’s contribution was lost.
   </p>
 
-  <h2>2.2—REVOLUTION (1800-1830)</h2>
+  <h2>2.2—Revolution (1800-1830)</h2>
   <p>
     The end of the 1700s and opening of the 1800s was an age of revolutions.
     Ruptures in the political world — where the unprecedented replaces what came before it — were echoed by growing evidence that similarly dramatic upheavals punctuated prehistoric time.
@@ -226,7 +226,7 @@
     Eternity recurred.
   </p>
 
-  <h2>2.3—THERMIDOR (1830-1850)</h2>
+  <h2>2.3—Thermidor (1830-1850)</h2>
   <p>
     We have a tendency to perceive infinity in any interval or distance that is larger than the largest span we were previously familiar with.
     But the fact we find some magnitude difficult to circumscribe in our minds is no evidence that, in reality, it lacks circumference and limit.
@@ -276,7 +276,7 @@
     For his own part, Fourier had assumed our “souls” would somehow be transmigrated to other habitable “globes”, ensuring our resurrection throughout “eternity”.<sup>[34]</sup>
   </p>
 
-  <h2>3—THERMODYNAMICS</h2>
+  <h2>3—Thermodynamics</h2>
   <p>
     Developed during the 1800s, thermodynamics is the mathematics of heat, enabling measurement of its sources and modelling of its flows.
     By the middle of the century, scientists accepted that — as all life ultimately is fuelled by the sun — we should look to our sun’s age to gauge how long life has been around and how long it might persist on Earth.
@@ -288,7 +288,7 @@
     ‘Now’ remained nearer the conclusion than the dawn.
   </p>
 
-  <h2>3.1—INDUSTRIAL (1830-1870)</h2>
+  <h2>3.1—Industrial (1830-1870)</h2>
   <p>
     Eternity still held sway in the sidereal immensities and outer nebulae, then being pried at by the first large reflecting telescopes.
     But how much longer did life have left, here, within our Solar System?
@@ -330,7 +330,7 @@
     So, physicists began asking: how long has our sun been outpouring heat, and how much longer can it continue to wring out energy for our sustenance?
   </p>
 
-  <h2>3.1—DECADENCE (1870-1900)</h2>
+  <h2>3.1—Decadence (1870-1900)</h2>
   <p>
     By 1861, Thomson revised his numbers upwards, but not by all too much.
     He now claimed Earth’s “inhabitants” cannot have “many million years longer”.<sup>[40]</sup>
@@ -396,7 +396,7 @@
     But, then, as the 1800s closed, and the 1900s opened, an entirely new force of nature was discovered, blowing the ceiling off all previous upper bounds on time past and future.
   </p>
 
-  <h2>4—RADIUM</h2>
+  <h2>4—Radium </h2>
   <p>
     In the opening years of the 1900s, following the discovery of radioactivity, Marie Curie proved atoms expel vast amounts of energy without taking any from their surroundings.
     This reveals that a shocking wealth of extra energy is locked up within mundane matter, hitherto previously unacknowledged.
@@ -479,7 +479,7 @@
     But that wasn’t all: not only did radium reveal a capacious future, it also lifted previous limits on evolution’s past by revealing new ways to date the Earth’s age.
   </p>
 
-  <h2>5—COSMOLOGY</h2>
+  <h2>5—Cosmology</h2>
   <p>
     Through the 1920s and 1930s, Edwin Hubble noticed that other galaxies are receding from us.
     Extrapolating backwards, this implies the cosmos itself had a beginning; looking forwards, it implies it will have a rarefied end.
@@ -559,7 +559,7 @@
     He concluded his speculation, by adding, piquantly: “And there are other galaxies”.<sup>[69]</sup>
   </p>
 
-  <h2>5—COSMOLOGY</h2>
+  <h2>5—Cosmology </h2>
   <p>
     Through the 1920s and 1930s, Edwin Hubble noticed that other galaxies are receding from us.
     Extrapolating backwards, this implies the cosmos itself had a beginning; looking forwards, it implies it will have a rarefied end.
@@ -642,7 +642,7 @@
     He concluded his speculation, by adding, piquantly: “And there are other galaxies”.<sup>[69]</sup>
   </p>
 
-  <h2>5—COSMOLOGY</h2>
+  <h2>5—Cosmology </h2>
   <p>
     Through the 1920s and 1930s, Edwin Hubble noticed that other galaxies are receding from us.
     Extrapolating backwards, this implies the cosmos itself had a beginning; looking forwards, it implies it will have a rarefied end.
@@ -722,7 +722,7 @@
     He concluded his speculation, by adding, piquantly: “And there are other galaxies”.<sup>[69]</sup>
   </p>
 
-  <h2>6—CLIMATOLOGY</h2>
+  <h2>6—Climatology </h2>
   <p>
     Throughout the Cold War, whilst predictions were wildly expanding on how long the universe itself might be capable of hosting life beyond Earth, the potential future for life on Earth was — ironically — being slashed downward.
     Better understanding of how the sun fuels itself, via nuclear fusion, reveals that it will expand — rather than shrink as it ages.
@@ -811,7 +811,7 @@
     Between then and now is — it’s fair to say — a very long way.
   </p>
 
-  <h2>6.3—OUR PRECARIOUS PRESENT</h2>
+  <h2>6.3—Our Precarious Present </h2>
   <p>
     Humans are orienting creatures.
     We orient ourselves in the world to better navigate our way through it.

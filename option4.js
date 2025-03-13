@@ -52,7 +52,6 @@ window.addEventListener('load', () => {
     ];
 
     let scaleWidth = cameraPositions[0].targetScale;
-    let nowMesh; // Declare nowMesh in the global scope
 
     // Global variables
     const DATA_COLOR = 0xff0000; // Red color
@@ -102,7 +101,7 @@ window.addEventListener('load', () => {
         isDarkMode = !isDarkMode;
     
         // Toggle renderer background
-        renderer.setClearColor(isDarkMode ? 0x000000 : 0xffffff, 1);
+        renderer.setClearColor(isDarkMode ? 0x090909 : 0xffffff, 1);
     
         // Toggle non-red object colors, but skip textured images
         scene.traverse((object) => {
@@ -195,13 +194,33 @@ darkModeBtn.addEventListener('click', toggleDarkMode);
     let entries = [];
     let centralLine;
 
-    // Load font and create text meshes and data visualization
-    const loader = new THREE.FontLoader();
+// Load font and create text meshes and data visualization
+const loader = new THREE.FontLoader();
+let regularFont, lightFont;
 
-fetch('data.json')
-.then(response => response.json())
-.then(data => {
-    loader.load('fonts/Cosmica.json', function (font) {
+// Load both fonts
+loader.load('fonts/Cosmica.json', function (font) {
+    regularFont = font;
+    checkFontsLoaded();
+});
+
+loader.load('fonts/Cosmica-Light.json', function (font) {
+    lightFont = font;
+    checkFontsLoaded();
+});
+
+function checkFontsLoaded() {
+    if (regularFont && lightFont) {
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                processEntries(data);
+            });
+    }
+}
+
+
+    function processEntries(data) {
         // Generate a complete list of years from the data range
         const years = data.Sheet1.map(entry => parseInt(entry.DATE)).filter(year => !isNaN(year));
         const minYear = Math.min(...years);
@@ -234,10 +253,10 @@ fetch('data.json')
         entries.forEach((entry) => {
             const yearNum = parseInt(entry.DATE);
             const isDummy = Object.keys(entry).length === 1;
-            
+        
             // Skip dummy entries that aren't decades
             if (isDummy && yearNum % 10 !== 0) return;
-            
+        
             // Calculate offset for data visualization if this is a duplicate
             let offset = 0;
             let duplicateOffset = 5;
@@ -245,15 +264,16 @@ fetch('data.json')
                 if (!yearDataCount[yearNum]) {
                     yearDataCount[yearNum] = 0;
                 }
-                offset = yearDataCount[yearNum] * duplicateOffset; // Offset by 5 units for each duplicate
+                offset = yearDataCount[yearNum] * duplicateOffset;
                 yearDataCount[yearNum]++;
             }
-            
-            // Create text only once per year
+        
+            // Create text only once per year  
             if (!yearTextCreated[yearNum]) {
-                const textSize = isDummy ? 10 : 5;
+                const textSize = isDummy ? 50 : 5;
+                const fontToUse = isDummy ? lightFont : regularFont;
                 const textGeometry = new THREE.TextGeometry(entry.DATE.toString(), {
-                    font: font,
+                    font: fontToUse,
                     size: textSize,
                     height: 0.1,
                     curveSegments: 12,
@@ -261,26 +281,34 @@ fetch('data.json')
                 textGeometry.computeBoundingBox();
                 const xOffset = -textGeometry.boundingBox.min.x;
                 textGeometry.translate(xOffset, 0, 0);
-
-                const material = new THREE.MeshBasicMaterial({ color: isDummy ? 0x000000 : 0xff0000, side: THREE.DoubleSide });
+        
+                const material = new THREE.MeshBasicMaterial({ 
+                    color: isDummy ? 0x000000 : 0xff0000, 
+                    side: THREE.DoubleSide 
+                });
                 const textMesh = new THREE.Mesh(textGeometry, material);
-
                 const yPosition = -10;
                 const zPosition = -((maxYear - yearNum) * 10);
-                textMesh.position.set(0, yPosition, zPosition);
+                const xPosition = isDummy ? 0 : -18; // Keep decades at x=0, move data years to x=-20
+                textMesh.position.set(xPosition, yPosition, zPosition);
                 textMesh.rotation.x = -Math.PI / 2;
-                textMesh.userData = { isYear: true, originalColor: isDummy ? 0x000000 : 0xff0000 };
+                textMesh.userData = {
+                    isYear: true,
+                    originalColor: isDummy ? 0x000000 : 0xff0000
+                };
                 textMesh.name = `Year_${entry.DATE}`;
                 scene.add(textMesh);
                 textMeshes.push(textMesh);
-
-                // Draw horizontal line marker (shared across all entries for this year)
-                const lineMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
-                const lineGeometry = new THREE.BoxGeometry(2000, 0.25, 0.25);
-                const line = new THREE.Mesh(lineGeometry, lineMaterial);
-                line.position.set(0, yPosition, zPosition);
-                scene.add(line);
-                
+        
+                // Only draw the long black horizontal line if it is a decade year
+                if (yearNum % 10 === 0 && isDummy) {
+                    const lineMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
+                    const lineGeometry = new THREE.BoxGeometry(2000, 0.25, 0.25);
+                    const line = new THREE.Mesh(lineGeometry, lineMaterial);
+                    line.position.set(0, yPosition, zPosition);
+                    scene.add(line);
+                }
+        
                 yearTextCreated[yearNum] = true;
             }
 
@@ -384,7 +412,7 @@ function wrapTextByWidth(text, font, size, maxWidth) {
                 
                         // Instead of createImageCaption, call createImageCaption3D
                         if (entry["IMAGE CAPTION"]) {
-                            createImageCaption3D(imagePlane, entry["IMAGE CAPTION"], font);
+                            createImageCaption3D(imagePlane, entry["IMAGE CAPTION"], regularFont);
                         }
                     });
                 }
@@ -403,7 +431,7 @@ function wrapTextByWidth(text, font, size, maxWidth) {
                         // Name text with offset
                         const nameText = entry["NAME"] ? entry["NAME"] : "UNKNOWN";
                         const nameGeometry = new THREE.TextGeometry(nameText, {
-                            font: font,
+                            font: regularFont, // Changed from font to regularFont
                             size: 3,
                             height: 0.1,
                             curveSegments: 12,
@@ -428,7 +456,7 @@ function wrapTextByWidth(text, font, size, maxWidth) {
                         redLines.push(redLine);
                         
                         // Vertical line with offset
-                        const verticalRedLineHeight = 20;
+                        const verticalRedLineHeight = 40;
                         const verticalRedLineGeometry = new THREE.BoxGeometry(DATA_LINE_THICKNESS, verticalRedLineHeight, DATA_LINE_THICKNESS);
                         const verticalRedLine = new THREE.Mesh(verticalRedLineGeometry, new THREE.MeshBasicMaterial({ color: DATA_COLOR }));
                         verticalRedLine.position.set(-lineLength + DATA_LINE_THICKNESS / 2 - 0.5,
@@ -442,11 +470,12 @@ function wrapTextByWidth(text, font, size, maxWidth) {
                         const nameText = entry["NAME"] ? entry["NAME"] : "UNKNOWN";
                         const textString = `${nameText}\n${pastAge}`;
                         const labelGeometry = new THREE.TextGeometry(textString, {
-                            font: font,
+                            font: regularFont,
                             size: 3,
                             height: 0.1,
                             curveSegments: 12,
                         });
+
                         labelGeometry.computeBoundingBox();
                         const labelMaterial = new THREE.MeshBasicMaterial({ color: DATA_COLOR });
                         const labelMesh = new THREE.Mesh(labelGeometry, labelMaterial);
@@ -483,7 +512,7 @@ function wrapTextByWidth(text, font, size, maxWidth) {
                         blueLines.push(blueLine);
                         
                         // Vertical blue line with offset
-                        const verticalBlueLineHeight = 20;
+                        const verticalBlueLineHeight = 40;
                         const verticalBlueLineGeometry = new THREE.BoxGeometry(DATA_LINE_THICKNESS, verticalBlueLineHeight, DATA_LINE_THICKNESS);
                         const verticalBlueLine = new THREE.Mesh(verticalBlueLineGeometry, new THREE.MeshBasicMaterial({ color: DATA_COLOR }));
                         verticalBlueLine.position.set(
@@ -496,10 +525,10 @@ function wrapTextByWidth(text, font, size, maxWidth) {
                         verticalBlueLines.push(verticalBlueLine);
                         
                         // Label with offset
-                        const nameText = entry["NAME"] ? entry["NAME"].toUpperCase() : "UNKNOWN";
+                        const nameText = entry["NAME"] ? entry["NAME"] : "UNKNOWN";
                         const textString = `${nameText}\n${futureHabitability}`;
                         const labelGeometry = new THREE.TextGeometry(textString, {
-                            font: font,
+                            font: regularFont,
                             size: 3,
                             height: 0.1,
                             curveSegments: 12,
@@ -536,7 +565,7 @@ function wrapTextByWidth(text, font, size, maxWidth) {
                         scene.add(cosmologicalLine);
                         cosmologicalLines.push(cosmologicalLine);
 
-                        const verticalCosmologicalLineHeight = 20;
+                        const verticalCosmologicalLineHeight = 40;
                         const verticalCosmologicalLineGeometry = new THREE.BoxGeometry(DATA_LINE_THICKNESS, verticalCosmologicalLineHeight, DATA_LINE_THICKNESS);
                         const verticalCosmologicalLine = new THREE.Mesh(verticalCosmologicalLineGeometry, new THREE.MeshBasicMaterial({ color: COSMOLOGICAL_COLOR }));
                         verticalCosmologicalLine.position.set(
@@ -551,7 +580,7 @@ function wrapTextByWidth(text, font, size, maxWidth) {
                         const nameText = entry["NAME"] ? entry["NAME"] : "UNKNOWN";
                         const textString = `${nameText}\n${pastAgeUniverse}`;
                         const labelGeometry = new THREE.TextGeometry(textString, {
-                            font: font,
+                            font: regularFont,
                             size: 3,
                             height: 0.1,
                             curveSegments: 12,
@@ -561,7 +590,7 @@ function wrapTextByWidth(text, font, size, maxWidth) {
                         const labelMesh = new THREE.Mesh(labelGeometry, labelMaterial);
                         const padding = 2;
                         const xOffset = offset - lineLength + padding;
-                        const yOffset = yPosition + verticalCosmologicalLineHeight / 2;
+                        const yOffset = yPosition + verticalCosmologicalLineHeight - 2;
                         labelMesh.position.set(xOffset, yOffset, zPosition + offset);
                         labelMesh.rotation.x = 0;
                         labelMesh.userData.isLabel = true;
@@ -605,7 +634,7 @@ function wrapTextByWidth(text, font, size, maxWidth) {
                         const nameText = entry["NAME"] ? entry["NAME"].toUpperCase() : "UNKNOWN";
                         const textString = `${nameText}\n${futureLifeUniverse}`;
                         const labelGeometry = new THREE.TextGeometry(textString, {
-                            font: font,
+                            font: regularFont,
                             size: 3,
                             height: 0.1,
                             curveSegments: 12,
@@ -626,12 +655,8 @@ function wrapTextByWidth(text, font, size, maxWidth) {
         });
 
         addCentralVerticalLine();
-     nowMesh = addNowText(font); // Assign to the global variable instead of creating a new const        updateSceneWithScaleWidth(scaleWidth); // Add this line to apply initial scaling
-
-       
-
-    });
-});
+        updateSceneWithScaleWidth(scaleWidth); // Add this line to apply initial scaling
+    }
 
     function addCentralVerticalLine() {
         if (textMeshes.length === 0) {
@@ -650,39 +675,6 @@ function wrapTextByWidth(text, font, size, maxWidth) {
         scene.add(rectangle);
     }
 
-    function addNowText(font) {
-        // Create the "NOW" text
-        const textGeometry = new THREE.TextGeometry("NOW", {
-            font: font,
-            size: 100, // Larger size for visibility
-            height: 0.1,
-            curveSegments: 12,
-        });
-        
-        // Compute bounding box to help with right-justification
-        textGeometry.computeBoundingBox();
-        
-        // Right-justify the text (move it left by its width)
-        const textWidth = textGeometry.boundingBox.max.x - textGeometry.boundingBox.min.x;
-        textGeometry.translate(-textWidth, 0, 0);
-        
-        // Create the text mesh with black material
-        const material = new THREE.MeshBasicMaterial({ color: 0x000000, side: THREE.DoubleSide });
-        const nowMesh = new THREE.Mesh(textGeometry, material);
-        
-        // Set rotation to match year numbers (flat on ground)
-        nowMesh.rotation.x = -Math.PI / 2;
-        
-        // Position near the central vertical line
-        const yPosition = -10; // Same y-position as the years
-        nowMesh.position.set(-5, yPosition, 0); // Fixed position along the central line
-        
-        // Add to scene
-        scene.add(nowMesh);
-        
-        // Store reference to update position
-        return nowMesh;
-    }
     
     // Then replace the animate function modification with:
 // Update the animate function
@@ -811,9 +803,16 @@ animate = function() {
         const nameAndDate = name || date ? `${name}${date}` : "";
         const otherData = Object.entries(entry)
             .filter(([key]) => key !== "NAME" && key !== "DATE" && key !== "IMAGE")
-            .map(([key, value]) =>
-                keysToInclude[key] ? `<span class="underline">${keysToInclude[key]}</span>: ${value}` : value
-            )
+            .map(([key, value]) => {
+                let displayValue = value;
+                const numericVal = parseFloat(value.replace(/,/g, ''));
+                if (!isNaN(numericVal) && value !== '∞') {
+                    displayValue += " yrs";
+                }
+                return keysToInclude[key]
+                    ? `<span class="underline">${keysToInclude[key]}</span>: ${displayValue}`
+                    : displayValue;
+            })
             .join('<br>');
         return nameAndDate ? `${nameAndDate}<br>${otherData}` : otherData;
     }
@@ -1149,7 +1148,7 @@ animate = function() {
             if (label) {
                 const padding = 2;
                 const xOffset = -lineLength + padding;
-                const yOffset = line.position.y + 10;
+                const yOffset = line.position.y + 40; // Change from 10 to 40
                 label.position.x = xOffset;
                 label.position.y = yOffset;
             }
@@ -1178,8 +1177,10 @@ animate = function() {
             if (label) {
                 const padding = 5;
                 const xOffset = lineLength + padding;
-                const yOffset = line.position.y + 10;
+                const yOffset = line.position.y + 40; // Change from 10 to 40
                 label.position.x = xOffset;
+                label.position.y = yOffset; // Need to set y position too
+
             }
             
             // Find and update matching vertical line
@@ -1209,7 +1210,7 @@ animate = function() {
                 if (label) {
                     const padding = 2;
                     const xOffset = -lineLength + padding;
-                    const yOffset = line.position.y + 10;
+                    const yOffset = line.position.y + 40; // Change from 10 to 40
                     label.position.x = xOffset;
                     label.position.y = yOffset;
                 }

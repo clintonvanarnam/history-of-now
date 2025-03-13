@@ -39,7 +39,11 @@ p {
 }
 
 h1 {
-  font-family: 'Cosmica Medium', sans-serif;
+  font-family: 'Cosmica Book', sans-serif;
+  font-size: 114px;
+  margin-top: 300px;
+  margin-bottom: 0px;
+  line-height: 98%;
 }
 
 h2 {
@@ -68,7 +72,7 @@ a:hover {
 }
 
 body.dark-mode .essay-container {
-  background-color: #000;
+  background-color: #090909;
   color: #fff;
 }
 
@@ -194,8 +198,9 @@ body, html {
   width: 50%;
   overflow-y: auto;
   height: 100vh;
-  padding: 40px;
-  padding-right: 120px; /* Add right padding */
+  padding-top: 0px;
+  padding-left: 40px;
+  padding-right: 80px; /* Add right padding */
 
   box-sizing: border-box;
   background-color: white;
