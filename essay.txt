@@ -1,7 +1,8 @@
 [Position 0]
+  <div class="opening-title">
   <h1>THE <br>HISTORY <br>OF <br>‘NOW’</h1>
   <p>by Thomas Moynihan</p>
-
+</div>
   <h2>0—Where is Now?</h2>
   <p>
     Humans are the only creatures to have asked, and begun answering, the question ‘where is now?’.

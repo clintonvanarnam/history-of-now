@@ -193,6 +193,13 @@ body, html {
   height: 100%;
 }
 
+.opening-title{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+
+}
 /* Essay container on the right side */
 .essay-container {
   width: 50%;

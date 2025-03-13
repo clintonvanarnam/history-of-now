@@ -30,14 +30,14 @@ window.addEventListener('load', () => {
     // Define camera positions with a targetScale property
     const cameraPositions = [
         {
-            position: { x: 0, y: 109, z: -1673 },
-            rotation: { x: -0.74, y: 0, z: 0 },
-            targetScale: 10000000000
+            position: { x: 0, y: 628.5, z: 349 },
+            rotation: { x: -0.68, y: 0, z: 0 },
+            targetScale: 3163005
         },
         {
-            position: { x: 0, y: 137.5, z: -1393 },
+            position: { x: 0, y: 195.5, z: -17822 },
             rotation: { x: -0.68, y: 0, z: 0 },
-            targetScale: 9999999900
+            targetScale: 15852581696
         },
         {
             position: { x: 0, y: 332.5, z: -515 },
@@ -1168,7 +1168,6 @@ animate = function() {
 
    function updateSceneWithScaleWidth(scaleWidth) {
     // Debug info
-    console.log(`Updating scene with scale: ${scaleWidth}, red lines: ${redLines.length}, blue lines: ${blueLines.length}`);
     
     // Update Earth past age lines (red)
     redLines.forEach((line) => {
