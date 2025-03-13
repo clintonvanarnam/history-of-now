@@ -312,6 +312,43 @@ function checkFontsLoaded() {
                 yearTextCreated[yearNum] = true;
             }
 
+            // Draw decade year text if it coincides with a data year
+            if (!isDummy && yearNum % 10 === 0) {
+                const textSize = 50;
+                const textGeometry = new THREE.TextGeometry(entry.DATE.toString(), {
+                    font: lightFont,
+                    size: textSize,
+                    height: 0.1,
+                    curveSegments: 12,
+                });
+                textGeometry.computeBoundingBox();
+                const xOffset = -textGeometry.boundingBox.min.x;
+                textGeometry.translate(xOffset, 0, 0);
+
+                const material = new THREE.MeshBasicMaterial({ 
+                    color: 0x000000, 
+                    side: THREE.DoubleSide 
+                });
+                const textMesh = new THREE.Mesh(textGeometry, material);
+                const yPosition = -10;
+                const zPosition = -((maxYear - yearNum) * 10);
+                textMesh.position.set(0, yPosition, zPosition);
+                textMesh.rotation.x = -Math.PI / 2;
+                textMesh.userData = {
+                    isYear: true,
+                    originalColor: 0x000000
+                };
+                textMesh.name = `Decade_${entry.DATE}`;
+                scene.add(textMesh);
+                textMeshes.push(textMesh);
+
+                const lineMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
+                const lineGeometry = new THREE.BoxGeometry(2000, 0.25, 0.25);
+                const line = new THREE.Mesh(lineGeometry, lineMaterial);
+                line.position.set(0, yPosition, zPosition);
+                scene.add(line);
+            }
+
             // Only add data visualization for non-dummy entries
             if (!isDummy) {
                 const yPosition = -10;
