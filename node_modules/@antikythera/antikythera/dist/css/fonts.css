@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'ESAllianz-Book';
+  font-style: normal;
+  font-weight: 400;
+  src:  url('../fonts/ESAllianz-Book.woff2') format('woff2'), url('../fonts/ESAllianz-Book.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'ESAllianz-Book';
+  font-style: italic;
+  font-weight: 400;
+  src:  url('../fonts/ESAllianz-BookItalic.woff2') format('woff2'), url('../fonts/ESAllianz-BookItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'ESAllianz-Book';
+  font-style: normal;
+  font-weight: 700;
+  src:  url('../fonts/ESAllianz-Bold.woff2') format('woff2'), url('../fonts/ESAllianz-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'ESAllianz-Book';
+  font-style: italic;
+  font-weight: 700;
+  src:  url('../fonts/ESAllianz-BoldItalic.woff2') format('woff2'), url('../fonts/ESAllianz-BoldItalic.woff') format('woff');
+
+}

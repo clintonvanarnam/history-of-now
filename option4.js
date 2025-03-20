@@ -220,6 +220,23 @@ function checkFontsLoaded() {
 }
 
 
+    let imagesVisible = true;
+
+    function toggleImages() {
+        imagesVisible = !imagesVisible;
+        scene.traverse((object) => {
+            if (object.isMesh && object.userData.isImage) {
+                object.visible = imagesVisible;
+            }
+            if (object.isMesh && object.userData.isCaption) {
+                object.visible = imagesVisible;
+            }
+        });
+    }
+
+    const toggleImagesBtn = document.getElementById('toggle-images-btn');
+    toggleImagesBtn.addEventListener('click', toggleImages);
+
     function processEntries(data) {
         // Generate a complete list of years from the data range
         const years = data.Sheet1.map(entry => parseInt(entry.DATE)).filter(year => !isNaN(year));
@@ -390,6 +407,7 @@ function checkFontsLoaded() {
                             lineGeometry,
                             new THREE.MeshBasicMaterial({ color: 0x000000 })
                         );
+                        textMesh.userData.isCaption = true; // Mark as caption
                 
                         // Position flush left, but slightly above the bottom
                         textMesh.position.set(xLeft, yOffset, imagePlane.position.z);
@@ -440,6 +458,7 @@ function wrapTextByWidth(text, font, size, maxWidth) {
                 
                         const imagePlaneMaterial = new THREE.MeshBasicMaterial({ map: texture, side: THREE.DoubleSide });
                         const imagePlane = new THREE.Mesh(imagePlaneGeometry, imagePlaneMaterial);
+                        imagePlane.userData.isImage = true; // Mark as image
                 
                         // Shift image plane randomly
                         const randomSign = Math.random() < 0.5 ? -1 : 1;

@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <title>History of Now</title>
     <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="vendor/antikythera/style.css">
 </head>
 <body>
     <div class="container">
         <!-- Left Half: 3D Scene and Controls -->
         <div class="scene-container">
+            <antikythera-menu></antikythera-menu>
             <!-- Logarithmic scales on both sides -->
             <div class="log-scale log-scale-left"></div>
             <div class="log-scale log-scale-right"></div>
@@ -26,6 +28,9 @@
                     <button id="position2-btn">Position 2</button>
                     <button id="position3-btn">Position 3</button>
                     <button id="position4-btn">Position 4</button>
+                </div>
+                <div id="controls">
+                    <button id="toggle-images-btn">Toggle Images</button>
                 </div>
                 <button id="dark-mode-btn">Toggle Dark Mode</button>
 
@@ -66,5 +71,29 @@
 
     <!-- Your main script for Option 2 -->
     <script src="option4.js"></script>
+    <script type="module">
+        // Some modules expect process.env, so we define it:
+        window.process = {
+          env: {
+            NODE_ENV: "production"
+          }
+        };
+      
+        window.addEventListener("DOMContentLoaded", async () => {
+          try {
+            // Import the module from our local vendor folder
+            const { Antikythera } = await import('./vendor/antikythera/antikythera.js');
+      
+            // Initialize the API with your slug
+            const api = new Antikythera({
+              slug: "historyofnow"
+            });
+      
+            console.log("Antikythera initialized:", api);
+          } catch (error) {
+            console.error("Error initializing Antikythera:", error);
+          }
+        });
+      </script>
 </body>
 </html>
