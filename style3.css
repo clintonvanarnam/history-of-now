@@ -48,11 +48,14 @@ h1 {
 
 h2 {
   font-family: 'Cosmica Medium', sans-serif;
+  font-size: 24px;
  
 }
 
 h3 {
   font-family: 'Cosmica Medium', sans-serif;
+  font-size: 24px;
+
 
 }
 
@@ -313,4 +316,27 @@ body, html {
 
 .controls-container button:hover {
     background-color: #0056b3;
+}
+
+.image-caption {
+  width: 60%;
+  display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    margin: auto;}
+
+
+.image-caption img {
+  display: block;      /* make the img a block so auto‑margins work */
+  width: 100%;          /* or whatever % you like */
+  margin: 0 auto;      /* centers the block within its container */
+}
+
+.caption {
+  font-family: 'Copernicus Book', serif;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+  color: #333;
 }
