@@ -340,3 +340,7 @@ body, html {
   margin-top: 10px;
   color: #333;
 }
+
+.section-marker{
+  text-align: center;
+}
