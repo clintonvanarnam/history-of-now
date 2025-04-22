@@ -47,6 +47,7 @@
   <div class="caption">Representation of eternity as an ouroboros, from Cleopatra the Alchemist’s Chrysopoeia, written sometime in the 3rd or 4rd century CE.</div>
 </div>
 
+[Position 1]
 <p>This is important. Where time has extremities, it cannot be guaranteed that everything possible will occur. Decisions matter when not every possible outcome will eventually come to pass regardless. It is this that makes taking one course of action, over any of the alternatives, consequential. But eternity, in its superabundance, crushes this.</p>
 <p>Contrarily, in bounded time—no matter how deep—pPossibilities can remain forever unrealized: meaning that taking one course of action, over any of the alternates, becomes consequential.</p>
 <p>In bounded time, legacies can last, and their influences run deep; in eternity, the only trajectory is an orbit. Eternity, in this way, is far from deep. Instead, it is shallow and flat. This is why—on the graph opposite—the predictions of Aristotle and Lucretius are represented by a single point, expressing shallowness and stasis rather than volume or depth. It took accepting that the time ahead and behind us is not only finite, but enormously finite, for the present to realize just how deeply the consequences of its decisions might become entrenched and for just how long they might resonate.</p>
@@ -87,7 +88,7 @@ James Ussher’s Annales, 1658." />
 James Ussher’s Annales, 1658.</div>
 </div>
 
-
+[Position 2]
 <p>It thus remained orthodox to assume that the world was around five or six thousand years old and would last only a few more centuries. This sense, of living nearer to history’s culmination than to its beginning, affected how people saw their world and how they felt they should act. Writing in 1658, Sir Thomas Browne perfectly captured this overriding sentiment. “’Tis too late to be ambitious,” he declared:</p>
 <p>The great mutations of the world are acted, or time may be too short for our designes. . . . We whose generations are ordained in this setting part of time, [are] necessitated to eye the remaining particle of futurity, [and] cannot excusably [anticipate any future] duration, which maketh pyramids pillars of snow, and all that’s past a moment.</p>
 <p>§</p>
@@ -174,7 +175,7 @@ James Ussher’s Annales, 1658.</div>
   <div class="caption">Étienne Léopold Trouvelot’s chromolithograph of the Sun, 1873.</div>
 </div>
 
-
+[Position 3]
 <p>§</p>
 <p>At this time, however, there was no certainty about how our star produces its outpouring. Scientists had already decided it couldn’t be combusting, like a gigantic coal, since a cinder the size of our Sun would burn itself up far more rapidly than seemed plausible. Such short timescales jarred with the timescales required to explain geological features on Earth.</p>
 <p>Generations before anyone alive had dreamed of the vast energy locked within atoms and long before subatomic processes were apprehended, various explanations were proposed, all assuming that stars shine through some mechanical process. The most popular, proposed by William Thomson and Hermann von Helmholtz, was that the Sun produces its heat by languorously collapsing under its own vast weight, grinding on its own matter as it compacts and outputting heat and light as the result.</p>
@@ -252,6 +253,7 @@ James Ussher’s Annales, 1658.</div>
 everything thereafter, from 1928.</div>
 </div>
 
+[Position 4]
 <p>§</p>
 <p>Another of Kelvin’s lines of reasoning, and justifications for his shorter timescales—both past and future—was the well-known fact that it is warm underground and gets hotter the further you dig down. From this, Kelvin calculated that a rock the size of Earth could not have been spilling its internal warmth into space for all too long. Accordingly, this is why—throughout the late 1800s—he had billed Earth’s age as somewhere between 20 and 40 million years, or 20,000,000 and 40,000,000 years.</p>
 <p>Nonetheless, following Skłodowska-Curie’s discoveries in the early 1900s, Irish geophysicist John Joly reasoned that, if it should turn out that there are radioactive ores packed throughout the Earth’s crust, then the planet also gained a new fund of internal heat, explaining why it remains toasty underground. Not long after he suggested this, surprisingly large amounts of radioactivity were measured in common garden soil. This conclusively toppled Kelvin’s other line of attack in his argument for a younger Earth.</p>
@@ -302,7 +304,7 @@ Right: Depiction of Solar System’s birth, according to the obsolesced Chamberl
 
 
 
-
+[Position 5]
 <h3>5.2—1940s and 1950s</h3>
 <p>As the 1930s drew to a close, thanks to the work of Lise Meitner and others, the understanding of nuclear fission coalesced. Around the same time, German American physicist Hans Bethe—echoing an idea previously suggested by Eddington—proposed a model for how sun produce their heat: by fusing hydrogen into helium atoms, or, in other words, via nuclear fusion.</p>
 <p>This better understanding of what powers the Sun—far less efficient than the “annihilation” theory of Jeans, in that only a fraction of mass is converted into energy—meant that estimates of the future of our star had to be revised downward.</p>

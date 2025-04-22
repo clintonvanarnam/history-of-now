@@ -48,6 +48,11 @@ window.addEventListener('load', () => {
             position: { x: 0, y: 860.48, z: 900.7 },
             rotation: { x: -0.47, y: 0, z: 0 },
             targetScale: 1e5
+        },
+        {
+            position: { x: 0, y: 1860.48, z: 900.7 },
+            rotation: { x: -0.47, y: 0, z: 0 },
+            targetScale: 1e5
         }
     ];
 
@@ -55,7 +60,7 @@ window.addEventListener('load', () => {
 
     // Global variables
     const DATA_COLOR = 0xff0000; // Red color
-    const COSMOLOGICAL_COLOR = 0x800080; // Purple color
+    const COSMOLOGICAL_COLOR = 0x777777; // Purple color
     let scrollVelocity = 0;
     let scrollOffset = 0;
     let isTransitioning = false;
@@ -220,7 +225,7 @@ function checkFontsLoaded() {
 }
 
 
-    let imagesVisible = true;
+    let imagesVisible = false;
 
     function toggleImages() {
         imagesVisible = !imagesVisible;
@@ -412,7 +417,7 @@ function checkFontsLoaded() {
                         // Position flush left, but slightly above the bottom
                         textMesh.position.set(xLeft, yOffset, imagePlane.position.z);
                         scene.add(textMesh);
-                
+                        textMesh.visible = false;
                         yOffset -= lineSpacing;
                     });
                 }
@@ -464,6 +469,7 @@ function wrapTextByWidth(text, font, size, maxWidth) {
                         const randomSign = Math.random() < 0.5 ? -1 : 1;
                         const randomDistance = Math.random() * (60 - 30) + 30;
                         imagePlane.position.set(offset + (randomDistance * randomSign), yPosition, zPosition + offset);
+                        imagePlane.visible = false;
                         scene.add(imagePlane);
                 
                         // Instead of createImageCaption, call createImageCaption3D
@@ -540,8 +546,12 @@ function wrapTextByWidth(text, font, size, maxWidth) {
                         const yOffset = yPosition + verticalRedLineHeight / 2;
                         labelMesh.position.set(xOffset, yOffset, zPosition + offset);
                         labelMesh.rotation.x = 0;
-                        labelMesh.userData.isLabel = true;
-                        scene.add(labelMesh);
+                        labelMesh.userData = {
+                            isLabel: true,
+                            entry: entry,
+                            originalColor: DATA_COLOR // or COSMOLOGICAL_COLOR depending on the label
+                          };
+                                                  scene.add(labelMesh);
                         redLine.userData.label = labelMesh;
                     }
                 }
@@ -595,7 +605,11 @@ function wrapTextByWidth(text, font, size, maxWidth) {
                         const xOffset = offset + lineLength + 5;
                         const yOffset = yPosition + verticalBlueLineHeight / 2;
                         labelMesh.position.set(xOffset, yOffset, zPosition + offset);                        labelMesh.rotation.x = 0;
-                        labelMesh.userData.isLabel = true;
+                        labelMesh.userData = {
+                            isLabel: true,
+                            entry: entry,
+                            originalColor: DATA_COLOR // or COSMOLOGICAL_COLOR depending on the label
+                          };
                         scene.add(labelMesh);
                         blueLine.userData.label = labelMesh;
                     }
@@ -649,7 +663,11 @@ function wrapTextByWidth(text, font, size, maxWidth) {
                         const yOffset = yPosition + verticalCosmologicalLineHeight - 2;
                         labelMesh.position.set(xOffset, yOffset, zPosition + offset);
                         labelMesh.rotation.x = 0;
-                        labelMesh.userData.isLabel = true;
+                        labelMesh.userData = {
+  isLabel: true,
+  entry: entry,
+  originalColor: DATA_COLOR // or COSMOLOGICAL_COLOR depending on the label
+};
                         scene.add(labelMesh);
                         cosmologicalLine.userData.label = labelMesh;
                     }
@@ -818,7 +836,7 @@ animate = function() {
         mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
         mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
         raycaster.setFromCamera(mouse, camera);
-        const intersects = raycaster.intersectObjects([...planeMeshes, ...redLines, ...blueLines, ...verticalRedLines, ...verticalBlueLines, ...cosmologicalLines, ...verticalCosmologicalLines], false);
+        const intersects = raycaster.intersectObjects([...planeMeshes, ...redLines, ...blueLines, ...verticalRedLines, ...verticalBlueLines, ...cosmologicalLines, ...verticalCosmologicalLines, ...textMeshes], false);
         if (intersects.length > 0) {
             const intersectedObject = intersects[0].object;
             if (highlightedObjects.length > 0 && !highlightedObjects.includes(intersectedObject)) {
