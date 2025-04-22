@@ -59,7 +59,7 @@
 <p>Accordingly, across Europe, Western Asia, and Northern Africa, belief spread that history was much nearer to its end than to its beginning. Each generation assumed it might be the last. The average person, throughout the medieval period, believed their ‘now’ was closer to time’s conclusion than to its dawn.</p>
 
 <div class="image-caption">
-  <img src="assets/photos/manuscript.jpg" alt="Illuminated manuscript depiction of the Book of Revelation" />
+  <img src="assets/photos/2.jpg" alt="Illuminated manuscript depiction of the Book of Revelation" />
   <div class="caption">Illuminated manuscript depiction of the Book of Revelation and the coming end of the world, from the Trier Apocalypse, ca. 800 CE.</div>
 </div>
 
@@ -82,7 +82,7 @@
 <p>The conviction that the end was near continued throughout Europe’s Renaissance, persisting well into the early modern period. During this time, methods for measuring the bookends of time remained scriptural. Around 1650, Irish theologian James Ussher famously calculated that the world was created in 4004 BCE and would end in around 2000 CE. He arrived at this conclusion, in part, by counting the chains of “begats” in the Old Testament: a way of tracing how many generations had passed since Adam.</p>
 
 <div class="image-caption">
-  <img src="assets/photos/frontispiece.png" alt="The frontispiece to the English translation of 
+  <img src="assets/photos/4.jpg" alt="The frontispiece to the English translation of 
 James Ussher’s Annales, 1658." />
   <div class="caption">The frontispiece to the English translation of 
 James Ussher’s Annales, 1658.</div>
@@ -102,7 +102,7 @@ James Ussher’s Annales, 1658.</div>
 <p>The 1600s saw the advent of modern, empirical science, culminating in the undeniable success of Isaac Newton’s application of its methodology to the study—and prediction—of the heavens. Following this, as the 1700s opened, naturalists shifted their focus downward. They began looking to the physical Earth itself, rather than to the Bible, to answer the question of where the present was located in time. Inquirers began turning to the testimony of rocks, rather than of scripture. The geological study of the Earth, as a physical and planetary whole, began to consolidate.</p>
 
 <div class="image-caption">
-  <img src="assets/photos/geological-diagram.jpg" alt="Early geological diagram depicting the formation of the Earth, from Thomas Burnet’s Telluris Theoria Sacra, 1681." />
+  <img src="assets/photos/5.jpg" alt="Early geological diagram depicting the formation of the Earth, from Thomas Burnet’s Telluris Theoria Sacra, 1681." />
   <div class="caption">Early geological diagram depicting the formation of the Earth, from Thomas Burnet’s Telluris Theoria Sacra, 1681.</div>
 </div>
 
@@ -119,7 +119,7 @@ James Ussher’s Annales, 1658.</div>
 <p>A few years later, Buffon’s compatriot Jean-Baptiste-Claude Delisle de Sales published a book in which he disagrees with Buffon, while agreeing that we could use physical laws to gauge Earth’s lifespan. He questions Buffon’s analogy between “small white-hot iron balls” and the “torrent of most subtle matter” that is planet Earth. Nonetheless, de Sales provides his own estimates. He cites some earlier calculations by Jean-Jacques d’Ortous de Mairan on long-term changes to the obliquity of the Earth’s orbit, before claiming that Earth is probably 140,000 years old. Short of potential astronomical catastrophes—that is, disasters that might truncate the future lifespan of the globe—de Sales surmises that our planet “still seems in its puberty” and “will probably take more than ten thousand centuries before it reaches its decrepitude.”</p>
 
 <div class="image-caption">
-  <img src="assets/photos/buffon.jpg" alt="Depiction of Buffon’s theory of Earth’s origins as molten matter ejected from the Sun by a colliding comet, 1774." />
+  <img src="assets/photos/6.jpg" alt="Depiction of Buffon’s theory of Earth’s origins as molten matter ejected from the Sun by a colliding comet, 1774." />
   <div class="caption">Depiction of Buffon’s theory of Earth’s origins as molten matter ejected from the Sun by a colliding comet, 1774.</div>
 </div>
 
@@ -128,7 +128,7 @@ James Ussher’s Annales, 1658.</div>
 <p>Fourier was confident that this would happen precisely 75,000 years from the present. He boasted that his calculation would be accurate “to within one-eighth.” Fourier was also confident, however, that Earth would become a utopia before then, with the oceans turning into lemonade and predatory animals becoming friends with former prey.</p>
 
 <div class="image-caption">
-  <img src="assets/photos/fourier.png" alt="Fourier’s elaborate outline of world history, both past and future, 1808." />
+  <img src="assets/photos/7.jpg" alt="Fourier’s elaborate outline of world history, both past and future, 1808." />
   <div class="caption">Fourier’s elaborate outline of world history, both past and future, 1808.</div>
 </div>
 
@@ -194,7 +194,7 @@ James Ussher’s Annales, 1658.</div>
 <p>What’s more, the theory that the Sun produces heat via collapsing on itself led physicists to conclude that the ratio of “past spent” to “future ahead” was unforgiving. If it had started life as a diffuse cloud, our star—now seemingly relatively compact and dense—seemed at an advanced, geriatric stage of its arc of life.</p>
 
 <div class="image-caption">
-  <img src="assets/photos/sun-earth.jpg" alt="Illustration of the Sun and Earth forming from a compacting gas cloud, 1888." />
+  <img src="assets/photos/9.jpg" alt="Illustration of the Sun and Earth forming from a compacting gas cloud, 1888." />
   <div class="caption">Illustration of the Sun and Earth forming from a compacting gas cloud, 1888.</div>
 </div>
 
@@ -204,7 +204,7 @@ James Ussher’s Annales, 1658.</div>
 
 
 <div class="image-caption">
-  <img src="assets/photos/engraving.jpg" alt="Engraving of the final human family, perished by encroaching cold on a geriatric Earth, from Camille Flammarion’s 1880 Astronomie Populaire." />
+  <img src="assets/photos/10.jpg" alt="Engraving of the final human family, perished by encroaching cold on a geriatric Earth, from Camille Flammarion’s 1880 Astronomie Populaire." />
   <div class="caption">Engraving of the final human family, perished by encroaching cold on a geriatric Earth, from Camille Flammarion’s 1880 Astronomie Populaire.</div>
 </div>
 
@@ -226,7 +226,7 @@ James Ussher’s Annales, 1658.</div>
 <p>By 1907, physicist Ernest Rutherford concurred, writing that we can expect solar “brilliancy” for many orders of magnitudes more than Kelvin’s considerations of no “more than 12 million years and probably much less.” Curie’s “new source of heat,” Rutherford wrote, probably suffices to power the Sun for a far “longer period,” thus vouchsafing a much greater “time for habitation of our globe.” By 1920, prominent physicist Arthur Eddington ventured that our Sun, powered by subatomic reservoirs, would be able to “maintain its output of heat for 15 billion years” more. To hammer home his point, he referred to the gravitational theory of Kelvin and Helmholtz as a “corpse.” The future had enlarged over a thousandfold.</p>
 
 <div class="image-caption">
-  <img src="assets/photos/illustration.jpg" alt="Early illustration of a young, Hadean Earth, from 1910." />
+  <img src="assets/photos/11.jpg" alt="Early illustration of a young, Hadean Earth, from 1910." />
   <div class="caption"> Early illustration of a young, Hadean Earth, from 1910.</div>
 </div>
 
@@ -248,7 +248,7 @@ James Ussher’s Annales, 1658.</div>
 <p>Jeans added that, while it is true that humankind has so far only damaged its environment and vandalized its planetary home, this must merely be signs of our immaturity. He compared us to a baby that was only just beginning to learn continence. But this wasn’t all: not only did radium reveal a capacious future, it also lifted previous limits on evolution’s past by revealing new ways to date Earth itself.</p>
 
 <div class="image-caption">
-  <img src="assets/photos/spiral.png" alt="A spiral graph developed to depict deep time’s expanses." />
+  <img src="assets/photos/13.png" alt="A spiral graph developed to depict deep time’s expanses." />
   <div class="caption"> A spiral graph developed to depict deep time’s expanses, in particular the vastness of Precambrian time compared to 
 everything thereafter, from 1928.</div>
 </div>
@@ -260,7 +260,7 @@ everything thereafter, from 1928.</div>
 <p>Yet more importantly, given that they decay at unvarying rates, radioelements proved to be extremely accurate hourglasses, enabling precise dating of minerals. Skłodowska-Curie’s discoveries, that is, founded the field of radiometric dating, which, over the next decades and thanks to pioneers such as Arthur Holmes, proved beyond doubt that our planetary home is multiple billions of years old.</p>
 
 <div class="image-caption">
-  <img src="assets/photos/end-of-world.jpg" alt="Various theorized modes of planetary extinction, from 1922." />
+  <img src="assets/photos/12.jpg" alt="Various theorized modes of planetary extinction, from 1922." />
   <div class="caption"> Various theorized modes of planetary extinction, from 1922.</div>
 </div>
 
@@ -277,7 +277,7 @@ everything thereafter, from 1928.</div>
 <p>The evolution of the universe can be compared to a display of fireworks that has just ended: some few red wisps, ashes and smoke. Standing on a well-chilled cinder, we see the slow fading of the suns, [and] recall the vanished brilliance of the origin of worlds.</p>
 
 <div class="image-caption">
-  <img src="assets/photos/visualization.png" alt="Likely the first visualization of what we now call the Big Bang, from Popular Science, 1932." />
+  <img src="assets/photos/15.jpg" alt="Likely the first visualization of what we now call the Big Bang, from Popular Science, 1932." />
   <div class="caption">Likely the first visualization of what we now call the Big Bang, from Popular Science, 1932.</div>
 </div>
 
@@ -296,7 +296,7 @@ everything thereafter, from 1928.</div>
 <p>Given this available time, Haldane reasoned it was not unreasonable to assume that, if at all possible, our descendants might one day invent the means to propel rockets to other stars. Thereafter, he provided what is likely the first quantitative estimate of how long the future of Earthly life might be, should it achieve interstellar exodus. He surmised that our “galaxy has a probable life of at least eighty million million years,” a figure he would reiterate a few years later. He concluded his speculation by adding, piquantly: “And there are other galaxies.”</p>
 
 <div class="image-caption">
-  <img src="assets/photos/left-right.png" alt="Left: Visualization of the “radium clock” of creation, from Popular Science, 1931.
+  <img src="assets/photos/14.jpg" alt="Left: Visualization of the “radium clock” of creation, from Popular Science, 1931.
 Right: Depiction of Solar System’s birth, according to the obsolesced Chamberlin–Moulton hypothesis of its formation, from 1930." />
   <div class="caption">Left: Visualization of the “radium clock” of creation, from Popular Science, 1931.
 Right: Depiction of Solar System’s birth, according to the obsolesced Chamberlin–Moulton hypothesis of its formation, from 1930.</div>
@@ -312,7 +312,7 @@ Right: Depiction of Solar System’s birth, according to the obsolesced Chamberl
 <p>So, maybe not a trillion years of further life were left on Earth, but we still appeared to be “creatures of the dawn.” Estimates of the past age of Earth were, at this time, steadily expanding, moving upward from roughly 2 billion, or 2,000,000,000, to 3 billion, or 3,000,000,000, years. ‘Now’ was still much nearer time’s beginning.</p>
 
 <div class="image-caption">
-  <img src="assets/photos/chesley.jpg" alt="Chesley Bonestell’s depiction of the Sun flaring up and immolating Earth, from 1947." />
+  <img src="assets/photos/17.jpg" alt="Chesley Bonestell’s depiction of the Sun flaring up and immolating Earth, from 1947." />
   <div class="caption">Chesley Bonestell’s depiction of the Sun flaring up 
 and immolating Earth, from 1947.</div>
 </div>
@@ -323,7 +323,7 @@ and immolating Earth, from 1947.</div>
 <p>Reflecting these new estimates, Jeans updated his visualizations of the future. Though not yet onboard with the fact that the Sun would expand as it ages, Jeans concurred that 10 billion years now seemed plausible as the “possible future for the existence of life on earth.” Accordingly, he had to update the imagery in his post-stamp metaphor. No longer was the future a pile of stamps higher than Mont Blanc. Instead, in the fourth edition of The Universe Around Us, published in wartime 1945, he changed it to a pile “as high as the towers of Westminster Abbey.” A reduction, from a mountain to a church, but still a spacious and sizable future for life on Earth.</p>
 
 <div class="image-caption">
-  <img src="assets/photos/personification.jpg" alt="A personification of planetary extinction, from 1938." />
+  <img src="assets/photos/16.jpg" alt="A personification of planetary extinction, from 1938." />
   <div class="caption">A personification of planetary extinction, from 1938.</div>
 </div>
 
@@ -347,7 +347,7 @@ and immolating Earth, from 1947.</div>
 <p>Eiseley concluded, poignantly, that “the same hands will never twice build the golden cities of this world.”</p>
 
 <div class="image-caption">
-  <img src="assets/photos/eveolution-of-earth.jpg" alt="Chesley Bonestell’s evocative “Evolution of Earth,” from 1955." />
+  <img src="assets/photos/18.jpg" alt="Chesley Bonestell’s evocative “Evolution of Earth,” from 1955." />
   <div class="caption">Chesley Bonestell’s evocative “Evolution of Earth,” from 1955.</div>
 </div>
 
@@ -371,7 +371,7 @@ and immolating Earth, from 1947.</div>
 <p>Accordingly, estimates of the Earthly future were, once again, revised downward. In 1973, Estonian astronomer Ernst Öpik produced a model predicting such a runaway would take place on Earth in 1 billion, or 1,000,000,000, years; the previous year, planetary scientists Carl Sagan and George Mullen produced slightly more liberal forecasts, giving a terrestrial future in the range of 3,500,000,000 to 4,000,000,000, or 3 to 4 billion, further years for life on Earth.</p>
 
 <div class="image-caption">
-  <img src="assets/photos/red-giant.jpg" alt="A red giant Sun looms over a scorched Earth, by space artist Don Dixon, 1984." />
+  <img src="assets/photos/19.jpg" alt="A red giant Sun looms over a scorched Earth, by space artist Don Dixon, 1984." />
   <div class="caption">A red giant Sun looms over a scorched Earth, by space artist Don Dixon, 1984.</div>
 </div>
 
@@ -388,7 +388,7 @@ and immolating Earth, from 1947.</div>
 <p>Between then and now is—it’s fair to say—a very long way.</p>
 
 <div class="image-caption">
-  <img src="assets/photos/time-diagram.png" alt="A diagram depicting the universe’s deep future and the major physical processes that will take place within it, by Gregory P. Laughlin, 1996." />
+  <img src="assets/photos/21.jpg" alt="A diagram depicting the universe’s deep future and the major physical processes that will take place within it, by Gregory P. Laughlin, 1996." />
   <div class="caption">A diagram depicting the universe’s deep future and the major physical processes that will take place within it, by Gregory P. Laughlin, 1996.</div>
 </div>
 
@@ -402,7 +402,7 @@ and immolating Earth, from 1947.</div>
 <p>Once again, today’s experts predict that Earth may remain habitable—that is, a place where complex life can go about doing complicated and interesting things—for something on the order of a further billion years. Our species, by comparison, has been around for only a measly few hundred thousand years. So, compared to all that’s past, we have only just appeared. Relative to all that might yet come, the story of life that is like us may have only just begun.</p>
 
 <div class="image-caption">
-  <img src="assets/photos/hartmann.png" alt="William K. Hartmann’s depiction of Earth, in the far future, with the moon silhouetted against a red giant Sun, filling the sky and returning Earth 
+  <img src="assets/photos/21.jpg" alt="William K. Hartmann’s depiction of Earth, in the far future, with the moon silhouetted against a red giant Sun, filling the sky and returning Earth 
 to a molten state—from 1987." />
   <div class="caption">William K. Hartmann’s depiction of Earth, in the far future, with the moon silhouetted against a red giant Sun, filling the sky and returning Earth 
 to a molten state—from 1987.</div>
