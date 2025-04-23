@@ -292,50 +292,67 @@ window.addEventListener('load', () => {
                 yearDataCount[yearNum]++;
             }
 
-            // Create text only once per year  
-            if (!yearTextCreated[yearNum]) {
-                const textSize = isDummy ? 50 : 5;
-                const fontToUse = isDummy ? lightFont : regularFont;
-                const textGeometry = new THREE.TextGeometry(entry.DATE.toString(), {
-                    font: fontToUse,
-                    size: textSize,
-                    height: 0.1,
-                    curveSegments: 12,
-                });
-                textGeometry.computeBoundingBox();
-                const xOffset = -textGeometry.boundingBox.min.x;
-                textGeometry.translate(xOffset, 0, 0);
-
-                const material = new THREE.MeshBasicMaterial({
-                    color: isDummy ? 0x000000 : 0xff0000,
-                    side: THREE.DoubleSide
-                });
-                const textMesh = new THREE.Mesh(textGeometry, material);
-                const yPosition = -10;
-                const zPosition = -((maxYear - yearNum) * 10);
-                const xPosition = isDummy ? 0 : -18; // Keep decades at x=0, move data years to x=-20
-                textMesh.position.set(xPosition, yPosition, zPosition);
-                textMesh.rotation.x = -Math.PI / 2;
-                textMesh.userData = {
-                    isYear: true,
-                    entry: entry, // ← must exist for the highlight logic to work
-                    originalColor: isDummy ? 0x000000 : 0xff0000
-                };
-                textMesh.name = `Year_${entry.DATE}`;
-                scene.add(textMesh);
-                textMeshes.push(textMesh);
-
-                // Only draw the long black horizontal line if it is a decade year
-                if (yearNum % 10 === 0 && isDummy) {
-                    const lineMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
-                    const lineGeometry = new THREE.BoxGeometry(2000, 0.25, 0.25);
-                    const line = new THREE.Mesh(lineGeometry, lineMaterial);
-                    line.position.set(0, yPosition, zPosition);
-                    scene.add(line);
-                }
-
-                yearTextCreated[yearNum] = true;
-            }
+           // === Create text only once per year ===
+if (!yearTextCreated[yearNum]) {
+    // 1) size & font
+    const textSize = isDummy ? 50 : 5;
+    const fontToUse = isDummy ? lightFont : regularFont;
+    const textGeometry = new THREE.TextGeometry(entry.DATE.toString(), {
+      font: fontToUse,
+      size: textSize,
+      height: 0.1,
+      curveSegments: 12,
+    });
+    textGeometry.computeBoundingBox();
+    const xOffsetGeo = -textGeometry.boundingBox.min.x;
+    textGeometry.translate(xOffsetGeo, 0, 0);
+  
+    // 2) positions (must define these)
+    const yPosition = -10;
+    const zPosition = -((maxYear - yearNum) * 10);
+    const xPosition = isDummy ? 0 : -18;
+  
+    // 3) choose color
+    let labelColor;
+    if (isDummy) {
+      labelColor = 0x000000;                     // decade labels
+    } else if (
+      entry["PAST AGE OF UNIVERSE"] ||
+      entry["FUTURE FOR LIFE IN WIDER UNIVERSE"]
+    ) {
+      labelColor = COSMOLOGICAL_COLOR;           // cosmological years
+    } else {
+      labelColor = DATA_COLOR;                   // normal data years
+    }
+  
+    // 4) build mesh
+    const material = new THREE.MeshBasicMaterial({
+      color: labelColor,
+      side: THREE.DoubleSide
+    });
+    const textMesh = new THREE.Mesh(textGeometry, material);
+    textMesh.position.set(xPosition, yPosition, zPosition);
+    textMesh.rotation.x = -Math.PI / 2;
+    textMesh.userData = {
+      isYear: true,
+      entry: entry,
+      originalColor: labelColor
+    };
+    textMesh.name = `Year_${entry.DATE}`;
+    scene.add(textMesh);
+    textMeshes.push(textMesh);
+  
+    // 5) optional decade line
+    if (isDummy && yearNum % 10 === 0) {
+      const lineMat = new THREE.MeshBasicMaterial({ color: 0x000000 });
+      const lineGeo = new THREE.BoxGeometry(2000, 0.25, 0.25);
+      const line = new THREE.Mesh(lineGeo, lineMat);
+      line.position.set(0, yPosition, zPosition);
+      scene.add(line);
+    }
+  
+    yearTextCreated[yearNum] = true;
+  }
 
             // Draw decade year text if it coincides with a data year
             if (!isDummy && yearNum % 10 === 0) {
@@ -1081,20 +1098,20 @@ window.addEventListener('load', () => {
         highlightAndCollect(planeMeshes);
         highlightAndCollect(labelMeshes);
 
-        textMeshes.forEach((text) => {
-            // skip the big decade labels
-            if (text.userData.isDecade) return;
-          
-            // but still highlight the small year labels that match
-            if (
-              text.userData.entry &&
-              text.userData.entry.NAME === entry.NAME &&
-              text.userData.entry.DATE === entry.DATE
-            ) {
-              text.material.color.set(highlightColor);
-              associatedLines.push(text);
-            }
-          });
+       textMeshes.forEach((text) => {
+  // skip the big decade labels
+  if (text.userData.isDecade) return;
+
+  // but still highlight the small year labels that match
+  if (
+    text.userData.entry &&
+    text.userData.entry.NAME === entry.NAME &&
+    text.userData.entry.DATE === entry.DATE
+  ) {
+    text.material.color.set(highlightColor);
+    associatedLines.push(text);
+  }
+});
 
         highlightedObjects = highlightedObjects.concat(associatedLines);
     }

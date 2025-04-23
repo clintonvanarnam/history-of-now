@@ -344,3 +344,9 @@ body, html {
 .section-marker{
   text-align: center;
 }
+
+.name-highlight {
+  font-family: 'Cosmica Medium', sans-serif;
+  font-size: calc(1em + 1pt);
+  color: red;
+}
