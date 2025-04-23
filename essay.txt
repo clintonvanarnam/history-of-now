@@ -1,7 +1,9 @@
 [Position 0]
   <div class="opening-title">
   <h1>THE <br>HISTORY <br>OF <br>‘NOW’</h1>
-  <p>by Thomas Moynihan</span></p>
+  <p class ="sub-author">by Thomas Moynihan</span></p>
+    <p class ="sub-author">with Information art and Clinton Van Arnam</span></p>
+
 </div>
 <h2>0—Where Is Now?</h2>
 <p>Humans are the only creatures to have asked, and begun answering, the question “Where is now?” That is, how much past was required to produce our living present and how much future might be left ahead, waiting to be produced? No matter how fallible the pursuit, humans are the first animals to have sought to gain their bearings in time.</p>

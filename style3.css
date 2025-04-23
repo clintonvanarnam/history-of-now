@@ -40,10 +40,10 @@ p {
 
 h1 {
   font-family: 'Cosmica Book', sans-serif;
-  font-size: 114px;
+  font-size: 140px;
   margin-top: 300px;
   margin-bottom: 0px;
-  line-height: 98%;
+  line-height: 102%;
 }
 
 h2 {
@@ -59,6 +59,13 @@ h3 {
 
 }
 
+.sub-author {
+  font-family: 'Cosmica Medium', sans-serif;
+  font-size: 17px;
+  color: #000;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 
 a {
   font-family: 'Cosmica Medium', sans-serif;
