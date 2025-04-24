@@ -44,18 +44,25 @@ h1 {
   margin-top: 300px;
   margin-bottom: 0px;
   line-height: 102%;
+  
 }
 
 h2 {
   font-family: 'Cosmica Medium', sans-serif;
   font-size: 24px;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-top: 80px;
+  margin-block-end: 1em; 
+
  
 }
 
 h3 {
   font-family: 'Cosmica Medium', sans-serif;
   font-size: 24px;
-
+  line-height: 1;
+  margin-top: 40px;
 
 }
 
@@ -67,6 +74,11 @@ h3 {
   margin-bottom: 0px;
 }
 
+.author-designer{
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+}
 a {
   font-family: 'Cosmica Medium', sans-serif;
   color: red;
@@ -326,26 +338,32 @@ body, html {
 }
 
 .image-caption {
-  width: 60%;
+  width: 100%;
   display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    
+      justify-content: flex-end;
+      align-items: end;
     margin: auto;}
 
 
 .image-caption img {
   display: block;      /* make the img a block so auto‑margins work */
-  width: 100%;          /* or whatever % you like */
+  width: 55%;          /* or whatever % you like */
   margin: 0 auto;      /* centers the block within its container */
 }
 
 .caption {
-  font-family: 'Copernicus Book', serif;
-  font-size: 14px;
-  text-align: center;
+  font-family: 'Cosmica Medium', sans-serif;
+  font-size: 13px;
+  text-align: left;
   margin-top: 10px;
   color: #333;
+  margin-left: 20px;
+  width: 50%  ;
+  padding-right: 100px;
+  padding-bottom: 0px;
+  border-top: 1px solid #717171;  /* or whatever color/weight you like */
+  padding-top: 8px;            /* so your text isn’t jammed against the line */
 }
 
 .section-marker{
@@ -354,6 +372,35 @@ body, html {
 
 .name-highlight {
   font-family: 'Cosmica Medium', sans-serif;
-  font-size: calc(1em + 1pt);
+  font-size: 17px;
   color: red;
+}
+.foot-notes {
+  /* split into two columns */
+  column-count: 2;
+  /* gap between the columns */
+  column-gap: 32px;
+}
+
+.foot-notes p {
+  /* your existing font rules… */
+  font-family: 'Cosmica Book', sans-serif !important;
+  font-size:   16px               !important;
+
+  /* add a top margin on every paragraph */
+  margin-top: 1em;
+}
+
+.foot-notes p:first-child {
+  /* except the very first one in the container */
+  margin-top: 0;
+}
+
+.block-quote{
+  font-family: 'Cosmica Medium', sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+
+  padding-right: 150px;
+
 }

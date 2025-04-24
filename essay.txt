@@ -1,8 +1,8 @@
 [Position 0]
   <div class="opening-title">
-  <h1>THE <br>HISTORY <br>OF <br>‘NOW’</h1>
-  <p class ="sub-author">by Thomas Moynihan</span></p>
-    <p class ="sub-author">with Information art and Clinton Van Arnam</span></p>
+  <h1>THE <br>HISTORY <br>OF <br>NOW</h1>
+  <div class="author-designer"><p class ="sub-author">by Thomas Moynihan</span></p>
+  <p class ="sub-author">with Informationart and Clinton Van Arnam</span></p> </div>
 
 </div>
 <h2>0—Where Is Now?</h2>
@@ -240,7 +240,7 @@
 <p>Not all estimates were quite so large. Back in 1907, American sociologist and paleontologist Lester Frank Ward had deployed his own, somewhat peculiar method. He used what he took to be a “parallelism” between the life histories of Earth and our neighboring planet, Mars. Such a view was common at the time: the notion was that planets don’t have different histories, which can develop in different directions, but all share the same basic evolutionary arc. Given the then-current theory that the Solar System was formed from a nebula of dust and gas laboriously imploding under its own weight, the outer planets were considered elder, as they would have been precipitated from the contracting cloud first. Hence, being farther from the Sun, Mars was considered older than Earth. What’s more, it was also often considered self-evidently inhabited at this time. Canals that had been spotted by astronomers, crosshatching its surface, were taken to be the irrigation projects of an ancient race attempting to extract the final drops of water from their elderly, desiccated world.</p>
 <p>Accordingly, Ward cited geologists’ estimates that Earth was around 72 million, or 72,000,000, years old, before attempting to estimate how much older Mars was than Earth. Making some guesses about “the rate at which a nebula contracts,” he concluded that our red neighbor was roughly 24 million, or 24,000,000, years elder than us. Given that, in his and his contemporaries’ eyes, it was still not only habitable but also inhabited, this meant that he forecast that life on Earth had around 25 million, or 25,000,000, years left ahead too—once again, assuming simplistic “parallelism” between their biographies.</p>
 <p>Mournfully, Ward pictured, on Mars, a species of “vast antiquity and supreme wisdom, clinging desperately to the orb that bore it . . . hoarding every drop of its precious water.” This fate, he proclaimed, must also visit “the life on our own globe.” Then, the “last human will breathe their last breath.” But, Ward stressed, the ultimate upshot is one of massive hope for our own species. He marveled:</p>
-<p>In a word, relatively speaking, man has only just begun to exist. His golden age [is before] and not behind. . . . The whole of that immense period lies before him.</p>
+<div class="block-quote">In a word, relatively speaking, man has only just begun to exist. His golden age [is before] and not behind. . . . The whole of that immense period lies before him.</div>
 <p class="section-marker">§</p>
 <p>But what did this mean for people? Almost as soon as Skłodowska-Curie’s revelations were unleashed on the world, people started proclaiming they were living far closer to the opening of the human story than to its ending.</p>
 <p>Communicating the potential scale of the future in his 1929 bestseller The Universe Around Us, Jeans visualized a stamp atop a penny, balanced on a twenty-meter-high obelisk (sixty-six feet). The stamp’s thickness represents recorded history. The stamp and penny combined represent our species’s existence. The distance from the stamp down to the obelisk base is the age of Earth.</p>
@@ -250,7 +250,7 @@
 <p>Jeans added that, while it is true that humankind has so far only damaged its environment and vandalized its planetary home, this must merely be signs of our immaturity. He compared us to a baby that was only just beginning to learn continence. But this wasn’t all: not only did radium reveal a capacious future, it also lifted previous limits on evolution’s past by revealing new ways to date Earth itself.</p>
 
 <div class="image-caption">
-  <img src="assets/photos/13.png" alt="A spiral graph developed to depict deep time’s expanses." />
+  <img src="assets/photos/13.jpg" alt="A spiral graph developed to depict deep time’s expanses." />
   <div class="caption"> A spiral graph developed to depict deep time’s expanses, in particular the vastness of Precambrian time compared to 
 everything thereafter, from 1928.</div>
 </div>
@@ -405,7 +405,7 @@ and immolating Earth, from 1947.</div>
 
 <div class="image-caption">
   <img src="assets/photos/21.jpg" alt="William K. Hartmann’s depiction of Earth, in the far future, with the moon silhouetted against a red giant Sun, filling the sky and returning Earth 
-to a molten state—from 1987." />
+to a molten state—from 1987."/>
   <div class="caption">William K. Hartmann’s depiction of Earth, in the far future, with the moon silhouetted against a red giant Sun, filling the sky and returning Earth 
 to a molten state—from 1987.</div>
 </div>
@@ -428,6 +428,8 @@ to a molten state—from 1987.</div>
 <p class="section-marker">§</p>
 <p>But nothing is certain, nothing predestined; there’s no guarantee nor fate, for better or worse. Nor is there even any tendency or trend. First and foremost, and with utmost urgency, we must tend to our own garden. But that garden is now the entire planet, hurtling through space. Our interconnected world is increasingly imperiled, and novel technologies will only conjure forth further hazards and vulnerabilities. Yet fragility and freedom are sides of a coin. Whatever happens next—for terrestrial life, for tomorrow and tomorrow and tomorrow—will be built on decisions we make now, in our own fleeting ‘now’.</p>
 <h2>8—Bibliography</h2>
+
+<div class="foot-notes">
 <p>Adams, Fred, and Gregory Laughlin. The Five Ages of the Universe. Free Press, 1999.</p>
 <p>Anonymous. “Alarming Situation.” Durham Globe, May 16, 1892, 2.</p>
 <p>Anthony, Sean W. “Muḥammad, the Keys to Paradise, and the Doctrina Iacobi: A Late Antique Puzzle.” Der Islam 91, no. 2 (2014): 243–65.</p>
@@ -517,3 +519,4 @@ to a molten state—from 1987.</div>
 <p>Ward, Frank Lester, “Mars and its Lesson”, Brown Alumni Monthly 7, no. 8 (1907): 159-165.</p>
 <p>Wolf, Eric T., and Owen B. Toon. “The Evolution of Habitable Climates Under the Brightening Sun.” JGR Atmospheres 120, no. 12 (2015): 5775–94.</p>
 <p>Young, Charles A. The Sun. New York, 1881.</p>
+</div>
