@@ -29,27 +29,27 @@ window.addEventListener('load', () => {
 
     // Define camera positions with a targetScale property
     const cameraPositions = [
-        {
+        { //0
             position: { x: 0, y: 628.5, z: 349 },
             rotation: { x: -0.68, y: 0, z: 0 },
             targetScale: 3163005
         },
-        {
+        {  //1
             position: { x: 0, y: 181.5, z: -23482.40 },
             rotation: { x: -0.78, y: 0, z: 0 },
             targetScale: 15852581696
         },
-        {
+        { //2
             position: { x: 0, y: 90, z: -19734 },
             rotation: { x: -0.6, y: 0, z: 0 },
             targetScale: 100023028502
         },
-        {
+        { //3
             position: { x: 0, y: 192, z: -17806.3 },
             rotation: { x: -0.57, y: 0, z: 0 },
             targetScale: 12592153234
         },
-        {
+        { //4
             position: { x: 0, y: 215.49, z: -15707.9 },
             rotation: { x: -0.44, y: 0, z: 0 },
             targetScale: 10002302850
@@ -59,10 +59,46 @@ window.addEventListener('load', () => {
             rotation: { x: -0.51, y: 0, z: 0 },
             targetScale: 10002302850
         },
-        {
-            position: { x: 0, y: 158.5, z: -2807.9 },
+        { //5
+            position: { x: 0, y: 121.5, z: -3537.7 },
             rotation: { x: -0.51, y: 0, z: 0 },
             targetScale: 10002302850
+        },
+        { //6
+            position: { x: 0, y: 121.5, z: -2753.8 },
+            rotation: { x: -0.51, y: 0, z: 0 },
+            targetScale: 10002302850
+        },
+        { //7
+            position: { x: 0, y: 216, z: -2146 },
+            rotation: { x: -0.51, y: 0, z: 0 },
+            targetScale: 794511156.6
+        },
+        { //8
+            position: { x: 0, y: 216, z: -1832 },
+            rotation: { x: -0.51, y: 0, z: 0 },
+            targetScale: 794511156.6
+        },
+        { //9
+            position: { x: 0, y: 216, z: -1631 },
+            rotation: { x: -0.51, y: 0, z: 0 },
+            targetScale: 125921532
+        },
+        { //10
+            position: { x: 0, y: 124, z: -1453 },
+            rotation: { x: -0.51, y: 0, z: 0 },
+            targetScale: 125921532
+        },
+
+        { //11
+            position: { x: 0, y: 141, z: -1390 },
+            rotation: { x: -0.51, y: 0, z: 0 },
+            targetScale: 3163005
+        }, 
+        { //12
+            position: { x: 0, y: 234.9, z: -947 },
+            rotation: { x: -0.48, y: 0, z: 0 },
+            targetScale: 1000230
         }
     ];
 
@@ -1406,8 +1442,13 @@ window.addEventListener('load', () => {
                 const positionIndex = entry.target.getAttribute('data-position');
                 console.log(`Entry for position ${positionIndex}: isIntersecting=${entry.isIntersecting}`);
                 if (entry.isIntersecting) {
-                    console.log(`Currently viewing section with position: ${positionIndex}`);
-                    switchCameraPosition(parseInt(positionIndex, 10));
+                    const posIndex = parseInt(positionIndex, 10);
+                    console.log(`Currently viewing section with position: ${posIndex}`);
+                    if (cameraPositions[posIndex]) {
+                        switchCameraPosition(posIndex);
+                    } else {
+                        console.warn(`No camera position for index: ${posIndex}`);
+                    }
                 }
             });
         }, options);
