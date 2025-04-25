@@ -16,6 +16,11 @@
 }
 
 @font-face {
+  font-family: 'Copernicus Book Italic';
+  src: url(fonts/Copernicus-BookItalic.otf) format('opentype');
+}
+
+@font-face {
   font-family: 'Copernicus Bold';
   src: url(fonts/Copernicus-Bold.ttf) format('truetype');
 }
@@ -404,3 +409,8 @@ body, html {
   padding-right: 150px;
 
 }
+
+.italic-text {
+  font-family: 'Copernicus Book Italic', serif;
+  
+} 

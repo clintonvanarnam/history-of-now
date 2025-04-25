@@ -35,24 +35,34 @@ window.addEventListener('load', () => {
             targetScale: 3163005
         },
         {
-            position: { x: 0, y: 195.5, z: -17822 },
-            rotation: { x: -0.68, y: 0, z: 0 },
+            position: { x: 0, y: 181.5, z: -23482.40 },
+            rotation: { x: -0.78, y: 0, z: 0 },
             targetScale: 15852581696
         },
         {
-            position: { x: 0, y: 332.5, z: -515 },
-            rotation: { x: -0.52, y: 0, z: 0 },
-            targetScale: 3981071
+            position: { x: 0, y: 90, z: -19734 },
+            rotation: { x: -0.6, y: 0, z: 0 },
+            targetScale: 100023028502
         },
         {
-            position: { x: 0, y: 860.48, z: 900.7 },
-            rotation: { x: -0.47, y: 0, z: 0 },
-            targetScale: 1e5
+            position: { x: 0, y: 192, z: -17806.3 },
+            rotation: { x: -0.57, y: 0, z: 0 },
+            targetScale: 12592153234
         },
         {
-            position: { x: 0, y: 1860.48, z: 900.7 },
-            rotation: { x: -0.47, y: 0, z: 0 },
-            targetScale: 1e5
+            position: { x: 0, y: 215.49, z: -15707.9 },
+            rotation: { x: -0.44, y: 0, z: 0 },
+            targetScale: 10002302850
+        },
+        {
+            position: { x: 0, y: 121.5, z: -4912.9 },
+            rotation: { x: -0.51, y: 0, z: 0 },
+            targetScale: 10002302850
+        },
+        {
+            position: { x: 0, y: 158.5, z: -2807.9 },
+            rotation: { x: -0.51, y: 0, z: 0 },
+            targetScale: 10002302850
         }
     ];
 
@@ -292,67 +302,71 @@ window.addEventListener('load', () => {
                 yearDataCount[yearNum]++;
             }
 
-           // === Create text only once per year ===
-if (!yearTextCreated[yearNum]) {
-    // 1) size & font
-    const textSize = isDummy ? 50 : 5;
-    const fontToUse = isDummy ? lightFont : regularFont;
-    const textGeometry = new THREE.TextGeometry(entry.DATE.toString(), {
-      font: fontToUse,
-      size: textSize,
-      height: 0.1,
-      curveSegments: 12,
-    });
-    textGeometry.computeBoundingBox();
-    const xOffsetGeo = -textGeometry.boundingBox.min.x;
-    textGeometry.translate(xOffsetGeo, 0, 0);
-  
-    // 2) positions (must define these)
-    const yPosition = -10;
-    const zPosition = -((maxYear - yearNum) * 10);
-    const xPosition = isDummy ? 0 : -18;
-  
-    // 3) choose color
-    let labelColor;
-    if (isDummy) {
-      labelColor = 0x000000;                     // decade labels
-    } else if (
-      entry["PAST AGE OF UNIVERSE"] ||
-      entry["FUTURE FOR LIFE IN WIDER UNIVERSE"]
-    ) {
-      labelColor = COSMOLOGICAL_COLOR;           // cosmological years
-    } else {
-      labelColor = DATA_COLOR;                   // normal data years
-    }
-  
-    // 4) build mesh
-    const material = new THREE.MeshBasicMaterial({
-      color: labelColor,
-      side: THREE.DoubleSide
-    });
-    const textMesh = new THREE.Mesh(textGeometry, material);
-    textMesh.position.set(xPosition, yPosition, zPosition);
-    textMesh.rotation.x = -Math.PI / 2;
-    textMesh.userData = {
-      isYear: true,
-      entry: entry,
-      originalColor: labelColor
-    };
-    textMesh.name = `Year_${entry.DATE}`;
-    scene.add(textMesh);
-    textMeshes.push(textMesh);
-  
-    // 5) optional decade line
-    if (isDummy && yearNum % 10 === 0) {
-      const lineMat = new THREE.MeshBasicMaterial({ color: 0x000000 });
-      const lineGeo = new THREE.BoxGeometry(2000, 0.25, 0.25);
-      const line = new THREE.Mesh(lineGeo, lineMat);
-      line.position.set(0, yPosition, zPosition);
-      scene.add(line);
-    }
-  
-    yearTextCreated[yearNum] = true;
-  }
+            // Create text only once per year  
+            if (!yearTextCreated[yearNum]) {
+                // 1) size & font
+                const textSize = isDummy ? 50 : 5;
+                const fontToUse = isDummy ? lightFont : regularFont;
+
+                // Determine if this is a cosmological entry
+                const isCosmological = !isDummy && (
+                    entry["PAST AGE OF UNIVERSE"] || 
+                    entry["FUTURE FOR LIFE IN WIDER UNIVERSE"]
+                );
+
+                const textGeometry = new THREE.TextGeometry(entry.DATE.toString(), {
+                    font: fontToUse,
+                    size: textSize,
+                    height: 0.1,
+                    curveSegments: 12,
+                });
+                textGeometry.computeBoundingBox();
+                const xOffsetGeo = -textGeometry.boundingBox.min.x;
+                textGeometry.translate(xOffsetGeo, 0, 0);
+
+                // 2) positions (must define these)
+                const yPosition = -10;
+                const zPosition = -((maxYear - yearNum) * 10);
+                const xPosition = isDummy ? 0 : -18;
+
+                // 3) choose color
+                let labelColor;
+                if (isDummy) {
+                    labelColor = 0x000000;                     // decade labels
+                } else if (isCosmological) {
+                    labelColor = COSMOLOGICAL_COLOR;           // cosmological years
+                } else {
+                    labelColor = DATA_COLOR;                   // normal data years
+                }
+
+                // 4) build mesh
+                const material = new THREE.MeshBasicMaterial({
+                    color: labelColor,
+                    side: THREE.DoubleSide
+                });
+                const textMesh = new THREE.Mesh(textGeometry, material);
+                textMesh.position.set(xPosition, yPosition, zPosition);
+                textMesh.rotation.x = -Math.PI / 2;
+                textMesh.userData = {
+                    isYear: true,
+                    entry: entry,
+                    originalColor: labelColor
+                };
+                textMesh.name = `Year_${entry.DATE}`;
+                scene.add(textMesh);
+                textMeshes.push(textMesh);
+
+                // Optional decade line
+                if (isDummy && yearNum % 10 === 0) {
+                    const lineMat = new THREE.MeshBasicMaterial({ color: 0x000000 });
+                    const lineGeo = new THREE.BoxGeometry(2000, 0.25, 0.25);
+                    const line = new THREE.Mesh(lineGeo, lineMat);
+                    line.position.set(0, yPosition, zPosition);
+                    scene.add(line);
+                }
+
+                yearTextCreated[yearNum] = true;
+            }
 
             // Draw decade year text if it coincides with a data year
             if (!isDummy && yearNum % 10 === 0) {
@@ -676,7 +690,7 @@ if (!yearTextCreated[yearNum]) {
 
 
                         
-                        // 3) now build your semi‑transparent plane exactly to the text geometry’s local‐bbox
+                        // 3) now build your semi‑transparent plane exactly to the text geometry’s local‑bbox
                         labelMesh.geometry.computeBoundingBox();
                         const localBBox = labelMesh.geometry.boundingBox;
                         const size  = localBBox.getSize(new THREE.Vector3());
@@ -771,7 +785,7 @@ if (!yearTextCreated[yearNum]) {
 
 
                         
-                        // 3) now build your semi‑transparent plane exactly to the text geometry’s local‐bbox
+                        // 3) now build your semi‑transparent plane exactly to the text geometry’s local‑bbox
                         labelMesh.geometry.computeBoundingBox();
                         const localBBox = labelMesh.geometry.boundingBox;
                         const size  = localBBox.getSize(new THREE.Vector3());
@@ -861,7 +875,7 @@ if (!yearTextCreated[yearNum]) {
 
 
                         
-                        // 3) now build your semi‑transparent plane exactly to the text geometry’s local‐bbox
+                        // 3) now build your semi‑transparent plane exactly to the text geometry’s local‑bbox
                         labelMesh.geometry.computeBoundingBox();
                         const localBBox = labelMesh.geometry.boundingBox;
                         const size  = localBBox.getSize(new THREE.Vector3());
@@ -924,10 +938,6 @@ if (!yearTextCreated[yearNum]) {
     // Update the animate function
     const originalAnimate = animate;
     animate = function () {
-        // Position NOW text relative to camera on z-axis but fixed to the central line
-        // if (nowMesh) {
-        //     // Calculate where the camera is looking on the z-axis
-        //     // For our purposes, we want to find a point along the timeline (z-axis)
         //     // that's visible to the camera
 
         //     // Use camera position and rotation to find a good z-position
@@ -1349,8 +1359,10 @@ if (!yearTextCreated[yearNum]) {
                     console.error('Essay content div not found.');
                     return;
                 }
+    
                 const sections = text.split(/\[Position (\d+)\]/g);
                 const essaySections = [];
+    
                 for (let i = 1; i < sections.length; i += 2) {
                     const positionIndex = parseInt(sections[i], 10);
                     const sectionText = sections[i + 1].trim();
@@ -1358,14 +1370,16 @@ if (!yearTextCreated[yearNum]) {
                         essaySections.push({ positionIndex, sectionText });
                     }
                 }
-                console.log('Parsed essay sections:', essaySections);
+    
                 essaySections.forEach(section => {
-                    const sectionDiv = document.createElement('div');
-                    sectionDiv.classList.add('essay-section');
-                    sectionDiv.setAttribute('data-position', section.positionIndex);
-                    sectionDiv.innerHTML = section.sectionText;
-                    contentDiv.appendChild(sectionDiv);
+                    const wrapper = document.createElement('div');
+                    wrapper.classList.add('essay-section');
+                    wrapper.setAttribute('data-position', section.positionIndex);
+                    wrapper.id = `position-${section.positionIndex}`;
+                    wrapper.innerHTML = section.sectionText; // keep HTML structure
+                    contentDiv.appendChild(wrapper);
                 });
+    
                 console.log('Essay content loaded successfully');
                 setupScrollLogging();
             })
@@ -1383,7 +1397,7 @@ if (!yearTextCreated[yearNum]) {
         }
         const options = {
             root: null,
-            rootMargin: '0px',
+            rootMargin: '0px 0px -100% 0px', // triggers only when top touches
             threshold: 0
         };
         const observer = new IntersectionObserver((entries) => {
