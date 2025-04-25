@@ -1350,6 +1350,7 @@ window.addEventListener('load', () => {
 
     loadEssay();
 
+
     function loadEssay() {
         fetch('essay.txt')
             .then(response => response.text())
@@ -1539,6 +1540,33 @@ window.addEventListener('load', () => {
                 }
             }
         });
+        function setupMobileToggle() {
+            if (window.innerWidth <= 768) {
+              const toggle = document.createElement('button');
+              toggle.textContent = 'View Interactive';
+              toggle.style.position = 'fixed';
+              toggle.style.top = '10px';
+              toggle.style.left = '10px';
+              toggle.style.zIndex = '9999';
+              toggle.style.padding = '10px';
+              toggle.style.background = '#000';
+              toggle.style.color = '#fff';
+              toggle.style.border = 'none';
+          
+              document.body.appendChild(toggle);
+          
+              toggle.addEventListener('click', () => {
+                const showingEssay = !document.body.classList.contains('view-3d');
+                document.body.classList.toggle('view-3d');
+                toggle.textContent = showingEssay ? 'View Essay' : 'View Interactive';
+          
+                // ⬇️ Add this line to fix the canvas/resizing issue
+                setTimeout(() => {
+                  window.dispatchEvent(new Event('resize'));
+                }, 50);
+              });
+            }
+          }
 
         // Render the updated scene
         renderer.render(scene, camera);

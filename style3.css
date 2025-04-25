@@ -414,3 +414,41 @@ body, html {
   font-family: 'Copernicus Book Italic', serif;
   
 } 
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .scene-container {
+    width: 100%;
+    height: 100vh;
+    display: none; /* Hide 3D by default */
+  }
+
+  .essay-container {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  body.view-3d .scene-container {
+    display: block;
+  }
+
+  body.view-3d .essay-container {
+    display: none;
+  }
+
+  .fullscreen .essay-container {
+    display: none !important;
+  }
+
+  .fullscreen .scene-container {
+    display: block !important;
+  }
+}
