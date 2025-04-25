@@ -87,7 +87,7 @@
   <img src="assets/photos/4.jpg" alt="The frontispiece to the English translation of 
  James Ussher's Annales, 1658." />
   <div class="caption">The frontispiece to the English translation of 
-<span class="name-highlight"> James Ussher </span>’s Annales, 1658.</div>
+James Ussher’s Annales, 1658.</div>
 </div>
 
 [Position 2]
@@ -433,8 +433,8 @@ to a molten state—from 1987.</div>
 <p>Adams, Fred, and Gregory Laughlin. The Five Ages of the Universe. Free Press, 1999.</p>
 <p>Anonymous. “Alarming Situation.” Durham Globe, May 16, 1892, 2.</p>
 <p>Anthony, Sean W. “Muḥammad, the Keys to Paradise, and the Doctrina Iacobi: A Late Antique Puzzle.” Der Islam 91, no. 2 (2014): 243–65.</p>
-<p><span class="name-highlight">Aristotle</span>. The Complete Works of <span class="name-highlight">Aristotle</span>: The Revised Oxford Translation, vol. 2, edited by Jonathan Barnes. Princeton University Press, 1984).</p>
-<p><span class="name-highlight"> Roger Bacon </span>, Roger. Opus maius, pars quarta,  vol. 2, translated by Robert B. Burke. University of Pennsylvania Press, 1928.</p>
+<p>Aristotle. The Complete Works of Aristotle: The Revised Oxford Translation, vol. 2, edited by Jonathan Barnes. Princeton University Press, 1984).</p>
+<p>Roger Bacon, Roger. Opus maius, pars quarta,  vol. 2, translated by Robert B. Burke. University of Pennsylvania Press, 1928.</p>
 <p>Ball, Robert S. “How Long Can the Earth Sustain Life?” Fortnightly Review 51 (1892): 478-490</p>
 <p>Balzac, Honoré de. La Peau de chagrin. Paris, 1831.</p>
 <p>Blumenberg, Hans. The Genesis of the Copernican World, trans. Robert M. Wallace. MIT Press, 1989.</p>
@@ -443,7 +443,7 @@ to a molten state—from 1987.</div>
 <p>Brundage, Burr C. Fifth Sun: Aztec Gods, Aztec World. University of Texas Press, 2014.</p>
 <p>Buffon, Georges-Louis Leclerc, Comte de. Histoire naturelle, générale et particuliére. Paris, 1749-1804.</p>
 <p>Chambers, Robert. Vestiges of the Natural History of Creation. W.& R. Chambers, 1884.</p>
-<p><span class="name-highlight"> Cicero </span>. De Re Publica: Selections, edited by  James E. G. Zetzel. Cambridge University Press, 1995.</p>
+<p> Cicero. De Re Publica: Selections, edited by  James E. G. Zetzel. Cambridge University Press, 1995.</p>
 <p>Columbus, Christopher. The Book of Prophecies, edited Blair Sullivan. Wipf & Stock, 2004.</p>
 <p>Copernicus, Nicolaus. De revolutionibus orbium coelestium. Johannes Petreius, 1543.</p>
 <p>Craig, John. Theologiae Christianae Principia Mathematica. London, 1699.</p>
@@ -451,7 +451,7 @@ to a molten state—from 1987.</div>
 <p>Darwin, George H. “Radio-Activity and the Age of the Sun.” Nature 68 (1903): 496.</p>
 <p>de Maillet, Benoit. Telliamed; or, Conversations between an Indian Philosopher and a French Missionary on the Diminution of the Sea, translated by Albert V. Carozzi. University of Illinois Press, 1968.</p>
 <p>———. Telliamed: or, Discourses Between an Indian Philosopher and a French Missionary, on the Diminution of the Sea, the Formation of the Earth, the Origin of Men and Animals, and Other Curious Subjects, Relating to Natural History and Philosophy. Being a Translation from the French Original. T. Osborne, 1750.</p>
-<p>de Mairan, Jean-Jacques D. Lettres de M. de Mairan, au R. P. Parrenin, missionnaire de la Compagnie de <span class="name-highlight">Jesus</span>, à Peki: contentant diverse questions sur las Chine. Paris: Imprimerie Royale, 1759.</p>
+<p>de Mairan, Jean-Jacques D. Lettres de M. de Mairan, au R. P. Parrenin, missionnaire de la Compagnie de Jesus, à Peki: contentant diverse questions sur las Chine. Paris: Imprimerie Royale, 1759.</p>
 <p>de Sales, Jean-Baptiste-Claude. De la philosophie de la nature. London, 1777.</p>
 <p>Dicus, Duane A., John R. Letaw, Doris C. Teplitz, and Vigdor L. Teplitz. “The Future of the Universe.” Scientific American 248 (1983): 74–85.</p>
 <p>Eddington, Arthur S. “The Internal Constitution of Stars.” The Observatory 43, no. 557 (1920): 233–40.</p>
@@ -491,7 +491,7 @@ to a molten state—from 1987.</div>
 <p>Leakey, Richard E., and Roger Lewin. The Sixth Extinction: Patterns of Life and the Future of Humankind. Doubleday, 1995.</p>
 <p>Lemaître, Georges. The Primeval Atom: An Essay on Cosmogony. Van Nostrand, 1950.</p>
 <p>Lomonosov, Mikhail. Первые основания металлургии или рудных дел [First Foundations of Metallurgy or Mininig]. St Petersburg, 1763.</p>
-<p><span class="name-highlight">Lucretius</span>. On the Nature of Things, translated by Martin Ferguson Smith. Hackett, 2001.</p>
+<p>Lucretius. On the Nature of Things, translated by Martin Ferguson Smith. Hackett, 2001.</p>
 <p>Lyell, Charles. Principles of Geology. William Clowes, 1830.</p>
 <p>Millikan, Robert A., and Frank P. Stockbridge. “When the Sun Goes Cold.” Popular Science (March 1929): 141.</p>
 <p>Newcomb, Simon. Popular Astronomy. Harper & Brothers, 1878.</p>
@@ -500,7 +500,7 @@ to a molten state—from 1987.</div>
 <p>Olbers, Wilhelm. “Über die Möglichkeit, daß ein Comet mit der Erde zusammenstoßen könne.” Monatliche Correspondenz zur Beförderung der Erd- und Himmelskunde 22 (1810): 409–50.</p>
 <p>Ozaki, Kazumi, and Christopher T. Reinhard, “The Future Lifespan of Earth’s Oxygenated Atmosphere.” Nature Geoscience 14 (2021): 138-142.</p>
 <p>Penzias, Arno A., and Robert W. Wilson. “A Measurement of Excess Antennae Temperature at 4080 Mc/s.” Astrophysical Journal Letters 142 (1965): 419–21.</p>
-<p><span class="name-highlight">Plato</span>. The Laws, translated by Tom Griffith. Cambridge University Press, 2016.</p>
+<p>Plato. The Laws, translated by Tom Griffith. Cambridge University Press, 2016.</p>
 <p>———. Timaeus & Critias, translated by Robin Waterfield. Oxford University Press, 2008.</p>
 <p>Robertson, Howard P. “On Relativistic Cosmology.” Philosophical Magazine & Journal of Science 5, no. 31 (1933): 835–48.</p>
 <p>Russell, Henry N. “The Time-Scale of the Universe.” Science 92, no. 2376 (1940): 19–27.</p>
