@@ -36,6 +36,23 @@ body.dark-mode {
   cursor: pointer;
 }
 
+/* Style for the footnote tooltip */
+.footnote-tooltip {
+  position: absolute;
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 0.9em;
+  max-width: 300px;
+  z-index: 1000;
+  display: none; /* Hidden by default */
+}
+
+.footnote:hover + .footnote-tooltip {
+  display: block; /* Show tooltip on hover */
+}
 /* Scene container on the right */
 .scene-container {
   width: 50%;

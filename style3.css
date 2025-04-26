@@ -39,6 +39,14 @@
   font-family: 'Cosmica Medium';
   src: url(fonts/Cosmica-Medium.otf) format('opentype');
 }
+
+@font-face {
+  font-family: 'Cosmica Regular';
+  src: url('assets/fonts/Cosmica-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 p {
   font-family: 'Copernicus Book', serif;
 }
@@ -143,25 +151,40 @@ body.dark-mode .essay-container {
   text-align: center;
 }
 
-/* Slider and checkbox container */
-.controls-container {
-  display: none;
 
-  position: fixed;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10000;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 10px;
-  border-radius: 5px;
-  align-items: center;
-  gap: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
 .controls-container label {
   margin-right: 10px;
+}
+
+.footnote{
+  cursor:pointer;
+  position: relative; /* Position relative to the footnote */
+  display: inline-block; /* Inline-block to allow tooltip positioning */
+  font-size: 10px;
+  transform: translate(0, -7px);
+}
+
+/* Style for the footnote tooltip */
+.footnote-tooltip {
+  position: absolute;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  font-family: 'Cosmica Book', sans-serif;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 0.9em;
+  max-width: 300px;
+  z-index: 1000;
+  display: none; /* Hidden by default */
+  pointer-events: none; /* Prevent mouse events from interfering with hover */
+
+}
+
+
+
+.footnote:hover + .footnote-tooltip {
+  display: block; /* Show tooltip on hover */
 }
 
 /* Tooltip */
@@ -202,6 +225,9 @@ body, html {
   overflow: hidden;
     align-items: stretch; /* Ensure children fill height */
 
+}
+.controls-container {
+  font-family: 'Cosmica Regular', sans-serif;
 }
 
 .scene-container {
@@ -289,35 +315,60 @@ body, html {
   z-index: 100;
 }
 
-#toggle-controls {
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
-  width: 50px; /* Adjust the size as needed */
-  height: 50px; /* Adjust the size as needed */
-  cursor: pointer;
-  z-index: 1000; /* Ensure it is on top of other elements */
-}
-
-
-.controls-container {
-  display: none; /* Initially hidden */
-  position: fixed;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10000;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 10px;
-  border-radius: 5px;
+/* Style the UI buttons container */
+.ui-buttons {
+  display: flex;
+  position: fixed; /* Fix the position relative to the viewport */
+  bottom: 0; /* Align it to the bottom of the page */
+  left: 0; /* Align it to the left edge */
   align-items: center;
-  gap: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 8px;
+  height: 50px; /* Adjust height to match content */
+  z-index: 1000; /* Ensure it appears above other content */
 }
 
-.controls-container label {
-    margin: 5px 0;
+.ui-section {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between buttons */
+  flex-direction: row;
+  width: 100%;
 }
+
+/* Style the toggle-controls image */
+#toggle-controls {
+  height: 40px; /* Adjust to match your desired size */
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+
+
+/* Style the controls container */
+.controls-container {
+  display: none;
+  align-items: center;
+  gap: 20px; /* Space between controls */
+}
+
+
+.text-controls{
+  max-width: 95px;
+  min-width: 60px;
+  width: 35%;
+  display: inline-flex;
+}
+
+/* Style individual controls */
+.controls-container div {
+  display: inlinne-flex;
+
+  align-items: center;
+}
+
+
 
 .controls-container input[type="range"] {
     width: 100%;
@@ -328,18 +379,48 @@ body, html {
     margin-right: 5px;
 }
 
-.controls-container button {
-    margin: 5px;
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
+/* Style the slider track */
+/* Style the slider track */
+input[type="range"] {
+  -webkit-appearance: none; /* Remove default styling */
+  width: 100%; /* Full width */
+  height: 8px; /* Track height */
+  background: #d3d3d3; /* Light grey track */
+  border-radius: 5px; /* Rounded corners */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Slight transparency */
+  transition: opacity 0.2s;
 }
 
-.controls-container button:hover {
-    background-color: #0056b3;
+input[type="range"]:hover {
+  opacity: 1; /* Fully opaque on hover */
+}
+
+/* Style the slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove default styling */
+  appearance: none;
+  width: 20px; /* Thumb width */
+  height: 20px; /* Thumb height */
+  background: #000; /* Black thumb */
+  border-radius: 50%; /* Circular thumb */
+  cursor: pointer; /* Pointer cursor */
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #000; /* Black thumb */
+  border-radius: 50%; /* Circular thumb */
+  cursor: pointer;
+}
+
+input[type="range"]::-ms-thumb {
+  width: 20px;
+  height: 20px;
+  background: #000; /* Black thumb */
+  border-radius: 50%; /* Circular thumb */
+  cursor: pointer;
 }
 
 .image-caption {
@@ -414,6 +495,52 @@ body, html {
   font-family: 'Copernicus Book Italic', serif;
   
 } 
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  margin-left: -20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 25px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #555; /* Set to grey */
+}
+
+input:checked + .slider:before {
+  transform: translateX(25px);
+}
 
 
 @media screen and (max-width: 768px) {

@@ -148,53 +148,52 @@ window.addEventListener('load', () => {
 
     let isDarkMode = false;
 
-    function toggleDarkMode() {
-        isDarkMode = !isDarkMode;
+    
 
-        // Toggle renderer background
+
+    function toggleDarkMode(isDarkMode) {
+        // Change the background color of the renderer
         renderer.setClearColor(isDarkMode ? 0x090909 : 0xffffff, 1);
-
-        // Toggle non-red object colors, but skip textured images
+    
+        // Update the scene objects' colors
         scene.traverse((object) => {
             if (object.isMesh && object.material) {
-                // Skip objects that have a texture map
-                if (object.material.map) return;
-                // Skip objects that started red
-                if (object.userData?.originalColor === 0xff0000) return;
-
+                if (object.material.map) return; // Skip textured objects
+                if (object.userData?.originalColor === 0xff0000) return; // Skip red objects
+    
                 if (object.material.color) {
                     const currentHex = object.material.color.getHex();
-                    // Black ↔ White
                     if (currentHex === 0x000000 || currentHex === 0xffffff) {
                         object.material.color.set(
                             currentHex === 0x000000 ? 0xffffff : 0x000000
                         );
                     }
-                    // Gray ↔ Lighter Gray
-                    if (currentHex === 0x808080 || currentHex === 0xaaaaaa) {
-                        object.material.color.set(
-                            currentHex === 0x808080 ? 0xaaaaaa : 0x808080
-                        );
-                    }
                 }
             }
         });
-
+    
+        // Update the body class for dark mode
         document.body.classList.toggle('dark-mode', isDarkMode);
+    
+        // Update the fullscreen icon if applicable
         const fullscreenIcon = document.getElementById('fullscreen-icon');
-        fullscreenIcon.classList.toggle('dark-mode', isDarkMode);
+        if (fullscreenIcon) {
+            fullscreenIcon.classList.toggle('dark-mode', isDarkMode);
+        }
     }
-
-    // Use the existing HTML button
-    const darkModeBtn = document.getElementById('dark-mode-btn');
-    darkModeBtn.addEventListener('click', toggleDarkMode);
-
-
-
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    if (darkModeToggle) {
+        darkModeToggle.addEventListener('change', (event) => {
+            const isDarkMode = event.target.checked;
+            toggleDarkMode(isDarkMode);
+        });
+    } else {
+        console.error('Dark mode toggle not found in the DOM.');
+    }
+    
 
     // Scale slider and label
     const scaleSlider = document.getElementById('scale-slider');
-    const scaleValueLabel = document.getElementById('scale-value');
 
     scaleSlider.addEventListener('input', function () {
         const exponent = parseFloat(scaleSlider.value);
@@ -202,7 +201,6 @@ window.addEventListener('load', () => {
         const maxScale = 1e13;
         const minScale = 0.0001; // Updated minimum scale
         scaleWidth = clamp(scaleWidth, minScale, maxScale);
-        scaleValueLabel.textContent = exponent.toFixed(1);
         updateSceneWithScaleWidth(scaleWidth);
     });
 
@@ -275,20 +273,9 @@ window.addEventListener('load', () => {
 
     let imagesVisible = false;
 
-    function toggleImages() {
-        imagesVisible = !imagesVisible;
-        scene.traverse((object) => {
-            if (object.isMesh && object.userData.isImage) {
-                object.visible = imagesVisible;
-            }
-            if (object.isMesh && object.userData.isCaption) {
-                object.visible = imagesVisible;
-            }
-        });
-    }
 
-    const toggleImagesBtn = document.getElementById('toggle-images-btn');
-    toggleImagesBtn.addEventListener('click', toggleImages);
+
+
 
     function processEntries(data) {
         // Generate a complete list of years from the data range
@@ -1074,7 +1061,6 @@ window.addEventListener('load', () => {
     
         // now intersect recursively
         const intersects = raycaster.intersectObjects(pickables, true);
-        console.log('hit count:', intersects.length, intersects);
 
         if (!intersects.length) return;
     
@@ -1299,11 +1285,6 @@ window.addEventListener('load', () => {
     });
 
 
-    document.getElementById('position1-btn').addEventListener('click', () => switchCameraPosition(0));
-    document.getElementById('position2-btn').addEventListener('click', () => switchCameraPosition(1));
-    document.getElementById('position3-btn').addEventListener('click', () => switchCameraPosition(2));
-    document.getElementById('position4-btn').addEventListener('click', () => switchCameraPosition(3));
-
     function switchCameraPosition(positionIndex) {
         const target = cameraPositions[positionIndex];
         targetPosition.set(target.position.x, target.position.y, target.position.z);
@@ -1419,10 +1400,39 @@ window.addEventListener('load', () => {
     
                 console.log('Essay content loaded successfully');
                 setupScrollLogging();
+    
+                // Add hoverable footnotes
+                setupFootnoteHover();
             })
             .catch(error => {
                 console.error('Error loading essay:', error);
             });
+    }
+    
+    // Function to set up hoverable footnotes
+    function setupFootnoteHover() {
+        const footnotes = document.querySelectorAll('.footnote');
+    
+        footnotes.forEach((footnote) => {
+            footnote.addEventListener('mouseenter', (event) => {
+                let tooltip = document.createElement('div');
+                tooltip.className = 'footnote-tooltip';
+                tooltip.innerHTML = footnote.getAttribute('data-footnote'); // Use innerHTML for HTML content
+                document.body.appendChild(tooltip);
+    
+                const rect = footnote.getBoundingClientRect();
+                tooltip.style.left = `${rect.left + window.scrollX}px`;
+                tooltip.style.top = `${rect.bottom + window.scrollY + 5}px`;
+                tooltip.style.display = 'block';
+            });
+    
+            footnote.addEventListener('mouseleave', () => {
+                const tooltip = document.querySelector('.footnote-tooltip');
+                if (tooltip) {
+                    tooltip.remove();
+                }
+            });
+        });
     }
 
     function setupScrollLogging() {
