@@ -319,9 +319,9 @@ everything thereafter, produced in 1928.</div>
 <p>Given this available time, Haldane reasoned it was not unreasonable to assume that, if at all possible, our descendants might one day invent the means to propel rockets to other stars. Thereafter, he provided what is likely the first <span class="italic-text">quantitative</span> estimate of how long the future of Earthly life might be, should it achieve interstellar exodus. He surmised that our “galaxy has a probable life of at least eighty million million years,” a figure he would reiterate a few years later. He concluded his speculation by adding, piquantly: “<span class="italic-text">And there are other galaxies</span>.<span class="footnote" data-footnote="Haldane, <i>Last Judgement</i>, 36.">[72]</span></p>
 
 <div class="image-caption">
-  <img src="assets/photos/14.jpg" alt="Left: Visualization of the “radium clock” of creation, from <span class="italic-text">Popular Science</span>, 1931.
-Right: Depiction of Solar System’s birth, according to the obsolesced Chamberlin–Moulton hypothesis of its formation, from 1930." />
-  <div class="caption">Left: Visualization of the “radium clock” of creation, from <span class="italic-text">Popular Science</span>, 1931.
+  <img src="assets/photos/14.jpg" alt="Left: Visualization of the “radium clock” of creation, from Popular Science, 1931. />
+  <div class="caption">Right: Depiction of Solar System’s birth, according to the obsolesced Chamberlin–Moulton hypothesis of its formation, from 1930."
+  Left: Visualization of the “radium clock” of creation, from <span class="italic-text">Popular Science</span>, 1931.
 Right: Depiction of Solar System’s birth, according to the obsolesced Chamberlin–Moulton hypothesis of its formation, from 1930.</div>
 </div>
 
