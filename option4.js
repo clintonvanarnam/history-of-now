@@ -184,7 +184,7 @@ window.addEventListener('load', () => {
     const darkModeToggle = document.getElementById('dark-mode-toggle');
     if (darkModeToggle) {
         darkModeToggle.addEventListener('change', (event) => {
-            const isDarkMode = event.target.checked;
+            isDarkMode = event.target.checked; // <-- update the global variable!
             toggleDarkMode(isDarkMode);
         });
     } else {
@@ -405,6 +405,7 @@ window.addEventListener('load', () => {
                 textMesh.rotation.x = -Math.PI / 2;
                 textMesh.userData = {
                     isYear: true,
+                    isDecade: true, // <-- Add this line
                     entry: entry,
                     originalColor: 0x000000
                 };
@@ -597,8 +598,8 @@ window.addEventListener('load', () => {
                         labelMesh.userData = {
                             isLabel: true,
                             entry: entry,
-                            originalColor: DATA_COLOR // or COSMOLOGICAL_COLOR depending on the label
-                        };
+                            originalColor: DATA_COLOR
+                                                                        };
                         scene.add(labelMesh);
                         labelMeshes.push(labelMesh);
                         labelMesh.geometry.computeBoundingBox();
@@ -788,7 +789,7 @@ window.addEventListener('load', () => {
                         labelMesh.userData = {
                             isLabel: true,
                             entry: entry,
-                            originalColor: DATA_COLOR // or COSMOLOGICAL_COLOR depending on the label
+                            originalColor: COSMOLOGICAL_COLOR // <-- FIXED HERE
                         };
                         scene.add(labelMesh);
                         labelMeshes.push(labelMesh);
@@ -880,6 +881,7 @@ window.addEventListener('load', () => {
                         labelMesh.position.set(xOffset, yOffset, zPosition + offset);
                         labelMesh.rotation.x = 0;
                         labelMesh.userData.isLabel = true;
+                        labelMesh.userData.originalColor = COSMOLOGICAL_COLOR;
                         scene.add(labelMesh);
                         labelMeshes.push(labelMesh);
                         labelMesh.geometry.computeBoundingBox();
@@ -1105,6 +1107,8 @@ window.addEventListener('load', () => {
 
         const highlightAndCollect = (linesArray) => {
             linesArray.forEach(line => {
+                // Skip big decade labels
+                if (line.userData && line.userData.isDecade) return;
                 if (line.userData.entry === entry) {
                     line.material.color.set(highlightColor);
                     associatedLines.push(line);
@@ -1121,20 +1125,23 @@ window.addEventListener('load', () => {
         highlightAndCollect(planeMeshes);
         highlightAndCollect(labelMeshes);
 
-       textMeshes.forEach((text) => {
-  // skip the big decade labels
-  if (text.userData.isDecade) return;
-
-  // but still highlight the small year labels that match
-  if (
-    text.userData.entry &&
-    text.userData.entry.NAME === entry.NAME &&
-    text.userData.entry.DATE === entry.DATE
-  ) {
-    text.material.color.set(highlightColor);
-    associatedLines.push(text);
-  }
-});
+        textMeshes.forEach((text) => {
+            // Always skip the big decade labels
+            if (text.userData && text.userData.isDecade) return;
+        
+            // Only highlight if not a decade and both NAME and DATE match
+            if (
+                text.userData &&
+                text.userData.entry &&
+                text.userData.entry.NAME &&
+                text.userData.entry.DATE &&
+                text.userData.entry.NAME === entry.NAME &&
+                text.userData.entry.DATE === entry.DATE
+            ) {
+                text.material.color.set(highlightColor);
+                associatedLines.push(text);
+            }
+        });
 
         highlightedObjects = highlightedObjects.concat(associatedLines);
     }
