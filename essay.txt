@@ -40,16 +40,16 @@
 <p>In the premodern world, the globe had yet to be fully mapped. Accordingly, it was possible to assume that everything chronicled and achieved on one’s own continent had already been achieved—and would thereafter ceaselessly reoccur—in other, uncontacted lands.</p>
 <p>Prior to the compiling and cross-referencing of an archaeological and fossil record spanning <span class="italic-text">all</span> Earth’s continents—that is, a record not remaining constrained within one landmass—it was impossible to <span class="italic-text">falsify</span> the suspicion that human history had never properly begun and could thus never properly end. Eternal things cannot die. People were liable to assume that human history had instead simply been going on, much in the same way, forever, and would so continue. Again, there was not yet evidence to disqualify such an assumption.</p>
 <p>Accordingly, the ancient Greeks and Romans tended to assume that time was eternal and that the future would thus, in the longer term, look like the past. Both <span class="name-highlight">Aristotle</span> and Plato were characteristic in claiming that the past was an “infinite period of time,” such that <span class="italic-text">all</span> the possibilities of human history had not only already been manifested but had been previously passed through innumerable times.<span class="footnote" data-footnote="Copernicus, <i>Laws</i>, 676a-c.">[07]</span> As Aristotle put it: “Each art and science has often been developed as far as possible and has again perished . . . not once nor twice nor occasionally, but infinitely often.”<span class="footnote" data-footnote="Aristotle, <i>Complete Works,</i> 2:1698.">[08]</span></p>
-<p>By the same token, they believed that all possibilities would, inevitably, be manifested again, unceasingly throughout the measureless future, regardless of what happens now. This meant no human potentials can ever be lost or irreversibly disappear from existence, including the potential for human existence as such. Indeed, <span class="name-highlight">Plato</span> and others spoke of the “periodic destruction at long intervals of the surface of the earth by massive conflagrations.” But <span class="name-highlight">Plato</span> also clarified that “the human race has often been destroyed in various ways—as it will be in the future too.”<span class="footnote" data-footnote="Plato, <i>Timaeus & Critias,</i> 9-10.">[09]</span> The presupposition therefore being that, even if humankind should be extinguished, it would eventually simply return. Other thinkers, such as Xenophanes, had already made similar claims<span class="footnote" data-footnote="Hippolytas, <i>Refutation</i>, 49.">[10]</span>.</p>
+<p>By the same token, they believed that all possibilities would, inevitably, be manifested again, unceasingly throughout the measureless future, regardless of what happens now. This meant no human potentials can ever be lost or irreversibly disappear from existence, including the potential for human existence as such. Indeed, Plato and others spoke of the “periodic destruction at long intervals of the surface of the earth by massive conflagrations.” But Plato also clarified that “the human race has often been destroyed in various ways—as it will be in the future too.”<span class="footnote" data-footnote="Plato, <i>Timaeus & Critias,</i> 9-10.">[09]</span> The presupposition therefore being that, even if humankind should be extinguished, it would eventually simply return. Other thinkers, such as Xenophanes, had already made similar claims<span class="footnote" data-footnote="Hippolytas, <i>Refutation</i>, 49.">[10]</span>.</p>
 <p>On this view, no genuine influences from the present persist into the further future, because the future will be a repeat of the past regardless of what happens now. All impacts of the past are eventually washed away in eternity. Nothing can be lost, nothing gained. It was for this reason that, around 50 BCE, Cicero claimed that there was little point in seeking to impart legacies that are <span class="italic-text">diuturnam</span>, or durable, much less ones that are indelible.<span class="footnote" data-footnote="Cicero, <i>De Re Publica,</i>90.">[11]</span></p>
 <p class="section-marker">§</p>
-<p>This way, eternity isn’t as voluminous as it might appear. In eternity, there is no pinpointing the placement of ‘now’; there is no orienting oneself. Indeed, Aristotle once reasoned that, if history cycles, then it doesn’t make sense to say we come <span class="italic-text">after</span> our ancestors, because, in another sense, we also come <span class="italic-text">before</span> them.<span class="footnote" data-footnote="Aristotle, <i>Complete Works,</i> 2:1426.">[12]</span> For Aristotle, it wasn’t logical to ask where the present lies. His, and <span class="name-highlight">Plato</span>’s, ‘now’ was lost in eternity. It was much the same for Lucretius, who, writing around 55 BCE, entertained the possibility that everything he had witnessed in his life had already “happened before.”<span class="footnote" data-footnote="Lucretius, <i>Nature of Things,</i> 146.">[13]</span></p>
+<p>This way, eternity isn’t as voluminous as it might appear. In eternity, there is no pinpointing the placement of ‘now’; there is no orienting oneself. Indeed, Aristotle once reasoned that, if history cycles, then it doesn’t make sense to say we come <span class="italic-text">after</span> our ancestors, because, in another sense, we also come <span class="italic-text">before</span> them.<span class="footnote" data-footnote="Aristotle, <i>Complete Works,</i> 2:1426.">[12]</span> For Aristotle, it wasn’t logical to ask where the present lies. His, and Plato’s, ‘now’ was lost in eternity. It was much the same for Lucretius, who, writing around 55 BCE, entertained the possibility that everything he had witnessed in his life had already “happened before.”<span class="footnote" data-footnote="Lucretius, <i>Nature of Things,</i> 146.">[13]</span></p>
 <p>Where time has no bounds or bookends, and eternity thus holds sway, all possibilities inevitably repeat without limit. Everything that <span class="italic-text">can</span> happen already <span class="italic-text">has</span> and <span class="italic-text">will</span> again. Unprecedented change and irrecuperable loss evaporate. In eternity, time isn’t deep, but shallow, because nothing <span class="italic-text">truly</span> changes.</p>
 <p>It’s easy to mistakenly assume that eternalist notions of time are similar to the vast durations revealed by modern science—described by the term <span class="italic-text">deep time</span>. But they couldn’t be more opposed. Depth is, by definition, measurable and bounded. Eternity, being boundless, lacks these qualities.</p>
 
 <div class="image-caption">
   <img src="assets/photos/eternity.jpg" alt="Representation of eternity as an ouroboros" />
-  <div class="caption">Representation of eternity as an ouroboros, from Cleopatra the Alchemist’s <span class="italic-text">Chrysopoeia</span>, written sometime in the 3rd or 4rd century CE.</div>
+  <div class="caption">Representation of eternity as an ouroboros, from Cleopatra the Alchemist’s <i>Chrysopoeia</i>, written sometime in the 3rd or 4rd century CE.</div>
 </div>
 
 
@@ -68,7 +68,7 @@
 
 <div class="image-caption">
   <img src="assets/photos/2.jpg" alt="Illuminated manuscript depiction of the Book of Revelation" />
-  <div class="caption">Illuminated manuscript depiction of the Book of Revelation and the coming end of the world, from the <span class="italic-text">Trier Apocalypse</span>, ca. 800 CE.</div>
+  <div class="caption">Illuminated manuscript depiction of the Book of Revelation and the coming end of the world, from the <i>Trier Apocalypse</i>, ca. 800 CE.</div>
 </div>
 
 
@@ -85,33 +85,29 @@
 
 <div class="image-caption">
   <img src="assets/photos/schedel.png" alt="The blank pages Schedel inserted at the end of his Liber Chronicarum" />
-  <div class="caption">The blank pages Schedel inserted at the end of his <span class="italic-text">Liber Chronicarum</span>, representing the remaining history yet to be written, ca. 1493.</div>
+  <div class="caption">The blank pages Schedel inserted at the end of his <i>Liber Chronicarum</i>, representing the remaining history yet to be written, ca. 1493.</div>
 </div>
 
-[Position 5]
+[Position ]
 <h3>1.3—Early Modern (1500–1700)</h3>
 <p>In his so-called <span class="italic-text">Book of Prophecies</span>, written on his fourth and final expedition in the first years of the 1500s, <span class="name-highlight">Christopher Columbus</span>—citing the wisdom of prior Christian chroniclers—pronounces that creation is 6,845 years old and, therefore, “[b]y this count, only 155 years remain of the 7,000 years in which, according to the authorities cited above, the world must come to an end.” Such belief remained unanimous. In fact, Columbus fervently believed that his own <span class="italic-text">actions</span>—colonizing the Americas and forcibly converting its population to Christianity—were playing an active role in precipitating the end of the world.<span class="footnote" data-footnote="Columbus, <i>Book of Prophecies,</i> 71, 21-25.">[18]</span></p>
 <p>The Indigenous peoples who were later decimated by the Spanish conquest held similarly apocalyptic beliefs in their own doctrines. Examples are the Aztec and Nahua people, who believed the universe would abruptly end if they stopped offering blood to the gods.<span class="footnote" data-footnote="Brundage, <i>Fifth Sun.</i>">[19]</span></p>
-
-[Position 6]
 <p>The conviction that the end was near continued throughout Europe’s Renaissance, persisting well into the early modern period. During this time, methods for measuring the bookends of time remained scriptural. Around 1650, Irish theologian <span class="name-highlight"> James Ussher </span> famously calculated that the world was created in 4004 BCE and would end in around 2000 CE. He arrived at this conclusion, in part, by counting the chains of “begats” in the Old Testament: a way of tracing how many generations had passed since Adam.<span class="footnote" data-footnote="Ussher, <i>Annales veteris.</i>">[20]</span></p>
 
 <div class="image-caption">
   <img src="assets/photos/4.jpg" alt="The frontispiece to the English translation of 
  James Ussher's Annales, 1658." />
   <div class="caption">The frontispiece to the English translation of 
-James Ussher’s <span class="italic-text">Annales</span>, 1658.</div>
+James Ussher’s <i>Annales</i>, 1658.</div>
 </div>
 
 
-<p>It thus remained orthodox to assume that the world was around five or six thousand years old and would last only a few more centuries. This sense, of living nearer to history’s culmination than to its beginning, affected how people <span class="italic-text">saw</div> their world and how they felt they should act. Writing in 1658, Sir Thomas Browne perfectly captured this overriding sentiment. “’Tis too late to be ambitious,” he declared:</p>
+<p>It thus remained orthodox to assume that the world was around five or six thousand years old and would last only a few more centuries. This sense, of living nearer to history’s culmination than to its beginning, affected how people <span class="italic-text">saw</span> their world and how they felt they should act. Writing in 1658, Sir Thomas Browne perfectly captured this overriding sentiment. “’Tis too late to be ambitious,” he declared:</p>
 <div class="block-quote">The great mutations of the world are acted, or time may be too short for our designes. . . . We whose generations are ordained in this setting part of time, [are] necessitated to eye the remaining particle of futurity, [and] cannot excusably [anticipate any future] duration, which maketh pyramids pillars of snow, and all that’s past a moment.<span class="footnote" data-footnote="Browne, <i>Hydriotaphia,</i> 73-74.">[21]</span></div>
 <p class="section-marker">§</p>
-
-[Position 7]
 <p>Expectations on the centuries left ahead could invariably be counted on the fingers of one hand. Even luminaries of the emerging scientific method, such as Isaac Newton, produced numerical prophecies—again based on scripture—predicting that the world would end sometime around 2060.</p>
-<p>In 1699, Scottish mathematician <span class="name-highlight">John Craig</span> added another method to the mix. In his <span class="italic-text">Theologiae Christianae Principia Mathematica</span>, he proposed a mathematical method for computing how the plausibility of a statement decays over time. He started from the assumption that the more distant we are from an original testimony, the more suspicious we should be of its accuracy. The more elapsed time since the primary source was recorded, the less credence we should give it. Deploying the recently invented mathematics of probability calculus, <span class="name-highlight">Craig</span> invented an elaborate numerical system for precisely computing this decay of credence and used this method to compute that the world would end exactly in 3150 CE.</p>
-<p>How did he get this number? It marks the date when the “probability” of the New Testament’s message will, according to Craig’s method, have rationally dwindled to zero. Thus, it is only reasonable to expect that, by this date, no one would believe in Christ anymore. The world, therefore, would be filled with unbelievers. In the Bible, this is given as a precondition for Jesus’s Second Coming and the end of the world. Hence, <span class="name-highlight">Craig</span> forecast a future roughly 1,450 years long.<span class="footnote" data-footnote="Craig, <i>Theologiae christianae.</i>">[22]</span></p>
+<p>In 1699, Scottish mathematician <span class="name-highlight">John Craig</span> added another method to the mix. In his <span class="italic-text">Theologiae Christianae Principia Mathematica</span>, he proposed a mathematical method for computing how the plausibility of a statement decays over time. He started from the assumption that the more distant we are from an original testimony, the more suspicious we should be of its accuracy. The more elapsed time since the primary source was recorded, the less credence we should give it. Deploying the recently invented mathematics of probability calculus, Craig invented an elaborate numerical system for precisely computing this decay of credence and used this method to compute that the world would end exactly in 3150 CE.</p>
+<p>How did he get this number? It marks the date when the “probability” of the New Testament’s message will, according to Craig’s method, have rationally dwindled to zero. Thus, it is only reasonable to expect that, by this date, no one would believe in Christ anymore. The world, therefore, would be filled with unbelievers. In the Bible, this is given as a precondition for Jesus’s Second Coming and the end of the world. Hence, Craig forecast a future roughly 1,450 years long.<span class="footnote" data-footnote="Craig, <i>Theologiae christianae.</i>">[22]</span></p>
 <p>Craig’s mathematics were innovative in that they applied probability theory to the question of the whereabouts of ‘now’. But his method obviously did not stand the test of time. Nonetheless, it marks a transition between the early proclamations of scriptural prophecy and the more recognizable scientific, mathematical methods that were soon to be applied to inspections of Earth itself.</p>
 <h2>2—Geology and Archeology</h2>
 <p><span class="italic-text">Throughout the 1700s, people began looking beyond scripture to understand the past and future. Geology began maturing as a science, relying on the testimony of rocks—rather than the Bible—to gauge Earth’s age and the procession of its creatures. No fossil humans could be found in the eldest strata, implying that humans are a recent addition to an ancient Earth. Results from the first experiments attempting to pinpoint the placement of ‘now’ implied that Earth is several tens of thousands of years old and might remain habitable for a similar interval of time.</span></p>
@@ -120,7 +116,7 @@ James Ussher’s <span class="italic-text">Annales</span>, 1658.</div>
 
 <div class="image-caption">
   <img src="assets/photos/5.jpg" alt="Early geological diagram depicting the formation of the Earth, from Thomas Burnet’s Telluris Theoria Sacra, 1681." />
-  <div class="caption">Early geological diagram depicting the formation of the Earth, from Thomas Burnet’s <span class="italic-text">Telluris Theoria Sacra</span>, 1681.</div>
+  <div class="caption">Early geological diagram depicting the formation of the Earth, from Thomas Burnet’s <i>Telluris Theoria Sacra</i>, 1681.</div>
 </div>
 
 <p>In 1763, Russian polymath Mikhail Lomonosov appended an essay entitled “On the Strata of the Earth” to a voluminous guidebook on mining he had written. In it, he references prior attempts of “Christian chronologists” in dating our planet, before hinting that the testimony of the Earth itself must trump that of the Bible and the chroniclers. After all, our planet, Lomonosov quips, is the “most senior Chronicler of all.” Lomonosov concludes that Earth’s age “appears to be greater” than previous calculations indicated.<span class="footnote" data-footnote="Lomonosov, <i>Первые основания</i> [First Foundations], 393-94 (my translation).">[23]</span></p>
@@ -130,7 +126,6 @@ James Ussher’s <span class="italic-text">Annales</span>, 1658.</div>
 <p>Fathoms ahead of his time, de Maillet predicted that the age of the Earth was a staggering “<span class="italic-text">deux milliard d’années</span>”. That’s two billion years. Believing the planet to have once been entirely covered by an ocean, he arrived at this eye-watering figure by measuring the steady diminution of the sea in various locales, before guesstimating how long it would have taken for the current amount of global landmass to emerge. Based on his highly speculative model of how planets age, de Maillet estimated that there were another billion years ahead before Earth would completely dry up.</p>
 <p>Unfortunately, when <span class="italic-text">Telliamed</span> was posthumously published, its editor—an abbé with an eye for orthodoxy—removed all references to actual numbers, replacing them with indeterminate phrases such as “an immensity of time.”<span class="footnote" data-footnote="De Maillet, <i>Telliamed</i> (University of Illionois Press, 1968).">[24]</span> In the English translation, they were removed entirely.<span class="footnote" data-footnote="De Maillet, <i>Telliamed</i> (London, 1750).">[25]</span> As such, though bewilderingly prescient, de Maillet’s contribution was lost and forgotten.</p>
 <p class="section-marker">§</p>
-[Position 8]
 <p>In the 1770s, French polymath <span class="name-highlight">Georges-Louis Leclerc, Comte de Buffon</span> presented the first theory comprehensively predicting both the past and the future of the Earth system, based on the rudimentary hypothesis that the planet was irreversibly losing an original and finite fund of internal heat.</p>
 <p>Buffon theorized that our planet started life as a molten globule, ripped from the Sun by a colliding comet. He pictured this red-hot, primordial droplet crusting over in space’s void, with the surface eventually cooling enough to become habitable. He concluded that global temperatures would steadily, monotonously decline over time—as the planet’s internal wealth of heat dissipated, outward, into space’s void—until Earth would freeze completely, killing all life.</p>
 <p>Assuming this, he decided to conduct the first physical experiment, attempting to gauge the time past and ahead, within his basement forge on his estate in leafy Burgundy. Buffon heated small iron spheres, measured their cooldown times, and scaled this up to the size of the planet to produce his planetary forecast. He estimated Earth was around 74,832 years old, that life emerged on it 35,983 years ago, and that it would remain habitable for another 93,291 years.<span class="footnote" data-footnote="Buffon, <i>Histoire naturelle,</i> XXXI:404, 513 (my translation).">[26]</span> (Rounding numbers was not yet a scientific convention.)</p>
@@ -141,7 +136,7 @@ James Ussher’s <span class="italic-text">Annales</span>, 1658.</div>
   <div class="caption">Depiction of Buffon’s theory of Earth’s origins as molten matter ejected from the Sun by a colliding comet, 1774.</div>
 </div>
 
-[Position 9]
+
 <p>Not long afterward, another Frenchman, the socialist philosopher <span class="name-highlight">Charles Fourier</span>, provided his own vision. Similarly extrapolating from gradual changes to Earth’s axial tilt over time, Fourier declared that our planet’s orbital inclination would eventually become too intense, creating seasonal extremes and eventually making Earth uninhabitable.</p>
 <p>Fourier was confident that this would happen precisely 75,000 years from the present. He boasted that his calculation would be accurate “to within one-eighth.”<span class="footnote" data-footnote="Fourier, <i>Théorie des quatre mouvements.</i>">[28]</span> Fourier was also confident, however, that Earth would become a utopia before then, with the oceans turning into lemonade and predatory animals becoming friends with former prey.</p>
 
@@ -179,8 +174,6 @@ James Ussher’s <span class="italic-text">Annales</span>, 1658.</div>
 <h3>3.1—Industrial (1830–1870)</h3>
 <p>Eternity still held sway in the sidereal immensities and distant nebulae, which were then being pried at by the first large-scale reflecting telescopes. But how much longer did life have left, <span class="italic-text">here</span>, within our Solar System? What further development might be possible? Answering this question involved estimating how long it had taken for life to arrive at its current grandeur on Earth, so as to gauge how much further development could be cumulated in the time left ahead. And answering <span class="italic-text">this</span> required looking to the furnaces fueling the snowballing Industrial Revolution.</p>
 <p class="section-marker">§</p>
-
-[Position 11]
 <p>The dynamo driving industrialization was coal burning. Thus, it is no coincidence that at this time—throughout the early 1800s—the science of heat was developed. By 1854, Scottish scientist <span class="name-highlight">William Thomson</span> (later Lord Kelvin) gave it its name: <span class="italic-text">thermodynamics</span>.</p>
 <p>This science provided far better tools for gauging the placement of ‘now’, markedly more advanced than the rudimentary ones available to Buffon in his Burgundy basement, less than a handful of generations before.</p>
 <p>Thermodynamics is the mathematics of energy, enabling the measuring of sources of heat and the modeling of its flows. It proved that all activity expends energy, and, because spent energy cannot be recouped, all activity—everywhere in existence—depends on the disbursing of some expendable fund. In this way, thermodynamics, for the first time, threw into crisp relief the truth that almost all activity on Earth is ultimately fueled by one wellspring: <span class="italic-text">the Sun</span>. Even coal, after all, is fossilized sunshine.</p>
@@ -200,11 +193,8 @@ James Ussher’s <span class="italic-text">Annales</span>, 1658.</div>
 <p>At this time, however, there was no certainty about how our star produces its outpouring. Scientists had already decided it couldn’t be combusting, like a gigantic coal, since a cinder the size of our Sun would burn itself up far more rapidly than seemed plausible. Such short timescales jarred with the timescales required to explain geological features on Earth.</p>
 <p>Generations before anyone alive had dreamed of the vast energy locked within atoms and long before subatomic processes were apprehended, various explanations were proposed, all assuming that stars shine through some mechanical process. The most popular, proposed by William Thomson and <span class="name-highlight">Hermann von Helmholtz</span>, was that the Sun produces its heat by languorously collapsing under its own vast weight, grinding on its own matter as it compacts and outputting heat and light as the result.<span class="footnote" data-footnote="Cf. Kragh, “Source of Solar Energy,” 365–94.">[38]</span></p>
 <p>Assuming this, in 1854 Thomson became the first to crunch the numbers and output an estimate of the length of Earth’s past and future, based on a thermodynamic calculation of the Sun’s lifespan. Dispassionately, he calculated that Earth had been “efficiently illuminated” by the Sun for around “32,000 years,” but that this “cannot last” for another “300,000 years.”<span class="footnote" data-footnote="Thomson, “On the Mechanical Energies,” 78.">[39]</span></p>
-[Position 12]
 <p>After applying thermodynamic calculation to Earth’s own internal temperature to estimate its age, Thomson became convinced that the time past for our planet was roughly 20 million, or 20,000,000, years.<span class="footnote" data-footnote="Thomson, “On the Secular Cooling.”.">[40]</span> Helmholtz concurred with a very similar prediction.<span class="footnote" data-footnote="Helmholtz, “On the Interaction.”">[41]</span> ‘Now’ was suddenly nearer the end than the beginning, once again, thanks to these newly developed thermodynamic techniques.</p>
 <h3>3.1—Decadence (1870–1900)</h3>
-
-[Position 13]
 <p>By 1861, Thomson had revised his numbers upward, but not by all too much. He now claimed Earth’s “inhabitants” could not have “many million years longer.”<span class="footnote" data-footnote="Thomson, “Age of the Sun's Heat,” 293.">[42]</span> Ten years later, Helmholtz made his own attempt. He announced that our Sun had been shining for 22 million, or 20,000,000, years, and we cannot expect it “to maintain an additional 17,000,000 of years the same intensity of sunshine as that which is now the source of all terrestrial life.”<span class="footnote" data-footnote="Helmholtz, “Ueber die Entstehung,” 84-85 (my translation).">[43]</span> By 1878, Canadian American astronomer <span class="name-highlight">Simon Newcomb</span> also chimed in, calculating that sometime before “12,000,000 years” hence, our star will “rapidly cease to radiate the heat necessary to support life on the globe.”<span class="footnote" data-footnote="Newcomb, <i>Popular Astronomy</i>, 513.">[44]</span> In 1881, US spectroscopist <span class="name-highlight">Charles Augustus Young</span> echoed Newcomb’s conclusion. He wrote that the Sun will “continue to give sufficient heat to support life on earth” for “ten million years from the present time.”<span class="footnote" data-footnote="Young, <i>Sun,</i> 276.">[45]</span></p>
 <p class="section-marker">§</p>
 <p>By the closing decades of the century, thermodynamic forecasts for Earth’s future varied, but they clustered around a prospect of around 10 million further years. The scientific community had converged on a kind of consensus. The Sun would die, killing Earth by cold, in several million years’ time.</p>
@@ -228,9 +218,9 @@ James Ussher’s <span class="italic-text">Annales</span>, 1658.</div>
 
 <div class="image-caption">
   <img src="assets/photos/10.jpg" alt="Engraving of the final human family, perished by encroaching cold on a geriatric Earth, from Camille Flammarion’s 1880 Astronomie Populaire." />
-  <div class="caption">Engraving of the final human family, perished by encroaching cold on a geriatric Earth, from Camille Flammarion’s 1880 <span class="italic-text">Astronomie Populaire</span>.</div>
+  <div class="caption">Engraving of the final human family, perished by encroaching cold on a geriatric Earth, from Camille Flammarion’s 1880 <i>Astronomie Populaire.</i>
 </div>
-
+</div>
 
 <p class="section-marker">§</p>
 <p>In an 1893 lecture delivered in Oxford’s ornate Sheldonian Theatre, prominent naturalist Thomas Henry Huxley miserably prophesied a protracted, senile death in the not-too-distant future.<span class="footnote" data-footnote="Huxley, “Evolution & Ethics, II.”">[50]</span> Life is past its prime, Huxley pronounced. We can look forward to a future populated by increasingly simple life-forms, withering on a diet of dwindling sunlight, he claimed. One day, there will only be lichen and moss left, struggling to survive in a darkened, tenebrous world.</p>
@@ -299,9 +289,10 @@ everything thereafter, produced in 1928.</div>
 <p>These developments were also inspired, in part, by Skłodowska-Curie. In the 1930s, Belgian priest and physicist Georges Lemaître was the first to propose that the universe began with a primordial explosion. He argued that it began life as a “primeval atom” that explosively and spontaneously disintegrated, just like one of Skłodowska-Curie’s radioactive elements, bursting forth into the receding galaxies we see today. Poetically, he wrote:</p>
 <div class="block-quote">The evolution of the universe can be compared to a display of fireworks that has just ended: some few red wisps, ashes and smoke. Standing on a well-chilled cinder, we see the slow fading of the suns, [and] recall the vanished brilliance of the origin of worlds.<span class="footnote" data-footnote="Lemaître, <i>Primeval Atom,</i> 78.">[67]</span></div>
 
+
 <div class="image-caption">
-  <img src="assets/photos/15.jpg" alt="Likely the first visualization of what we now call the Big Bang, from Popular Science, 1932." />
-  <div class="caption">Likely the first visualization of what we now call the Big Bang, from Popular Science, 1932.</div>
+  <img src="assets/photos/15.jpg" alt="Likely the first visualization of what we now call the Big Bang, from <span class="italic-text">Popular Science</span>, 1932." />
+  <div class="caption">Likely the first visualization of what we now call the Big Bang, from <i>Popular Science</i>, 1932.</div>
 </div>
 
 <p>By this time, though they remained few and far between, some cosmologists began feeling confident enough to put tentative ages on the universe itself. In these early days of cosmology, the numbers varied wildly: from Jeans’s 1929 estimate, based on the rate of matter’s radioactive decay, of an age of 200 trillion or 200,000,000,000,000 years, to Russian mathematician <span class="name-highlight">Alexander Friedmann’s</span> 1923 guess of 10 billion or 10,000,000,000 years.<span class="footnote" data-footnote="Jeans,<i>Universe Around Us</i>, 327; Friedmann, <i>Мир как пространство</i> [The World as Space and Time].">[68]</span></p>
@@ -319,10 +310,8 @@ everything thereafter, produced in 1928.</div>
 <p>Given this available time, Haldane reasoned it was not unreasonable to assume that, if at all possible, our descendants might one day invent the means to propel rockets to other stars. Thereafter, he provided what is likely the first <span class="italic-text">quantitative</span> estimate of how long the future of Earthly life might be, should it achieve interstellar exodus. He surmised that our “galaxy has a probable life of at least eighty million million years,” a figure he would reiterate a few years later. He concluded his speculation by adding, piquantly: “<span class="italic-text">And there are other galaxies</span>.<span class="footnote" data-footnote="Haldane, <i>Last Judgement</i>, 36.">[72]</span></p>
 
 <div class="image-caption">
-  <img src="assets/photos/14.jpg" alt="Left: Visualization of the “radium clock” of creation, from Popular Science, 1931. />
-  <div class="caption">Right: Depiction of Solar System’s birth, according to the obsolesced Chamberlin–Moulton hypothesis of its formation, from 1930."
-  Left: Visualization of the “radium clock” of creation, from <span class="italic-text">Popular Science</span>, 1931.
-Right: Depiction of Solar System’s birth, according to the obsolesced Chamberlin–Moulton hypothesis of its formation, from 1930.</div>
+  <img src="assets/photos/14.jpg" alt="Left: Visualization of the “radium clock” of creation, from <i>Popular Science</i>, 1931.
+Right: Depiction of Solar System’s birth, according to the obsolesced Chamberlin–Moulton hypothesis of its formation, from 1930." />
 </div>
 
 
@@ -343,7 +332,7 @@ and immolating Earth, from 1947.</div>
 
 
 <p class="section-marker">§</p>
-<p>Reflecting these new estimates, Jeans updated his visualizations of the future. Though not yet onboard with the fact that the Sun would expand as it ages, Jeans concurred that 10 billion years now seemed plausible as the “possible future for the existence of life on earth.” Accordingly, he had to update the imagery in his post-stamp metaphor. No longer was the future a pile of stamps higher than Mont Blanc. Instead, in the fourth edition of <span class="name-highlight">The Universe Around Us</span>, published in wartime 1945, he changed it to a pile “as high as the towers of Westminster Abbey.”<span class="footnote" data-footnote="Jeans, <i>Universe Around Us</i>, 4th ed., 287-88.">[76]</span> A reduction, from a mountain to a church, but still a spacious and sizable future for life on Earth.</p>
+<p>Reflecting these new estimates, Jeans updated his visualizations of the future. Though not yet onboard with the fact that the Sun would expand as it ages, Jeans concurred that 10 billion years now seemed plausible as the “possible future for the existence of life on earth.” Accordingly, he had to update the imagery in his post-stamp metaphor. No longer was the future a pile of stamps higher than Mont Blanc. Instead, in the fourth edition of <span class="italic-text">The Universe Around Us</span>, published in wartime 1945, he changed it to a pile “as high as the towers of Westminster Abbey.”<span class="footnote" data-footnote="Jeans, <i>Universe Around Us</i>, 4th ed., 287-88.">[76]</span> A reduction, from a mountain to a church, but still a spacious and sizable future for life on Earth.</p>
 
 <div class="image-caption">
   <img src="assets/photos/16.jpg" alt="A personification of planetary extinction, from 1938." />
@@ -450,96 +439,97 @@ to a molten state—from 1987.</div>
 <p>But nothing is certain, nothing predestined; there’s no guarantee nor fate, for better or worse. Nor is there even any tendency or trend. First and foremost, and with utmost urgency, we must tend to our own garden. But that garden is now the entire planet, hurtling through space. Our interconnected world is increasingly imperiled, and novel technologies will only conjure forth further hazards and vulnerabilities. Yet fragility and freedom are sides of a coin. Whatever happens next—for terrestrial life, for tomorrow and tomorrow and tomorrow—will be built on decisions we make now, in our own fleeting ‘now’.</p>
 <h2>8—Bibliography</h2>
 
+
 <div class="foot-notes">
-<p>Adams, Fred, and Gregory Laughlin. <span class="italic-text">The Five Ages of the Universe</span>. Free Press, 1999.</p>
-<p>Anonymous. “Alarming Situation.” <span class="italic-text">Durham Globe</span>, May 16, 1892, 2.</p>
-<p>Anthony, Sean W. “Muḥammad, the Keys to Paradise, and the Doctrina Iacobi: A Late Antique Puzzle.” <span class="italic-text">Der Islam</span> 91, no. 2 (2014): 243–65.</p>
-<p>Aristotle. <span class="italic-text">The Complete Works of Aristotle: The Revised Oxford Translation</span>, vol. 2, edited by Jonathan Barnes. Princeton University Press, 1984.</p>
-<p>Roger Bacon, Roger. <span class="italic-text">Opus maius, pars quarta</span>,  vol. 2, translated by Robert B. Burke. University of Pennsylvania Press, 1928.</p>
-<p>Ball, Robert S. “How Long Can the Earth Sustain Life?” <span class="italic-text">Fortnightly Review</span> 51 (1892): 478-490</p>
-<p>Balzac, Honoré de. <span class="italic-text">La Peau de chagrin</span>. Paris, 1831.</p>
-<p>Blumenberg, Hans. <span class="italic-text">The Genesis of the Copernican World</span>, trans. Robert M. Wallace. MIT Press, 1989.</p>
-<p>Bondi, Hermann and Thomas Gold, “The Steady-State Theory of the Expanding Universe.” <span class="italic-text">Monthly Notices of the Royal Astronomical Society</span> 108, no. 3 (1948): 252–70.</p>
-<p>Browne, Thomas. <span class="italic-text">Hydriotaphia, Urne Buriall, or, a Discourse of the Sepulchrall Urnes Lately Found in Norfolk</span>. London, 1658.</p>
-<p>Brundage, Burr C. <span class="italic-text">Fifth Sun: Aztec Gods, Aztec World</span>. University of Texas Press, 2014.</p>
-<p>Buffon, Georges-Louis Leclerc, Comte de. <span class="italic-text">Histoire naturelle, générale et particuliére</span>. Paris, 1749-1804.</p>
-<p>Chambers, Robert. <span class="italic-text">Vestiges of the Natural History of Creation</span>. W.& R. Chambers, 1884.</p>
-<p> Cicero. <span class="italic-text">De Re Publica: Selections</span>, edited by  James E. G. Zetzel. Cambridge University Press, 1995.</p>
-<p>Columbus, Christopher. <span class="italic-text">The Book of Prophecies</span>, edited Blair Sullivan. Wipf & Stock, 2004.</p>
-<p>Copernicus, Nicolaus. <span class="italic-text">De revolutionibus orbium coelestium</span>. Johannes Petreius, 1543.</p>
-<p>Craig, John. <span class="italic-text">Theologiae Christianae Principia Mathematica</span>. London, 1699.</p>
-<p>Dalrymple, G. Brent. <span class="italic-text">The Age of the Earth</span> (Stanford: Stanford University Press, 1991), 14-17.</p>
-<p>Darwin, George H. “Radio-Activity and the Age of the Sun.” <span class="italic-text">Nature</span> 68 (1903): 496.</p>
-<p>de Maillet, Benoit. <span class="italic-text">Telliamed; or, Conversations between an Indian Philosopher and a French Missionary on the Diminution of the Sea</span>, translated by Albert V. Carozzi. University of Illinois Press, 1968.</p>
-<p>———. <span class="italic-text">Telliamed: or, Discourses Between an Indian Philosopher and a French Missionary, on the Diminution of the Sea, the Formation of the Earth, the Origin of Men and Animals, and Other Curious Subjects, Relating to Natural History and Philosophy. Being a Translation from the French Original</span>. T. Osborne, 1750.</p>
-<p>de Mairan, Jean-Jacques D. <span class="italic-text">Lettres de M. de Mairan, au R. P. Parrenin, missionnaire de la Compagnie de Jesus, à Peki: contentant diverse questions sur las Chine</span>. Paris: Imprimerie Royale, 1759.</p>
-<p>de Sales, Jean-Baptiste-Claude. <span class="italic-text">De la philosophie de la nature</span>. London, 1777.</p>
-<p>Dicus, Duane A., John R. Letaw, Doris C. Teplitz, and Vigdor L. Teplitz. “The Future of the Universe.” <span class="italic-text">Scientific American</span> 248 (1983): 74–85.</p>
-<p>Eddington, Arthur S. “The Internal Constitution of Stars.” <span class="italic-text">The Observatory</span> 43, no. 557 (1920): 233–40.</p>
-<p>Eiseley, Loren C. “Is Man Alone in Space?’ <span class="italic-text">Scientific American</span> 189 (1953): 80-87.</p>
-<p>Elster, Julius, and Hans Geitel. “Über die radioaktive Emanation in der atmosphärischen Luft.” <span class="italic-text">Physikalische Zeitschrift</span> 4, no. 199 (1903): 522–30.</p>
-<p>Esnault-Pelterie, Robert. “Considérations sur les résultats d’un allégement indéfini des moteurs.” <span class="italic-text">Journal de physique théorique et appliqué</span> 3, no. 1 (1913): 218–30.</p>
-<p>Fourier, Charles. <span class="italic-text">Théorie des quatre mouvements et des destinées générales</span>. Leipzig, 1808.</p>
-<p>Friedmann, Alexander. <span class="italic-text">Мир как пространство и время</span> [The World as Space and Time]. Academia, 1923.</p>
-<p>Gamow, George. <span class="italic-text">The Biography of the Earth</span>. Viking Press, 1941.</p>
-<p>———. <span class="italic-text">A Planet Called Earth</span>. Viking, 1963.</p>
-<p>Garrett Fisher, William E. “Our Expectation of Life.” <span class="italic-text">Daily Mail</span>, September 28, 1903, 4.</p>
-<p>Goddard, Robert H. “The Final Migration.” <span class="italic-text">Beyond Reality</span> 31 (1978): 20–23.</p>
-<p>———. <span class="italic-text">The Papers of Robert H. Goddard: 1898–1924</span>. Mc-Graw-Hill, 1970.</p>
-<p>Haldane, John B. S. <span class="italic-text">The Last Judgement</span>. Harper & Bros, 1927.</p>
-<p>Helmholtz, Hermann. “On the Interaction of Natural Forces.” <span class="italic-text">Philosophical Magazine</span> 11 (1856): 489–578.</p>
-<p>———. “Ueber die Entstehung des Planetensystems.” In <span class="italic-text">Vorträge & Reden</span>. Braunschweig, 1884.</p>
-<p>Hippolytus. <span class="italic-text">Refutation of All Heresies</span>, translated by M. David Litwa. SBL Press, 2016.</p>
-<p>Hoffer, William. “Looking Up to Know Ourselves.” <span class="italic-text">Mosaic</span> (September/October 1980): 40.</p>
-<p>Holmes, Arthur. <span class="italic-text">The Age of the Earth</span>. Harper & Bros., 1913.</p>
-<p>———. “An Estimate of the Age of the Earth.” <span class="italic-text">Nature</span> 157 (1947): 127–28.</p>
-<p>Hoyle, Fred. <span class="italic-text">Of Men and Galaxies</span>. Heinemann, 1964.</p>
-<p>Hutton, James. ‘Theory of the Earth; or an Investigation of the Laws Observable in the Composition, Dissolution, and Restoration of Land upon the Globe’, <span class="italic-text">Transactions of the Royal Society of Edinburgh</span>, 1:2 (1788), 304.</p>
-<p>———. <span class="italic-text">Theory of the Earth, with Proofs & Illustrations</span>. Geological Society, 1795.</p>
-<p>Huxley, Thomas H. “Evolution & Ethics II.” <span class="italic-text">Popular Science Monthly</span> 41 (1893), 178–191.</p>
-<p>Ingersoll, Andrew P. “The Runaway Greenhouse: A History of Water on Venus.” <span class="italic-text">Journal of the Atmospheric Sciences</span> 26, no. 6 (1969): 1191–98.</p>
-<p>Islam, Jamal N. <span class="italic-text">The Ultimate Fate of the Universe</span>. Cambridge University Press, 2009.</p>
-<p>Jeans, James. “Annihilation of Matter.” <span class="italic-text">Nature</span> 3220 (supplement 1931), 103–10.</p>
-<p>———. <span class="italic-text">Eos: Or, The Wider Aspects of Cosmogony</span>. Kegan Paul, 1928.</p>
-<p>———. <span class="italic-text">The Universe Around Us</span>. Cambridge University Press, 1929.</p>
-<p>———. <span class="italic-text">The Universe Around Us</span>, 4th ed. Cambridge University Press.</p>
-<p>———. “Wider Aspects of Cosmogony.” <span class="italic-text">Nature</span> 26, no. 5 (1928): 454–63.</p>
-<p>Koestler, Arthur. “The Boredom of Fantasy.” <span class="italic-text">The Listener</span> 49, no. 1265 (1953): 893.</p>
-<p>Baynard Klein, L. M. “Huxley’s Evolution & Ethics.” <span class="italic-text">Dublin Review</span> 113 (1893): 598.</p>
-<p>Knopf, Alfred. “Age of the Earth—Summary of Principal Results.” <span class="italic-text">Physics of the Earth, part 4: The Age of the Earth</span>. National Research Council of the National Academy of Sciences, Bulletin 80. The National Academies Press, 1939.</p>
-<p>Kragh, Helge. “The Source of Solar Energy, ca. 1840-1910: From Meteoric Hypothesis to Radioactive Speculations.” <span class="italic-text">European Physics Journal H</span> 41 (2016): 365–94.</p>
-<p>Landes, Richard. “Lest the Millennium Be Fulfilled.” In <span class="italic-text">The Use and Abuse of Eschatology  in the Middle Ages</span>, edited by Werner Verbeke, Daniël Verhelst, and Andries Welkenhuysen. Leuven University Press, 1988.</p>
-<p>Leakey, Richard E., and Roger Lewin. <span class="italic-text">The Sixth Extinction: Patterns of Life and the Future of Humankind</span>. Doubleday, 1995.</p>
-<p>Lemaître, Georges. <span class="italic-text">The Primeval Atom: An Essay on Cosmogony</span>. Van Nostrand, 1950.</p>
-<p>Lomonosov, Mikhail. <span class="italic-text">Первые основания металлургии или рудных дел</span> [First Foundations of Metallurgy or Mininig]. St Petersburg, 1763.</p>
-<p>Lucretius. <span class="italic-text">On the Nature of Things</span>, translated by Martin Ferguson Smith. Hackett, 2001.</p>
-<p>Lyell, Charles. <span class="italic-text">Principles of Geology</span>. William Clowes, 1830.</p>
-<p>Millikan, Robert A., and Frank P. Stockbridge. “When the Sun Goes Cold.” <span class="italic-text">Popular Science</span> (March 1929): 141.</p>
-<p>Newcomb, Simon. <span class="italic-text">Popular Astronomy</span>. Harper & Brothers, 1878.</p>
-<p>ÓhÉigeartaigh, Sean. “Extinction of the Human Species: What Could Cause it and How Likely Is it to Occur?” <span class="italic-text">Cambridge Prisms: Extinction</span> 3 (2025): e4.</p>
-<p>Öpik, Ernst. “Our Cosmic Destiny.” <span class="italic-text">Irish Astronomical Journal</span> 11, no. 4 (1973): 113–24.</p>
-<p>Olbers, Wilhelm. “Über die Möglichkeit, daß ein Comet mit der Erde zusammenstoßen könne.” <span class="italic-text">Monatliche Correspondenz zur Beförderung der Erd- und Himmelskunde</span> 22 (1810): 409–50.</p>
-<p>Ozaki, Kazumi, and Christopher T. Reinhard, “The Future Lifespan of Earth’s Oxygenated Atmosphere.” <span class="italic-text">Nature Geoscience</span> 14 (2021): 138-142.</p>
-<p>Penzias, Arno A., and Robert W. Wilson. “A Measurement of Excess Antennae Temperature at 4080 Mc/s.” <span class="italic-text">Astrophysical Journal Letters</span> 142 (1965): 419–21.</p>
-<p>Plato. <span class="italic-text">The Laws</span>, translated by Tom Griffith. Cambridge University Press, 2016.</p>
-<p>———. <span class="italic-text">Timaeus & Critias</span>, translated by Robin Waterfield. Oxford University Press, 2008.</p>
-<p>Robertson, Howard P. “On Relativistic Cosmology.” <span class="italic-text">Philosophical Magazine & Journal of Science</span> 5, no. 31 (1933): 835–48.</p>
-<p>Russell, Henry N. “The Time-Scale of the Universe.” <span class="italic-text">Science</span> 92, no. 2376 (1940): 19–27.</p>
-<p>Rutherford, Ernest. “Some Cosmical Aspects of Radioactivity.” <span class="italic-text">Journal of the Royal Astronomical Society of Canada</span> 1, no. 3 (1907): 145–65.</p>
-<p>Sagan, Carl, and George Mullen. “Earth and Mars: Evolution of Atmospheres and Surface Temperatures.” <span class="italic-text">Science</span> 177, no. 4043 (1972): 52–56.</p>
-<p>Schedel, Hartmann. <span class="italic-text">Liber chronicarum</span>. Nuremberg, 1493.</p>
-<p>Sellars, Wilfrid S. “Philosophy and the Scientific Image of Man.” In <span class="italic-text">Frontiers of Science and Philosophy</span>, edited by Robert G. Colodny. University of Pittsburgh Press, 1962.</p>
-<p>Swagman, A. ‘Ingle-Hook’, <span class="italic-text">The Western Star</span>, Wednesday June 19th (1892), 3.</p>
-<p>Thomson, William. “The Age of the Earth as an Abode Fitted for Life.” <span class="italic-text">Annual Report of the Smithsonian Institution</span> (1897): 337–57.</p>
-<p>———. “Age of the Sun’s Heat.” <span class="italic-text">Macmillan’s Magazine</span>, March 5, 1862, 293.</p>
-<p>———. “On the Mechanical Energies of the Solar System.” <span class="italic-text">Transaction of the Royal Society of Edinburgh</span> 21 (1854): 63-80.</p>
-<p>———. On the Secular Cooling of the Earth.” Nature, <span class="italic-text">Transactions of the Royal Society of Edinburgh</span> 153 (1863): 157–70.</p>
-<p>Tolman, Richard C., “On the Possible Line Elements for the Universe”, <span class="italic-text">Proceedings of the National Academy of Sciences</span> 15 (1929): 297-304.</p>
-<p>Tyndall, John. <span class="italic-text">Heat Considered as a Mode of Motion</span>. D. Appleton and Company, 1863.</p>
-<p>Ussher, James. <span class="italic-text">Annales Veteris Testamenti, a Prima Mundi Origine Deducti</span>. London, 1650.</p>
-<p>Ward, Frank Lester, “Mars and its Lesson”, <span class="italic-text">Brown Alumni Monthly</span> 7, no. 8 (1907): 159-165.</p>
-<p>Wolf, Eric T., and Owen B. Toon. “The Evolution of Habitable Climates Under the Brightening Sun.” <span class="italic-text">JGR Atmospheres</span> 120, no. 12 (2015): 5775–94.</p>
-<p>Young, Charles A. <span class="italic-text">The Sun</span>. New York, 1881.</p>
+<p>Adams, Fred, and Gregory Laughlin. <i>The Five Ages of the Universe</i>. Free Press, 1999.</p>
+<p>Anonymous. “Alarming Situation.” <i>Durham Globe</i>, May 16, 1892, 2.</p>
+<p>Anthony, Sean W. “Muḥammad, the Keys to Paradise, and the Doctrina Iacobi: A Late Antique Puzzle.” <i>Der Islam</i> 91, no. 2 (2014): 243–65.</p>
+<p>Aristotle. <i>The Complete Works of Aristotle: The Revised Oxford Translation</i>, vol. 2, edited by Jonathan Barnes. Princeton University Press, 1984.</p>
+<p>Roger Bacon, Roger. <i>Opus maius, pars quarta</i>,  vol. 2, translated by Robert B. Burke. University of Pennsylvania Press, 1928.</p>
+<p>Ball, Robert S. “How Long Can the Earth Sustain Life?” <i>Fortnightly Review</i> 51 (1892): 478-490</p>
+<p>Balzac, Honoré de. <i>La Peau de chagrin</i>. Paris, 1831.</p>
+<p>Blumenberg, Hans. <i>The Genesis of the Copernican World</i>, trans. Robert M. Wallace. MIT Press, 1989.</p>
+<p>Bondi, Hermann and Thomas Gold, “The Steady-State Theory of the Expanding Universe.” <i>Monthly Notices of the Royal Astronomical Society</i> 108, no. 3 (1948): 252–70.</p>
+<p>Browne, Thomas. <i>Hydriotaphia, Urne Buriall, or, a Discourse of the Sepulchrall Urnes Lately Found in Norfolk</i>. London, 1658.</p>
+<p>Brundage, Burr C. <i>Fifth Sun: Aztec Gods, Aztec World</i>. University of Texas Press, 2014.</p>
+<p>Buffon, Georges-Louis Leclerc, Comte de. <i>Histoire naturelle, générale et particuliére</i>. Paris, 1749-1804.</p>
+<p>Chambers, Robert. <i>Vestiges of the Natural History of Creation</i>. W.& R. Chambers, 1884.</p>
+<p> Cicero. <i>De Re Publica: Selections</i>, edited by  James E. G. Zetzel. Cambridge University Press, 1995.</p>
+<p>Columbus, Christopher. <i>The Book of Prophecies</i>, edited Blair Sullivan. Wipf & Stock, 2004.</p>
+<p>Copernicus, Nicolaus. <i>De revolutionibus orbium coelestium</i>. Johannes Petreius, 1543.</p>
+<p>Craig, John. <i>Theologiae Christianae Principia Mathematica</i>. London, 1699.</p>
+<p>Dalrymple, G. Brent. <i>The Age of the Earth</i> (Stanford: Stanford University Press, 1991), 14-17.</p>
+<p>Darwin, George H. “Radio-Activity and the Age of the Sun.” <i>Nature</i> 68 (1903): 496.</p>
+<p>de Maillet, Benoit. <i>Telliamed; or, Conversations between an Indian Philosopher and a French Missionary on the Diminution of the Sea</i>, translated by Albert V. Carozzi. University of Illinois Press, 1968.</p>
+<p>———. <i>Telliamed: or, Discourses Between an Indian Philosopher and a French Missionary, on the Diminution of the Sea, the Formation of the Earth, the Origin of Men and Animals, and Other Curious Subjects, Relating to Natural History and Philosophy. Being a Translation from the French Original</i>. T. Osborne, 1750.</p>
+<p>de Mairan, Jean-Jacques D. <i>Lettres de M. de Mairan, au R. P. Parrenin, missionnaire de la Compagnie de Jesus, à Peki: contentant diverse questions sur las Chine</i>. Paris: Imprimerie Royale, 1759.</p>
+<p>de Sales, Jean-Baptiste-Claude. <i>De la philosophie de la nature</i>. London, 1777.</p>
+<p>Dicus, Duane A., John R. Letaw, Doris C. Teplitz, and Vigdor L. Teplitz. “The Future of the Universe.” <i>Scientific American</i> 248 (1983): 74–85.</p>
+<p>Eddington, Arthur S. “The Internal Constitution of Stars.” <i>The Observatory</i> 43, no. 557 (1920): 233–40.</p>
+<p>Eiseley, Loren C. “Is Man Alone in Space?’ <i>Scientific American</i> 189 (1953): 80-87.</p>
+<p>Elster, Julius, and Hans Geitel. “Über die radioaktive Emanation in der atmosphärischen Luft.” <i>Physikalische Zeitschrift</i> 4, no. 199 (1903): 522–30.</p>
+<p>Esnault-Pelterie, Robert. “Considérations sur les résultats d’un allégement indéfini des moteurs.” <i>Journal de physique théorique et appliqué</i> 3, no. 1 (1913): 218–30.</p>
+<p>Fourier, Charles. <i>Théorie des quatre mouvements et des destinées générales</i>. Leipzig, 1808.</p>
+<p>Friedmann, Alexander. <i>Мир как пространство и время</i> [The World as Space and Time]. Academia, 1923.</p>
+<p>Gamow, George. <i>The Biography of the Earth</i>. Viking Press, 1941.</p>
+<p>———. <i>A Planet Called Earth</i>. Viking, 1963.</p>
+<p>Garrett Fisher, William E. “Our Expectation of Life.” <i>Daily Mail</i>, September 28, 1903, 4.</p>
+<p>Goddard, Robert H. “The Final Migration.” <i>Beyond Reality</i> 31 (1978): 20–23.</p>
+<p>———. <i>The Papers of Robert H. Goddard: 1898–1924</i>. Mc-Graw-Hill, 1970.</p>
+<p>Haldane, John B. S. <i>The Last Judgement</i>. Harper & Bros, 1927.</p>
+<p>Helmholtz, Hermann. “On the Interaction of Natural Forces.” <i>Philosophical Magazine</i> 11 (1856): 489–578.</p>
+<p>———. “Ueber die Entstehung des Planetensystems.” In <i>Vorträge & Reden</i>. Braunschweig, 1884.</p>
+<p>Hippolytus. <i>Refutation of All Heresies</i>, translated by M. David Litwa. SBL Press, 2016.</p>
+<p>Hoffer, William. “Looking Up to Know Ourselves.” <i>Mosaic</i> (September/October 1980): 40.</p>
+<p>Holmes, Arthur. <i>The Age of the Earth</i>. Harper & Bros., 1913.</p>
+<p>———. “An Estimate of the Age of the Earth.” <i>Nature</i> 157 (1947): 127–28.</p>
+<p>Hoyle, Fred. <i>Of Men and Galaxies</i>. Heinemann, 1964.</p>
+<p>Hutton, James. ‘Theory of the Earth; or an Investigation of the Laws Observable in the Composition, Dissolution, and Restoration of Land upon the Globe’, <i>Transactions of the Royal Society of Edinburgh</i>, 1:2 (1788), 304.</p>
+<p>———. <i>Theory of the Earth, with Proofs & Illustrations</i>. Geological Society, 1795.</p>
+<p>Huxley, Thomas H. “Evolution & Ethics II.” <i>Popular Science Monthly</i> 41 (1893), 178–191.</p>
+<p>Ingersoll, Andrew P. “The Runaway Greenhouse: A History of Water on Venus.” <i>Journal of the Atmospheric Sciences</i> 26, no. 6 (1969): 1191–98.</p>
+<p>Islam, Jamal N. <i>The Ultimate Fate of the Universe</i>. Cambridge University Press, 2009.</p>
+<p>Jeans, James. “Annihilation of Matter.” <i>Nature</i> 3220 (supplement 1931), 103–10.</p>
+<p>———. <i>Eos: Or, The Wider Aspects of Cosmogony</i>. Kegan Paul, 1928.</p>
+<p>———. <i>The Universe Around Us</i>. Cambridge University Press, 1929.</p>
+<p>———. <i>The Universe Around Us</i>, 4th ed. Cambridge University Press.</p>
+<p>———. “Wider Aspects of Cosmogony.” <i>Nature</i> 26, no. 5 (1928): 454–63.</p>
+<p>Koestler, Arthur. “The Boredom of Fantasy.” <i>The Listener</i> 49, no. 1265 (1953): 893.</p>
+<p>Baynard Klein, L. M. “Huxley’s Evolution & Ethics.” <i>Dublin Review</i> 113 (1893): 598.</p>
+<p>Knopf, Alfred. “Age of the Earth—Summary of Principal Results.” <i>Physics of the Earth, part 4: The Age of the Earth</i>. National Research Council of the National Academy of Sciences, Bulletin 80. The National Academies Press, 1939.</p>
+<p>Kragh, Helge. “The Source of Solar Energy, ca. 1840-1910: From Meteoric Hypothesis to Radioactive Speculations.” <i>European Physics Journal H</i> 41 (2016): 365–94.</p>
+<p>Landes, Richard. “Lest the Millennium Be Fulfilled.” In <i>The Use and Abuse of Eschatology  in the Middle Ages</i>, edited by Werner Verbeke, Daniël Verhelst, and Andries Welkenhuysen. Leuven University Press, 1988.</p>
+<p>Leakey, Richard E., and Roger Lewin. <i>The Sixth Extinction: Patterns of Life and the Future of Humankind</i>. Doubleday, 1995.</p>
+<p>Lemaître, Georges. <i>The Primeval Atom: An Essay on Cosmogony</i>. Van Nostrand, 1950.</p>
+<p>Lomonosov, Mikhail. <i>Первые основания металлургии или рудных дел</i> [First Foundations of Metallurgy or Mininig]. St Petersburg, 1763.</p>
+<p>Lucretius. <i>On the Nature of Things</i>, translated by Martin Ferguson Smith. Hackett, 2001.</p>
+<p>Lyell, Charles. <i>Principles of Geology</i>. William Clowes, 1830.</p>
+<p>Millikan, Robert A., and Frank P. Stockbridge. “When the Sun Goes Cold.” <i>Popular Science</i> (March 1929): 141.</p>
+<p>Newcomb, Simon. <i>Popular Astronomy</i>. Harper & Brothers, 1878.</p>
+<p>ÓhÉigeartaigh, Sean. “Extinction of the Human Species: What Could Cause it and How Likely Is it to Occur?” <i>Cambridge Prisms: Extinction</i> 3 (2025): e4.</p>
+<p>Öpik, Ernst. “Our Cosmic Destiny.” <i>Irish Astronomical Journal</i> 11, no. 4 (1973): 113–24.</p>
+<p>Olbers, Wilhelm. “Über die Möglichkeit, daß ein Comet mit der Erde zusammenstoßen könne.” <i>Monatliche Correspondenz zur Beförderung der Erd- und Himmelskunde</i> 22 (1810): 409–50.</p>
+<p>Ozaki, Kazumi, and Christopher T. Reinhard, “The Future Lifespan of Earth’s Oxygenated Atmosphere.” <i>Nature Geoscience</i> 14 (2021): 138-142.</p>
+<p>Penzias, Arno A., and Robert W. Wilson. “A Measurement of Excess Antennae Temperature at 4080 Mc/s.” <i>Astrophysical Journal Letters</i> 142 (1965): 419–21.</p>
+<p>Plato. <i>The Laws</i>, translated by Tom Griffith. Cambridge University Press, 2016.</p>
+<p>———. <i>Timaeus & Critias</i>, translated by Robin Waterfield. Oxford University Press, 2008.</p>
+<p>Robertson, Howard P. “On Relativistic Cosmology.” <i>Philosophical Magazine & Journal of Science</i> 5, no. 31 (1933): 835–48.</p>
+<p>Russell, Henry N. “The Time-Scale of the Universe.” <i>Science</i> 92, no. 2376 (1940): 19–27.</p>
+<p>Rutherford, Ernest. “Some Cosmical Aspects of Radioactivity.” <i>Journal of the Royal Astronomical Society of Canada</i> 1, no. 3 (1907): 145–65.</p>
+<p>Sagan, Carl, and George Mullen. “Earth and Mars: Evolution of Atmospheres and Surface Temperatures.” <i>Science</i> 177, no. 4043 (1972): 52–56.</p>
+<p>Schedel, Hartmann. <i>Liber chronicarum</i>. Nuremberg, 1493.</p>
+<p>Sellars, Wilfrid S. “Philosophy and the Scientific Image of Man.” In <i>Frontiers of Science and Philosophy</i>, edited by Robert G. Colodny. University of Pittsburgh Press, 1962.</p>
+<p>Swagman, A. ‘Ingle-Hook’, <i>The Western Star</i>, Wednesday June 19th (1892), 3.</p>
+<p>Thomson, William. “The Age of the Earth as an Abode Fitted for Life.” <i>Annual Report of the Smithsonian Institution</i> (1897): 337–57.</p>
+<p>———. “Age of the Sun’s Heat.” <i>Macmillan’s Magazine</i>, March 5, 1862, 293.</p>
+<p>———. “On the Mechanical Energies of the Solar System.” <i>Transaction of the Royal Society of Edinburgh</i> 21 (1854): 63-80.</p>
+<p>———. On the Secular Cooling of the Earth.” Nature, <i>Transactions of the Royal Society of Edinburgh</i> 153 (1863): 157–70.</p>
+<p>Tolman, Richard C., “On the Possible Line Elements for the Universe”, <i>Proceedings of the National Academy of Sciences</i> 15 (1929): 297-304.</p>
+<p>Tyndall, John. <i>Heat Considered as a Mode of Motion</i>. D. Appleton and Company, 1863.</p>
+<p>Ussher, James. <i>Annales Veteris Testamenti, a Prima Mundi Origine Deducti</i>. London, 1650.</p>
+<p>Ward, Frank Lester, “Mars and its Lesson”, <i>Brown Alumni Monthly</i> 7, no. 8 (1907): 159-165.</p>
+<p>Wolf, Eric T., and Owen B. Toon. “The Evolution of Habitable Climates Under the Brightening Sun.” <i>JGR Atmospheres</i> 120, no. 12 (2015): 5775–94.</p>
+<p>Young, Charles A. <i>The Sun</i>. New York, 1881.</p>
 <p></p>
 <p></p>
 </div>
