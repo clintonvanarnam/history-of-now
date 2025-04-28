@@ -1069,6 +1069,8 @@ window.addEventListener('load', () => {
 
     function formatEntryData(entry) {
         const keysToInclude = {
+            "PAST AGE OF UNIVERSE": "Past Age of Universe",
+            "FUTURE FOR LIFE IN WIDER UNIVERSE": "Future for Life in Universe",
             "FUTURE HABITABILITY ON EARTH": "Future Earth Habitability",
             "EXPLANATION TYPE": "Explanation Type",
             "KILL MECHANISM": "Kill Mechanism",

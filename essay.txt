@@ -85,7 +85,7 @@
 <p>In 1493, German writer <span class="name-highlight"> Hartmann Schedel </span> set out to compile a chronicle of time in its total compendium—stretching from Creation to apocalypse. At the end of the book, he left blank pages for his readers to fill in and record history’s remaining episodes themselves. The entire volume was roughly three hundred pages long. Schedel left only six blank pages for time’s remaining episodes.</p>
 
 <div class="image-caption">
-  <img src="assets/photos/schedel.png" alt="The blank pages Schedel inserted at the end of his Liber Chronicarum" />
+  <img src="assets/photos/3.jpg" alt="The blank pages Schedel inserted at the end of his Liber Chronicarum" />
   <div class="caption">The blank pages Schedel inserted at the end of his Liber Chronicarum, representing the remaining history yet to be written, ca. 1493.</div>
 </div>
 
@@ -395,7 +395,7 @@ and immolating Earth, from 1947.</div>
 <p>It didn’t take long for scientists to start arguing that our neighboring planet was not always so hellish. In the Solar System’s early days, Venus may have been quite clement, oceanic, even habitable. But then, something happened to trigger its terrible transformation. In 1969, Andrew P. Ingersoll proposed the “runaway greenhouse effect” as an explanation. This describes a process whereby increases in temperature cause water to evaporate, causing heightened atmospheric heat retention and triggering temperatures to continue rising in a reinforcing loop.</p>
 
 <div class="image-caption">
-  <img src="assets/photos/probe-landing.jpg" alt="Painting of the Soviet’s Venera IV Probe landing on Venus's surface in 1967." />
+  <img src="assets/photos/19.jpg" alt="Painting of the Soviet’s Venera IV Probe landing on Venus's surface in 1967." />
   <div class="caption">Painting of the Soviet’s Venera IV Probe landing on Venus's surface in 1967.</div>
 </div>
 
