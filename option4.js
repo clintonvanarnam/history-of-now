@@ -283,37 +283,37 @@ window.addEventListener('load', () => {
         const minYear = Math.min(...years);
         const maxYear = Math.max(...years);
         const allYears = Array.from({ length: maxYear - minYear + 1 }, (_, i) => (minYear + i).toString());
-
+    
         // Track which years we've already created text for
         const yearTextCreated = {};
-
+    
         // Track how many data entries we've seen for each year (for offset calculation)
         const yearDataCount = {};
-
+    
         // Get all data entries first, then add dummy entries for years without data
         const dataEntries = data.Sheet1.slice(); // Clone data
-
+    
         // Add dummy entries for years that don't have data
         allYears.forEach(year => {
             if (!dataEntries.some(entry => entry.DATE === year)) {
                 dataEntries.push({ DATE: year });
             }
         });
-
+    
         // Sort entries by year
         dataEntries.sort((a, b) => parseInt(a.DATE) - parseInt(b.DATE));
-
+    
         // Store for reference
         entries = dataEntries;
-
+    
         // Process each entry
         entries.forEach((entry) => {
             const yearNum = parseInt(entry.DATE);
             const isDummy = Object.keys(entry).length === 1;
-
+    
             // Skip dummy entries that aren't decades
             if (isDummy && yearNum % 10 !== 0) return;
-
+    
             // Calculate offset for data visualization if this is a duplicate
             let offset = 0;
             let duplicateOffset = 5;
@@ -324,19 +324,21 @@ window.addEventListener('load', () => {
                 offset = yearDataCount[yearNum] * duplicateOffset;
                 yearDataCount[yearNum]++;
             }
-
+    
+            // Determine if this is a cosmological entry
+            const isCosmological = !isDummy && (
+                entry["PAST AGE OF UNIVERSE"] || 
+                entry["FUTURE FOR LIFE IN WIDER UNIVERSE"]
+            );
+    
+            // Set the color for both text and labels
+            const labelColor = isDummy ? 0x000000 : (isCosmological ? COSMOLOGICAL_COLOR : DATA_COLOR);
+    
             // Create text only once per year  
             if (!yearTextCreated[yearNum]) {
-                // 1) size & font
                 const textSize = isDummy ? 50 : 5;
                 const fontToUse = isDummy ? lightFont : regularFont;
-
-                // Determine if this is a cosmological entry
-                const isCosmological = !isDummy && (
-                    entry["PAST AGE OF UNIVERSE"] || 
-                    entry["FUTURE FOR LIFE IN WIDER UNIVERSE"]
-                );
-
+    
                 const textGeometry = new THREE.TextGeometry(entry.DATE.toString(), {
                     font: fontToUse,
                     size: textSize,
@@ -346,23 +348,11 @@ window.addEventListener('load', () => {
                 textGeometry.computeBoundingBox();
                 const xOffsetGeo = -textGeometry.boundingBox.min.x;
                 textGeometry.translate(xOffsetGeo, 0, 0);
-
-                // 2) positions (must define these)
+    
                 const yPosition = -10;
                 const zPosition = -((maxYear - yearNum) * 10);
                 const xPosition = isDummy ? 0 : -18;
-
-                // 3) choose color
-                let labelColor;
-                if (isDummy) {
-                    labelColor = 0x000000;                     // decade labels
-                } else if (isCosmological) {
-                    labelColor = COSMOLOGICAL_COLOR;           // cosmological years
-                } else {
-                    labelColor = DATA_COLOR;                   // normal data years
-                }
-
-                // 4) build mesh
+    
                 const material = new THREE.MeshBasicMaterial({
                     color: labelColor,
                     side: THREE.DoubleSide
@@ -378,7 +368,7 @@ window.addEventListener('load', () => {
                 textMesh.name = `Year_${entry.DATE}`;
                 scene.add(textMesh);
                 textMeshes.push(textMesh);
-
+    
                 // Optional decade line
                 if (isDummy && yearNum % 10 === 0) {
                     const lineMat = new THREE.MeshBasicMaterial({ color: 0x000000 });
@@ -387,10 +377,10 @@ window.addEventListener('load', () => {
                     line.position.set(0, yPosition, zPosition);
                     scene.add(line);
                 }
-
+    
                 yearTextCreated[yearNum] = true;
             }
-
+    
             // Draw decade year text if it coincides with a data year
             if (!isDummy && yearNum % 10 === 0) {
                 const textSize = 50;
@@ -403,7 +393,7 @@ window.addEventListener('load', () => {
                 textGeometry.computeBoundingBox();
                 const xOffset = -textGeometry.boundingBox.min.x;
                 textGeometry.translate(xOffset, 0, 0);
-
+    
                 const material = new THREE.MeshBasicMaterial({
                     color: 0x000000,
                     side: THREE.DoubleSide
@@ -415,14 +405,13 @@ window.addEventListener('load', () => {
                 textMesh.rotation.x = -Math.PI / 2;
                 textMesh.userData = {
                     isYear: true,
-                    entry: entry, // ← must exist for the highlight logic to work
-
+                    entry: entry,
                     originalColor: 0x000000
                 };
                 textMesh.name = `Decade_${entry.DATE}`;
                 scene.add(textMesh);
                 textMeshes.push(textMesh);
-
+    
                 const lineMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
                 const lineGeometry = new THREE.BoxGeometry(2000, 0.25, 0.25);
                 const line = new THREE.Mesh(lineGeometry, lineMaterial);
