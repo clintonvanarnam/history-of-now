@@ -110,6 +110,11 @@ body.dark-mode .essay-container {
   background-color: #090909;
   color: #fff;
 }
+body.dark-mode .text-controls label,
+body.dark-mode .text-controls,
+body.dark-mode .sub-author {
+  color: white;
+}
 
 .fullscreen-icon.dark-mode {
   filter: invert(100%);
