@@ -30,9 +30,9 @@ window.addEventListener('load', () => {
     // Define camera positions with a targetScale property
     const cameraPositions = [
         { //0
-            position: { x: 0, y: 628.5, z: 349 },
-            rotation: { x: -0.68, y: 0, z: 0 },
-            targetScale: 3163005
+            position: { x: 0, y: 970.49, z: -1024.30 },
+            rotation: { x: -1.57, y: 0, z: 0 },
+            targetScale: 12592153.2345884
         },
         {  //1
             position: { x: 0, y: 181.5, z: -23482.40 },
@@ -99,6 +99,71 @@ window.addEventListener('load', () => {
             position: { x: 0, y: 234.9, z: -947 },
             rotation: { x: -0.48, y: 0, z: 0 },
             targetScale: 1000230
+        },
+        { //14
+            position: { x: 0, y: 349.9, z: -679.5 },
+            rotation: { x: -0.54, y: 0, z: 0 },
+            targetScale: 10002.302850208242
+        },
+        { //15
+            position: { x: 0, y: 349.9, z: -585 },
+            rotation: { x: -0.54, y: 0, z: 0 },
+            targetScale: 10002.302850208242
+        },
+        { //16
+            position: { x: 0, y: 165.3, z: -602 },
+            rotation: { x: -0.54, y: 0, z: 0 },
+            targetScale: 10002.302850208242
+        },
+        { //17
+            position: { x: 0, y: 746.39, z: -530.7 },
+            rotation: { x: -0.82, y: 0, z: 0 },
+            targetScale: 10002.302850208242
+        },
+        { //18
+            position: { x: 0, y: 297.79, z: -552.10 },
+            rotation: { x: -0.68, y: 0, z: 0 },
+            targetScale: 10002.302850208242
+        },
+        { //19
+            position: { x: 0, y: 140.28, z: -669.70 },
+            rotation: { x: -1.4, y: 0, z: 0 },
+            targetScale: 15852.581696229441
+        },
+        { //20
+            position: { x: 0, y: 220.780, z: -295.50 },
+            rotation: { x: -0.42, y: 0, z: 0 },
+            targetScale: 15852.581696229441
+        },
+        { //21
+            position: { x: 0, y: 284.76, z: -155.90 },
+            rotation: { x: -0.42, y: 0, z: 0 },
+            targetScale: 15852.581696229441
+        },
+        { //22
+            position: { x: 0, y: 386.75, z: 41.199 },
+            rotation: { x: -0.42, y: 0, z: 0 },
+            targetScale: 7945.111566183569
+        },
+        { //23
+            position: { x: 0, y: 444.74, z: 252.29 },
+            rotation: { x: -0.46, y: 0, z: 0 },
+            targetScale: 199.57217939926332
+        },
+        { //24
+            position: { x: 0, y: 596.23, z: 499.59 },
+            rotation: { x: -0.459, y: 0, z: 0 },
+            targetScale: 199.57217939926332
+        },
+        { //25
+            position: { x: 0, y: 285.67, z: 249.58 },
+            rotation: { x: -0.4590, y: 0, z: 0 },
+            targetScale: 25124.648813287706
+        },
+        { //26
+            position: { x: 0, y: 393.17, z: -154.81 },
+            rotation: { x: -1.57, y: 0, z: 0 },
+            targetScale: 1000230.2850208242
         }
     ];
 
