@@ -59,6 +59,10 @@ p {
   font-family: 'Copernicus Book', serif;
 }
 
+b {
+  font-family: 'Copernicus Medium', serif;  
+}
+
 h1 {
   font-family: 'Cosmica Book', sans-serif;
   font-size: 140px;
@@ -497,11 +501,21 @@ input[type="range"]::-ms-thumb {
 }
 
 .block-quote{
-  font-family: 'Cosmica Medium', sans-serif;
-  font-size: 17px;
-  line-height: 24px;
+  font-family: 'Copernicus Medium', serif;
+  font-size: 14px;
+  line-height: 22px;
+  margin-block-end: 1em;
+  border-left: 1px solid #717171; /* or whatever color/weight you like */
+  padding-left: 16px; /* space between the line and text */
+  color: #171717;
 
-  padding-right: 150px;
+
+}
+
+.graph-reference{
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
 
 }
 

@@ -106,7 +106,7 @@ window.addEventListener('load', () => {
 
     // Global variables
     const DATA_COLOR = 0xff0000; // Red color
-    const COSMOLOGICAL_COLOR = 0x777777; // Purple color
+    const COSMOLOGICAL_COLOR = 0x176292; // Cosmological color changed from grey to #176292
     let scrollVelocity = 0;
     let scrollOffset = 0;
     let isTransitioning = false;
