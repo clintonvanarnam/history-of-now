@@ -131,6 +131,9 @@ body.dark-mode .caption,
 body.dark-mode .block-quote {
   color: white;
 }
+body.dark-mode .graph-reference{
+  background-color: #818181;
+}
 
 .fullscreen-icon.dark-mode {
   filter: invert(100%);
