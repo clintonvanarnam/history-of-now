@@ -271,7 +271,7 @@
     {
       "NAME": "Hermann von Helmholtz",
       "DATE": "1871",
-      "PAST AGE OF EARTH": "22,000,000,000",
+      "PAST AGE OF EARTH": "22,000,000",
       "FUTURE HABITABILITY ON EARTH": "17,000,000",
       "EXPLANATION TYPE": "Thermodynamic.",
       "KILL MECHANISM": "Solar aging & cooling.",
@@ -411,7 +411,6 @@
     {
       "NAME": "Arthur S. Eddington",
       "DATE": "1920",
-      "IMAGE CAPTION": "Arthur S. Eddington, 1882-1944.",
       "FUTURE HABITABILITY ON EARTH": "15,000,000,000",
       "EXPLANATION TYPE": "Nuclear physics.",
       "KILL MECHANISM": "Solar aging & cooling.",
@@ -428,7 +427,7 @@
     {
       "NAME": "Alexander Friedmann",
       "DATE": "1923",
-      "PAST AGE OF UNIVERSE": "10,000",
+      "PAST AGE OF UNIVERSE": "10,000,000,000",
       "EXPLANATION TYPE": "Relativistic physics.",
       "SOURCE": "Alexander Friedmann, Мир как пространство и время (Petrograd: Academia, 1923)."
     },

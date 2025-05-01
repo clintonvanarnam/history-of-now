@@ -930,7 +930,7 @@ window.addEventListener('load', () => {
                         scene.add(verticalCosmologicalLine);
                         verticalCosmologicalLines.push(verticalCosmologicalLine);
 
-                        const nameText = entry["NAME"] ? entry["NAME"].toUpperCase() : "UNKNOWN";
+                        const nameText = entry["NAME"] ? entry["NAME"] : "UNKNOWN";
                         const textString = `${nameText}\n${futureLifeUniverse}`;
                         const labelGeometry = new THREE.TextGeometry(textString, {
                             font: regularFont,

@@ -393,7 +393,6 @@ body, html {
 /* Style individual controls */
 .controls-container div {
   display: inlinne-flex;
-
   align-items: center;
 }
 
@@ -490,6 +489,11 @@ input[type="range"]::-ms-thumb {
   font-size: 17px;
   color: red;
 }
+
+.name-highlight-cosmic {
+  color: #176292;
+}
+
 .foot-notes {
   /* split into two columns */
   column-count: 2;
@@ -503,7 +507,6 @@ input[type="range"]::-ms-thumb {
   /* your existing font rules… */
   font-family: 'Cosmica Book', sans-serif !important;
   font-size:   16px               !important;
-
   /* add a top margin on every paragraph */
   margin-top: 1em;
 }
@@ -521,8 +524,7 @@ input[type="range"]::-ms-thumb {
   border-left: 1px solid #717171; 
   padding-left: 15px;
   padding-right: 125px;
-    color: #171717;
-
+  color: #171717;
 }
 
 .graph-reference{
@@ -626,4 +628,5 @@ input:checked + .slider:before {
   .fullscreen .scene-container {
     display: block !important;
   }
+
 }
