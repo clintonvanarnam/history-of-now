@@ -600,6 +600,9 @@ input:checked + .slider:before {
   .container {
     flex-direction: column;
   }
+  h1{
+    font-size: 6rem;
+  }
 
   .scene-container {
     width: 100%;
@@ -608,12 +611,15 @@ input:checked + .slider:before {
   }
 
   .essay-container {
-    display: block;
-    width: 100%;
-    height: 100vh;
-    overflow-y: scroll;
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
     padding-left: 20px;
     padding-right: 20px;
+  }
+  body, html {
+    overflow-x: hidden;
   }
 
   body.view-3d .scene-container {

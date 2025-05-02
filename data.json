@@ -452,6 +452,12 @@
       "NAME": "J.B.S. Haldane",
       "DATE": "1926",
       "FUTURE HABITABILITY ON EARTH": "1,000,000,000,000",
+      "EXPLANATION TYPE": "Speculative.",
+      "SOURCE": "J.B.S. Haldane, The Last Judgement (London: Harper's, 1927), 36."
+    },
+    {
+      "NAME": "J.B.S. Haldane",
+      "DATE": "1926",
       "FUTURE FOR LIFE IN WIDER UNIVERSE": "80,000,000,000,000",
       "EXPLANATION TYPE": "Speculative.",
       "SOURCE": "J.B.S. Haldane, The Last Judgement (London: Harper's, 1927), 36."
@@ -466,26 +472,44 @@
     {
       "NAME": "James Jeans",
       "DATE": "1928",
-      "PAST AGE OF THE UNIVERSE": "10,000,000,000,000",
       "PAST AGE OF EARTH": "7,000,000,000,000 - 8,000,000,000,000",
+      "EXPLANATION TYPE": "Geological.",
+      "SOURCE": "James Jeans, 'The Physics of the Universe', Supplement to Nature, 3079 (1928), 692-697."
+    },
+    {
+      "NAME": "James Jeans",
+      "DATE": "1928",
+      "PAST AGE OF THE UNIVERSE": "10,000,000,000,000",
       "EXPLANATION TYPE": "Cosmological (equipartition of stellar motions).",
       "SOURCE": "James Jeans, 'The Physics of the Universe', Supplement to Nature, 3079 (1928), 692-697."
     },
     {
       "NAME": "James Jeans",
       "DATE": "1929",
-      "PAST AGE OF THE UNIVERSE": "200,000,000,000,000",
       "PAST AGE OF EARTH": "2,000,000,000",
-      "PAST HABITABILITY": "300,000,000",
       "FUTURE HABITABILITY ON EARTH": "1,000,000,000,000",
-      "EXPLANATION TYPE": "Cosmological & nuclear physics.",
-      "KILL MECHANISM": "Solar aging & cooling."
+      "EXPLANATION TYPE": "Nuclear physics.",
+      "KILL MECHANISM": "Solar aging & cooling.",
+      "SOURCE": "James Jeans, The Universe Around Us (Cambridge: Cambridge University Press, 1928)."
+    },
+    {
+      "NAME": "James Jeans",
+      "DATE": "1929",
+      "PAST AGE OF THE UNIVERSE": "200,000,000,000,000",
+      "EXPLANATION TYPE": "Cosmological.",
+      "SOURCE": "James Jeans, The Universe Around Us (Cambridge: Cambridge University Press, 1928)."
+    },
+    {
+      "NAME": "E.W. Barnes",
+      "DATE": "1931",
+      "PAST AGE OF EARTH": "3,000,000,000",
+      "EXPLANATION TYPE": "Cosmological (probability of colliding suns).",
+      "SOURCE": "E.W. Barnes, 'Evolution of the Universe', Nature, 128 (1931), 710-722."
     },
     {
       "NAME": "E.W. Barnes",
       "DATE": "1931",
       "PAST AGE OF UNIVERSE": "5,000,000,000,000",
-      "PAST AGE OF EARTH": "3,000,000,000",
       "EXPLANATION TYPE": "Cosmological (equipartition of stellar motions).",
       "SOURCE": "E.W. Barnes, 'Evolution of the Universe', Nature, 128 (1931), 710-722."
     },
@@ -539,14 +563,21 @@
     {
       "NAME": "Henry Norris Russell",
       "DATE": "1940",
-      "PAST AGE OF UNIVERSE": "2,000,000,000",
       "PAST AGE OF EARTH": "1,800,000,000",
       "FUTURE HABITABILITY ON EARTH": "10,000,000,000",
+      "EXPLANATION TYPE": "Cosmological & nuclear physics.",
+      "KILL MECHANISM": "Solar aging.",
+      "SOURCE": "Henry Norris Russell,'The Time-Scale of the Universe', Science, 92:2376 (1940), 19-27."
+      },
+      {
+      "NAME": "Henry Norris Russell",
+      "DATE": "1940",
+      "PAST AGE OF UNIVERSE": "2,000,000,000",
       "FUTURE FOR LIFE IN WIDER UNIVERSE": "100,000,000,000",
       "EXPLANATION TYPE": "Cosmological.",
-      "KILL MECHANISM": "Solar aging (Earth); Heat death (wider universe).",
+      "KILL MECHANISM": "Heat death.",
       "SOURCE": "Henry Norris Russell,'The Time-Scale of the Universe', Science, 92:2376 (1940), 19-27."
-    },
+      },
     {
       "NAME": "Kirtley F. Mather",
       "DATE": "1940",
@@ -731,12 +762,19 @@
     {
       "NAME": "Fred Adams & Gregory P. Laughlin",
       "DATE": "1999",
-      "PAST AGE OF UNIVERSE": "10,000,000,000",
       "PAST AGE OF EARTH": "4,500,000,000",
       "FUTURE HABITABILITY ON EARTH": "3,000,000,000",
+      "EXPLANATION TYPE": "Climatological.",
+      "KILL MECHANISM": "Runaway greenhouse.",
+      "SOURCE": "F. Adams & G. Laughlin, The Five Ages of the Universe (New York: Free Press, 1999)."
+    },
+    {
+      "NAME": "Fred Adams & Gregory P. Laughlin",
+      "DATE": "1999",
+      "PAST AGE OF UNIVERSE": "10,000,000,000",
       "FUTURE FOR LIFE IN WIDER UNIVERSE": "1e,+40",
       "EXPLANATION TYPE": "Physical eschatology.",
-      "KILL MECHANISM": "Runaway greenhouse (Earth); Proton decay (wider universe).",
+      "KILL MECHANISM": "Proton decay.",
       "SOURCE": "F. Adams & G. Laughlin, The Five Ages of the Universe (New York: Free Press, 1999)."
     },
     {
