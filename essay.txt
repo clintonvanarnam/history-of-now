@@ -53,7 +53,7 @@
 <p>It’s easy to mistakenly assume that eternalist notions of time are similar to the vast durations revealed by modern science—described by the term <span class="italic-text">deep time</span>. But they couldn’t be more opposed. Depth is, by definition, measurable and bounded. Eternity, being boundless, lacks these qualities.</p>
 
 <div class="graph-reference">
-<p> On the left you will see a red dot — representing eternity as a singularity — given the inherent shallowness of eternal notions of time. As explained above, in eternity, there are no dimensions nor proportions, given all possibilities repeat without limit, such that it makes sense to represent articulations of the eternity of worldly time — here and below — in this way. </p>
+<p> <b>On the left</b> you will see a red dot — representing eternity as a singularity — given the inherent shallowness of eternal notions of time. As explained above, in eternity, there are no dimensions nor proportions, given all possibilities repeat without limit, such that it makes sense to represent articulations of the eternity of worldly time — here and below — in this way. </p>
 </div>
 
 <div class="image-caption">
@@ -93,7 +93,7 @@
 <p>In 1493, German writer Hartmann Schedel set out to compile a chronicle of time in its total compendium: stretching from Creation to apocalypse. At the end of the book, he left blank pages for his readers to fill in and record history’s remaining episodes themselves. The entire volume was roughly three hundred pages long. Schedel left only <span class="italic-text">six</span> blank pages for time’s remaining episodes.<span class="footnote" data-footnote="Schedel, <i>Liber chronicarum.</i>">[17]</span> This gives a sense of how shallow people, back then, felt their future would be.</p>
 
 <div class="image-caption">
-  <img src="assets/photos/schedel.png" alt="The blank pages Schedel inserted at the end of his Liber Chronicarum" />
+  <img src="assets/photos/schedel.jpg" alt="The blank pages Schedel inserted at the end of his Liber Chronicarum" />
   <div class="caption">The blank pages Schedel inserted at the end of his <i>Liber Chronicarum</i>, representing the remaining history yet to be written, ca. 1493.</div>
 </div>
 
@@ -319,7 +319,7 @@ everything thereafter, produced in 1928.</div>
 <p class="section-marker">§</p>
 
 <div class="graph-reference">
-<p>On the graph on the left, you will now see both red lines <span class="italic-text">and</span> blue ones. The red ones represent gauges of the past and future for Earth alone, whereas the blue ones represent the same for the wider universe as a whole. That is, they represent estimates of the amount of time the universe has taken to develop to its present state, as well as the magnitude of time that might be left ahead, during which this cosmos can host and house complex creatures like you or me.</p>
+<p><b>On the graph on the left</b>, you will now see both red lines <span class="italic-text">and</span> blue ones. The red ones represent gauges of the past and future for Earth alone, whereas the blue ones represent the same for the wider universe as a whole. That is, they represent estimates of the amount of time the universe has taken to develop to its present state, as well as the magnitude of time that might be left ahead, during which this cosmos can host and house complex creatures like you or me.</p>
 </div>
 <p class="section-marker">§</p>
 <p>These developments were also inspired, in part, by Skłodowska-Curie. In the 1930s, Belgian priest and physicist Georges Lemaître was the first to propose that the universe began with a primordial explosion. He argued that it began life as a “primeval atom” that explosively and spontaneously disintegrated, just like one of Skłodowska-Curie’s radioactive elements, bursting forth into the receding galaxies we see today. Poetically, he wrote:</p>
@@ -495,7 +495,7 @@ to a molten state—from 1987.</div>
 <p>But nothing is certain, nothing predestined; there’s no guarantee nor fate, for better or worse. Nor is there even any tendency or trend. First and foremost, and with utmost urgency, we must tend to our own garden. But that garden is now the entire planet, hurtling through space. Our interconnected world is increasingly imperiled, and novel technologies will only conjure forth further hazards and vulnerabilities. Yet fragility and freedom are sides of a coin. Whatever happens next—for terrestrial life, for tomorrow and tomorrow and tomorrow—will be built on decisions we make now, in our own fleeting ‘now’.</p>
 
 <div class="graph-reference">
-<p>Thank you for your interest and for reading this far. Please feel free to collapse the text on the right side of your screen by clicking the grey box in the top right of your screen: this will allow you to roam the datas freely and to explore the history of 'now' unshackled.</p>
+<p><b>Thank you</b> for your interest and for reading this far. Please feel free to collapse the text on the right side of your screen by clicking the grey box in the top right of your screen: this will allow you to roam the datas freely and to explore the history of 'now' unshackled.</p>
 </div>
 
 <h2>8—Bibliography</h2>

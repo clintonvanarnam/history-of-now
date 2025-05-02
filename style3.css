@@ -491,6 +491,8 @@ input[type="range"]::-ms-thumb {
 }
 
 .name-highlight-cosmic {
+  font-family: 'Cosmica Medium', sans-serif;
+  font-size: 17px;
   color: #176292;
 }
 
@@ -532,6 +534,7 @@ input[type="range"]::-ms-thumb {
   padding: 20px;
   border-radius: 10px;
   font-family: 'Cosmica Book', sans-serif;
+  margin-bottom: 20px;
 }
 
 .graph-reference p {
