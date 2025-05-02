@@ -101,6 +101,7 @@
 <h3>1.3—Early Modern (1500–1700)</h3>
 <p>In his so-called <span class="italic-text">Book of Prophecies</span>, written on his fourth and final expedition in the first years of the 1500s, <span class="name-highlight">Christopher Columbus</span>—citing the wisdom of prior Christian chroniclers—pronounces that creation is 6,845 years old and, therefore, “[b]y this count, only 155 years remain of the 7,000 years in which, according to the authorities cited above, the world must come to an end.” Such belief remained unanimous. In fact, Columbus fervently believed that his own <span class="italic-text">actions</span>—colonizing the Americas and forcibly converting its population to Christianity—were playing an active role in precipitating the end of the world.<span class="footnote" data-footnote="Columbus, <i>Book of Prophecies,</i> 71, 21-25.">[18]</span></p>
 <p>The Indigenous peoples who were later decimated by the Spanish conquest held similarly apocalyptic beliefs in their own doctrines. Examples are the Aztec and Nahua people, who believed the universe would abruptly end if they stopped offering blood to the gods.<span class="footnote" data-footnote="Brundage, <i>Fifth Sun.</i>">[19]</span></p>
+[Position 6]
 <p>The conviction that the end was near continued throughout Europe’s Renaissance, persisting well into the early modern period. During this time, methods for measuring the bookends of time remained scriptural. Around 1650, Irish theologian <span class="name-highlight"> James Ussher </span> famously calculated that the world was created in 4004 BCE and would end in around 2000 CE. He arrived at this conclusion, in part, by counting the chains of “begats” in the Old Testament: a way of tracing how many generations had passed since Adam.<span class="footnote" data-footnote="Ussher, <i>Annales veteris.</i>">[20]</span></p>
 
 <div class="image-caption">
@@ -114,9 +115,9 @@ James Ussher’s <i>Annales</i>, 1658.</div>
 <p>It thus remained orthodox to assume that the world was around five or six thousand years old and would last only a few more centuries. This sense, of living nearer to history’s culmination than to its beginning, affected how people <span class="italic-text">saw</span> their world and how they felt they should act. Writing in 1658, Sir Thomas Browne perfectly captured this overriding sentiment. “’Tis too late to be ambitious,” he declared:</p>
 <div class="block-quote">The great mutations of the world are acted, or time may be too short for our designes. . . . We whose generations are ordained in this setting part of time, [are] necessitated to eye the remaining particle of futurity, [and] cannot excusably [anticipate any future] duration, which maketh pyramids pillars of snow, and all that’s past a moment.<span class="footnote" data-footnote="Browne, <i>Hydriotaphia,</i> 73-74.">[21]</span></div>
 
-[Position 6]
+
 <p class="section-marker">§</p>
-<p>Expectations on the centuries left ahead could invariably be counted on the fingers of one hand. Even luminaries of the emerging scientific method, such as Isaac Newton, produced numerical prophecies—again based on scripture—predicting that the world would end sometime around 2060.</p>
+<p>Expectations on the centuries left ahead could invariably be counted on the fingers of one hand. Even luminaries of the emerging scientific method, such as <span class="name-highlight">Isaac Newton</span>, produced numerical prophecies—again based on scripture—predicting that the world would end sometime around 2060.</p>
 
 
 [Position 7]

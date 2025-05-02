@@ -282,18 +282,24 @@ window.addEventListener('load', () => {
         }
         const parsedValue = parseFloat(value.replace(/,/g, '')) || 0;
         const minLinear = 1;
-        const maxLinear = 1e12;
-        const clampedValue = clamp(parsedValue, minLinear, maxLinear);
+        const linearThreshold = 1e12;
+        const clampedValue = Math.max(parsedValue, minLinear);
 
-        // Normalize the clamped value to a range between 0 and 1
-        const normalizedValue = (clampedValue - minLinear) / (maxLinear - minLinear);
+        // Cap the maximum line length to avoid glitches
+        const MAX_LINE_LENGTH = 100000; // adjust as needed
 
-        // Determine the maximum length based on whether it's cosmological data
-        const maxLength = isCosmological ? 10000 : 1000; // Adjust these values as needed
-
-        // Scale the normalized value by the appropriate maximum length
-        const length = scaleWidth * normalizedValue;
-        return clamp(length, 0, maxLength);
+        if (clampedValue > linearThreshold) {
+            // Logarithmic growth, softer factor
+            const baseLength = scaleWidth;
+            const logGrowth = Math.log10(clampedValue / linearThreshold + 1);
+            const length = baseLength + baseLength * logGrowth * 2; // softer growth
+            return Math.min(length, MAX_LINE_LENGTH);
+        } else {
+            const maxLinear = 1e12;
+            const normalizedValue = (clampedValue - minLinear) / (maxLinear - minLinear);
+            const length = scaleWidth * normalizedValue;
+            return Math.min(length, MAX_LINE_LENGTH);
+        }
     }
 
     const DATA_LINE_THICKNESS = 0.75;
@@ -1654,6 +1660,7 @@ window.addEventListener('load', () => {
                 }
             }
         });
+        
         function setupMobileToggle() {
             if (window.innerWidth <= 768) {
               const toggle = document.createElement('button');
