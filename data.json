@@ -161,7 +161,7 @@
       "FUTURE HABITABILITY ON EARTH": "1,411",
       "EXPLANATION TYPE": "Probabilistic.",
       "KILL MECHANISM": "Divine.",
-      "SOURCE": "J. Craig,  Christianae Principia Mathematica (London, 1699)."
+      "SOURCE": "John Craig,  Christianae Principia Mathematica (London, 1699)."
     },
     {
       "NAME": "Benoît de Maillet",
@@ -176,7 +176,6 @@
       "NAME": "Georges Buffon",
       "DATE": "1774",
       "PAST AGE OF EARTH": "74,832",
-      "PAST HABITABILITY OF EARTH": "38,849",
       "FUTURE HABITABILITY ON EARTH": "93,291.00",
       "EXPLANATION TYPE": "Scientific.",
       "KILL MECHANISM": "Global freezing.",
@@ -240,15 +239,13 @@
       "DATE": "1854",
       "PAST AGE OF EARTH": "20,000,000",
       "EXPLANATION TYPE": "Thermodynamic.",
-      "KILL MECHANISM": "Solar aging & cooling.",
       "SOURCE": "Hermann von Helmholtz, ‘On the Interaction of Natural Forces’, Philosophical Magazine, 11 (1856), 489-578."
     },
     {
       "NAME": "William Thomson",
       "DATE": "1862",
       "PAST AGE OF EARTH": "20,000,000 - 400,000,000",
-      "EXPLANATION TYPE": "Thermodynamic.",
-      "KILL MECHANISM": "Earth's internal heat dissipation.",
+      "EXPLANATION TYPE": "Earth's internal heat dissipation.",
       "SOURCE": "William Thomson, ‘On the Secular Cooling of the Earth’, Transactions of the Royal Society of Edinburgh, 153 (1863), 157-170."
     },
     {
@@ -257,15 +254,14 @@
       "PAST AGE OF EARTH": "100,000,000 - 500,000,000",
       "FUTURE HABITABILITY ON EARTH": "5,000,000 - 10,000,000",
       "EXPLANATION TYPE": "Thermodynamic.",
-      "KILL MECHANISM": "Earth's internal heat dissipation.",
+      "KILL MECHANISM": "Solar aging & cooling.",
       "SOURCE": "William Thomson, ‘On the Age of the Sun’s Heat’, Macmillan’s Magazine, Wednesday March 5th (1862), 293."
     },
     {
       "NAME": "William Thomson",
       "DATE": "1868",
-      "PAST HABITABILITY ON EARTH": "100,000,000",
+      "PAST AGE OF EARTH": "100,000,000",
       "EXPLANATION TYPE": "Thermodynamic.",
-      "KILL MECHANISM": "Earth's internal heat dissipation.",
       "SOURCE": "William Thomson, ‘On Geological Time — 1868’, in Popular Lectures & Addresses (London, 1894), vol.II, 64."
     },
     {
@@ -289,8 +285,7 @@
       "NAME": "George Darwin",
       "DATE": "1879",
       "PAST AGE OF EARTH": "54,000,000",
-      "EXPLANATION TYPE": "Astronomical (tidal forces).",
-      "KILL MECHANISM": "Earth-Moon tidal retardation.",
+      "EXPLANATION TYPE": "Astronomical (Earth-Moon tidal interaction).",
       "SOURCE": "George H. Darwin, 'On the Precession of a Viscous Spheroid, & on the Remote History of the Earth', Philosphical Transactions of the Royal Soceity of London, 170 (1879), 447-538; George H. Darwin, 'On the Secular Changes in the Elements of the Orbit of a Satellite Revolving about a Tidally Distorted Planet', Philosphical Transactions of the Royal Soceity of London, 171 (1880), 713-891."
     },
     {
@@ -330,15 +325,13 @@
       "DATE": "1897",
       "PAST AGE OF EARTH": "20,000,000 - 40,000,000",
       "EXPLANATION TYPE": "Thermodynamic.",
-      "KILL MECHANISM": "Solar aging & cooling.",
       "SOURCE": "William Thomson, 'The Age of the Earth as an Abode Fitted for life', Annual Report of the Smithsonian Institution (Washington, 1897), 337-357."
     },
     {
       "NAME": "Archibald Geike",
       "DATE": "1899",
       "PAST AGE OF EARTH": "100,000,000",
-      "EXPLANATION TYPE": "Sedimentological.",
-      "KILL MECHANISM": "Sediment accumulation.",
+      "EXPLANATION TYPE": "Sedimentological (sediment accumulation).",
       "SOURCE": "Archibald Geike, 'Address of the President', Report of the 69th Meeting of the British Assocation for the Advancement of Science (1899), 718-730."
     },
     {
@@ -351,8 +344,6 @@
     {
       "NAME": "George Darwin",
       "DATE": "1903",
-      "IMAGE":"3.png",
-      "IMAGE CAPTION": "George Darwin, 1845-1912.",
       "FUTURE HABITABILITY ON EARTH": "100,000,000",
       "EXPLANATION TYPE": "Nuclear physics.",
       "KILL MECHANISM": "Solar aging & cooling.",
@@ -378,8 +369,6 @@
     {
       "NAME": "Thomas Chrowder Chamberlin",
       "DATE": "1909",
-      "IMAGE":"4.png",
-      "IMAGE CAPTION": "Thomas Chrowder Chamberlin, 1843-1928.",
       "FUTURE HABITABILITY ON EARTH": "5,000,000 - 50,000,000",
       "EXPLANATION TYPE": "Nuclear physics.",
       "KILL MECHANISM": "Solar aging & cooling.",
@@ -453,6 +442,7 @@
       "DATE": "1926",
       "FUTURE HABITABILITY ON EARTH": "1,000,000,000,000",
       "EXPLANATION TYPE": "Speculative.",
+      "KILL MECHANISM": "Earth-Moon collision.",
       "SOURCE": "J.B.S. Haldane, The Last Judgement (London: Harper's, 1927), 36."
     },
     {
@@ -460,6 +450,7 @@
       "DATE": "1926",
       "FUTURE FOR LIFE IN WIDER UNIVERSE": "80,000,000,000,000",
       "EXPLANATION TYPE": "Speculative.",
+      "KILL MECHANISM": "?",
       "SOURCE": "J.B.S. Haldane, The Last Judgement (London: Harper's, 1927), 36."
     },
     {
@@ -479,7 +470,7 @@
     {
       "NAME": "James Jeans",
       "DATE": "1928",
-      "PAST AGE OF THE UNIVERSE": "10,000,000,000,000",
+      "PAST AGE OF UNIVERSE": "10,000,000,000,000",
       "EXPLANATION TYPE": "Cosmological (equipartition of stellar motions).",
       "SOURCE": "James Jeans, 'The Physics of the Universe', Supplement to Nature, 3079 (1928), 692-697."
     },
@@ -495,7 +486,7 @@
     {
       "NAME": "James Jeans",
       "DATE": "1929",
-      "PAST AGE OF THE UNIVERSE": "200,000,000,000,000",
+      "PAST AGE OF UNIVERSE": "200,000,000,000,000",
       "EXPLANATION TYPE": "Cosmological.",
       "SOURCE": "James Jeans, The Universe Around Us (Cambridge: Cambridge University Press, 1928)."
     },
@@ -731,7 +722,7 @@
     {
       "NAME": "Jamal Nazrul Islam",
       "DATE": "1983",
-      "FUTURE FOR LIFE IN WIDER UNIVERSE": "1e,+45 - 1e,+50",
+      "FUTURE FOR LIFE IN WIDER UNIVERSE": "10,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000",
       "EXPLANATION TYPE": "Physical eschatology.",
       "KILL MECHANISM": "Proton Decay (though life could exist beyond?).",
       "SOURCE": "J.N. Islam, The Ultimate Fate of the Universe (Cambridge: Cambridge University Press, 1983)."
@@ -739,9 +730,9 @@
     {
       "NAME": "Duane A. Dicus et al.",
       "DATE": "1983",
-      "FUTURE FOR LIFE IN WIDER UNIVERSE": "1e,+32",
+      "FUTURE FOR LIFE IN WIDER UNIVERSE": "100,000,000,000,000,000,000,000,000,000,000",
       "EXPLANATION TYPE": "Physical eschatology.",
-      "KILL MECHANISM": "Blackhole Evaporation at 10^100, though life probably died at 10^32 due to Proton Decay.",
+      "KILL MECHANISM": "Blackhole Evaporation at 10^100, though life probably dies at 10^32 due to Proton Decay.",
       "SOURCE": "Duane A. Dicus et al., ‘The Future of the Universe’, Scientific American, 248 (1983), 74-85."
     },
     {
@@ -772,7 +763,7 @@
       "NAME": "Fred Adams & Gregory P. Laughlin",
       "DATE": "1999",
       "PAST AGE OF UNIVERSE": "10,000,000,000",
-      "FUTURE FOR LIFE IN WIDER UNIVERSE": "1e,+40",
+      "FUTURE FOR LIFE IN WIDER UNIVERSE": "10,000,000,000,000,000,000,000,000,000,000,000,000,000",
       "EXPLANATION TYPE": "Physical eschatology.",
       "KILL MECHANISM": "Proton decay.",
       "SOURCE": "F. Adams & G. Laughlin, The Five Ages of the Universe (New York: Free Press, 1999)."
