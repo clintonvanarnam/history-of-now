@@ -148,12 +148,12 @@ window.addEventListener('load', () => {
         { //23
             position: { x: 0, y: 444.74, z: 252.29 },
             rotation: { x: -0.46, y: 0, z: 0 },
-            targetScale: 199.57217939926332
+            targetScale: 3.1630058853452048
         },
         { //24
             position: { x: 0, y: 596.23, z: 499.59 },
             rotation: { x: -0.459, y: 0, z: 0 },
-            targetScale: 199.57217939926332
+            targetScale: 3.1630058853452048
         },
         { //25
             position: { x: 0, y: 285.67, z: 249.58 },
