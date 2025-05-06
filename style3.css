@@ -17,7 +17,7 @@
 }
 
 @font-face {
-  font-family: 'Copernicus Book';
+  font-family: 'Copernicus Book Italic';
   src: url('fonts/Copernicus-BookItalic.woff2') format('woff2'),
        url('fonts/Copernicus-BookItalic.woff') format('woff'),
        url('fonts/Copernicus-BookItalic.otf') format('opentype');
@@ -161,6 +161,24 @@
 }
 
 @font-face {
+  font-family: 'Cosmica Semibold';
+  src: url('fonts/Cosmica-Semibold.woff2') format('woff2'),
+       url('fonts/Cosmica-Semibold.woff') format('woff'),
+       url('fonts/Cosmica-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cosmica Semibold Italic';
+  src: url('fonts/Cosmica-SemiboldItalic.woff2') format('woff2'),
+       url('fonts/Cosmica-SemiboldItalic.woff') format('woff'),
+       url('fonts/Cosmica-SemiboldItalic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
   font-family: 'Cosmica Regular';
   src: url('fonts/Cosmica-Regular.woff2') format('woff2'),
        url('fonts/Cosmica-Regular.woff') format('woff'),
@@ -201,9 +219,7 @@ p {
 }
 
 b {
-  font-family: 'Cosmica Medium', sans-serif;
-  font-weight: 500;
-  font-style: normal;
+  font-family: 'Cosmica Medium', sans-serif;  
   font-size: 17px;
 }
 
@@ -226,8 +242,6 @@ h2 {
 
 h3 {
   font-family: 'Cosmica Medium', sans-serif;
-  font-weight: 500;
-  font-style: normal;
   font-size: 24px;
   line-height: 1;
   margin-top: 40px;
@@ -666,8 +680,8 @@ input[type="range"]::-ms-thumb {
 }
 
 .italic-text {
-  font-family: 'Copernicus Book', serif;
-  font-style: italic;
+  font-family: 'Copernicus Book Italic', serif;
+  
 } 
 
 .switch {
@@ -766,7 +780,10 @@ input:checked + .slider:before {
   .fullscreen .scene-container {
     display: block !important;
   }
-
+.ui-buttons{
+  flex-direction:column-reverse;
+  background: none;;
+}
   .image-caption {
     flex-direction: column;
     align-items: center;
