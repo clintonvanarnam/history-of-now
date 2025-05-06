@@ -740,6 +740,9 @@ input:checked + .slider:before {
   h1{
     font-size: 4.5rem;
   }
+  h2{
+    font-size: 2.5rem;  
+  }
   .scene-container {
     width: 100vw;
     height: 100dvh;
@@ -778,4 +781,17 @@ input:checked + .slider:before {
     display: block !important;
   }
 
+  .image-caption {
+    flex-direction: column;
+    align-items: center;
+  }
+  .caption {
+    width: 100%;
+    margin-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  .image-caption img {
+    width: 100%;
+  }
 }
