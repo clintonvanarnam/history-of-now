@@ -802,15 +802,7 @@ input:checked + .slider:before {
     width: 40px;
     height: 40px;
   }
-  .controls-container {
-    width: 100vw;
-    max-width: 90vw;
-    padding: 10px 0;
-    left: 0;
-    transform: none;
-    border-radius: 0;
-    justify-content: center;
-  }
+
   .ui-section,
   .text-controls {
     width: 100%;
@@ -833,16 +825,34 @@ input:checked + .slider:before {
     justify-content: center;
     border-radius: 0;
     z-index: 1000;
+    background: none;
+    box-shadow: none;
+  }
+  #toggle-controls {
+    position: fixed;
+    top: auto;
+    bottom: -5px;
+    left: 6%;
+    transform: translateX(-50%);
+    z-index: 1002;
+    border-radius: 8px;
+    padding: 8px;
+    height: 45px;
+    width: auto;
   }
   .controls-container {
     position: static;
     width: 100%;
-    max-width: 90vw;
-    padding: 0;
-    margin-bottom: 10px;
-    border-radius: 0;
-    z-index: 1002;
+    max-width: 95vw;
+    padding: 5px;
+    margin-bottom: 150px; /* Increased from 10px to 60px to move it 50px higher */
+    margin-left: 10px;
+    border-radius: 5px;
+    z-index: 1001;
     display: flex;
     justify-content: center;
+    background: none;
+    box-shadow: none;
+    background-color: grey;
   }
 }
