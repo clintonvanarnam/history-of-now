@@ -786,7 +786,9 @@ input:checked + .slider:before {
   }
 .ui-buttons{
   flex-direction:column-reverse;
-  background: none;;
+  background: none;
+  align-items: start;
+  gap: 20px;
 }
   .image-caption {
     flex-direction: column;
@@ -803,6 +805,12 @@ input:checked + .slider:before {
   }
   .ui-buttons{
     font-size: 10px;
+  }
+
+  .controls-container {
+    flex-direction: column;
+    align-items: start;
+    margin-left: 0px;
   }
   .fullscreen-icon {
     top: auto;
