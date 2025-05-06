@@ -601,7 +601,7 @@ input:checked + .slider:before {
     flex-direction: column;
   }
   h1{
-    font-size: 6rem;
+    font-size: 5.5rem;
   }
 
   .scene-container {
