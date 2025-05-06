@@ -300,6 +300,10 @@ body.dark-mode .graph-reference {
   background-color: #151515 !important;
 }
 
+body.dark-mode .graph-reference {
+  background: #494949 !important;
+}
+
 body.dark-mode .scene-container {
   background-color: #151515 !important;
 }
