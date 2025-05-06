@@ -801,58 +801,6 @@ input:checked + .slider:before {
     left: auto;
     width: 40px;
     height: 40px;
-  }
-
-  .ui-section,
-  .text-controls {
-    width: 100%;
-    min-width: 0;
-    max-width: 100vw;
-    flex: 1 1 100%;
-  }
-  .controls-container input[type="range"] {
-    width: 100%;
-    min-width: 0;
-    max-width: 100vw;
-  }
-  .ui-buttons {
-    flex-direction: column;
-    align-items: stretch;
-    position: fixed;
-    bottom: 15px;
-    left: 0;
-    width: 100vw;
-    justify-content: center;
-    border-radius: 0;
-    z-index: 1000;
-    background: none;
-    box-shadow: none;
-  }
-  #toggle-controls {
-    position: fixed;
-    top: auto;
-    bottom: -5px;
-    left: 6%;
-    transform: translateX(-50%);
-    z-index: 1002;
-    border-radius: 8px;
-    padding: 8px;
-    height: 45px;
-    width: auto;
-  }
-  .controls-container {
-    position: static;
-    width: 100%;
-    max-width: 95vw;
-    padding: 5px;
-    margin-bottom: 150px; /* Increased from 10px to 60px to move it 50px higher */
-    margin-left: 10px;
-    border-radius: 5px;
     z-index: 1001;
-    display: flex;
-    justify-content: center;
-    background: none;
-    box-shadow: none;
-    background-color: grey;
   }
 }
