@@ -794,6 +794,9 @@ input:checked + .slider:before {
   .image-caption img {
     width: 100%;
   }
+  .ui-buttons{
+    font-size: 10px;
+  }
   .fullscreen-icon {
     top: auto;
     bottom: 20px;
