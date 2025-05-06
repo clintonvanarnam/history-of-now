@@ -18,9 +18,10 @@
 
 @font-face {
   font-family: 'Copernicus Book Italic';
-  src: url('fonts/Copernicus-BookItalic.woff2') format('woff2'),
-       url('fonts/Copernicus-BookItalic.woff') format('woff'),
-       url('fonts/Copernicus-BookItalic.otf') format('opentype');
+  src: url('fonts/Copernicus-BookItalic.otf') format('opentype'),
+       url('fonts/Copernicus-BookItalic.ttf') format('truetype'),
+       url('fonts/Copernicus-BookItalic.woff2') format('woff2'),
+       url('fonts/Copernicus-BookItalic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
 }
@@ -144,9 +145,10 @@
 
 @font-face {
   font-family: 'Cosmica Medium';
-  src: url('fonts/Cosmica-Medium.woff2') format('woff2'),
-       url('fonts/Cosmica-Medium.woff') format('woff'),
-       url('fonts/Cosmica-Medium.otf') format('opentype');
+  src: url('fonts/Cosmica-Medium.otf') format('opentype'),
+       url('fonts/Cosmica-Medium.ttf') format('truetype'),
+       url('fonts/Cosmica-Medium.woff2') format('woff2'),
+       url('fonts/Cosmica-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
@@ -221,6 +223,8 @@ p {
 b {
   font-family: 'Cosmica Medium', sans-serif;  
   font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
 }
 
 h1 {
@@ -681,7 +685,7 @@ input[type="range"]::-ms-thumb {
 
 .italic-text {
   font-family: 'Copernicus Book Italic', serif;
-  
+  font-style: italic;
 } 
 
 .switch {
@@ -816,5 +820,16 @@ input:checked + .slider:before {
     width: 100vw;
     z-index: 2000;
     pointer-events: auto;
+  }
+  .footnote-tooltip {
+    left: unset !important;
+    right: unset !important;
+    /* Remove forced width/max-width, revert to default */
+    width: auto !important;
+    max-width: 300px !important;
+    /* Position tooltip so it stays inside viewport */
+    position: fixed !important;
+    bottom: auto;
+    z-index: 2000;
   }
 }
