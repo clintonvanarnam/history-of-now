@@ -818,7 +818,7 @@ input:checked + .slider:before {
     display: none;
   }
   .author-designer{
-    margin-bottom: 50px;
+    margin-bottom: 75px;
   }
   .essay-container {
     width: 100vw;

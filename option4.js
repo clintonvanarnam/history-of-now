@@ -1266,7 +1266,7 @@ window.addEventListener('load', () => {
         if (isScrolling) {
             const touchEndY = event.touches[0].clientY;
             const deltaY = touchStartY - touchEndY;
-            scrollVelocity += deltaY * 0.005;
+            scrollVelocity += deltaY * 0.025; // Increased multiplier for mobile responsiveness
             touchStartY = touchEndY;
         }
     });
