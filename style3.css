@@ -282,6 +282,11 @@ body.dark-mode .essay-container, body.dark-mode .ui-buttons {
   background-color: #090909;
   color: #fff;
 }
+
+body.dark-mode .ui-buttons {
+  background: none;
+}
+
 body.dark-mode .text-controls label,
 body.dark-mode .text-controls,
 body.dark-mode .sub-author,
