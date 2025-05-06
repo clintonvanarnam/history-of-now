@@ -1,64 +1,217 @@
 @font-face {
   font-family: 'Copernicus Book';
-  src: url('fonts/Copernicus-Book.otf') format('opentype');
+  src: url('fonts/Copernicus-Book.woff2') format('woff2'),
+       url('fonts/Copernicus-Book.woff') format('woff'),
+       url('fonts/Copernicus-Book.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Copernicus Bold';
-  src: url('fonts/Copernicus-Bold.otf') format('opentype');
+  src: url('fonts/Copernicus-Bold.woff2') format('woff2'),
+       url('fonts/Copernicus-Bold.woff') format('woff'),
+       url('fonts/Copernicus-Bold.otf') format('opentype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Copernicus Book Italic';
-  src: url('fonts/Copernicus-BookItalic.otf') format('opentype');
+  src: url('fonts/Copernicus-BookItalic.woff2') format('woff2'),
+       url('fonts/Copernicus-BookItalic.woff') format('woff'),
+       url('fonts/Copernicus-BookItalic.otf') format('opentype');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Cosmica Regular';
-  src: url('fonts/Cosmica-Regular.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Cosmica Bold';
-  src: url('fonts/Cosmica-Bold.otf') format('opentype');
+  font-family: 'Copernicus Bold Italic';
+  src: url('fonts/Copernicus-BoldItalic.woff2') format('woff2'),
+       url('fonts/Copernicus-BoldItalic.woff') format('woff'),
+       url('fonts/Copernicus-BoldItalic.otf') format('opentype');
   font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Copernicus Extrabold';
+  src: url('fonts/Copernicus-Extrabold.woff2') format('woff2'),
+       url('fonts/Copernicus-Extrabold.woff') format('woff'),
+       url('fonts/Copernicus-Extrabold.otf') format('opentype');
+  font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Cosmica Medium';
-  src: url('fonts/Cosmica-Medium.otf') format('opentype');
+  font-family: 'Copernicus Extrabold Italic';
+  src: url('fonts/Copernicus-ExtraboldItalic.woff2') format('woff2'),
+       url('fonts/Copernicus-ExtraboldItalic.woff') format('woff'),
+       url('fonts/Copernicus-ExtraboldItalic.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Copernicus Heavy';
+  src: url('fonts/Copernicus-Heavy.woff2') format('woff2'),
+       url('fonts/Copernicus-Heavy.woff') format('woff'),
+       url('fonts/Copernicus-Heavy.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Copernicus Heavy Italic';
+  src: url('fonts/Copernicus-HeavyItalic.woff2') format('woff2'),
+       url('fonts/Copernicus-HeavyItalic.woff') format('woff'),
+       url('fonts/Copernicus-HeavyItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Copernicus Medium';
+  src: url('fonts/Copernicus-Medium.woff2') format('woff2'),
+       url('fonts/Copernicus-Medium.woff') format('woff'),
+       url('fonts/Copernicus-Medium.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
+  font-family: 'Copernicus Medium Italic';
+  src: url('fonts/Copernicus-MediumItalic.woff2') format('woff2'),
+       url('fonts/Copernicus-MediumItalic.woff') format('woff'),
+       url('fonts/Copernicus-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Copernicus Semibold';
+  src: url('fonts/Copernicus-Semibold.woff2') format('woff2'),
+       url('fonts/Copernicus-Semibold.woff') format('woff'),
+       url('fonts/Copernicus-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Copernicus Semibold Italic';
+  src: url('fonts/Copernicus-SemiboldItalic.woff2') format('woff2'),
+       url('fonts/Copernicus-SemiboldItalic.woff') format('woff'),
+       url('fonts/Copernicus-SemiboldItalic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
   font-family: 'Cosmica Book';
-  src: url('fonts/Cosmica-Book.otf') format('opentype');
+  src: url('fonts/Cosmica-Book.woff2') format('woff2'),
+       url('fonts/Cosmica-Book.woff') format('woff'),
+       url('fonts/Cosmica-Book.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Cosmica Italic';
-  src: url('fonts/Cosmica-RegularItalic.otf') format('opentype');
+  font-family: 'Cosmica Book Italic';
+  src: url('fonts/Cosmica-BookItalic.woff2') format('woff2'),
+       url('fonts/Cosmica-BookItalic.woff') format('woff'),
+       url('fonts/Cosmica-BookItalic.otf') format('opentype');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Cosmica Thin';  
-  src: url('fonts/Cosmica-Thin.otf') format('opentype');
+  font-family: 'Cosmica Bold';
+  src: url('fonts/Cosmica-Bold.woff2') format('woff2'),
+       url('fonts/Cosmica-Bold.woff') format('woff'),
+       url('fonts/Cosmica-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cosmica Bold Italic';
+  src: url('fonts/Cosmica-BoldItalic.woff2') format('woff2'),
+       url('fonts/Cosmica-BoldItalic.woff') format('woff'),
+       url('fonts/Cosmica-BoldItalic.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Cosmica Medium';
+  src: url('fonts/Cosmica-Medium.woff2') format('woff2'),
+       url('fonts/Cosmica-Medium.woff') format('woff'),
+       url('fonts/Cosmica-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cosmica Medium Italic';
+  src: url('fonts/Cosmica-MediumItalic.woff2') format('woff2'),
+       url('fonts/Cosmica-MediumItalic.woff') format('woff'),
+       url('fonts/Cosmica-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Cosmica Semibold';
+  src: url('fonts/Cosmica-Semibold.woff2') format('woff2'),
+       url('fonts/Cosmica-Semibold.woff') format('woff'),
+       url('fonts/Cosmica-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cosmica Semibold Italic';
+  src: url('fonts/Cosmica-SemiboldItalic.woff2') format('woff2'),
+       url('fonts/Cosmica-SemiboldItalic.woff') format('woff'),
+       url('fonts/Cosmica-SemiboldItalic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Cosmica Regular';
+  src: url('fonts/Cosmica-Regular.woff2') format('woff2'),
+       url('fonts/Cosmica-Regular.woff') format('woff'),
+       url('fonts/Cosmica-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cosmica Regular Italic';
+  src: url('fonts/Cosmica-RegularItalic.woff2') format('woff2'),
+       url('fonts/Cosmica-RegularItalic.woff') format('woff'),
+       url('fonts/Cosmica-RegularItalic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Cosmica Thin';
+  src: url('fonts/Cosmica-Thin.woff2') format('woff2'),
+       url('fonts/Cosmica-Thin.woff') format('woff'),
+       url('fonts/Cosmica-Thin.otf') format('opentype');
   font-weight: 100;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cosmica Thin Italic';
+  src: url('fonts/Cosmica-ThinItalic.woff2') format('woff2'),
+       url('fonts/Cosmica-ThinItalic.woff') format('woff'),
+       url('fonts/Cosmica-ThinItalic.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
 }
 
 p {
