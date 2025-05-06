@@ -1482,27 +1482,59 @@ window.addEventListener('load', () => {
     // Function to set up hoverable footnotes
     function setupFootnoteHover() {
         const footnotes = document.querySelectorAll('.footnote');
-    
+        let activeTooltip = null;
+
         footnotes.forEach((footnote) => {
+            // Desktop hover
             footnote.addEventListener('mouseenter', (event) => {
-                let tooltip = document.createElement('div');
-                tooltip.className = 'footnote-tooltip';
-                tooltip.innerHTML = footnote.getAttribute('data-footnote'); // Use innerHTML for HTML content
-                document.body.appendChild(tooltip);
-    
-                const rect = footnote.getBoundingClientRect();
-                tooltip.style.left = `${rect.left + window.scrollX}px`;
-                tooltip.style.top = `${rect.bottom + window.scrollY + 5}px`;
-                tooltip.style.display = 'block';
+                if (window.innerWidth > 768) {
+                    showFootnoteTooltip(footnote);
+                }
             });
-    
             footnote.addEventListener('mouseleave', () => {
-                const tooltip = document.querySelector('.footnote-tooltip');
-                if (tooltip) {
-                    tooltip.remove();
+                if (window.innerWidth > 768) {
+                    removeFootnoteTooltip();
+                }
+            });
+            // Mobile tap
+            footnote.addEventListener('click', (event) => {
+                if (window.innerWidth <= 768) {
+                    event.stopPropagation();
+                    if (activeTooltip) {
+                        removeFootnoteTooltip();
+                        if (activeTooltip.footnote === footnote) {
+                            activeTooltip = null;
+                            return;
+                        }
+                    }
+                    showFootnoteTooltip(footnote);
+                    activeTooltip = { footnote };
                 }
             });
         });
+        // Hide tooltip on tap elsewhere
+        document.addEventListener('click', () => {
+            if (activeTooltip) {
+                removeFootnoteTooltip();
+                activeTooltip = null;
+            }
+        });
+
+        function showFootnoteTooltip(footnote) {
+            removeFootnoteTooltip();
+            let tooltip = document.createElement('div');
+            tooltip.className = 'footnote-tooltip';
+            tooltip.innerHTML = footnote.getAttribute('data-footnote');
+            document.body.appendChild(tooltip);
+            const rect = footnote.getBoundingClientRect();
+            tooltip.style.left = `${rect.left + window.scrollX}px`;
+            tooltip.style.top = `${rect.bottom + window.scrollY + 5}px`;
+            tooltip.style.display = 'block';
+        }
+        function removeFootnoteTooltip() {
+            const tooltip = document.querySelector('.footnote-tooltip');
+            if (tooltip) tooltip.remove();
+        }
     }
 
     function setupScrollLogging() {
