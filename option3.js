@@ -812,4 +812,25 @@ function clamp(value, min, max) {
         // Re-render the scene
         renderer.render(scene, camera);
     }
+
+    function toggleDarkMode(isDark) {
+        renderer.setClearColor(isDark ? 0x1E1E1E : 0xffffff, 1);
+        document.body.classList.toggle('dark-mode', isDark);
+        scene.traverse((object) => {
+            if (object.isMesh && object.material && object.material.color) {
+                // Grid lines
+                if (object.material.color.getHex() === 0x808080) {
+                    object.material.color.set(isDark ? 0x444444 : 0x808080);
+                }
+                // Timeline/decade lines
+                if (object.material.color.getHex() === 0x000000 || object.material.color.getHex() === 0xffffff) {
+                    object.material.color.set(isDark ? 0xffffff : 0x000000);
+                }
+            }
+        });
+        const fullscreenIcon = document.getElementById('fullscreen-icon');
+        if (fullscreenIcon) {
+            fullscreenIcon.classList.toggle('dark-mode', isDark);
+        }
+    }
 });

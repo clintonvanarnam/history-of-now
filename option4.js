@@ -216,34 +216,27 @@ window.addEventListener('load', () => {
     
 
 
-    function toggleDarkMode(isDarkMode) {
-        // Change the background color of the renderer
-        renderer.setClearColor(isDarkMode ? 0x090909 : 0xffffff, 1);
-    
-        // Update the scene objects' colors
+    function toggleDarkMode(isDark) {
+        // Set renderer background for dark mode
+        renderer.setClearColor(isDark ? 0x1E1E1E : 0xffffff, 1);
+        document.body.classList.toggle('dark-mode', isDark);
+        // Update grid/timeline line colors
         scene.traverse((object) => {
-            if (object.isMesh && object.material) {
-                if (object.material.map) return; // Skip textured objects
-                if (object.userData?.originalColor === 0xff0000) return; // Skip red objects
-    
-                if (object.material.color) {
-                    const currentHex = object.material.color.getHex();
-                    if (currentHex === 0x000000 || currentHex === 0xffffff) {
-                        object.material.color.set(
-                            currentHex === 0x000000 ? 0xffffff : 0x000000
-                        );
-                    }
+            if (object.isMesh && object.material && object.material.color) {
+                // Update grid lines (grey in light, lighter grey in dark)
+                if (object.material.color.getHex() === 0x808080) {
+                    object.material.color.set(isDark ? 0x444444 : 0x808080);
+                }
+                // Update timeline/decade lines (black in light, white in dark)
+                if (object.material.color.getHex() === 0x000000 || object.material.color.getHex() === 0xffffff) {
+                    object.material.color.set(isDark ? 0xffffff : 0x000000);
                 }
             }
         });
-    
-        // Update the body class for dark mode
-        document.body.classList.toggle('dark-mode', isDarkMode);
-    
-        // Update the fullscreen icon if applicable
+        // Update fullscreen icon if needed
         const fullscreenIcon = document.getElementById('fullscreen-icon');
         if (fullscreenIcon) {
-            fullscreenIcon.classList.toggle('dark-mode', isDarkMode);
+            fullscreenIcon.classList.toggle('dark-mode', isDark);
         }
     }
     const darkModeToggle = document.getElementById('dark-mode-toggle');

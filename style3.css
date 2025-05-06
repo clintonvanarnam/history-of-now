@@ -278,13 +278,14 @@ a:hover {
   text-decoration: underline;
 }
 
-body.dark-mode .essay-container, body.dark-mode .ui-buttons {
-  background-color: #090909;
+body.dark-mode .essay-container,
+body.dark-mode .ui-buttons,
+body.dark-mode .graph-reference,
+body.dark-mode .controls-container,
+body.dark-mode .scene-container,
+body.dark-mode {
+  background-color: #1E1E1E !important;
   color: #fff;
-}
-
-body.dark-mode .ui-buttons {
-  background: none;
 }
 
 body.dark-mode .text-controls label,
@@ -292,10 +293,43 @@ body.dark-mode .text-controls,
 body.dark-mode .sub-author,
 body.dark-mode .caption,
 body.dark-mode .block-quote {
-  color: white;
+  color: #fff;
 }
-body.dark-mode .graph-reference{
-  background-color: #171717;
+
+body.dark-mode .graph-reference {
+  background-color: #232323 !important;
+}
+
+body.dark-mode .scene-container {
+  background-color: #1E1E1E !important;
+}
+
+body.dark-mode .essay-content,
+body.dark-mode .foot-notes p,
+body.dark-mode .caption {
+  background-color: transparent !important;
+  color: #fff;
+}
+
+body.dark-mode .log-scale {
+  background-color: #232323 !important;
+  color: #fff;
+}
+
+body.dark-mode .tooltip,
+body.dark-mode .footnote-tooltip {
+  background-color: #232323 !important;
+  color: #fff !important;
+  border: 1px solid #444;
+}
+
+body.dark-mode .block-quote {
+  color: #fff;
+  border-left: 1px solid #444;
+}
+
+body.dark-mode .fullscreen-icon {
+  filter: invert(100%);
 }
 
 .fullscreen-icon.dark-mode {
