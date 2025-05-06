@@ -1,62 +1,64 @@
 @font-face {
   font-family: 'Copernicus Book';
-  src: url(fonts/Copernicus-Book.ttf) format('truetype');
+  src: url('fonts/Copernicus-Book.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'Copernicus Bold';
-  src: url(fonts/Copernicus-Bold.ttf) format('truetype');
-}
-
-
-@font-face {
-  font-family: 'Copernicus Book';
-  src: url(fonts/Copernicus-Book.ttf) format('truetype');
+  src: url('fonts/Copernicus-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'Copernicus Book Italic';
-  src: url(fonts/Copernicus-BookItalic.otf) format('opentype');
-}
-
-@font-face {
-  font-family: 'Copernicus Bold';
-  src: url(fonts/Copernicus-Bold.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Cosmica Bold';
-  src: url(fonts/Cosmica-Bold.otf) format('opentype');
-}
-
-@font-face {
-  font-family: 'Cosmica Book';
-  src: url(fonts/Cosmica-Book.otf) format('opentype');
-}
-
-@font-face {
-  font-family: 'Cosmica Medium';
-  src: url(fonts/Cosmica-Medium.otf) format('opentype');
+  src: url('fonts/Copernicus-BookItalic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
 }
 
 @font-face {
   font-family: 'Cosmica Regular';
-  src: url('assets/fonts/Cosmica-Regular.ttf') format('truetype');
+  src: url('fonts/Cosmica-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cosmica Bold';
+  src: url('fonts/Cosmica-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cosmica Medium';
+  src: url('fonts/Cosmica-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cosmica Book';
+  src: url('fonts/Cosmica-Book.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Cosmica Italic';
-  src: url('assets/fonts/Cosmica-Italic.ttf') format('truetype');
+  src: url('fonts/Cosmica-RegularItalic.otf') format('opentype');
   font-weight: normal;
-  font-style: normal;
+  font-style: italic;
 }
 
 @font-face {
   font-family: 'Cosmica Thin';  
-  src: url('assets/fonts/Cosmica-Thin.ttf') format('truetype');
-  font-weight: thin;
+  src: url('fonts/Cosmica-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
 }
 
 p {
@@ -78,11 +80,11 @@ h1 {
 
 h2 {
   font-family: 'Cosmica Regular', sans-serif;
+  font-weight: normal;
+  font-style: normal;
   font-size: 64px;
   line-height: 1.2;
   margin-top: 80px;
-
- 
 }
 
 h3 {
@@ -90,7 +92,6 @@ h3 {
   font-size: 24px;
   line-height: 1;
   margin-top: 40px;
-
 }
 
 .sub-author {
@@ -105,7 +106,6 @@ h3 {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-
 
 a {
   font-family: 'Cosmica Medium', sans-serif;
@@ -176,12 +176,9 @@ body.dark-mode .graph-reference{
   text-align: center;
 }
 
-
-
 .controls-container label {
   margin-right: 10px;
 }
-
 
 .footnote{
   cursor:pointer;
@@ -205,10 +202,7 @@ body.dark-mode .graph-reference{
   z-index: 1000;
   display: none; /* Hidden by default */
   pointer-events: none; /* Prevent mouse events from interfering with hover */
-
 }
-
-
 
 .footnote:hover + .footnote-tooltip {
   display: block; /* Show tooltip on hover */
@@ -264,7 +258,6 @@ body, html {
   height: 100%;
 }
 
-
 #threejs-container {
   position: absolute; /* Make this a positioning context for the canvas */
   top: 0;
@@ -301,8 +294,6 @@ body, html {
   height: 100%;
 }
 
-
-
 /* When in full-screen mode, hide the essay-container and let scene-container expand */
 .fullscreen .essay-container {
   display: none;
@@ -322,8 +313,6 @@ body, html {
   margin-bottom: 1em;
   cursor: pointer; /* Indicates that the text is interactive */
 }
-
-
 
 .scene-container canvas {
   display: block;
@@ -371,8 +360,6 @@ body, html {
   cursor: pointer;
 }
 
-
-
 /* Style the controls container */
 .controls-container {
   display: none;
@@ -380,7 +367,6 @@ body, html {
   gap: 20px; /* Space between controls */
   margin-left: 30px;
 }
-
 
 .text-controls{
   max-width: 95px;
@@ -394,8 +380,6 @@ body, html {
   display: inlinne-flex;
   align-items: center;
 }
-
-
 
 .controls-container input[type="range"] {
     width: 100%;
@@ -457,7 +441,6 @@ input[type="range"]::-ms-thumb {
       justify-content: flex-end;
       align-items: end;
     margin: auto;}
-
 
 .image-caption img {
   display: block;      /* make the img a block so auto‑margins work */
@@ -593,7 +576,6 @@ input:checked + .slider {
 input:checked + .slider:before {
   transform: translateX(25px);
 }
-
 
 @media screen and (max-width: 768px) {
   .container {
