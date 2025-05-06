@@ -738,15 +738,16 @@ input:checked + .slider:before {
     overflow: hidden;
   }
   h1{
-    font-size: 4rem;
-    color: red;
+    font-size: 4.5rem;
   }
   .scene-container {
     width: 100vw;
     height: 100dvh;
     display: none;
   }
-
+  .author-designer{
+    margin-bottom: 50px;
+  }
   .essay-container {
     width: 100vw;
     max-width: 100vw;
