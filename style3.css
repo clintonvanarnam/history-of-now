@@ -229,7 +229,7 @@ b {
 
 h1 {
   font-family: 'Cosmica Book', sans-serif;
-  font-size: 140px;
+  font-size: 120px;
   margin-top: 300px;
   margin-bottom: 0px;
   line-height: 102%;
@@ -284,7 +284,7 @@ body.dark-mode .graph-reference,
 body.dark-mode .controls-container,
 body.dark-mode .scene-container,
 body.dark-mode {
-  background-color: #1E1E1E !important;
+  background-color: #151515 !important;
   color: #fff;
 }
 
@@ -297,11 +297,11 @@ body.dark-mode .block-quote {
 }
 
 body.dark-mode .graph-reference {
-  background-color: #232323 !important;
+  background-color: #151515 !important;
 }
 
 body.dark-mode .scene-container {
-  background-color: #1E1E1E !important;
+  background-color: #151515 !important;
 }
 
 body.dark-mode .essay-content,

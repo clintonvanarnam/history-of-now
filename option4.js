@@ -213,32 +213,25 @@ window.addEventListener('load', () => {
 
     let isDarkMode = false;
 
-    
-
-
     function toggleDarkMode(isDark) {
-        // Set renderer background for dark mode
-        renderer.setClearColor(isDark ? 0x1E1E1E : 0xffffff, 1);
+        renderer.setClearColor(isDark ? 0x151515 : 0xffffff, 1);
         document.body.classList.toggle('dark-mode', isDark);
-        // Update grid/timeline line colors
         scene.traverse((object) => {
             if (object.isMesh && object.material && object.material.color) {
-                // Update grid lines (grey in light, lighter grey in dark)
                 if (object.material.color.getHex() === 0x808080) {
                     object.material.color.set(isDark ? 0x444444 : 0x808080);
                 }
-                // Update timeline/decade lines (black in light, white in dark)
                 if (object.material.color.getHex() === 0x000000 || object.material.color.getHex() === 0xffffff) {
                     object.material.color.set(isDark ? 0xffffff : 0x000000);
                 }
             }
         });
-        // Update fullscreen icon if needed
         const fullscreenIcon = document.getElementById('fullscreen-icon');
         if (fullscreenIcon) {
             fullscreenIcon.classList.toggle('dark-mode', isDark);
         }
     }
+
     const darkModeToggle = document.getElementById('dark-mode-toggle');
     if (darkModeToggle) {
         darkModeToggle.addEventListener('change', (event) => {
@@ -250,7 +243,7 @@ window.addEventListener('load', () => {
     }
     
 
-    // Scale slider and label
+    // Scale slider and labeljust
     const scaleSlider = document.getElementById('scale-slider');
 
     scaleSlider.addEventListener('input', function () {
@@ -308,6 +301,7 @@ window.addEventListener('load', () => {
     const verticalCosmologicalPastLines = [];
     const cosmologicalFutureLines = [];
     const verticalCosmologicalFutureLines = [];
+    const infinitySpheres = [];
     let entries = [];
     let centralLine;
 
@@ -604,6 +598,17 @@ window.addEventListener('load', () => {
                         sphere.userData = { entry, originalColor: DATA_COLOR };
                         scene.add(sphere);
                         planeMeshes.push(sphere);
+                        infinitySpheres.push(sphere); // <-- Track for highlighting
+
+                        // Add invisible hover plane for the sphere
+                        const spherePlaneGeo = new THREE.PlaneGeometry(6, 6); // Slightly larger than sphere
+                        const spherePlaneMat = new THREE.MeshBasicMaterial({ opacity: 0, transparent: true, side: THREE.DoubleSide });
+                        const spherePlane = new THREE.Mesh(spherePlaneGeo, spherePlaneMat);
+                        spherePlane.position.copy(sphere.position);
+                        spherePlane.userData = { entry, originalColor: DATA_COLOR };
+                        scene.add(spherePlane);
+                        hitPlanes.push(spherePlane);
+                        planeMeshes.push(spherePlane);
 
                         // Name text with offset
                         const nameText = entry["NAME"] ? entry["NAME"] : "UNKNOWN";
@@ -619,8 +624,23 @@ window.addEventListener('load', () => {
                         const nameYOffset = yPosition + 10;
                         nameMesh.position.set(offset, nameYOffset, zPosition); // Apply offset
                         nameMesh.rotation.x = 0;
-                        nameMesh.userData.isLabel = true;
+                        nameMesh.userData = { isLabel: true, entry, originalColor: DATA_COLOR };
                         scene.add(nameMesh);
+                        labelMeshes.push(nameMesh); // <-- Ensure Aristotle's name is highlightable
+
+                        // Add invisible hover plane for the name label
+                        const nameBBox = nameGeometry.boundingBox;
+                        const nameWidth = nameBBox.max.x - nameBBox.min.x;
+                        const nameHeight = nameBBox.max.y - nameBBox.min.y;
+                        const namePlaneGeo = new THREE.PlaneGeometry(nameWidth * 1.2, nameHeight * 1.5);
+                        const namePlaneMat = new THREE.MeshBasicMaterial({ opacity: 0, transparent: true, side: THREE.DoubleSide });
+                        const namePlane = new THREE.Mesh(namePlaneGeo, namePlaneMat);
+                        namePlane.position.set(offset, nameYOffset, zPosition);
+                        namePlane.rotation.x = 0;
+                        namePlane.userData = { entry, originalColor: DATA_COLOR };
+                        scene.add(namePlane);
+                        hitPlanes.push(namePlane);
+                        planeMeshes.push(namePlane);
                     } else {
                         // Red line with offset
                         const lineLength = mapToLinearScale(pastAge);
@@ -719,6 +739,7 @@ window.addEventListener('load', () => {
                         sphere.position.set(offset, yPosition, zPosition); // Apply offset
                         sphere.userData = { entry, originalColor: DATA_COLOR };
                         scene.add(sphere);
+                        infinitySpheres.push(sphere); // <-- Track for highlighting
                     } else {
                         const lineLength = Math.abs(mapToLinearScale(futureHabitability));
                         const blueLineMaterial = new THREE.MeshBasicMaterial({ color: DATA_COLOR });
@@ -814,6 +835,7 @@ window.addEventListener('load', () => {
                         sphere.userData = { entry, originalColor: COSMOLOGICAL_COLOR };
                         scene.add(sphere);
                         planeMeshes.push(sphere);
+                        infinitySpheres.push(sphere); // <-- Track for highlighting
                     } else {
                         const lineLength = mapToLinearScale(pastAgeUniverse, true);
                         const cosmologicalLineMaterial = new THREE.MeshBasicMaterial({ color: COSMOLOGICAL_COLOR });
@@ -909,6 +931,7 @@ window.addEventListener('load', () => {
                         sphere.userData = { entry, originalColor: COSMOLOGICAL_COLOR };
                         scene.add(sphere);
                         planeMeshes.push(sphere);
+                        infinitySpheres.push(sphere); // <-- Track for highlighting
                     } else {
                         const lineLength = Math.abs(mapToLinearScale(futureLifeUniverse, true));
                         const cosmologicalLineMaterial = new THREE.MeshBasicMaterial({ color: COSMOLOGICAL_COLOR });
@@ -1102,7 +1125,7 @@ window.addEventListener('load', () => {
         // ensure world matrices (so children hitPlanes are in the right place)
         scene.updateMatrixWorld();
     
-        // one big list of everything we want to hit-test
+        // one big list of everything we want to hit-test, but skip big decade numbers
         const pickables = [
           ...planeMeshes,
           ...hitPlanes,                   // your debug planes
@@ -1110,7 +1133,7 @@ window.addEventListener('load', () => {
           ...blueLines, ...verticalBlueLines,
           ...cosmologicalPastLines, ...verticalCosmologicalPastLines,
           ...cosmologicalFutureLines, ...verticalCosmologicalFutureLines,
-          ...textMeshes
+          ...textMeshes.filter(t => !(t.userData && t.userData.isDecade)) // skip big decade numbers
         ];
     
         // now intersect recursively
@@ -1189,6 +1212,7 @@ window.addEventListener('load', () => {
         highlightAndCollect(verticalCosmologicalFutureLines);
         highlightAndCollect(planeMeshes);
         highlightAndCollect(labelMeshes);
+        highlightAndCollect(infinitySpheres); // <-- Highlight spheres
 
         textMeshes.forEach((text) => {
             // Always skip the big decade labels

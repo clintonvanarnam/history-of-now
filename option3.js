@@ -814,7 +814,7 @@ function clamp(value, min, max) {
     }
 
     function toggleDarkMode(isDark) {
-        renderer.setClearColor(isDark ? 0x1E1E1E : 0xffffff, 1);
+        renderer.setClearColor(isDark ? 0x151515 : 0xffffff, 1);
         document.body.classList.toggle('dark-mode', isDark);
         scene.traverse((object) => {
             if (object.isMesh && object.material && object.material.color) {
