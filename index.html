@@ -8,10 +8,7 @@
     />
     <title>History of Now</title>
     <link rel="stylesheet" href="style3.css" />
-    <link
-      rel="stylesheet"
-      href="./node_modules/@antikythera/antikythera/dist/css/fonts.css"
-    />
+    <link rel="stylesheet" href="./vendor/antikythera/css/fonts.css" />
     <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="shortcut icon" href="favicon.ico" />
@@ -118,7 +115,7 @@
       window.process = { env: { NODE_ENV: "production" } };
     </script>
     <script type="module">
-      import { Antikythera } from "./node_modules/@antikythera/antikythera/dist/antikythera.js";
+      import { Antikythera } from "./vendor/antikythera/antikythera.js";
 
       document.addEventListener("DOMContentLoaded", async () => {
         const antikythera = new Antikythera({
